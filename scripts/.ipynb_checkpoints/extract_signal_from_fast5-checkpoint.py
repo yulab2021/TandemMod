@@ -10,8 +10,8 @@ from tqdm import tqdm
 def get_base_quality():
     
     base_quality_dict=dict()
+    
     reference_dict=dict()
-
     with open(args.reference) as f:
         for line in f:
             line=line.rstrip()
@@ -25,7 +25,7 @@ def get_base_quality():
 
     f=open(args.sam)
 
-    k=0
+
     for line in f:
 
         if line[0] != "@":
@@ -79,8 +79,8 @@ def get_base_quality():
     return base_quality_dict
 
 
-def get_label_raw(fast5_fn, basecall_group, basecall_subgroup,reverse = False):
-	##Open file
+def get_events(fast5_fn, basecall_group, basecall_subgroup,reverse = False):
+	#Open file
 
 	try:
 		fast5_data = h5py.File(fast5_fn, 'r')
@@ -89,9 +89,9 @@ def get_label_raw(fast5_fn, basecall_group, basecall_subgroup,reverse = False):
 
 	# Get raw data
 	try:
-		raw_dat = list(fast5_data['/Raw/Reads/'].values())[0]
-		# raw_attrs = raw_dat.attrs
-		raw_dat = raw_dat['Signal'][()]
+		raw_data = list(fast5_data['/Raw/Reads/'].values())[0]
+		# raw_attrs = raw_data.attrs
+		raw_data = raw_data['Signal'][()]
 		# ~ .value
 	except:
 		raise RuntimeError(
@@ -102,83 +102,63 @@ def get_label_raw(fast5_fn, basecall_group, basecall_subgroup,reverse = False):
 	try:
 
 		corr_data = fast5_data['/Analyses/'+basecall_group +'/' + basecall_subgroup + '/Events']
-
 		corr_attrs = dict(list(corr_data.attrs.items()))
 		corr_data = corr_data[()]
 
-
 	except Exception as e:
-
         
 		raise RuntimeError(('Corrected data not found.'))
 
 	# Reading extra information
 	corr_start_rel_to_raw = corr_attrs['read_start_rel_to_raw']  #
-	if len(raw_dat) > 99999999:
+	if len(raw_data) > 99999999:
 		raise ValueError(fast5_fn + ": max signal length exceed 99999999")
-	if any(len(vals) <= 1 for vals in (corr_data, raw_dat)):
+	if any(len(vals) <= 1 for vals in (corr_data, raw_data)):
 		raise NotImplementedError(('One or no segments or signal present in read.'))
 	event_starts = corr_data['start'] + corr_start_rel_to_raw
 	event_lengths = corr_data['length']
 	event_bases = corr_data['base']
 	fast5_data.close()
 
-	return (raw_dat, event_bases, event_starts, event_lengths)
-	#######################################
-def search_RRACH(signal,start,length,base,fn_string):
-	uniq_arr=np.unique(signal)
-	
-	raw_signal = signal.tolist()
-	kmer_fillter="[AG][AG]AC[ACT]"
-	line=""
+	return raw_data, event_bases, event_starts, event_lengths
 
-	signal_list=[]
-	base="".join([x.decode() for x in base]) 
-
-	for indx in range(len(length)):
-		single_base_signal=raw_signal[start[indx]:start[indx]+length[indx]]
- 		    
-		signal_list.append("*".join([str(x) for x in raw_signal[start[indx]:start[indx]+length[indx]]]))
-
-
-	line="%s\t%s\t%s\n"%(str(fn_string).split("/")[-1].split(".")[0],base,"|".join(signal_list))
-                                                                                                                                                                                                         
-	return line
-def extract_file(input_file):
+    
+def extract_signal(fast5_path):
 	try:
-		(raw_data, raw_label, raw_start, raw_length ) = get_label_raw(input_file, FLAGS.basecall_group,FLAGS.basecall_subgroup)
-
+		signal, sequence, signal_start, signal_length  = get_events(fast5_path, args.basecall_group,args.basecall_subgroup)
 	except Exception as e:
-
 		return False, (None, None)
-	raw_data = raw_data[::-1]
+        
+	signal = signal[::-1]
+	signal = signal.tolist()
+	signal_list=[]
+	sequence="".join([x.decode() for x in sequence]) 
 
-	total_seq=""
-	line=search_RRACH(raw_data,raw_start,raw_length,raw_label,input_file)
-
-	return line,total_seq
+	for i in range(len(signal_length)):
+		signal_list.append("*".join([str(x) for x in signal[signal_start[i]:signal_start[i]+signal_length[i]]]))
+        
+	line="%s\t%s\t%s\n"%(str(fast5_path).split("/")[-1].split(".")[0],sequence,"|".join(signal_list))     
+    
+	return line
 
 def subcon(fls):
 	base_quality_dict=get_base_quality()
 	if True:
 		results=[]
-
-		pool = multiprocessing.Pool(processes = int(FLAGS.cpu))
+		pool = multiprocessing.Pool(processes = int(args.cpu))
 
 		for fl in fls:
 
-
-			result=pool.apply_async(extract_file,(fl,))
+			result=pool.apply_async(extract_signal,(fl,))
 			results.append(result)
 		pool.close()
 
 		pbar=tqdm(total=len(fls),position=0, leave=True)
 		nums=[]
 		for result in results:
-			num,seq=result.get()
+			num=result.get()
 
 			if num:
-
 				nums.append(num)
 			pbar.update(1)
 
@@ -188,27 +168,11 @@ def subcon(fls):
 		nums=[]
 		for fl in fls:
 
-			num,seq=extract_file(fl)
+			num=extract_file(fl)
 			if num:
 				nums.append(num)
-	output=open(FLAGS.output+".signal.tsv","w")
+	output=open(args.output+".signal.tsv","w")
  
-
-	#rename
-	sequencing_summary_file="/home/wuyou/Projects/m6A/data/guppy_non_1/sequencing_summary.txt"
-	sequencing_summary_file="/home/wuyou/Projects/human_HEK293T_nanopore/data/HEK293T-KO-rep1_guppy/sequencing_summary.txt"
-
-	read_id_dict=dict()
-	with open(sequencing_summary_file) as f:
-
-		for line in f:
-			if "filename" in line:
-				continue
-			filename=line.split("\t")[0].split(".")[0]
-			read_id=line.split("\t")[1]
-			read_id_dict[filename]=read_id
-
-    
 	for num in nums:
 
 		try:
@@ -228,25 +192,29 @@ def subcon(fls):
 
 	output.close()
 
+def main():
+
+    fast5_files=[]
+    with open(args.fast5) as f:
+        for line in f:
+            fast5_files.append(line.rstrip())
+            
+	subcon(fast5_files)
+
 
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser(description='Extract fast5 files.')
+	parser = argparse.ArgumentParser(description='Extract current signal from fast5 files.')
 
-	parser.add_argument('-o', '--output', required = True, help="Output file")
-	parser.add_argument('--basecall_group',default = "RawGenomeCorrected_000",
-                        help='The attribute group to extract the training data from. e.g. RawGenomeCorrected_000')
+	parser.add_argument('-o', '--output', required = True, help="Output file.")
+	parser.add_argument('--basecall_group',default = "RawGenomeCorrected_000", help='The attribute group to extract the training data from. e.g. RawGenomeCorrected_000.')
+	parser.add_argument('--basecall_subgroup', default='BaseCalled_template', help='Basecall subgroup Nanoraw resquiggle into. Default is BaseCalled_template.')
+	parser.add_argument('-p','--process', default=1,help='Process.')
+	parser.add_argument('--clip', default=10,help='The number of bases to be discarded at both ends.')
+	parser.add_argument('--fast5',required = True,help='The file containing fast5 path.')
+	parser.add_argument('-r','--reference',required = True,help='Reference transcripts fasta file.')
+	parser.add_argument('--sam',required = True,help='Sam file.')
+	args = parser.parse_args()
 
-	parser.add_argument('--basecall_subgroup', default='BaseCalled_template',help='Basecall subgroup Nanoraw resquiggle into. Default is BaseCalled_template')
-	parser.add_argument('--cpu', default=1,help='cpu number usage')
-	parser.add_argument('--clip', default=10,help='reads first and last N base signal drop out')
-	parser.add_argument('--fl',required = True,help='files comtained fast5 path, one line, one fast5 file')
-	parser.add_argument('-reference',required = True,help='files comtained fast5 path, one line, one fast5 file')
-	parser.add_argument('-sam',required = True,help='files comtained fast5 path, one line, one fast5 file')
-	args = parser.parse_args(sys.argv[1:])
+    main()
 
-	global FLAGS
-	FLAGS = args
-	total_fl=[]
-	for i in open(FLAGS.fl,"r"):
-		total_fl.append(i.rstrip())
-	subcon(total_fl)
+	
