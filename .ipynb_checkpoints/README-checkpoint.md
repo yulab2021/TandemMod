@@ -1,11 +1,11 @@
 ## TandemMod
 ---
-[![GitHub release (latest SemVer)](https://img.shields.io/badge/test-v1.0-yellowgreen)](#data-release-and-access)
+![GitHub release (latest SemVer)](https://img.shields.io/badge/Version-v1.0-yellowgreen) ![GitHub release (latest SemVer)](https://img.shields.io/badge/Language-python-yellowgreen)
 
 ### Environment configuration
 #### 
 
-The following modules are needed to run TandemMod. You 
+The following modules are needed to run TandemMod. 
 module | version
 ---|---
 samtools | 1.3.1
@@ -65,7 +65,7 @@ python TandemMod.py -run_mode train \
   -train_data_mod data/m5C_train.tsv \
   -train_data_unmod data/C_train.tsv \
   -test_data_mod data/m5C_test.tsv \
-  -test_data_unmod data/C_test.tsv \
+  -test_data_unmod data/C_test.tsv 
 ```
 ---
 ### Predict modifications using pretrained model.
@@ -85,7 +85,7 @@ python TandemMod.py -run_mode transfer \
   -train_data_mod data/m6Am_train.tsv \
   -train_data_unmod data/A_train.tsv \
   -test_data_mod data/m6Am_test.tsv \
-  -test_data_unmod data/A_test.tsv \
+  -test_data_unmod data/A_test.tsv 
 ```
 ---
 ### Contact
