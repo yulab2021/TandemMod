@@ -1,13 +1,10 @@
 ## TandemMod
 
-
+---
 ![GitHub release (latest SemVer)](https://img.shields.io/badge/Version-v1.0-yellowgreen) ![GitHub release (latest SemVer)](https://img.shields.io/badge/Language-python-yellowgreen)
 
 ### Environment configuration
-#### 
-
-
-The following modules are needed to run TandemMod. 
+#### The following modules are needed to run TandemMod. 
 =======
 The following modules are needed to run TandemMod.
 
