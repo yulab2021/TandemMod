@@ -1,10 +1,20 @@
-fasta="/home/wuyou/Projects/Osativa_nanopore/ref/Osativa_323_v7.0.fa"
-gff="/home/wuyou/Projects/Osativa_nanopore/ref/Osativa_323_v7.0.gene_exons.gtf"
+#fasta="/home/wuyou/Projects/Osativa_nanopore/ref/Osativa_323_v7.0.fa"
+#gff="/home/wuyou/Projects/Osativa_nanopore/ref/Osativa_323_v7.0.gene_exons.gtf"
 
 
 def fasta_to_sequence_dict(fasta):
     """
-    Convert fasta files to dictionary.
+    Convert a fasta file into a dictionary of sequences.
+
+    Args:
+        fasta (str): The path to the fasta file.
+
+    Returns:
+        Dict[str, str]: A dictionary containing the sequence data, where the keys are chromosome names and the values
+        are the corresponding sequences.
+
+    Raises:
+        None
     """
     sequence_dict={}
     chr="Chr0"
@@ -22,7 +32,7 @@ def fasta_to_sequence_dict(fasta):
             else:
                 sequence+=line
     sequence_dict[chr]=sequence    
-
+    
     
 # transcript_location_to_genome_location()
 

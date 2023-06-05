@@ -7,6 +7,13 @@ from torch.utils.data import WeightedRandomSampler
 
 
 class MyDataset(Dataset):
+    """
+    Dataset class that holds x and y data.
+
+    Args:
+        x (Any): The input data.
+        y (Any): The target data.
+    """
     def __init__(self,x,y):
         self.x=x
         self.y=y
@@ -19,6 +26,19 @@ class MyDataset(Dataset):
 
 
 def make_weights_for_balanced_classes(data, nclasses):
+    """
+    Calculate weights for balanced classes based on the provided data.
+
+    Args:
+        data (List[Tuple[Any, int]]): The input data as a list of tuples, where each tuple contains the item and its class label.
+        nclasses (int): The number of classes.
+
+    Returns:
+        List[float]: A list of weights corresponding to each item in the data.
+
+    Raises:
+        None
+    """
     count = [0] * nclasses
     for item in data:
         count[item[1]] += 1
@@ -33,7 +53,18 @@ def make_weights_for_balanced_classes(data, nclasses):
 
 
 class CustomWeightedRandomSampler(WeightedRandomSampler):
-    """WeightedRandomSampler except allows for more than 2^24 samples to be sampled"""
+    """
+    Custom implementation of WeightedRandomSampler.
+    This class extends the WeightedRandomSampler class provided by PyTorch. 
+    WeightedRandomSampler except allows for more than 2^24 samples to be sampled
+
+    Args:
+        *args: Variable length argument list.
+        **kwargs: Arbitrary keyword arguments.
+
+    Attributes:
+        None
+    """
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -48,7 +79,7 @@ class CustomWeightedRandomSampler(WeightedRandomSampler):
 
 
 def make_dataset(dir, class_to_idx):
-    images = []
+    dataset = []
     dir = os.path.expanduser(dir)
     for target in sorted(class_to_idx.keys()):
         d = os.path.join(dir, target)
@@ -60,9 +91,9 @@ def make_dataset(dir, class_to_idx):
 
                 path = os.path.join(root, fname)
                 item = (path, class_to_idx[target])
-                images.append(item)
+                dataset.append(item)
 
-    return images
+    return dataset
 
 
 class DatasetFolder(data.Dataset):
@@ -141,7 +172,26 @@ class DatasetFolder(data.Dataset):
 kmer_encode_dic={'A': 0, "C": 1, "G": 2, "T": 3}
 
 def default_loader(path):
-    #return np.loadtxt(path,delimiter=",")
+    """
+    Load data from the specified path.
+
+    Args:
+        path (str): The path to the file.
+
+    Returns:
+        Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+            A tuple containing the loaded data:
+                - signal (np.ndarray): The signals.
+                - kmer (np.ndarray): The encoded kmers.
+                - mean (np.ndarray): The mean values.
+                - std (np.ndarray): The standard deviation values.
+                - intense (np.ndarray): The intensity values.
+                - dwell (np.ndarray): The dwell values.
+                - base_quality (np.ndarray): The base quality values.
+
+    Raises:
+        None
+    """
     with open(path) as f:
         line=f.readlines()[0]
         signals="|".join(line.split("\t")[9:14]).split("|")
@@ -157,6 +207,25 @@ def default_loader(path):
     return signal,kmer,mean,std,intense,dwell,base_quality
 
 def sequence_and_signal_loader(path):
+    """
+    Load sequence and signal data from the specified path.
+
+    Args:
+        path (str): The path to the file.
+
+    Returns:
+        Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+            A tuple containing the loaded data:
+                - signal (np.ndarray): The signal data.
+                - kmer (np.ndarray): The kmer data.
+                - mean (np.ndarray): The mean values.
+                - std (np.ndarray): The standard deviation values.
+                - intense (np.ndarray): The intensity values.
+                - dwell (np.ndarray): The dwell values.
+
+    Raises:
+        None
+    """
     with open(path) as f:
         line=f.readline()
         line=line.rstrip()
@@ -184,6 +253,23 @@ class TextFolder(DatasetFolder):
         
         
 def load_data(data_mod,data_unmod,data_length):
+    """
+    Load data from the specified files.
+
+    Args:
+        data_mod (str): The path to the modified data file.
+        data_unmod (str): The path to the unmodified data file.
+        data_length (int): The desired length of the data.
+
+    Returns:
+        Tuple[List[List[np.ndarray]], List[int]]:
+            A tuple containing the loaded data:
+                - X (List[List[np.ndarray]]): A list of input samples, where each sample is a list of numpy arrays.
+                - Y (List[int]): A list of class labels.
+
+    Raises:
+        None
+    """
     X,Y=[],[]
     for i,file in enumerate([data_mod,data_unmod]):
         with open(file) as f:
@@ -212,7 +298,25 @@ def load_data(data_mod,data_unmod,data_length):
                     break
     return X,Y
 
+
+
 def load_predict_data(file):
+    """
+    Load prediction data from the specified file.
+
+    Args:
+        file (str): The path to the file.
+
+    Returns:
+        Tuple[List[List[np.ndarray]], List[str]]:
+            A tuple containing the loaded data:
+                - X (List[List[np.ndarray]]): A list of input samples, where each sample is a list of numpy arrays.
+                - Y (List[str]): A list of identifiers for each sample.
+
+    Raises:
+        None
+    """
+    
     X,Y=[],[]
 
     with open(file) as f:
@@ -237,7 +341,6 @@ def load_predict_data(file):
             x=[signal, kmer, mean, std, intense, dwell,base_quality]
             X.append(x)
             Y.append("|".join([contig,position,motif,read_id]))
-
 
     return X,Y    
 

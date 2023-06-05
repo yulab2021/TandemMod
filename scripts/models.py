@@ -3,10 +3,16 @@ import torch.nn as nn
 
 class BahdanauAttention(nn.Module):
     """
-    input: from RNN module h_1, ... , h_n (batch_size, seq_len, units*num_directions),
-                                    h_n: (num_directions, batch_size, units)
-    return: (batch_size, num_task, units)
+    Bahdanau Attention model, modified from MultiRM (https://github.com/Tsedao/MultiRM)
+
+    Args:
+        hidden_states (tensor): The hiden state from LSTM.
+        values (tensor): The output from LSTM.
+
+    Returns:
+        tensor: context_vector, attention_weights.
     """
+
     def __init__(self,in_features, hidden_units,num_task):
         super(BahdanauAttention,self).__init__()
         self.W1 = nn.Linear(in_features=in_features,out_features=hidden_units)
@@ -18,8 +24,9 @@ class BahdanauAttention(nn.Module):
 
         score  = self.V(nn.Tanh()(self.W1(values)+self.W2(hidden_with_time_axis)))
         attention_weights = nn.Softmax(dim=1)(score)
-        values = torch.transpose(values,1,2)   # transpose to make it suitable for matrix multiplication
-        #print(attention_weights.shape,values.shape)
+        values = torch.transpose(values,1,2)   
+        # transpose to make it suitable for matrix multiplication
+
         context_vector = torch.matmul(values,attention_weights)
         context_vector = torch.transpose(context_vector,1,2)
         return context_vector, attention_weights
@@ -27,9 +34,16 @@ class BahdanauAttention(nn.Module):
     
 class TandemMod(nn.Module):
     """
-    input: signal-level features and event-level feauters, x,kmer,mean,std,intense,dwell,base_quality
-    return: x
+    TandemMod model。
+
+    Args:
+        Current level features (tensor): x.
+        Event level features (tensor): kmer,mean,std,intense,dwell,base_quality.
+
+    Returns:
+        tensor: x, 2D probabilities.
     """
+
     def __init__(self,num_classes=2,vocab_zie=5, embedding_size=4,seq_len=5):
         super(TandemMod,self).__init__()
 
@@ -104,8 +118,14 @@ class TandemMod(nn.Module):
 
 class TandemMod_3_classes(nn.Module):
     """
-    input: signal-level features and event-level feauters, x,kmer,mean,std,intense,dwell,base_quality
-    return: x
+    TandemMod model。
+
+    Args:
+        Current level features (tensor): x.
+        Event level features (tensor): kmer,mean,std,intense,dwell,base_quality.
+
+    Returns:
+        tensor: x, 2D probabilities.
     """
     def __init__(self,num_classes=3,vocab_zie=5, embedding_size=4,seq_len=5):
         super(TandemMod,self).__init__()
@@ -180,6 +200,16 @@ class TandemMod_3_classes(nn.Module):
     
 
 class TandemMod_eventlevel_features(nn.Module):
+    """
+    TandemMod model。
+
+    Args:
+        
+        Event level features (tensor): kmer,mean,std,intense,dwell,base_quality.
+
+    Returns:
+        tensor: x, 2D probabilities.
+    """
     def __init__(self,num_classes=2,vocab_zie=5, embedding_size=4,seq_len=5):
         super(TandemMod_eventlevel_features,self).__init__()
 
@@ -218,11 +248,10 @@ class TandemMod_eventlevel_features(nn.Module):
         
         out_seq=torch.cat((kmer_embedded,mean,std,intense,dwell,base_quality),2)
 
-
         out_seq,(h_n_seq,c_n_seq)=self.lstm_seq(out_seq)
 
         out=torch.cat((out_seq[:,0,:],out_seq[:,1,:],out_seq[:,2,:],out_seq[:,3,:],out_seq[:,4,:]),1)
-        #out=context_vector[:,0,:]
+ 
         out.view(out.size()[0],1,out.size()[1])
         x=self.fc(out)
         #x.view(x.size()[0], 1, x.size()[1])
@@ -230,7 +259,16 @@ class TandemMod_eventlevel_features(nn.Module):
 
     
     
-class TandemMod_signallevel_features(nn.Module):
+class TandemMod_currentlevel_features(nn.Module):
+    """
+    TandemMod model。
+
+    Args:
+        Current level features (tensor): x.
+
+    Returns:
+        tensor: x, 2D probabilities.
+    """
     def __init__(self,num_classes=2,vocab_zie=5, embedding_size=4,seq_len=5):
         super(TandemMod_signal_features,self).__init__()
 
@@ -268,8 +306,6 @@ class TandemMod_signallevel_features(nn.Module):
 
     def forward(self,x,kmer,mean,std,intense,dwell,base_quality):
         
-        
-
         x = self.cnn_1d(x)
 
         batch_size, features, seq_len = x.size()
@@ -281,7 +317,7 @@ class TandemMod_signallevel_features(nn.Module):
         context_vector, attention_weights = self.attention(h_n, output)  # Attention (batch_size, num_task, unit)
 
         out=context_vector[:,0,:]
-        #out=context_vector[:,0,:]
+
         out.view(out.size()[0],1,out.size()[1])
         x=self.fc(out)
 
