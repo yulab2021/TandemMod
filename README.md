@@ -5,7 +5,7 @@
 ### Environment configuration
 #### 
 
-The following modules are needed to run TandemMod. You 
+The following modules are needed to run TandemMod.
 module | version
 ---|---
 samtools | 1.3.1
