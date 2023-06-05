@@ -2,7 +2,7 @@
 #gff="/home/wuyou/Projects/Osativa_nanopore/ref/Osativa_323_v7.0.gene_exons.gtf"
 
 
-def fasta_to_sequence_dict(fasta):
+def get_sequence_dict_from_fasta(fasta):
     """
     Convert a fasta file into a dictionary of sequences.
 
@@ -32,30 +32,56 @@ def fasta_to_sequence_dict(fasta):
             else:
                 sequence+=line
     sequence_dict[chr]=sequence    
-    
+    return sequence_dict
     
 # transcript_location_to_genome_location()
 
-exon_dict={}
-chr_dict={}
-strand_dict={}
-with open(gff) as f:
-    for line in f:
-        type=line.split("\t")[2]
-        if type=="exon":
-            chr=line.split('\t')[0]
-            transcript_id=line.split('"')[1]
-            start=int(line.split("\t")[3])
-            end=int(line.split("\t")[4])
-            strand=line.split("\t")[6]
-            if transcript_id not in exon_dict:
-                exon_dict[transcript_id]=[]
-                chr_dict[transcript_id]=chr
-                strand_dict[transcript_id]=strand
-            exon_dict[transcript_id].append([start,end])
+def get_exon_dict_from_gff(gff):
+    """
+    Extract exon information from a GFF file and return it as a dictionary.
 
+    Args:
+        gff (str): The path to the GFF file.
+
+    Returns:
+        Dict[str, List[List[int]]]: A dictionary containing exon information, where the keys are transcript IDs and
+        the values are lists of exon coordinates represented as [start, end] pairs.
+
+    Raises:
+        None
+    """
+    exon_dict={}
+    chr_dict={}
+    strand_dict={}
+    with open(gff) as f:
+        for line in f:
+            type=line.split("\t")[2]
+            if type=="exon":
+                chr=line.split('\t')[0]
+                transcript_id=line.split('"')[1]
+                start=int(line.split("\t")[3])
+                end=int(line.split("\t")[4])
+                strand=line.split("\t")[6]
+                if transcript_id not in exon_dict:
+                    exon_dict[transcript_id]=[]
+                    chr_dict[transcript_id]=chr
+                    strand_dict[transcript_id]=strand
+                exon_dict[transcript_id].append([start,end])
+    return exon_dict
 
 def revere_complement(seq):
+    """
+    Generate the reverse complement of a DNA sequence.
+
+    Args:
+        seq (str): The DNA sequence.
+
+    Returns:
+        str: The reverse complement of the input sequence.
+
+    Raises:
+        None
+    """
     seq=seq.replace("A","t")
     seq=seq.replace("C","g")
     seq=seq.replace("G","c")
