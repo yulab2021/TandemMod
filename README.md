@@ -6,7 +6,7 @@
 ### Environment configuration
 #### The following modules are needed to run TandemMod. 
 =======
-The following modules are needed to run TandemMod.
+
 
 module | version
 ---|---
