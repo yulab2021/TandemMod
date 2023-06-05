@@ -5,14 +5,23 @@ import multiprocessing
 
 import numpy as np
 from tqdm import tqdm
-##################################
 
-def get_base_quality():
-    
+
+def get_base_quality(reference,sam):
+    """
+    This function parse base qualities from sam file.
+
+    Args:
+        reference (str): The path to reference transcripts, in fasta format.
+        sam (str): Alignment results from minimap2.
+
+    Returns:
+        dict: A dictionary containing base quality and sequence info.
+    """
     base_quality_dict=dict()
     
     reference_dict=dict()
-    with open(args.reference) as f:
+    with open(reference) as f:
         for line in f:
             line=line.rstrip()
             if ">" in line:
@@ -23,67 +32,78 @@ def get_base_quality():
                 sequence=line
                 reference_dict[contig]=reference_dict[contig]+sequence
 
-    f=open(args.sam)
-
-
-    for line in f:
-
-        if line[0] != "@":
-            items =line.split("\t")
-            id=items[0]
-            flag=items[1]
-            chr =items[2]
-            start=int(items[3])
-            CIGAR=items[5]
-            seq=items[9]
-            base_quality_string=items[10]
-            base_quality_list=[ord(char)-33 for char in base_quality_string]   #ascii string to int list
-            mapped_base_quality_list=[]
-            
-            if  chr != "*":
+    with open(sam) as f:
+        for line in f:
+    
+            if line[0] != "@":
+                items =line.split("\t")
+                id=items[0]
+                flag=items[1]
+                chr =items[2]
+                start=int(items[3])
+                CIGAR=items[5]
+                seq=items[9]
+                base_quality_string=items[10]
+                base_quality_list=[ord(char)-33 for char in base_quality_string]   
+                #Convert ascii string to int list. 
+                mapped_base_quality_list=[]
                 
-                temp=""
-                index=0
-                new_seq=""
-                for char in CIGAR:
-                    temp+=char
-                    if char=="H":
-                        num=int(temp[:-1])
-                        temp=""
-                    elif char=="S":
-                        num=int(temp[:-1])
-                        index+=num
-                        temp=""
-                    elif char=="M":
-                        num=int(temp[:-1])
-                        new_seq+=seq[index:index+num]
-                        mapped_base_quality_list.extend(base_quality_list[index:index+num])
-                        index+=num
-                        temp=""
-                    elif char=="I":
-                        num=int(temp[:-1])
-                        index+=num
-                        temp=""
-                    elif char=="D":
-                        num=int(temp[:-1])
-                        new_seq+="N"*num
-                        mapped_base_quality_list.extend([0]*num)  #padding 0 for deletions, as placeholder
-                        temp=""
+                if  chr != "*":
+                    
+                    temp=""
+                    index=0
+                    new_seq=""
+                    for char in CIGAR:
+                        temp+=char
+                        if char=="H":
+                            num=int(temp[:-1])
+                            temp=""
+                        elif char=="S":
+                            num=int(temp[:-1])
+                            index+=num
+                            temp=""
+                        elif char=="M":
+                            num=int(temp[:-1])
+                            new_seq+=seq[index:index+num]
+                            mapped_base_quality_list.extend(base_quality_list[index:index+num])
+                            index+=num
+                            temp=""
+                        elif char=="I":
+                            num=int(temp[:-1])
+                            index+=num
+                            temp=""
+                        elif char=="D":
+                            num=int(temp[:-1])
+                            new_seq+="N"*num
+                            mapped_base_quality_list.extend([0]*num)  
+                            #padding 0 for deletions, as placeholder
+                            temp=""
 
-                
-                if flag=="0":
+                    
+                    if flag=="0":
+                    #DRS reads only map to sense strand.
+                        base_quality_dict[id] = [chr,start,reference_dict[chr][start-1:start+len(new_seq)-1],"|".join([str(x) for x in mapped_base_quality_list])]
+                    
 
-                    base_quality_dict[id]=[chr,start,reference_dict[chr][start-1:start+len(new_seq)-1],"|".join([str(x) for x in mapped_base_quality_list])]
-                
-    f.close()
     return base_quality_dict
 
 
-def get_events(fast5_fn, basecall_group, basecall_subgroup,reverse = False):
-	#Open file
+def get_events(fast5_path, basecall_group, basecall_subgroup,reverse = False):
+	"""
+    This function extract events from fast5 file.
+
+    Args:
+        fast5_path (str): The path to fast5 file.
+        basecall_group (str): The default group from tombo output is "RawGenomeCorrected_000".
+	
+        
+
+    Returns:
+        dict: A dictionary containing base quality and sequence info.
+    """
 
 	try:
-		fast5_data = h5py.File(fast5_fn, 'r')
+		fast5_data = h5py.File(fast5_path, 'r')
 	except IOError:
 		raise IOError('Error opening file. Likely a corrupted file.')
 
@@ -142,7 +162,7 @@ def extract_signal(fast5_path):
 	return line
 
 def subcon(fls):
-	base_quality_dict=get_base_quality()
+	base_quality_dict=get_base_quality(args.reference,args.sam)
 	if True:
 		results=[]
 		pool = multiprocessing.Pool(processes = int(args.cpu))
