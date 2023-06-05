@@ -1,11 +1,16 @@
 ## TandemMod
 ---
+
 ![GitHub release (latest SemVer)](https://img.shields.io/badge/Version-v1.0-yellowgreen) ![GitHub release (latest SemVer)](https://img.shields.io/badge/Language-python-yellowgreen)
 
 ### Environment configuration
 #### 
 
+
 The following modules are needed to run TandemMod. 
+=======
+The following modules are needed to run TandemMod.
+>>>>>>> 23609fd9f05e7073ba217589eb221ce5ee916b54
 module | version
 ---|---
 samtools | 1.3.1
@@ -16,7 +21,7 @@ statsmodels                        |0.10.0
 joblib                        |0.16.0
 pysam                         |0.16.0.1
 tqdm                          |4.39.0
-scikit-learn              |0.22
+scikit-learn              |0.22 
 torch                     |1.9.1
 scipy                     |1.6.3
 guppy                     |6.1.5
