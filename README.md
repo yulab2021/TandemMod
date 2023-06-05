@@ -1,5 +1,6 @@
 ## TandemMod
 ---
+[![GitHub release (latest SemVer)](https://img.shields.io/badge/test-v1.0-yellowgreen)](#data-release-and-access)
 
 ### Environment configuration
 #### 
