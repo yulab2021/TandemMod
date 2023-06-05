@@ -27,6 +27,7 @@ conda create env -f TandemMod.yaml
 ---
 ### Data preprocessing
 #### Basecalling
+Guppy, as well as the now deprecated Albacore and all other basecallers, uses files in fast5 format as input. In addition to basecalling, Guppy also performs filtering of low quality reads, clipping of Oxford Nanopore adapters.
 ```
 guppy_basecaller -i data/fast5 -s data/guppy --num_callers 40 --recursive --fast5_out --config rna_r9.4.1_70bps_hac.cfg
 ```
@@ -37,6 +38,7 @@ pip install ont-fast5-api
 multi_to_single_fast5 -i data/guppy -s data/guppy_single -t 40 --recursive 
 ```
 #### Resquiggle
+The re-squiggle algorithm is the basis for the Tombo framework. The re-squiggle algorithm takes as input a read file (in FAST5 format) containing raw signal and associated base calls. The base calls are mapped to a genome or transcriptome reference and then the raw signal is assigned to the reference sequence based on an expected current level model.
 ```
 tombo resquiggle --overwrite --basecall-group Basecall_1D_001 data/guppy_single  data/reference_transcripts.fasta --processes 40 --fit-global-scale --include-event-stdev
 ```

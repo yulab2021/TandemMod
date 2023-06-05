@@ -10,6 +10,15 @@ from statsmodels import robust
 
 
 def reverse_compliment(seq):
+    """
+    Generate reverse complement sequence.
+
+    Args:
+        seq (str): Origin sequence.
+
+    Returns:
+        str: Reverse complement sequence.
+    """
     seq=seq.replace("A","t")
     seq=seq.replace("G","c")
     seq=seq.replace("C","g")
@@ -18,7 +27,15 @@ def reverse_compliment(seq):
     return seq[::-1].upper()
 
 def interp(x):
+    """
+    Interpolate and resample the current signal to make each base correspond to the same length of current signal.
 
+    Args:
+        x (float list): Origin current signal.
+
+    Returns:
+        float list: Reverse complement sequence.
+    """
     l=len(x)
     y=x
     x=np.linspace(0,l-1,l)
