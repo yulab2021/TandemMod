@@ -1,5 +1,5 @@
 ## TandemMod
----
+
 
 ![GitHub release (latest SemVer)](https://img.shields.io/badge/Version-v1.0-yellowgreen) ![GitHub release (latest SemVer)](https://img.shields.io/badge/Language-python-yellowgreen)
 
@@ -10,7 +10,7 @@
 The following modules are needed to run TandemMod. 
 =======
 The following modules are needed to run TandemMod.
->>>>>>> 23609fd9f05e7073ba217589eb221ce5ee916b54
+
 module | version
 ---|---
 samtools | 1.3.1
