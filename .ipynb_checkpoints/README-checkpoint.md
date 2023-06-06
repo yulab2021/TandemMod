@@ -29,12 +29,12 @@ conda create env -f TandemMod.yaml
 ---
 ### Data preprocessing
 #### Basecalling
-Guppy, as well as the now deprecated Albacore and all other basecallers, uses files in fast5 format as input. In addition to basecalling, Guppy also performs filtering of low quality reads, clipping of Oxford Nanopore adapters.
+Guppy is used for basecalling. Guppy, as well as the now deprecated Albacore and all other basecallers, uses files in fast5 format as input. In addition to basecalling, Guppy also performs filtering of low quality reads, clipping of Oxford Nanopore adapters.
 ```
 guppy_basecaller -i demo/fast5 -s demo/guppy --num_callers 40 --recursive --fast5_out --config rna_r9.4.1_70bps_hac.cfg
 ```
 #### Multi-fast5 to single_fast5
-If fast5 reads are stored at multi-reads format, ont_fast5_api is recommended to convert multi-fast5 reads to single-fast5 reads. The ont_fast5_api is available on PyPI and can be installed via pip:
+If fast5 reads are stored at multi-reads format, ont_fast5_api is recommended to convert multi-fast5 reads to single-fast5 reads. Usually, the size of multi-reads fast5 file is about 200-300M. The ont_fast5_api is available on PyPI and can be installed via pip:
 ```
 pip install ont-fast5-api
 multi_to_single_fast5 -i demo/guppy -s demo/guppy_single -t 40 --recursive 
@@ -50,7 +50,7 @@ minimap2 is used to map basecalled sequences to reference transcripts.
 cat demo/guppy/pass/*.fastq >demo/m6A.fastq
 minimap2 -ax map-ont demo/reference_transcripts.fasta demo/m6A.fastq >demo/m6A.sam
 ```
-Extract signal files and features from resquiggled fast5 files using python scripts.
+Extract signal files and features from resquiggled fast5 files using the following python scripts.
 ```
 
 python scripts/extract_signal_from_fast5.py -p=40 --fast5=demo/guppy_single --reference demo/reference_transcripts.fasta --sam demo/m6A.sam -o demo/m6A --clip=10
@@ -58,6 +58,7 @@ python scripts/extract_feature_from_signal.py  -signal_file demo/m6A.signal.tsv 
 ```
 
 ---
+Three different modes has been developed: de novo training, transfer learning, and prediction. The mode of de novo training allows users to train the TandemMod model from scratch using their own datasets. In the prediction mode, users can apply a pre-trained or fine-tuned TandemMod model to identify modifications in their dataset. In the transfer learning mode, users can fine-tune a pre-trained TandemMod model using their own data. 
 ### Train your own model
 
 ```
