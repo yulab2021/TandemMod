@@ -24,7 +24,7 @@ ont_vbz_hdf_plugin        |1.0.1
 
 You can install dependent modules manually or install them through yaml file.
 ```
-conda create env -f TandemMod.yaml
+conda env create -f TandemMod.yaml
 ```
 ---
 ### Data preprocessing
