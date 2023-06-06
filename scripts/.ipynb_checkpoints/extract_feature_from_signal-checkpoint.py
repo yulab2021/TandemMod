@@ -10,6 +10,15 @@ from statsmodels import robust
 
 
 def reverse_compliment(seq):
+    """
+    Generate reverse complement sequence.
+
+    Args:
+        seq (str): Origin sequence.
+
+    Returns:
+        str: Reverse complement sequence.
+    """
     seq=seq.replace("A","t")
     seq=seq.replace("G","c")
     seq=seq.replace("C","g")
@@ -18,7 +27,15 @@ def reverse_compliment(seq):
     return seq[::-1].upper()
 
 def interp(x):
+    """
+    Interpolate and resample the current signal to make each base correspond to the same length of current signal.
 
+    Args:
+        x (float list): Origin current signal.
+
+    Returns:
+        float list: Reverse complement sequence.
+    """
     l=len(x)
     y=x
     x=np.linspace(0,l-1,l)
@@ -31,6 +48,14 @@ def interp(x):
 
 
 def signal_to_file2(out_dir,file_name,line):
+    """
+    Append the line to a file in the specified directory.
+    
+    Args:
+        out_dir (str): Output directory path.
+        file_name (str): Name of the file to append the line to.
+        line (str): Line of text to be written to the file.
+    """
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
     
@@ -38,6 +63,14 @@ def signal_to_file2(out_dir,file_name,line):
             f.writelines(line)
 
 def signal_to_file(out_dir,file_name,line):
+    """
+    Write the line to a file in the specified directory based on a random selection.
+    
+    Args:
+        out_dir (str): Output directory path.
+        file_name (str): Name of the file to be created.
+        line (str): Line of text to be written to the file.
+    """
     if not os.path.exists(out_dir+"/test/"+args.label):
         os.makedirs(out_dir+"/test/"+args.label)
     if not os.path.exists(out_dir+"/train/"+args.label):
@@ -51,7 +84,13 @@ def signal_to_file(out_dir,file_name,line):
 
 
 def extract_5mer_features(signal_file):
+    """
+    Extracts features from a signal file.
     
+    Args:
+        signal_file (str): Path to the signal file.
+        args (Namespace): Command-line arguments.
+    """
     base_quality_dict=dict()
     
     kmer_fillter="[ACGT][ACGT]A[ACGT][ACGT]"
@@ -59,6 +98,7 @@ def extract_5mer_features(signal_file):
     
     out=open(args.out_dir+"/"+args.label,"w")
 
+    """
     #rename
     sequencing_summary_file="/home/wuyou/Projects/m6A/data/guppy_non_2/sequencing_summary.txt"
     read_id_dict=dict()
@@ -69,7 +109,7 @@ def extract_5mer_features(signal_file):
             filename=line.split("\t")[0].split(".")[0]
             read_id=line.split("\t")[1]
             read_id_dict[ filename]=read_id
-
+    """
 
     clip=10 
     count=0
