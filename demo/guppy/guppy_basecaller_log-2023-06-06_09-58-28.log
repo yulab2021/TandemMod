@@ -1,0 +1,989 @@
+2023-06-06 09:58:28.600719 [guppy/message] ONT Guppy basecalling software version 6.1.5+446c355, minimap2 version 2.22-r1101
+config file:        /opt/ont/guppy/data/rna_r9.4.1_70bps_hac.cfg
+model file:         /opt/ont/guppy/data/template_rna_r9.4.1_70bps_hac.jsn
+input path:         demo/fast5
+save path:          demo/guppy
+chunk size:         2000
+chunks per runner:  512
+minimum qscore:     7
+records per file:   4000
+num basecallers:    40
+cpu mode:           ON
+threads per caller: 4
+
+Use of this software is permitted solely under the terms of the end user license agreement (EULA).By running, copying or accessing this software, you are demonstrating your acceptance of the EULA.
+The EULA may be found in /opt/ont/guppy/bin
+
+2023-06-06 09:58:28.601818 [guppy/info] crashpad_handler not supported on this platform.
+2023-06-06 09:58:30.420136 [guppy/message] Found 1 fast5 files to process.
+2023-06-06 09:58:30.425498 [guppy/message] Init time: 1776 ms
+2023-06-06 09:58:30.464087 [guppy/info] Read '00007b91-98f4-41c3-9eab-39f40625d550' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.465319 [guppy/info] Read '00104315-e8fa-4031-a122-3741b7531396' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.465368 [guppy/info] Read '0020eb7c-89f8-44bf-aeaf-acb2ea776b2c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.465402 [guppy/info] Read '0045dcf9-ac50-4e2e-b8dc-ea7a9157b2c4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.466515 [guppy/info] Read '005c48b0-72d1-4898-9fb2-00bebca69828' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.466550 [guppy/info] Read '006451b4-2487-4c6a-b159-c41a05d92d17' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.467670 [guppy/info] Read '00674aa7-adf7-42ac-9339-19742a920968' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.467763 [guppy/info] Read '006f4a6e-d0d0-41d5-bc9a-b7cdd958d241' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.468873 [guppy/info] Read '00828455-e5c5-4557-9a85-1c53abdd56b5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.468909 [guppy/info] Read '008c7aeb-7e99-4213-8bfe-df785fef9f49' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.470023 [guppy/info] Read '00aa78ee-dba1-4b00-8bb9-e5f553ffc3d2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.470109 [guppy/info] Read '00c9ebce-70b1-430e-ac96-423cf287e129' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.471212 [guppy/info] Read '00f4ed9d-e90d-483e-801a-5664684e487e' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.471243 [guppy/info] Read '0120b08c-9a41-4b5c-af9a-517c9076b664' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.471276 [guppy/info] Read '0136a3b3-cbc1-4bd5-b977-4204431769ac' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.472381 [guppy/info] Read '014c0b7d-a2b6-4491-9398-f5d1e2afd54f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.472411 [guppy/info] Read '0160378a-b9bb-4d1d-b789-055c5ab3377f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.473507 [guppy/info] Read '0164e118-a2c8-48a7-b2d9-bb54ab23efff' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.473539 [guppy/info] Read '01714ff1-1e77-45a8-8360-1899905dcaeb' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.474637 [guppy/info] Read '017b700d-1bb7-4cbd-b330-c78bc4409b7b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.474665 [guppy/info] Read '0184464e-e2be-4ff1-8c9f-b628a96f2ba0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.475754 [guppy/info] Read '01a0fef5-f996-45ec-9a95-5dfc18008148' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.475782 [guppy/info] Read '01ae2c0d-e852-41db-9852-1eccfec07164' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.476874 [guppy/info] Read '01c9086f-4549-4487-aa57-1bf474875b1c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.476908 [guppy/info] Read '01d327ab-9b09-4f15-8e19-0826a88543e8' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.478019 [guppy/info] Read '01d37036-5bbc-43eb-bbce-e91664d99a15' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.478086 [guppy/info] Read '02098c74-47c5-4699-8620-2411502bea9f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.478118 [guppy/info] Read '021bbf3d-a2fd-436d-b1de-0823485025a4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.479214 [guppy/info] Read '02469b20-3401-4840-99e4-0218f3d6c47a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.479242 [guppy/info] Read '0269a2cf-d379-4ba0-952e-eb6f4a403339' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.480336 [guppy/info] Read '026e67a4-5eaf-40de-9825-cc3cefc63faf' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.480364 [guppy/info] Read '026fcedf-1f98-43d5-9a82-1901ddc058c6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.481482 [guppy/info] Read '0278af6f-6092-4591-accc-885069ab00af' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.481518 [guppy/info] Read '028d485d-5964-4eed-a249-274c97c71e9b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.481540 [guppy/info] Read '028fc594-eee7-4e0d-b037-9d33d9fcbacc' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.482632 [guppy/info] Read '02992942-16da-4650-9938-0bd905b494d8' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.482659 [guppy/info] Read '02c9ea36-2c2a-45b1-a785-502f4ed643b5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.483749 [guppy/info] Read '02dd3249-ddd3-4f89-9b4d-79844b8141b3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.483777 [guppy/info] Read '03046a15-1c09-492f-bbce-95fe76295920' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.484868 [guppy/info] Read '030e259d-3a07-4998-9158-8ceb055cbda6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.484902 [guppy/info] Read '03102aeb-8bb2-4f9c-819c-48ceb55e0d19' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.485994 [guppy/info] Read '0362a949-c9aa-45e4-98a2-8593971ed4ad' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.486022 [guppy/info] Read '0365751e-05c7-4152-bb36-77e2529629a0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.487124 [guppy/info] Read '03664f89-651c-4f90-97a8-eba86498cb82' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.487155 [guppy/info] Read '0371eff1-c132-459b-86b3-2e2d27f46b91' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.487178 [guppy/info] Read '037ba1ca-911f-4d3b-b891-f4b9c957c971' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.488268 [guppy/info] Read '037cf260-4fe4-4075-8750-ab885f0e29c4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.489372 [guppy/info] Read '038595b2-3f29-440d-bf40-0fcd26521c62' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.489427 [guppy/info] Read '039096ca-afa3-4182-8197-e218da6b1d8a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.490518 [guppy/info] Read '03a97f91-6249-4e33-8580-967589be4c9f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.490547 [guppy/info] Read '03aa5743-3bea-41ed-aa8b-ccf779c3f640' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.491653 [guppy/info] Read '03e76ab1-673b-4791-9dbe-e63a79eb0f3f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.491768 [guppy/info] Read '03f5ab78-d2a8-43b4-b75d-3919d1de556a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.492895 [guppy/info] Read '0407e196-3f1b-448f-8970-92c4c57a211a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.492982 [guppy/info] Read '04250b65-55d7-47aa-8185-04eafd7b51e9' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.494107 [guppy/info] Read '04278436-7fb4-405d-a938-1752c041a338' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.495230 [guppy/info] Read '0433af9f-ec17-476e-93ff-6d77f8ff6e62' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.495282 [guppy/info] Read '04343c9a-c88b-46e6-9b7d-1f97f7a28128' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.495386 [guppy/info] Read '04413815-11e9-4146-a423-913307955f51' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.496493 [guppy/info] Read '044cc9b9-7926-4fc9-913f-562c1e6a54b3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.498189 [guppy/info] Read '0457d4b3-132b-4913-9b84-35184f5a5cd3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.498273 [guppy/info] Read '047aafa7-3d2f-4511-812b-0f89be12a48d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.498315 [guppy/info] Read '049548e6-802c-4053-8d0d-dbb874d29ea1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.498353 [guppy/info] Read '04968f2e-07a2-4a8f-82de-0913ecd20c3c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.500532 [guppy/info] Read '0496cb3b-36c6-435d-84d4-96b2d0442fe6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.500575 [guppy/info] Read '04ac29ee-b35b-42e5-aec5-0c8124b32e98' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.501840 [guppy/info] Read '04b9b086-8778-45ae-ae17-d763ddeb0693' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.502023 [guppy/info] Read '04ca3a37-5a3d-4fc3-bf64-f1d947b92557' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.507867 [guppy/info] Read '04e99123-ae4b-4299-81c4-6a444894e2ac' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.510427 [guppy/info] Read '04f926ec-3a04-4f80-aac7-36721685376c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.511567 [guppy/info] Read '050221c5-4a23-4a41-ad19-df96f34daad0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.517848 [guppy/info] Read '051f7da4-07b3-4d76-ae4e-0b04fcac888b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.521390 [guppy/info] Read '052e3063-be1c-4d77-9d9f-2fde968d62bf' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.530666 [guppy/info] Read '054df1ed-996f-4f59-ac0a-4bb01c35106a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.532250 [guppy/info] Read '05517ab1-927b-4472-a576-b0fea657c788' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.698150 [guppy/info] Read '058a4a5e-2889-4d03-ba7a-3144c69e48ce' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.711832 [guppy/info] Read '058c4f1c-29bc-4c23-b0e0-02953b011425' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.711900 [guppy/info] Read '05a00f85-6539-4600-b920-8da47068af12' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.740633 [guppy/info] Read '05a74410-21bd-4022-8ef2-652b7e35e4a2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.773639 [guppy/info] Read '05a94777-4974-4984-931b-85b0ccfd6432' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.776909 [guppy/info] Read '05af7c14-e39c-46fd-91cc-abe16e52e74f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.783331 [guppy/info] Read '05b123a4-f8ca-4687-b584-8ceeb70ce46b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.855701 [guppy/info] Read '05c6a0d2-cbf8-4beb-af4e-b1f81c4f6e40' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.856843 [guppy/info] Read '05c7d70a-fad8-4549-a3c1-db487ade060b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.856894 [guppy/info] Read '05ce7c85-b48d-4fe7-9060-2448ce35421f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.857984 [guppy/info] Read '05d2f753-ea55-4a30-865d-0d802894a853' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.859108 [guppy/info] Read '05ec345d-c22b-4049-a565-9777f58abf69' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.859166 [guppy/info] Read '05f9e552-7efa-4f27-9fec-e68c6c052532' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.860256 [guppy/info] Read '061e43ab-424a-457d-8e3c-665e89fd9d10' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.914518 [guppy/info] Read '0626fb8f-cf8c-47d3-9d39-f9010ce9093e' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.968765 [guppy/info] Read '064350c6-2c57-4e64-a62c-4df9a1f18084' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.968850 [guppy/info] Read '065c7a47-d449-4b90-aa79-7bcde9d00cd1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.969519 [guppy/info] Read '052e3063-be1c-4d77-9d9f-2fde968d62bf' from file "batch_0.fast5" completed.
+2023-06-06 09:58:30.970822 [guppy/info] Read '0662e8ae-41ac-4d03-a4bd-0600baa45374' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.971942 [guppy/info] Read '0665bd9b-7ac0-42a2-b20e-b53ed0224768' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.971986 [guppy/info] Read '06715186-8c8b-45fd-b6a5-e9db062f42f4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.973070 [guppy/info] Read '0673c37c-bfc8-4636-a45c-b77d5b96a99b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.973111 [guppy/info] Read '0694b6f5-e1d0-43d2-829d-d7f45a84ddb3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:30.977214 [guppy/info] Read '00674aa7-adf7-42ac-9339-19742a920968' from file "batch_0.fast5" completed.
+2023-06-06 09:58:31.008583 [guppy/info] Read '00828455-e5c5-4557-9a85-1c53abdd56b5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:31.012001 [guppy/info] Read '06a3abdb-99b7-406b-a00f-d2b60d7d0c07' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.017396 [guppy/info] Read '06b5fceb-9299-4563-b93b-4e692962751e' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.018532 [guppy/info] Read '06da53e3-18bc-4ad5-bb7b-8e23aabcc240' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.018583 [guppy/info] Read '06de609d-9e0c-463c-9672-073df56d0dfb' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.019814 [guppy/info] Read '06e62f86-c432-42c2-96b9-52d00eecc74c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.020928 [guppy/info] Read '06ee0fc3-e6a8-4893-9f8e-1499123aadd5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.020971 [guppy/info] Read '06f0a8b5-3173-4fd0-8722-2db8b4e44173' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.023124 [guppy/info] Read '06fd48cd-4527-4032-b51a-0a92443025bb' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.023170 [guppy/info] Read '07005baa-8d1a-4a5c-8746-610d783be5ad' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.024257 [guppy/info] Read '070d0edd-3260-4f4c-bca9-658928bcde16' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.024316 [guppy/info] Read '0729d528-e67a-4b3c-8f1d-1242c8b631e5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.025403 [guppy/info] Read '0757ca35-a084-42af-8afc-2051694a918a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.026506 [guppy/info] Read '075e8f6a-637d-4abc-8328-8459b4dfd7e6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.030901 [guppy/info] Read '07702896-274c-4c28-b932-e09ecbb36891' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.032047 [guppy/info] Read '079446b0-0212-4f41-ac72-41722fbf4af3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.032097 [guppy/info] Read '07b1c455-22d3-49ee-af43-94816c6310d3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.032822 [guppy/info] Read '014c0b7d-a2b6-4491-9398-f5d1e2afd54f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:31.080551 [guppy/info] Read '07d4800f-08b0-4502-b5d4-2d02f4ddec09' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.082151 [guppy/info] Read '07d52f5d-971b-4f44-83c3-3fd4295f8982' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.101479 [guppy/info] Read '07f0a111-206b-44d0-a013-7ded42ccdf8d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.118855 [guppy/info] Read '081421da-6cbb-48fe-ab00-2f81abba829b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.120014 [guppy/info] Read '082bf237-f01f-4920-ad98-15dd327183bd' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.124320 [guppy/info] Read '082eb8b6-ed6f-4fed-ad23-3ab1cb64eeee' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.126513 [guppy/info] Read '086463e2-3401-4fe0-aad4-e13cd1280299' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.128685 [guppy/info] Read '0878d2e2-f80b-432e-ad43-0f3bc52ff6eb' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.128728 [guppy/info] Read '087c4949-cf65-40ab-aabe-83ce65f3ac35' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.134062 [guppy/info] Read '087ecad3-1b8d-4c88-8cce-9bbadc2a2a5b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.136278 [guppy/info] Read '088b1f2a-f84e-4b18-be7d-f5f6e09eba5a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.152295 [guppy/info] Read '088b380e-783d-477a-9f6c-7e20f1a0bb1a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.167255 [guppy/info] Read '0898e248-f7ba-4070-b260-2f25b88efbbe' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.210738 [guppy/info] Read '08a11193-bf20-4dff-9c75-c67141a99c08' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.249810 [guppy/info] Read '08b40b99-09a7-4293-9c36-cc24eca0bc27' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.252022 [guppy/info] Read '08ee1272-5a18-45a1-9b31-c8c950880c71' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.264818 [guppy/info] Read '090aa260-80f0-4f69-a7f3-8ae55f6d5d6d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.276642 [guppy/info] Read '09104b98-2dfe-48b8-a684-98917a72e9cd' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.286763 [guppy/info] Read '09106ead-dbb3-4719-9dab-ea73ef45224c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.287964 [guppy/info] Read '091e9729-4b54-4a45-bc19-fd65e2576a48' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.294563 [guppy/info] Read '092057e2-1c3b-4ba9-b16a-aaf00c56f4e7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.336497 [guppy/info] Read '09249596-26db-4ea1-b9fd-75b2cabf9222' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.351824 [guppy/info] Read '09276997-175b-497a-802a-2ffe20fcf468' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.353705 [guppy/info] Read '094b34c2-c5a8-48ee-932b-c21b237697d4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.367785 [guppy/info] Read '094bdfc6-dcc9-495d-90d0-cd631946c205' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.379371 [guppy/info] Read '094fc372-b706-4107-9cb4-4319b6b0ae24' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.388367 [guppy/info] Read '0362a949-c9aa-45e4-98a2-8593971ed4ad' from file "batch_0.fast5" completed.
+2023-06-06 09:58:31.400280 [guppy/info] Read '09535ad1-316d-45e7-806f-8676adbd57a0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.404567 [guppy/info] Read '095fa8a9-2e9b-4d46-b4de-5d8858ee1596' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.407726 [guppy/info] Read '097ea8f1-37c7-48ed-9c5e-846ee670cd86' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.407803 [guppy/info] Read '09986474-8177-435d-a94b-9c20eb900ba2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.441480 [guppy/info] Read '00007b91-98f4-41c3-9eab-39f40625d550' from file "batch_0.fast5" completed.
+2023-06-06 09:58:31.447172 [guppy/info] Read '09a1b6da-7ba5-43bc-be2a-c9b458b1bfa6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.447267 [guppy/info] Read '09c39187-4a42-4f4f-a4d5-2ba8a04f7a4f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.524514 [guppy/info] Read '0164e118-a2c8-48a7-b2d9-bb54ab23efff' from file "batch_0.fast5" completed.
+2023-06-06 09:58:31.548520 [guppy/info] Read '09d14535-de80-4b65-94f1-86f01711ed69' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.550771 [guppy/info] Read '09d60b04-3cf6-404e-87d7-5409c6d919ab' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.550860 [guppy/info] Read '09e5a552-752f-414e-9716-97c8156d3d53' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.551980 [guppy/info] Read '09f60f8b-4097-434d-9e4b-e45deaf10c6f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.553172 [guppy/info] Read '0a1da4d6-d460-4379-a1b0-c9837ff37ae7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.596626 [guppy/info] Read '0a26343c-cd0c-4863-9a9e-076dadcefae7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.602237 [guppy/info] Read '0a29c40e-6030-4792-a903-9bcab4f0cb09' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.606247 [guppy/info] Read '0a29dbaa-ca29-4b5f-9497-e47b657e0aaf' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.669461 [guppy/info] Read '0a2d3aaf-e6fa-4b79-ab67-c345fc4d94ef' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.681374 [guppy/info] Read '0a366afb-c172-497f-b4f9-41acb4069534' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.765468 [guppy/info] Read '0a3e97f1-a8f4-4eab-9fd8-105ba3744274' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.784781 [guppy/info] Read '0a5a303a-a819-4e14-b382-b105518cc8c1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.880734 [guppy/info] Read '0a610a9b-2777-4ca5-ac36-d540aaed893d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.881892 [guppy/info] Read '0a8a2218-c87f-4fb4-b2f1-d06d6f752593' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.883039 [guppy/info] Read '0a92150d-e15d-4c00-8013-4f2d9024e403' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:31.884914 [guppy/info] Read '0ae48d3c-2a82-4fbc-b654-77fd3d3ae61c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.084800 [guppy/info] Read '00104315-e8fa-4031-a122-3741b7531396' from file "batch_0.fast5" completed.
+2023-06-06 09:58:32.175707 [guppy/info] Read '0b054e1e-2bd0-44b5-8ef4-d49c31d8e372' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.388888 [guppy/info] Read '0b277dae-a069-4342-86f1-1697f97ca784' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.390078 [guppy/info] Read '0b366a90-84e8-42dc-88d3-d4be1d0d2919' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.465084 [guppy/info] Read '0b5ffe4f-960b-4ab4-99df-131c60183c35' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.465168 [guppy/info] Read '0b60e1b6-45bc-4bb9-8a44-42aa5efe6bcf' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.465185 [guppy/info] Read '0b60f505-4053-4f24-a368-41cac7431d74' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.465202 [guppy/info] Read '0b7fd507-5b81-4066-bbf5-31e957577e8e' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.465219 [guppy/info] Read '0b84f368-b4b9-4c63-af9c-7574f9a12d43' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.465237 [guppy/info] Read '0b8898ca-a2cc-4687-a53a-15fc159ceb3b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:32.466336 [guppy/info] Read '0bcf6596-d060-4684-9a65-be246f572a46' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:33.033554 [guppy/info] Read '0bd21274-5a9b-4c7f-80da-17bcf60e0649' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:33.119249 [guppy/info] Read '0bd28a39-3722-415f-8486-4aa4bfd5121d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:33.155526 [guppy/info] Read '005c48b0-72d1-4898-9fb2-00bebca69828' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.196539 [guppy/info] Read '006451b4-2487-4c6a-b159-c41a05d92d17' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.267156 [guppy/info] Read '00f4ed9d-e90d-483e-801a-5664684e487e' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.283583 [guppy/info] Read '0120b08c-9a41-4b5c-af9a-517c9076b664' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.341245 [guppy/info] Read '05c6a0d2-cbf8-4beb-af4e-b1f81c4f6e40' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.392034 [guppy/info] Read '05d2f753-ea55-4a30-865d-0d802894a853' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.406585 [guppy/info] Read '0bd76870-5060-48cc-bdc3-fdb89e25b8df' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:33.458753 [guppy/info] Read '02dd3249-ddd3-4f89-9b4d-79844b8141b3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.475788 [guppy/info] Read '03046a15-1c09-492f-bbce-95fe76295920' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.527750 [guppy/info] Read '038595b2-3f29-440d-bf40-0fcd26521c62' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.604553 [guppy/info] Read '039096ca-afa3-4182-8197-e218da6b1d8a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.665940 [guppy/info] Read '064350c6-2c57-4e64-a62c-4df9a1f18084' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.679477 [guppy/info] Read '0bd76eaf-4aaa-4e44-9ee4-739844aad14c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:33.679624 [guppy/info] Read '0bee8398-3230-4698-88e8-ad3f5187ce4a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:33.714313 [guppy/info] Read '0020eb7c-89f8-44bf-aeaf-acb2ea776b2c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.754393 [guppy/info] Read '0136a3b3-cbc1-4bd5-b977-4204431769ac' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.784112 [guppy/info] Read '017b700d-1bb7-4cbd-b330-c78bc4409b7b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.807851 [guppy/info] Read '0184464e-e2be-4ff1-8c9f-b628a96f2ba0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.874522 [guppy/info] Read '01a0fef5-f996-45ec-9a95-5dfc18008148' from file "batch_0.fast5" completed.
+2023-06-06 09:58:33.933770 [guppy/info] Read '01c9086f-4549-4487-aa57-1bf474875b1c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.005653 [guppy/info] Read '01d327ab-9b09-4f15-8e19-0826a88543e8' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.046896 [guppy/info] Read '0bf085e8-881e-4d79-96dd-a1d79ad08b84' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.047076 [guppy/info] Read '0bf20fc3-1eb4-4a33-ae0b-f18096337912' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.047101 [guppy/info] Read '0c0b0084-8fc6-49f4-ab9e-a05a78ebdfa3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.047119 [guppy/info] Read '0c14ee79-c5fd-4cbd-ba98-142d3d16ebd0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.060473 [guppy/info] Read '0045dcf9-ac50-4e2e-b8dc-ea7a9157b2c4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.120240 [guppy/info] Read '0160378a-b9bb-4d1d-b789-055c5ab3377f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.141896 [guppy/info] Read '026e67a4-5eaf-40de-9825-cc3cefc63faf' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.184007 [guppy/info] Read '026fcedf-1f98-43d5-9a82-1901ddc058c6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.199663 [guppy/info] Read '0365751e-05c7-4152-bb36-77e2529629a0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.245089 [guppy/info] Read '03e76ab1-673b-4791-9dbe-e63a79eb0f3f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.259160 [guppy/info] Read '04b9b086-8778-45ae-ae17-d763ddeb0693' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.284732 [guppy/info] Read '05ec345d-c22b-4049-a565-9777f58abf69' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.285563 [guppy/info] Read '0c192d16-ab39-466c-8ed5-1a706942859a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.285619 [guppy/info] Read '0c2e60a3-778f-4524-be0d-a24618a94dfc' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.285635 [guppy/info] Read '0c3696e5-4136-4f29-b595-c0839174b84a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.285649 [guppy/info] Read '0c391d8a-6a7d-4227-b042-7f7ad190b182' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.285665 [guppy/info] Read '0c410322-8294-4886-9cfb-e56efd47e422' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.285680 [guppy/info] Read '0c58f41e-478a-415d-b9dc-b6c19263b0b1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.285707 [guppy/info] Read '0c7518d6-6fae-4327-9212-b203b2ae5f52' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.303001 [guppy/info] Read '0496cb3b-36c6-435d-84d4-96b2d0442fe6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.401359 [guppy/info] Read '065c7a47-d449-4b90-aa79-7bcde9d00cd1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.453497 [guppy/info] Read '0665bd9b-7ac0-42a2-b20e-b53ed0224768' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.457403 [guppy/info] Read '0c79e367-3f2a-4159-a3c5-ec5dd8e3f461' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.457489 [guppy/info] Read '0c859741-eb07-43eb-935e-7d5179426422' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.457510 [guppy/info] Read '0c8e7fd7-805f-4f56-92ee-2581d6ed121f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.457527 [guppy/info] Read '0c8f741f-1c55-4191-894c-3303d7210ee0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.457545 [guppy/info] Read '0c96826d-cb56-43fc-80d4-b45d9758c79d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.457565 [guppy/info] Read '0c9b7e14-efe3-4200-8306-3ea6574722fc' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.485775 [guppy/info] Read '0cab85a2-acfd-4c84-8e6b-c87ecca0c921' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.539523 [guppy/info] Read '0cb1abc8-3776-45e6-996a-35e89f08d57d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.550314 [guppy/info] Read '0cc99086-e894-4d91-9a33-099040ac5f0f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.577757 [guppy/info] Read '02469b20-3401-4840-99e4-0218f3d6c47a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.581472 [guppy/info] Read '0cfbe3d2-9a9c-4509-adad-bd4f3ea41b3f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.671228 [guppy/info] Read '01ae2c0d-e852-41db-9852-1eccfec07164' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.698336 [guppy/info] Read '0d0b7bb1-f226-4063-842c-643210c9e26c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.719103 [guppy/info] Read '0d0ed7a3-9b1e-4c62-9382-61e6612a24a2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.783317 [guppy/info] Read '05f9e552-7efa-4f27-9fec-e68c6c052532' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.809486 [guppy/info] Read '061e43ab-424a-457d-8e3c-665e89fd9d10' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.853121 [guppy/info] Read '0b366a90-84e8-42dc-88d3-d4be1d0d2919' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.857690 [guppy/info] Read '0b5ffe4f-960b-4ab4-99df-131c60183c35' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.859972 [guppy/info] Read '0d3b5c6e-6ef7-4e39-a194-4af9c39c8346' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.895121 [guppy/info] Read '0b60e1b6-45bc-4bb9-8a44-42aa5efe6bcf' from file "batch_0.fast5" completed.
+2023-06-06 09:58:34.927405 [guppy/info] Read '0d434ec8-7520-4c23-841e-089449898b8a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.952261 [guppy/info] Read '0d44730f-7e83-4bfd-905b-d811849f8918' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:34.996838 [guppy/info] Read '05a74410-21bd-4022-8ef2-652b7e35e4a2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:35.016742 [guppy/info] Read '0d67cf76-5ed2-44ce-a418-c9d60d8637da' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:35.025215 [guppy/info] Read '0d8a0630-d3b1-4070-b5e0-3c354d847264' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:35.031836 [guppy/info] Read '0d8c6fa0-8e78-4e24-9fc8-cfc06cb59acf' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:35.232497 [guppy/info] Read '0a3e97f1-a8f4-4eab-9fd8-105ba3744274' from file "batch_0.fast5" completed.
+2023-06-06 09:58:35.232878 [guppy/info] Read '0d954b43-a4e7-4ce2-83f3-b07adf9e5215' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:35.285268 [guppy/info] Read '0da28aeb-e2f0-4887-9433-adb96eb6da2b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:35.319174 [guppy/info] Read '0db6f50d-3386-40d0-ae67-d11301f66ddb' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:35.429034 [guppy/info] Read '081421da-6cbb-48fe-ab00-2f81abba829b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:35.456793 [guppy/info] Read '082eb8b6-ed6f-4fed-ad23-3ab1cb64eeee' from file "batch_0.fast5" completed.
+2023-06-06 09:58:35.500906 [guppy/info] Read '0db8f70f-2917-4ed4-9c5c-542483717bc5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:35.541399 [guppy/info] Read '0dbbe882-62f9-4321-b5ce-d731881caa6b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:35.713393 [guppy/info] Read '0d44730f-7e83-4bfd-905b-d811849f8918' from file "batch_0.fast5" completed.
+2023-06-06 09:58:35.716474 [guppy/info] Read '0dd89742-08eb-42e2-a611-90e6c49d16fc' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:35.808959 [guppy/info] Read '05b123a4-f8ca-4687-b584-8ceeb70ce46b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:35.867164 [guppy/info] Read '03a97f91-6249-4e33-8580-967589be4c9f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:35.927825 [guppy/info] Read '03f5ab78-d2a8-43b4-b75d-3919d1de556a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.006868 [guppy/info] Read '0407e196-3f1b-448f-8970-92c4c57a211a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.073679 [guppy/info] Read '04250b65-55d7-47aa-8185-04eafd7b51e9' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.122336 [guppy/info] Read '050221c5-4a23-4a41-ad19-df96f34daad0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.155337 [guppy/info] Read '088b380e-783d-477a-9f6c-7e20f1a0bb1a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.195678 [guppy/info] Read '09249596-26db-4ea1-b9fd-75b2cabf9222' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.251934 [guppy/info] Read '0de8486b-c472-4fe2-bc79-254228fbbeee' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.252045 [guppy/info] Read '0dfae9a3-2636-43eb-b2ee-d18cc66cf2fd' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.252062 [guppy/info] Read '0dfb8f5d-8420-44dc-8c39-178a164914d1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.253191 [guppy/info] Read '0278af6f-6092-4591-accc-885069ab00af' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.289576 [guppy/info] Read '028d485d-5964-4eed-a249-274c97c71e9b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.355017 [guppy/info] Read '03aa5743-3bea-41ed-aa8b-ccf779c3f640' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.418495 [guppy/info] Read '04ca3a37-5a3d-4fc3-bf64-f1d947b92557' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.466561 [guppy/info] Read '06715186-8c8b-45fd-b6a5-e9db062f42f4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.537572 [guppy/info] Read '090aa260-80f0-4f69-a7f3-8ae55f6d5d6d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.573910 [guppy/info] Read '094fc372-b706-4107-9cb4-4319b6b0ae24' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.599817 [guppy/info] Read '0b60f505-4053-4f24-a368-41cac7431d74' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.637475 [guppy/info] Read '0b7fd507-5b81-4066-bbf5-31e957577e8e' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.657362 [guppy/info] Read '0b84f368-b4b9-4c63-af9c-7574f9a12d43' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.697594 [guppy/info] Read '0bd76870-5060-48cc-bdc3-fdb89e25b8df' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.779026 [guppy/info] Read '0c79e367-3f2a-4159-a3c5-ec5dd8e3f461' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.807782 [guppy/info] Read '0c859741-eb07-43eb-935e-7d5179426422' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.838761 [guppy/info] Read '0c8e7fd7-805f-4f56-92ee-2581d6ed121f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.870106 [guppy/info] Read '0dfc8239-dce2-4b62-b71d-71f81fb1383b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870234 [guppy/info] Read '0e1ec525-f9f1-4d74-94ea-2b4d74b33aef' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870267 [guppy/info] Read '0e211b23-8177-4547-ba9e-b1dcee165e11' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870283 [guppy/info] Read '0e2a7096-b777-4e0a-bc5a-221a587f24f4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870324 [guppy/info] Read '0e2f71cd-a77d-4065-9a80-11ab39df15d9' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870342 [guppy/info] Read '0e38ab56-1aed-4c3d-a5e6-626c57fbc709' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870356 [guppy/info] Read '0e516878-3762-4f50-b3a0-8c2f2c03a609' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870387 [guppy/info] Read '0e6b69c2-d3d9-4dec-b21c-6972d26c32e5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870404 [guppy/info] Read '0e79a86f-d004-4473-aa32-d60a98077e1b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870419 [guppy/info] Read '0e7c4a7e-52e6-44cf-8653-ef72a943c83c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870451 [guppy/info] Read '0e9fe9ec-489d-45c3-8368-e36e4548fec7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870468 [guppy/info] Read '0ec01537-80be-4d3c-b192-08c2b9462ee8' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870495 [guppy/info] Read '0ecea8ca-3d71-474e-903b-32cc9007d6b1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870515 [guppy/info] Read '0ecf47d8-f4ea-4599-a072-dadddb0f7da7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870533 [guppy/info] Read '0ed0fbcc-c912-44a6-ba86-7847e8376245' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870547 [guppy/info] Read '0ed5052f-9b7e-4949-afa9-b3b06b71aaa9' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.870563 [guppy/info] Read '0ed5b04a-5c95-44d2-957b-47da6bec9703' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:36.889397 [guppy/info] Read '01d37036-5bbc-43eb-bbce-e91664d99a15' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.913487 [guppy/info] Read '02098c74-47c5-4699-8620-2411502bea9f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.914140 [guppy/info] Read '021bbf3d-a2fd-436d-b1de-0823485025a4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:36.914892 [guppy/info] Read '05517ab1-927b-4472-a576-b0fea657c788' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.007131 [guppy/info] Read '058a4a5e-2889-4d03-ba7a-3144c69e48ce' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.047523 [guppy/info] Read '09104b98-2dfe-48b8-a684-98917a72e9cd' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.091469 [guppy/info] Read '0ef8f410-e19c-44ba-9719-a632da1b1c2a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.091570 [guppy/info] Read '0efb3a73-c43e-4268-b806-9456d19be0b1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.091588 [guppy/info] Read '0f1baa11-7805-4d3d-991e-c596a3246f51' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.128804 [guppy/info] Read '0ae48d3c-2a82-4fbc-b654-77fd3d3ae61c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.131397 [guppy/info] Read '0f247cd6-0d45-4699-890e-7eb0f1b2d62f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.195476 [guppy/info] Read '044cc9b9-7926-4fc9-913f-562c1e6a54b3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.219766 [guppy/info] Read '079446b0-0212-4f41-ac72-41722fbf4af3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.283609 [guppy/info] Read '07b1c455-22d3-49ee-af43-94816c6310d3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.286177 [guppy/info] Read '08ee1272-5a18-45a1-9b31-c8c950880c71' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.321081 [guppy/info] Read '0f69c903-0851-4ab3-a08f-b16c514f5866' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.321207 [guppy/info] Read '0f70cf3c-3d61-4f98-9b23-ad4623a75867' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.321241 [guppy/info] Read '0f9d9c86-48f2-4015-9d25-e2d53a159958' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.321259 [guppy/info] Read '0fa548e8-7e93-4b25-a3e0-100d2df1b187' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.321277 [guppy/info] Read '0fcffe21-a9b1-40c3-bb28-6d1a85fc11e2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.321292 [guppy/info] Read '0fd25c08-57cd-48a3-95fd-fb581d5fc091' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.321316 [guppy/info] Read '0fd53e23-f974-4135-bf63-0767ea924b84' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.321332 [guppy/info] Read '0fd8ef07-cfb7-4921-8386-5d3d1b9d792c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.363365 [guppy/info] Read '075e8f6a-637d-4abc-8328-8459b4dfd7e6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.390245 [guppy/info] Read '07f0a111-206b-44d0-a013-7ded42ccdf8d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.417403 [guppy/info] Read '088b1f2a-f84e-4b18-be7d-f5f6e09eba5a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.488909 [guppy/info] Read '09106ead-dbb3-4719-9dab-ea73ef45224c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.517606 [guppy/info] Read '0fe51bf1-3612-41e3-afd1-3b6df54e7a03' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.517732 [guppy/info] Read '0fe5ffb2-c945-4507-82d1-ba48c70da1c4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.604230 [guppy/info] Read '008c7aeb-7e99-4213-8bfe-df785fef9f49' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.608687 [guppy/info] Read '01714ff1-1e77-45a8-8360-1899905dcaeb' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.620456 [guppy/info] Read '091e9729-4b54-4a45-bc19-fd65e2576a48' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.661883 [guppy/info] Read '09a1b6da-7ba5-43bc-be2a-c9b458b1bfa6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.671021 [guppy/info] Read '0b8898ca-a2cc-4687-a53a-15fc159ceb3b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.712074 [guppy/info] Read '0cb1abc8-3776-45e6-996a-35e89f08d57d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.719744 [guppy/info] Read '0fea4d2f-7d40-417e-8312-b7f45f4a7494' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.719845 [guppy/info] Read '0ffbec46-e348-4f74-b92e-f2b104b48385' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.719863 [guppy/info] Read '202fc49a-cf88-48fc-bbab-1fa3d0f7a562' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.719880 [guppy/info] Read '20316eb3-52d7-4028-b895-1b293eaf31e3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.719894 [guppy/info] Read '2032a8b4-2c39-401a-ace1-7d5dba0a680e' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.719909 [guppy/info] Read '204b9094-ea8c-4149-8ee9-28578f3842ac' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.719924 [guppy/info] Read '205391f4-c816-42c6-b016-3d9cd7de7ff3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.732256 [guppy/info] Read '006f4a6e-d0d0-41d5-bc9a-b7cdd958d241' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.734065 [guppy/info] Read '03664f89-651c-4f90-97a8-eba86498cb82' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.737605 [guppy/info] Read '0371eff1-c132-459b-86b3-2e2d27f46b91' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.749333 [guppy/info] Read '037ba1ca-911f-4d3b-b891-f4b9c957c971' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.751284 [guppy/info] Read '037cf260-4fe4-4075-8750-ab885f0e29c4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.758084 [guppy/info] Read '04f926ec-3a04-4f80-aac7-36721685376c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.759334 [guppy/info] Read '054df1ed-996f-4f59-ac0a-4bb01c35106a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.767145 [guppy/info] Read '05a94777-4974-4984-931b-85b0ccfd6432' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.772734 [guppy/info] Read '05c7d70a-fad8-4549-a3c1-db487ade060b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.774038 [guppy/info] Read '07d4800f-08b0-4502-b5d4-2d02f4ddec09' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.774969 [guppy/info] Read '07d52f5d-971b-4f44-83c3-3fd4295f8982' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.775855 [guppy/info] Read '09f60f8b-4097-434d-9e4b-e45deaf10c6f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.777374 [guppy/info] Read '0a1da4d6-d460-4379-a1b0-c9837ff37ae7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.779069 [guppy/info] Read '0a29c40e-6030-4792-a903-9bcab4f0cb09' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.779685 [guppy/info] Read '2056b4fe-fb2e-4d15-be39-1b3a7a8d9573' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779738 [guppy/info] Read '2059ddad-b9fd-437c-9283-b995f85e9c1d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779754 [guppy/info] Read '205f0991-b01d-4ab3-a949-39877b47e70e' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779769 [guppy/info] Read '2066c2bf-f150-4411-958d-271211d39035' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779784 [guppy/info] Read '2088f684-a9a1-46f7-9abc-8d828e0c226c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779799 [guppy/info] Read '20b01200-0ae7-48ed-b9b2-95f91eab1d27' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779813 [guppy/info] Read '20dd4223-d04c-4f04-a44b-319c7c2b2080' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779827 [guppy/info] Read '20e01a1c-a706-45db-baef-874502101a57' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779840 [guppy/info] Read '20f13a04-694c-4a0c-b385-49a4e30bd2bb' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779853 [guppy/info] Read '20f2bc64-935c-4627-a633-1550d8314717' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779867 [guppy/info] Read '2111114c-c93e-4c00-9176-8fec21a44d78' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779880 [guppy/info] Read '21142c58-77c4-4fea-bd69-6a2d5e3177bf' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779893 [guppy/info] Read '2125f207-656e-432c-8f4f-2624d049dc88' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779908 [guppy/info] Read '212d7544-6c8a-49a7-aa8b-695fbf8b80e5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779921 [guppy/info] Read '213a1d52-8f07-4891-b518-0367ac0ebf23' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779937 [guppy/info] Read '2141199b-d9d5-4be9-8190-50eeae44e3d0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779951 [guppy/info] Read '214865f3-409b-43fb-96a9-cfa897f92407' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779965 [guppy/info] Read '2151eba3-5dbf-4860-bc5d-8c49c8679a24' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.779978 [guppy/info] Read '2155d0a7-1e19-4ee4-8a3a-5e28058d6d1d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.801837 [guppy/info] Read '05ce7c85-b48d-4fe7-9060-2448ce35421f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.803923 [guppy/info] Read '06ee0fc3-e6a8-4893-9f8e-1499123aadd5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.804796 [guppy/info] Read '06f0a8b5-3173-4fd0-8722-2db8b4e44173' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.805824 [guppy/info] Read '0898e248-f7ba-4070-b260-2f25b88efbbe' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.816344 [guppy/info] Read '08a11193-bf20-4dff-9c75-c67141a99c08' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.817957 [guppy/info] Read '215b660c-46e1-473f-b540-06707344827a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.818028 [guppy/info] Read '2162c167-b6f9-40d9-b49f-52786117aca0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.818046 [guppy/info] Read '2198f667-3bd8-419f-b3a5-9b432ca43d39' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.818076 [guppy/info] Read '219a7e02-8fd5-425a-a81c-5775299bedde' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.818092 [guppy/info] Read '219dabb4-8696-443f-b7bb-84e09442d376' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.825395 [guppy/info] Read '028fc594-eee7-4e0d-b037-9d33d9fcbacc' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.826843 [guppy/info] Read '0b054e1e-2bd0-44b5-8ef4-d49c31d8e372' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.869763 [guppy/info] Read '086463e2-3401-4fe0-aad4-e13cd1280299' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.877962 [guppy/info] Read '02992942-16da-4650-9938-0bd905b494d8' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.878274 [guppy/info] Read '219e9b59-2b11-4698-9d76-157817288ff2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.885702 [guppy/info] Read '21b4a1dc-7735-45d1-a7e8-f27d6e79eb44' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.887967 [guppy/info] Read '21c8be18-61f8-4f0d-9469-8378a45716bb' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.901962 [guppy/info] Read '21effb4d-d0ff-4745-a861-a9fe3ed2a9e6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.903150 [guppy/info] Read '222e49f3-c61a-4657-86be-91214659a483' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.912788 [guppy/info] Read '222e6758-fce3-4c7d-81ed-dc3080558ff0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.919338 [guppy/info] Read '223307f5-2770-49a2-930b-4df17c5bdddc' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.940809 [guppy/info] Read '2244c88e-93f2-4653-8baa-c981b145a1b1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.941974 [guppy/info] Read '225e0db4-7c4d-4a8e-948d-c32ab92a6cc0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.943124 [guppy/info] Read '229e2d32-116b-48c4-945a-379176b54849' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.943187 [guppy/info] Read '22a286a7-ec4e-4ea6-bc1d-602c47bcd9c7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.944599 [guppy/info] Read '092057e2-1c3b-4ba9-b16a-aaf00c56f4e7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:37.944845 [guppy/info] Read '22ade9e2-c973-4de7-b3d6-2089fda58673' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.945958 [guppy/info] Read '22ba8886-0ff1-4aed-8b63-efc4281eda01' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.947115 [guppy/info] Read '22d7a541-531c-4f04-a3ba-4a7ac2fcbb57' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.953604 [guppy/info] Read '22ebc498-0f8b-41fb-a936-37cda8e4829d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.956911 [guppy/info] Read '230a6722-0035-41d3-ae56-e1e9e340605a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.958066 [guppy/info] Read '2316da8b-e84d-473c-823d-610125df2f8b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.983746 [guppy/info] Read '231a6d16-eafc-45ba-a03b-c9cc300181a0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:37.999898 [guppy/info] Read '2322e2c4-97b9-4f4e-8726-e2677f0f11e7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.009602 [guppy/info] Read '232791d2-5785-49f1-a532-89e40a6c9a65' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.010773 [guppy/info] Read '2334fc15-650a-44d2-b8cd-01302a17688b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.028999 [guppy/info] Read '2396eb01-eb10-4c6b-a336-1f9d13557c75' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.030162 [guppy/info] Read '23a77fa4-f795-4d81-bf9c-5bcba67379ce' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.030241 [guppy/info] Read '23abdb13-5f3c-4ee4-be5d-165506133d79' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.034567 [guppy/info] Read '23b70b87-fb06-47ac-ad1f-cc902ccde5b7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.035778 [guppy/info] Read '23c360cc-c3a3-442b-97a6-3431a385a567' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.036958 [guppy/info] Read '23d233f1-217e-4f26-bfde-34a7055ba03f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.041335 [guppy/info] Read '23e97a0d-d82e-4d4d-a4ac-8809efbae5c6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.054246 [guppy/info] Read '24062272-697b-4f73-8fe9-97544f8f6f5b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.055428 [guppy/info] Read '241d36b1-d5e0-49c2-86db-49e434f7cc25' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.056627 [guppy/info] Read '24274de5-8287-467a-9055-2aeb9aa99c09' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.061504 [guppy/info] Read '244b30e0-d52e-41ba-9afc-45a4803905e6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.062680 [guppy/info] Read '2458b5af-b9fe-4646-9a74-3b714f0b8faf' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.065501 [guppy/info] Read '247fb600-5d7f-42ce-b41d-7e10012c064f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.069889 [guppy/info] Read '24882c50-6d3b-4039-bfec-6e89a3891713' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.079599 [guppy/info] Read '248eeef4-33da-41be-a43e-c1438937c338' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.089316 [guppy/info] Read '2490f571-eeaf-427e-ab6a-e55628577b6a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.090482 [guppy/info] Read '24b15168-cea0-49ae-b088-b8d9159aff44' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.091634 [guppy/info] Read '24d57aad-e88c-454f-a408-1001af1476ad' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.091694 [guppy/info] Read '24ef1df0-5d31-4612-b0ca-9ad09864d485' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.092835 [guppy/info] Read '24f0ccc3-6fd4-492a-9597-a604adcf4a73' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.099320 [guppy/info] Read '24fa1022-7934-49e3-b103-9c42733b576d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.100511 [guppy/info] Read '2500f277-5751-434f-8eb7-a9a9589f0a30' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.101674 [guppy/info] Read '2517b076-7e62-4a2a-9c18-b1b02506fa88' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.109215 [guppy/info] Read '252d0a29-23c9-4ff7-908a-4eecc2119bee' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.110396 [guppy/info] Read '2538a2cf-97cb-4269-97e1-dbc97c4beab6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.110472 [guppy/info] Read '253c0892-f31a-4635-aa49-a2a617a0f399' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.125509 [guppy/info] Read '253c1c95-c6a0-4bbe-a743-d03f494713e5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.125589 [guppy/info] Read '255e35e8-d29f-42cd-9914-cb0059907fb3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.126694 [guppy/info] Read '2568c2f3-2fd6-4b51-ae46-c962f100f3f4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.127845 [guppy/info] Read '258f104d-4357-48e0-8843-4e9ef3ce75fe' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.128987 [guppy/info] Read '25b1a8a1-7460-49d6-b5c0-925d85757aea' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.129047 [guppy/info] Read '25c77324-c8dc-4505-966b-ab6ef0e9a4f1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.130149 [guppy/info] Read '25cdb38b-7393-44f5-bd3a-e21993174a74' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.131312 [guppy/info] Read '25ce8336-b3d4-44bb-83d4-2d1516fbb0f2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.157038 [guppy/info] Read '260ee1f2-5c8f-408b-bce0-cb9377a035a7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.159267 [guppy/info] Read '26113a7e-5562-4dc3-9f68-38502a032e19' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.172199 [guppy/info] Read '26437f76-ac3e-4431-a08c-28bd6eb22d35' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.173396 [guppy/info] Read '264bdedb-3cca-4b2e-af55-c7d6c38ecde3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.174565 [guppy/info] Read '264f3fbe-e6ea-41dd-ab71-de91f1733693' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.175726 [guppy/info] Read '2661906c-3e3a-4b14-8385-3c0b22926bc1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.175799 [guppy/info] Read '26632779-a12d-4543-8c64-eab2fffe11c2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.176897 [guppy/info] Read '26670318-4869-4d17-9387-54ceb6b67d82' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.178042 [guppy/info] Read '267d92b6-0b98-49d1-b115-f4a3f1c001ec' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.200542 [guppy/info] Read '26907828-8bf3-45ba-a4bf-4bedf3cf77e6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.201714 [guppy/info] Read '26a9abbc-aca8-4d73-8dc3-01ec7df32a5a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.202871 [guppy/info] Read '26ac1c34-f7f3-4356-95ad-6ff210725df7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.204026 [guppy/info] Read '26b9ad7b-7a14-450f-b154-395ed1a47e36' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.208400 [guppy/info] Read '26c1a3cb-1a04-4ae5-8928-32ff367a3d18' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.209584 [guppy/info] Read '26d22eaf-ea76-4ff9-ad79-0c6f47b26229' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.223540 [guppy/info] Read '26d375df-2142-4aad-b24d-013442ade413' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.223667 [guppy/info] Read '26f0545b-e926-486b-9e75-c384b7530863' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.224782 [guppy/info] Read '26f6076f-0000-435d-bb33-35d7d1799f72' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.225942 [guppy/info] Read '27051ab5-aa05-4a81-a13a-ac174a661f64' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.227097 [guppy/info] Read '27065dd2-9687-4347-9dae-e6e5b773247d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.228254 [guppy/info] Read '27075305-8f18-4c0e-8e5e-4a25cd69d909' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.228338 [guppy/info] Read '27167e80-d8af-4e89-abe8-d6c394894c57' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.255064 [guppy/info] Read '271fe610-8b99-4b0e-b2a8-1d78755f7dc5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.265806 [guppy/info] Read '2727b730-d9f8-4e05-b446-2381c2e61889' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.266961 [guppy/info] Read '272d0c18-4cd5-4ea0-8af6-e50c6b42a714' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.268109 [guppy/info] Read '273a821a-538b-451f-a3cd-ed13bfc809ac' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.269252 [guppy/info] Read '27548f50-1848-441e-b5a2-a0e95b206d6c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.269326 [guppy/info] Read '27777b0f-3e8f-4e40-ba81-e8b9a00a9834' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.276826 [guppy/info] Read '27847871-7905-4458-8188-ca5cc621664c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.277996 [guppy/info] Read '27a62838-2d96-4179-9076-83f7179170b5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.279144 [guppy/info] Read '27b00510-80cc-4415-b72f-67b026adb1f9' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.280310 [guppy/info] Read '27bd4352-4dbd-447a-90b6-65139a18fcad' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.281465 [guppy/info] Read '27c779b4-7c14-4f25-89d1-734d30c77ffe' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.282621 [guppy/info] Read '27d75f85-a581-492a-8119-6c34ae915316' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.304580 [guppy/info] Read '27e0d549-859b-4dc4-9273-ba5ef0235491' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.304698 [guppy/info] Read '27e91704-a656-49da-a389-89534af7eabf' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.305801 [guppy/info] Read '27f1d03c-3b3a-4812-a1f9-5a5d7b3751f1' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.306950 [guppy/info] Read '27f4f4e3-0a53-42f5-b565-f9fd0d6f460b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.308103 [guppy/info] Read '27f7cbfb-019c-4619-be2a-d71359cb71a8' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.347097 [guppy/info] Read '27fdacc9-f754-4434-a6dc-091d7b4485d9' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.350401 [guppy/info] Read '2815b212-8a27-4138-8ec1-6e33c4c938b3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.356845 [guppy/info] Read '0a26343c-cd0c-4863-9a9e-076dadcefae7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.359266 [guppy/info] Read '281aa1a0-3342-4871-93be-907fbe57acb5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.403154 [guppy/info] Read '281abbc0-5509-4555-a9ff-b98c13d7b8c6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.404354 [guppy/info] Read '28287dce-0c5e-4434-b070-eb2e0da680e9' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.405530 [guppy/info] Read '28292bd7-4f5f-45dd-9556-45ad4b4b706c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.407777 [guppy/info] Read '28341651-d189-467f-a804-8c74a2d27472' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.418552 [guppy/info] Read '2838e730-aa43-4d14-9987-b64586b13c24' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.428348 [guppy/info] Read '28454467-10a4-490b-9835-a5a48611b4ec' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.432752 [guppy/info] Read '2882d7d5-2c39-407e-9bb8-f0dfa2d9fb8c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.438200 [guppy/info] Read '28adf63c-3f19-476b-9c45-b4c4280f74dc' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.441490 [guppy/info] Read '06a3abdb-99b7-406b-a00f-d2b60d7d0c07' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.442592 [guppy/info] Read '06b5fceb-9299-4563-b93b-4e692962751e' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.462713 [guppy/info] Read '28ec9ea8-408a-4232-be94-744ff98d8605' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.463926 [guppy/info] Read '28f877f8-989b-4502-9839-6aa8d6237f56' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.465105 [guppy/info] Read '290d7557-33f1-4e59-8d8b-c05cbe37c285' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.475936 [guppy/info] Read '292523b9-81fc-40ce-8ae6-7024e0aab274' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.477115 [guppy/info] Read '295de52d-c814-48b7-b4c3-4685fe0150e9' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.481496 [guppy/info] Read '298373bf-4bca-4adf-a4d5-1c1fd75424a7' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.484828 [guppy/info] Read '2996114a-4f02-4271-948d-1edce1adb1ac' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.488159 [guppy/info] Read '299726ba-a7f3-4f53-a2ee-3e4d4f98de2d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.510917 [guppy/info] Read '058c4f1c-29bc-4c23-b0e0-02953b011425' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.514432 [guppy/info] Read '29a2f086-6da1-435e-b745-4f14b235409f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.514537 [guppy/info] Read '29ad7e90-22bf-4a4d-aab1-2e0d84783c15' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.518870 [guppy/info] Read '29e610b6-dcc5-4290-a405-9f489ec54a88' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.524371 [guppy/info] Read '29f1a0fb-d4e3-4006-9fbd-3a455211c3c5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.528809 [guppy/info] Read '29f9507d-84ae-4b09-883c-3f5f1485fb8c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.544052 [guppy/info] Read '2a06cda0-325b-4dde-bde1-15074a4207f4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.552790 [guppy/info] Read '2a078991-c3d9-4e60-91a9-23a39fa5c4a9' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.557223 [guppy/info] Read '2a103e42-0f51-447b-b496-14e1148b4ff3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.559535 [guppy/info] Read '2a21b0d7-28ac-4a04-a591-3904fc1ad118' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.568935 [guppy/info] Read '04ac29ee-b35b-42e5-aec5-0c8124b32e98' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.572420 [guppy/info] Read '2a4703dc-b39a-4e27-9a1e-b107d6e57ed3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.575394 [guppy/info] Read '0269a2cf-d379-4ba0-952e-eb6f4a403339' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.576531 [guppy/info] Read '030e259d-3a07-4998-9158-8ceb055cbda6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.583689 [guppy/info] Read '0878d2e2-f80b-432e-ad43-0f3bc52ff6eb' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.585240 [guppy/info] Read '087c4949-cf65-40ab-aabe-83ce65f3ac35' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.590646 [guppy/info] Read '2a526991-3b95-44dc-a9c5-94dedc1e7ca3' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.594945 [guppy/info] Read '2a52e85f-525c-4cdb-a47a-781134fa4985' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.606811 [guppy/info] Read '2a64e88c-1360-4d73-ba41-c33fd27edb46' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.616563 [guppy/info] Read '2a7710bb-696e-4373-b441-f41a9bf4ee3d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.622042 [guppy/info] Read '2a7abd0a-88a5-40f2-8d48-92261e103783' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.632888 [guppy/info] Read '2a8edb1e-61a1-484a-a8f8-136642754e35' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.641585 [guppy/info] Read '2a9ef0c1-ef4d-49f5-b676-ee20c0f3881c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.663150 [guppy/info] Read '2aaecc17-4487-4bec-9d0d-3678ed747e2d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.664336 [guppy/info] Read '2ab10b85-6f3d-43c4-bd27-0f0da50ae61b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.665489 [guppy/info] Read '2ab23179-9650-432c-a5d0-793d56769093' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.675244 [guppy/info] Read '2acccb64-4b35-469e-b08c-20a93e30b126' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.677513 [guppy/info] Read '2b1f5dbb-d83f-405c-8dbb-2b85a0ed2217' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.688359 [guppy/info] Read '2b33be1d-12bd-4f2a-9170-5286d46a1c7a' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.690603 [guppy/info] Read '095fa8a9-2e9b-4d46-b4de-5d8858ee1596' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.693030 [guppy/info] Read '2b3c691c-b20c-4c9d-926a-b92501a7919c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.712501 [guppy/info] Read '2b6ddb16-bf81-4dcd-b18b-e0b02f39d18c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.713703 [guppy/info] Read '2b9c49df-aef8-4791-ae8f-e9b3473a7a29' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.714875 [guppy/info] Read '2bc11aef-4d41-42c7-8fc6-719e78cc2eb6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.730022 [guppy/info] Read '2bcb2060-e2f0-4507-918a-98f0d79b8c37' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.732290 [guppy/info] Read '2be6c633-3912-4556-af9e-e09b9d39dd2e' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.734597 [guppy/info] Read '2be7c281-bd80-41e7-bbe5-e42019ae36fd' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.740938 [guppy/info] Read '0cc99086-e894-4d91-9a33-099040ac5f0f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.752019 [guppy/info] Read '2bf7f0d4-24eb-4e69-b314-0d36422ce32f' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.753216 [guppy/info] Read '2bf9e97c-1772-4e07-90e3-4fbf669154e0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.754398 [guppy/info] Read '2bfba443-ccd9-4faa-a39d-01d369fc41c8' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.756641 [guppy/info] Read '2c0d3862-cca5-448d-a25a-bbf2b8a27670' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.763201 [guppy/info] Read '2c0f7225-8aec-4a05-8508-834ad728fc49' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.767600 [guppy/info] Read '2c18e93d-b188-433b-b8f3-75dc9eb0cb17' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.785906 [guppy/info] Read '2c2b96b6-9545-49fd-8809-0f2b543cd5e2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.789258 [guppy/info] Read '2c32841a-bbb1-4cc0-a71c-de821c42de61' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.790466 [guppy/info] Read '2c69107a-34be-4f6f-90d9-a79281f26ef8' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.791666 [guppy/info] Read '2c6c2e0e-6206-45fa-a4c7-52ff56da976b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.794993 [guppy/info] Read '2c89a3a2-df9a-48a1-a3d4-20e4b6fa37a2' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.798338 [guppy/info] Read '2c90b8a2-5727-4170-bb57-27fe0b3e36a4' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.814750 [guppy/info] Read '02c9ea36-2c2a-45b1-a785-502f4ed643b5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.820417 [guppy/info] Read '2c953725-32f8-42a1-9300-0f68bdf899e9' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.820516 [guppy/info] Read '2c9e2ff3-570f-4e55-97d1-186ec76d41b5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.829163 [guppy/info] Read '2ca6c5c5-5285-4e9f-a851-62bd261461b5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.833587 [guppy/info] Read '2cca3a96-d175-4fb4-af7e-ec3ada4ae092' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.834716 [guppy/info] Read '0db6f50d-3386-40d0-ae67-d11301f66ddb' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.835509 [guppy/info] Read '0de8486b-c472-4fe2-bc79-254228fbbeee' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.835927 [guppy/info] Read '0dfae9a3-2636-43eb-b2ee-d18cc66cf2fd' from file "batch_0.fast5" completed.
+2023-06-06 09:58:38.852194 [guppy/info] Read '2cda5f86-e9dd-4b42-8fa4-a47fbc41bb6d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.853341 [guppy/info] Read '2ce899fe-fcf7-4aad-8ffa-f6f8fa8f8508' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.871744 [guppy/info] Read '2cec36ce-a556-47c6-b102-02ba8eabdfba' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.872957 [guppy/info] Read '2cf88a74-b152-46df-8b98-1e50c45c7b61' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.874126 [guppy/info] Read '2d0fd95f-a932-4616-8125-0ab14c9dcdeb' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.876345 [guppy/info] Read '2d1d4ff5-a7a8-4802-9d1e-7279b1ac1c46' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.891554 [guppy/info] Read '2d25c3c2-604c-4abe-9e70-8672562d626b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.892767 [guppy/info] Read '2d2bb5d1-703b-42d6-8e2d-542145151633' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.896096 [guppy/info] Read '2d32e4bd-1ede-42af-8bd2-72ea762516de' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.911242 [guppy/info] Read '2d9b65b3-4c19-4e19-922e-c5e2aff5b095' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.912450 [guppy/info] Read '2da6760d-84a4-4271-be15-29846021ec88' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.912520 [guppy/info] Read '2db9b57b-2bed-43bd-a85f-776ab4709edd' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.920077 [guppy/info] Read '2dbc03eb-d609-40fb-9b96-70896341d29c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.924487 [guppy/info] Read '2dbde088-9ce1-4605-8f9a-c2132e9ecb0b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.941865 [guppy/info] Read '2dcd024d-9453-411d-8489-1032425ec716' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.943032 [guppy/info] Read '2de264ba-c4b3-4ec0-ac9e-6f561cfa6207' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.963419 [guppy/info] Read '2df15885-738f-4257-acca-8a85f099931b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.964619 [guppy/info] Read '2df1721f-32f8-4d18-ab80-49318b49a198' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.965795 [guppy/info] Read '2df5a3e1-1cd3-4590-970b-9cffeb8d9d02' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.966963 [guppy/info] Read '2df7b084-8dfd-4600-b4e4-ce0e772cba02' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.968135 [guppy/info] Read '2e404638-6d86-48bf-82ef-38c31b1e2f2b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.972540 [guppy/info] Read '2e4dd3b5-03df-44ec-b84d-72c70f75bf57' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:38.984510 [guppy/info] Read '2e5bb084-12e4-4366-979c-e660bf62e2e5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.006084 [guppy/info] Read '2e722265-df86-419d-84d4-b2c6522b7070' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.007272 [guppy/info] Read '2e7554f7-b50f-4b0d-857a-c0fc726f4e54' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.008449 [guppy/info] Read '2e763c91-8f72-4a73-87e5-e40fb79133fe' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.009638 [guppy/info] Read '2e920560-a7d3-4af9-9ba2-c86db7cd1b15' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.014034 [guppy/info] Read '2ef4af0e-54aa-489a-8782-975018ffe5c5' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.029190 [guppy/info] Read '2ef5d658-707e-410f-aca2-85a799bc3397' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.040735 [guppy/info] Read '2f0a4cfd-5b3a-4b78-b55a-ef96379cd62c' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.045142 [guppy/info] Read '2f142050-02da-420c-ba33-a5720ca7ca8b' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.053389 [guppy/info] Read '03102aeb-8bb2-4f9c-819c-48ceb55e0d19' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.055849 [guppy/info] Read '2f1d94ea-0537-4bbb-9492-91274b738eeb' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.068896 [guppy/info] Read '2f2c2155-0576-46dd-94ab-4fd3977a4ecc' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.086277 [guppy/info] Read '2f3b323a-d6ca-414b-9a6e-09db063f2ee0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.087503 [guppy/info] Read '2f3be404-f92d-46ff-8bba-45ba2a981b09' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.088663 [guppy/info] Read '2f4b008e-40cc-4bb9-a026-96b0de60b02d' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.088732 [guppy/info] Read '2f553b21-c408-427e-b0ff-32c0c20a83ae' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.096287 [guppy/info] Read '2f6d5f1d-e625-4d90-a1b1-013ddf7a0cbd' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.101801 [guppy/info] Read '2f755c7c-177a-4700-b1fb-65aa4f71cb08' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.106196 [guppy/info] Read '2f866411-2008-419e-a2fa-16e1b53d0950' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.114869 [guppy/info] Read '2f912f08-99ad-4100-a426-8fc50ed70e04' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.121469 [guppy/info] Read '2fb497e2-5642-44b2-aa69-461e2ea44368' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.129119 [guppy/info] Read '2fcc0339-0752-4bfc-a067-8f763f78aec6' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.136722 [guppy/info] Read '2feb12af-e3e0-4ff7-b79a-716b343527c0' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.145415 [guppy/info] Read '2fec4832-2dfb-418e-9d43-ce7eadbd4ade' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.149868 [guppy/info] Read '2fee9f40-4716-424e-a892-38400d8a4b26' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.226237 [guppy/info] Read '2ff28e64-695f-464e-909d-c582c6dcf1ec' from file "batch_0.fast5" has been loaded.
+2023-06-06 09:58:39.232793 [guppy/info] Dispatched batch 0 containing 1 inputs:
+2023-06-06 09:58:39.233246 [guppy/info] Batch input 0 : demo/fast5/batch_0.fast5
+2023-06-06 09:58:39.242254 [guppy/info] Read '09535ad1-316d-45e7-806f-8676adbd57a0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.251466 [guppy/info] Read '04278436-7fb4-405d-a938-1752c041a338' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.254592 [guppy/info] Read '05a00f85-6539-4600-b920-8da47068af12' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.269522 [guppy/info] Read '094bdfc6-dcc9-495d-90d0-cd631946c205' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.270477 [guppy/info] Read '0da28aeb-e2f0-4887-9433-adb96eb6da2b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.645958 [guppy/info] Read '09c39187-4a42-4f4f-a4d5-2ba8a04f7a4f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.782383 [guppy/info] Read '0cfbe3d2-9a9c-4509-adad-bd4f3ea41b3f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.851212 [guppy/info] Read '0433af9f-ec17-476e-93ff-6d77f8ff6e62' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.946658 [guppy/info] Read '0a2d3aaf-e6fa-4b79-ab67-c345fc4d94ef' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.947897 [guppy/info] Read '0a5a303a-a819-4e14-b382-b105518cc8c1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.951899 [guppy/info] Read '051f7da4-07b3-4d76-ae4e-0b04fcac888b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:39.956185 [guppy/info] Read '0bf085e8-881e-4d79-96dd-a1d79ad08b84' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.041451 [guppy/info] Read '00aa78ee-dba1-4b00-8bb9-e5f553ffc3d2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.198562 [guppy/info] Read '0cab85a2-acfd-4c84-8e6b-c87ecca0c921' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.278730 [guppy/info] Read '06da53e3-18bc-4ad5-bb7b-8e23aabcc240' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.280156 [guppy/info] Read '06de609d-9e0c-463c-9672-073df56d0dfb' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.280970 [guppy/info] Read '0757ca35-a084-42af-8afc-2051694a918a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.282130 [guppy/info] Read '0a92150d-e15d-4c00-8013-4f2d9024e403' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.452218 [guppy/info] Read '0b277dae-a069-4342-86f1-1697f97ca784' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.599696 [guppy/info] Read '0db8f70f-2917-4ed4-9c5c-542483717bc5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.626671 [guppy/info] Read '097ea8f1-37c7-48ed-9c5e-846ee670cd86' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.627239 [guppy/info] Read '09986474-8177-435d-a94b-9c20eb900ba2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.629119 [guppy/info] Read '0a610a9b-2777-4ca5-ac36-d540aaed893d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.749983 [guppy/info] Read '0d954b43-a4e7-4ce2-83f3-b07adf9e5215' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.840267 [guppy/info] Read '09d14535-de80-4b65-94f1-86f01711ed69' from file "batch_0.fast5" completed.
+2023-06-06 09:58:40.989831 [guppy/info] Read '0662e8ae-41ac-4d03-a4bd-0600baa45374' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.020262 [guppy/info] Read '04343c9a-c88b-46e6-9b7d-1f97f7a28128' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.175676 [guppy/info] Read '0c192d16-ab39-466c-8ed5-1a706942859a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.180517 [guppy/info] Read '08b40b99-09a7-4293-9c36-cc24eca0bc27' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.311849 [guppy/info] Read '0f69c903-0851-4ab3-a08f-b16c514f5866' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.456511 [guppy/info] Read '0d67cf76-5ed2-44ce-a418-c9d60d8637da' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.501431 [guppy/info] Read '0626fb8f-cf8c-47d3-9d39-f9010ce9093e' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.666861 [guppy/info] Read '0c8f741f-1c55-4191-894c-3303d7210ee0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.667971 [guppy/info] Read '0c96826d-cb56-43fc-80d4-b45d9758c79d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.669394 [guppy/info] Read '0c9b7e14-efe3-4200-8306-3ea6574722fc' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.847252 [guppy/info] Read '21b4a1dc-7735-45d1-a7e8-f27d6e79eb44' from file "batch_0.fast5" completed.
+2023-06-06 09:58:41.964766 [guppy/info] Read '094b34c2-c5a8-48ee-932b-c21b237697d4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.013256 [guppy/info] Read '2996114a-4f02-4271-948d-1edce1adb1ac' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.016776 [guppy/info] Read '0d434ec8-7520-4c23-841e-089449898b8a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.102362 [guppy/info] Read '28ec9ea8-408a-4232-be94-744ff98d8605' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.131726 [guppy/info] Read '24274de5-8287-467a-9055-2aeb9aa99c09' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.169605 [guppy/info] Read '06e62f86-c432-42c2-96b9-52d00eecc74c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.241885 [guppy/info] Read '21effb4d-d0ff-4745-a861-a9fe3ed2a9e6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.265757 [guppy/info] Read '0bcf6596-d060-4684-9a65-be246f572a46' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.329173 [guppy/info] Read '22d7a541-531c-4f04-a3ba-4a7ac2fcbb57' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.434328 [guppy/info] Read '0bf20fc3-1eb4-4a33-ae0b-f18096337912' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.435449 [guppy/info] Read '241d36b1-d5e0-49c2-86db-49e434f7cc25' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.555082 [guppy/info] Read '230a6722-0035-41d3-ae56-e1e9e340605a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.558471 [guppy/info] Read '0dbbe882-62f9-4321-b5ce-d731881caa6b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.605018 [guppy/info] Read '0dfb8f5d-8420-44dc-8c39-178a164914d1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.607016 [guppy/info] Read '2a52e85f-525c-4cdb-a47a-781134fa4985' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.649225 [guppy/info] Read '0f70cf3c-3d61-4f98-9b23-ad4623a75867' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.685675 [guppy/info] Read '0673c37c-bfc8-4636-a45c-b77d5b96a99b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.713779 [guppy/info] Read '0c0b0084-8fc6-49f4-ab9e-a05a78ebdfa3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.741597 [guppy/info] Read '260ee1f2-5c8f-408b-bce0-cb9377a035a7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.824947 [guppy/info] Read '23b70b87-fb06-47ac-ad1f-cc902ccde5b7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.938214 [guppy/info] Read '215b660c-46e1-473f-b540-06707344827a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.939405 [guppy/info] Read '2162c167-b6f9-40d9-b49f-52786117aca0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.960744 [guppy/info] Read '2da6760d-84a4-4271-be15-29846021ec88' from file "batch_0.fast5" completed.
+2023-06-06 09:58:42.963235 [guppy/info] Read '2ef4af0e-54aa-489a-8782-975018ffe5c5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.014931 [guppy/info] Read '2568c2f3-2fd6-4b51-ae46-c962f100f3f4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.029480 [guppy/info] Read '27d75f85-a581-492a-8119-6c34ae915316' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.030395 [guppy/info] Read '2a4703dc-b39a-4e27-9a1e-b107d6e57ed3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.052284 [guppy/info] Read '27f4f4e3-0a53-42f5-b565-f9fd0d6f460b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.087839 [guppy/info] Read '2b6ddb16-bf81-4dcd-b18b-e0b02f39d18c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.088422 [guppy/info] Read '2bc11aef-4d41-42c7-8fc6-719e78cc2eb6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.107472 [guppy/info] Read '2db9b57b-2bed-43bd-a85f-776ab4709edd' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.190579 [guppy/info] Read '04413815-11e9-4146-a423-913307955f51' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.231846 [guppy/info] Read '26d375df-2142-4aad-b24d-013442ade413' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.412873 [guppy/info] Read '09276997-175b-497a-802a-2ffe20fcf468' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.413698 [guppy/info] Read '26437f76-ac3e-4431-a08c-28bd6eb22d35' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.418949 [guppy/info] Read '25cdb38b-7393-44f5-bd3a-e21993174a74' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.425116 [guppy/info] Read '281aa1a0-3342-4871-93be-907fbe57acb5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.425809 [guppy/info] Read '2dbde088-9ce1-4605-8f9a-c2132e9ecb0b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.441881 [guppy/info] Read '0694b6f5-e1d0-43d2-829d-d7f45a84ddb3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.442583 [guppy/info] Read '070d0edd-3260-4f4c-bca9-658928bcde16' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.443635 [guppy/info] Read '0729d528-e67a-4b3c-8f1d-1242c8b631e5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.498959 [guppy/info] Read '2316da8b-e84d-473c-823d-610125df2f8b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.500843 [guppy/info] Read '248eeef4-33da-41be-a43e-c1438937c338' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.502594 [guppy/info] Read '222e6758-fce3-4c7d-81ed-dc3080558ff0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.503936 [guppy/info] Read '27051ab5-aa05-4a81-a13a-ac174a661f64' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.585223 [guppy/info] Read '219e9b59-2b11-4698-9d76-157817288ff2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.602639 [guppy/info] Read '2cf88a74-b152-46df-8b98-1e50c45c7b61' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.611764 [guppy/info] Read '00c9ebce-70b1-430e-ac96-423cf287e129' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.612872 [guppy/info] Read '2198f667-3bd8-419f-b3a5-9b432ca43d39' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.812902 [guppy/info] Read '222e49f3-c61a-4657-86be-91214659a483' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.814033 [guppy/info] Read '2244c88e-93f2-4653-8baa-c981b145a1b1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.852785 [guppy/info] Read '0dd89742-08eb-42e2-a611-90e6c49d16fc' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.953184 [guppy/info] Read '26f0545b-e926-486b-9e75-c384b7530863' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.976798 [guppy/info] Read '29a2f086-6da1-435e-b745-4f14b235409f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:43.977415 [guppy/info] Read '29ad7e90-22bf-4a4d-aab1-2e0d84783c15' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.036262 [guppy/info] Read '0fe51bf1-3612-41e3-afd1-3b6df54e7a03' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.037336 [guppy/info] Read '0fe5ffb2-c945-4507-82d1-ba48c70da1c4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.115547 [guppy/info] Read '0d0b7bb1-f226-4063-842c-643210c9e26c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.116815 [guppy/info] Read '23c360cc-c3a3-442b-97a6-3431a385a567' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.120574 [guppy/info] Read '0bd28a39-3722-415f-8486-4aa4bfd5121d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.121731 [guppy/info] Read '0d0ed7a3-9b1e-4c62-9382-61e6612a24a2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.151143 [guppy/info] Read '26c1a3cb-1a04-4ae5-8928-32ff367a3d18' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.304686 [guppy/info] Read '28292bd7-4f5f-45dd-9556-45ad4b4b706c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.305733 [guppy/info] Read '2c2b96b6-9545-49fd-8809-0f2b543cd5e2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.324383 [guppy/info] Read '0c14ee79-c5fd-4cbd-ba98-142d3d16ebd0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.340783 [guppy/info] Read '0f9d9c86-48f2-4015-9d25-e2d53a159958' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.341749 [guppy/info] Read '0fa548e8-7e93-4b25-a3e0-100d2df1b187' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.397350 [guppy/info] Read '24d57aad-e88c-454f-a408-1001af1476ad' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.398058 [guppy/info] Read '24ef1df0-5d31-4612-b0ca-9ad09864d485' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.401984 [guppy/info] Read '0bd76eaf-4aaa-4e44-9ee4-739844aad14c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.410550 [guppy/info] Read '2c89a3a2-df9a-48a1-a3d4-20e4b6fa37a2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.548549 [guppy/info] Read '2a8edb1e-61a1-484a-a8f8-136642754e35' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.549556 [guppy/info] Read '2a9ef0c1-ef4d-49f5-b676-ee20c0f3881c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.550408 [guppy/info] Read '2c69107a-34be-4f6f-90d9-a79281f26ef8' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.570840 [guppy/info] Read '087ecad3-1b8d-4c88-8cce-9bbadc2a2a5b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.623128 [guppy/info] Read '0a8a2218-c87f-4fb4-b2f1-d06d6f752593' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.625315 [guppy/info] Read '26113a7e-5562-4dc3-9f68-38502a032e19' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.773375 [guppy/info] Read '27548f50-1848-441e-b5a2-a0e95b206d6c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.774182 [guppy/info] Read '27777b0f-3e8f-4e40-ba81-e8b9a00a9834' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.794623 [guppy/info] Read '2056b4fe-fb2e-4d15-be39-1b3a7a8d9573' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.796030 [guppy/info] Read '2059ddad-b9fd-437c-9283-b995f85e9c1d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.797521 [guppy/info] Read '205f0991-b01d-4ab3-a949-39877b47e70e' from file "batch_0.fast5" completed.
+2023-06-06 09:58:44.925368 [guppy/info] Read '219a7e02-8fd5-425a-a81c-5775299bedde' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.051166 [guppy/info] Read '0d3b5c6e-6ef7-4e39-a194-4af9c39c8346' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.081547 [guppy/info] Read '04e99123-ae4b-4299-81c4-6a444894e2ac' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.167744 [guppy/info] Read '0c2e60a3-778f-4524-be0d-a24618a94dfc' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.202373 [guppy/info] Read '225e0db4-7c4d-4a8e-948d-c32ab92a6cc0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.327883 [guppy/info] Read '273a821a-538b-451f-a3cd-ed13bfc809ac' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.427645 [guppy/info] Read '2a21b0d7-28ac-4a04-a591-3904fc1ad118' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.428818 [guppy/info] Read '2dcd024d-9453-411d-8489-1032425ec716' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.445342 [guppy/info] Read '0bd21274-5a9b-4c7f-80da-17bcf60e0649' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.446338 [guppy/info] Read '22ebc498-0f8b-41fb-a936-37cda8e4829d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.472481 [guppy/info] Read '0ef8f410-e19c-44ba-9719-a632da1b1c2a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.489680 [guppy/info] Read '27a62838-2d96-4179-9076-83f7179170b5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.545601 [guppy/info] Read '2815b212-8a27-4138-8ec1-6e33c4c938b3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.605163 [guppy/info] Read '27847871-7905-4458-8188-ca5cc621664c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.631216 [guppy/info] Read '27b00510-80cc-4415-b72f-67b026adb1f9' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.678004 [guppy/info] Read '09d60b04-3cf6-404e-87d7-5409c6d919ab' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.679196 [guppy/info] Read '09e5a552-752f-414e-9716-97c8156d3d53' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.697546 [guppy/info] Read '2334fc15-650a-44d2-b8cd-01302a17688b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.797782 [guppy/info] Read '2ef5d658-707e-410f-aca2-85a799bc3397' from file "batch_0.fast5" completed.
+2023-06-06 09:58:45.921773 [guppy/info] Read '05af7c14-e39c-46fd-91cc-abe16e52e74f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.015201 [guppy/info] Read '2df5a3e1-1cd3-4590-970b-9cffeb8d9d02' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.026737 [guppy/info] Read '0c3696e5-4136-4f29-b595-c0839174b84a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.133620 [guppy/info] Read '29f1a0fb-d4e3-4006-9fbd-3a455211c3c5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.160710 [guppy/info] Read '219dabb4-8696-443f-b7bb-84e09442d376' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.257647 [guppy/info] Read '27065dd2-9687-4347-9dae-e6e5b773247d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.259905 [guppy/info] Read '26f6076f-0000-435d-bb33-35d7d1799f72' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.353290 [guppy/info] Read '082bf237-f01f-4920-ad98-15dd327183bd' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.378734 [guppy/info] Read '229e2d32-116b-48c4-945a-379176b54849' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.379356 [guppy/info] Read '22a286a7-ec4e-4ea6-bc1d-602c47bcd9c7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.380962 [guppy/info] Read '22ade9e2-c973-4de7-b3d6-2089fda58673' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.444035 [guppy/info] Read '0fcffe21-a9b1-40c3-bb28-6d1a85fc11e2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.453815 [guppy/info] Read '2322e2c4-97b9-4f4e-8726-e2677f0f11e7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.455079 [guppy/info] Read '23a77fa4-f795-4d81-bf9c-5bcba67379ce' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.474622 [guppy/info] Read '21c8be18-61f8-4f0d-9469-8378a45716bb' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.549725 [guppy/info] Read '0efb3a73-c43e-4268-b806-9456d19be0b1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.552330 [guppy/info] Read '27f7cbfb-019c-4619-be2a-d71359cb71a8' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.590117 [guppy/info] Read '24f0ccc3-6fd4-492a-9597-a604adcf4a73' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.662097 [guppy/info] Read '264f3fbe-e6ea-41dd-ab71-de91f1733693' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.684575 [guppy/info] Read '2cda5f86-e9dd-4b42-8fa4-a47fbc41bb6d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.685606 [guppy/info] Read '2cec36ce-a556-47c6-b102-02ba8eabdfba' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.763452 [guppy/info] Read '0457d4b3-132b-4913-9b84-35184f5a5cd3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.929756 [guppy/info] Read '2661906c-3e3a-4b14-8385-3c0b22926bc1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:46.980812 [guppy/info] Read '2f142050-02da-420c-ba33-a5720ca7ca8b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.122730 [guppy/info] Read '0a366afb-c172-497f-b4f9-41acb4069534' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.172485 [guppy/info] Read '23abdb13-5f3c-4ee4-be5d-165506133d79' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.193660 [guppy/info] Read '23e97a0d-d82e-4d4d-a4ac-8809efbae5c6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.195205 [guppy/info] Read '24fa1022-7934-49e3-b103-9c42733b576d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.196681 [guppy/info] Read '28adf63c-3f19-476b-9c45-b4c4280f74dc' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.250139 [guppy/info] Read '223307f5-2770-49a2-930b-4df17c5bdddc' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.268726 [guppy/info] Read '0bee8398-3230-4698-88e8-ad3f5187ce4a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.337579 [guppy/info] Read '298373bf-4bca-4adf-a4d5-1c1fd75424a7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.358110 [guppy/info] Read '2a7abd0a-88a5-40f2-8d48-92261e103783' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.382554 [guppy/info] Read '06fd48cd-4527-4032-b51a-0a92443025bb' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.383723 [guppy/info] Read '07005baa-8d1a-4a5c-8746-610d783be5ad' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.447782 [guppy/info] Read '047aafa7-3d2f-4511-812b-0f89be12a48d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.527040 [guppy/info] Read '0fd25c08-57cd-48a3-95fd-fb581d5fc091' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.592948 [guppy/info] Read '0f1baa11-7805-4d3d-991e-c596a3246f51' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.782630 [guppy/info] Read '2f0a4cfd-5b3a-4b78-b55a-ef96379cd62c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.821706 [guppy/info] Read '2066c2bf-f150-4411-958d-271211d39035' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.868997 [guppy/info] Read '26632779-a12d-4543-8c64-eab2fffe11c2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.897687 [guppy/info] Read '2ff28e64-695f-464e-909d-c582c6dcf1ec' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.904832 [guppy/info] Read '27c779b4-7c14-4f25-89d1-734d30c77ffe' from file "batch_0.fast5" completed.
+2023-06-06 09:58:47.946538 [guppy/info] Read '23d233f1-217e-4f26-bfde-34a7055ba03f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.004729 [guppy/info] Read '24882c50-6d3b-4039-bfec-6e89a3891713' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.019993 [guppy/info] Read '231a6d16-eafc-45ba-a03b-c9cc300181a0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.145515 [guppy/info] Read '0c391d8a-6a7d-4227-b042-7f7ad190b182' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.146663 [guppy/info] Read '0c410322-8294-4886-9cfb-e56efd47e422' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.172027 [guppy/info] Read '292523b9-81fc-40ce-8ae6-7024e0aab274' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.194531 [guppy/info] Read '2a103e42-0f51-447b-b496-14e1148b4ff3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.222128 [guppy/info] Read '2a06cda0-325b-4dde-bde1-15074a4207f4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.262073 [guppy/info] Read '2500f277-5751-434f-8eb7-a9a9589f0a30' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.441053 [guppy/info] Read '26a9abbc-aca8-4d73-8dc3-01ec7df32a5a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.457585 [guppy/info] Read '232791d2-5785-49f1-a532-89e40a6c9a65' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.641831 [guppy/info] Read '24062272-697b-4f73-8fe9-97544f8f6f5b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.651283 [guppy/info] Read '2f2c2155-0576-46dd-94ab-4fd3977a4ecc' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.652191 [guppy/info] Read '2f3b323a-d6ca-414b-9a6e-09db063f2ee0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.657805 [guppy/info] Read '07702896-274c-4c28-b932-e09ecbb36891' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.761721 [guppy/info] Read '2bfba443-ccd9-4faa-a39d-01d369fc41c8' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.785074 [guppy/info] Read '2396eb01-eb10-4c6b-a336-1f9d13557c75' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.816459 [guppy/info] Read '25b1a8a1-7460-49d6-b5c0-925d85757aea' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.833719 [guppy/info] Read '2a7710bb-696e-4373-b441-f41a9bf4ee3d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.861175 [guppy/info] Read '267d92b6-0b98-49d1-b115-f4a3f1c001ec' from file "batch_0.fast5" completed.
+2023-06-06 09:58:48.947351 [guppy/info] Read '26b9ad7b-7a14-450f-b154-395ed1a47e36' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.013489 [guppy/info] Read '2f912f08-99ad-4100-a426-8fc50ed70e04' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.069661 [guppy/info] Read '2490f571-eeaf-427e-ab6a-e55628577b6a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.095243 [guppy/info] Read '26d22eaf-ea76-4ff9-ad79-0c6f47b26229' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.135366 [guppy/info] Read '244b30e0-d52e-41ba-9afc-45a4803905e6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.154755 [guppy/info] Read '2f3be404-f92d-46ff-8bba-45ba2a981b09' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.206231 [guppy/info] Read '0fd53e23-f974-4135-bf63-0767ea924b84' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.236553 [guppy/info] Read '22ba8886-0ff1-4aed-8b63-efc4281eda01' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.308268 [guppy/info] Read '0fea4d2f-7d40-417e-8312-b7f45f4a7494' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.327078 [guppy/info] Read '2727b730-d9f8-4e05-b446-2381c2e61889' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.327994 [guppy/info] Read '27fdacc9-f754-4434-a6dc-091d7b4485d9' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.328869 [guppy/info] Read '281abbc0-5509-4555-a9ff-b98c13d7b8c6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.360412 [guppy/info] Read '2acccb64-4b35-469e-b08c-20a93e30b126' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.424333 [guppy/info] Read '0fd8ef07-cfb7-4921-8386-5d3d1b9d792c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.513246 [guppy/info] Read '049548e6-802c-4053-8d0d-dbb874d29ea1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.514378 [guppy/info] Read '04968f2e-07a2-4a8f-82de-0913ecd20c3c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.540256 [guppy/info] Read '2a64e88c-1360-4d73-ba41-c33fd27edb46' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.543507 [guppy/info] Read '0f247cd6-0d45-4699-890e-7eb0f1b2d62f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.545478 [guppy/info] Read '24b15168-cea0-49ae-b088-b8d9159aff44' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.567127 [guppy/info] Read '253c1c95-c6a0-4bbe-a743-d03f494713e5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.647175 [guppy/info] Read '0c58f41e-478a-415d-b9dc-b6c19263b0b1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.751801 [guppy/info] Read '26907828-8bf3-45ba-a4bf-4bedf3cf77e6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.762993 [guppy/info] Read '2f866411-2008-419e-a2fa-16e1b53d0950' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.835759 [guppy/info] Read '28287dce-0c5e-4434-b070-eb2e0da680e9' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.951859 [guppy/info] Read '2c0f7225-8aec-4a05-8508-834ad728fc49' from file "batch_0.fast5" completed.
+2023-06-06 09:58:49.981940 [guppy/info] Read '25c77324-c8dc-4505-966b-ab6ef0e9a4f1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.066653 [guppy/info] Read '2dbc03eb-d609-40fb-9b96-70896341d29c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.084855 [guppy/info] Read '2fb497e2-5642-44b2-aa69-461e2ea44368' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.106834 [guppy/info] Read '0ffbec46-e348-4f74-b92e-f2b104b48385' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.107836 [guppy/info] Read '202fc49a-cf88-48fc-bbab-1fa3d0f7a562' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.185998 [guppy/info] Read '0a29dbaa-ca29-4b5f-9497-e47b657e0aaf' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.199545 [guppy/info] Read '2088f684-a9a1-46f7-9abc-8d828e0c226c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.204145 [guppy/info] Read '2f6d5f1d-e625-4d90-a1b1-013ddf7a0cbd' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.204918 [guppy/info] Read '2fee9f40-4716-424e-a892-38400d8a4b26' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.212044 [guppy/info] Read '27075305-8f18-4c0e-8e5e-4a25cd69d909' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.213149 [guppy/info] Read '27167e80-d8af-4e89-abe8-d6c394894c57' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.272104 [guppy/info] Read '255e35e8-d29f-42cd-9914-cb0059907fb3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.423811 [guppy/info] Read '26670318-4869-4d17-9387-54ceb6b67d82' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.431872 [guppy/info] Read '271fe610-8b99-4b0e-b2a8-1d78755f7dc5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.446467 [guppy/info] Read '0c7518d6-6fae-4327-9212-b203b2ae5f52' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.447448 [guppy/info] Read '0d8a0630-d3b1-4070-b5e0-3c354d847264' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.550426 [guppy/info] Read '20b01200-0ae7-48ed-b9b2-95f91eab1d27' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.589737 [guppy/info] Read '20316eb3-52d7-4028-b895-1b293eaf31e3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.591407 [guppy/info] Read '26ac1c34-f7f3-4356-95ad-6ff210725df7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.611468 [guppy/info] Read '2517b076-7e62-4a2a-9c18-b1b02506fa88' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.673845 [guppy/info] Read '264bdedb-3cca-4b2e-af55-c7d6c38ecde3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.733510 [guppy/info] Read '2032a8b4-2c39-401a-ace1-7d5dba0a680e' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.758405 [guppy/info] Read '2c32841a-bbb1-4cc0-a71c-de821c42de61' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.852274 [guppy/info] Read '2458b5af-b9fe-4646-9a74-3b714f0b8faf' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.853075 [guppy/info] Read '252d0a29-23c9-4ff7-908a-4eecc2119bee' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.872207 [guppy/info] Read '2838e730-aa43-4d14-9987-b64586b13c24' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.873128 [guppy/info] Read '299726ba-a7f3-4f53-a2ee-3e4d4f98de2d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.873785 [guppy/info] Read '2ce899fe-fcf7-4aad-8ffa-f6f8fa8f8508' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.935512 [guppy/info] Read '2be6c633-3912-4556-af9e-e09b9d39dd2e' from file "batch_0.fast5" completed.
+2023-06-06 09:58:50.939834 [guppy/info] Read '2c0d3862-cca5-448d-a25a-bbf2b8a27670' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.069944 [guppy/info] Read '28454467-10a4-490b-9835-a5a48611b4ec' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.070626 [guppy/info] Read '29f9507d-84ae-4b09-883c-3f5f1485fb8c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.072384 [guppy/info] Read '2c953725-32f8-42a1-9300-0f68bdf899e9' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.072962 [guppy/info] Read '2c9e2ff3-570f-4e55-97d1-186ec76d41b5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.145974 [guppy/info] Read '0d8c6fa0-8e78-4e24-9fc8-cfc06cb59acf' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.153253 [guppy/info] Read '2bf7f0d4-24eb-4e69-b314-0d36422ce32f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.165454 [guppy/info] Read '2538a2cf-97cb-4269-97e1-dbc97c4beab6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.166376 [guppy/info] Read '253c0892-f31a-4635-aa49-a2a617a0f399' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.169562 [guppy/info] Read '2a526991-3b95-44dc-a9c5-94dedc1e7ca3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.170150 [guppy/info] Read '2ab10b85-6f3d-43c4-bd27-0f0da50ae61b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.184017 [guppy/info] Read '2fcc0339-0752-4bfc-a067-8f763f78aec6' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.219449 [guppy/info] Read '20dd4223-d04c-4f04-a44b-319c7c2b2080' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.340115 [guppy/info] Read '20e01a1c-a706-45db-baef-874502101a57' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.410466 [guppy/info] Read '204b9094-ea8c-4149-8ee9-28578f3842ac' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.431927 [guppy/info] Read '272d0c18-4cd5-4ea0-8af6-e50c6b42a714' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.433209 [guppy/info] Read '27f1d03c-3b3a-4812-a1f9-5a5d7b3751f1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.447431 [guppy/info] Read '25ce8336-b3d4-44bb-83d4-2d1516fbb0f2' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.705593 [guppy/info] Read '0dfc8239-dce2-4b62-b71d-71f81fb1383b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.710084 [guppy/info] Read '2df15885-738f-4257-acca-8a85f099931b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.711847 [guppy/info] Read '2c6c2e0e-6206-45fa-a4c7-52ff56da976b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.832914 [guppy/info] Read '0e1ec525-f9f1-4d74-94ea-2b4d74b33aef' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.833498 [guppy/info] Read '0e211b23-8177-4547-ba9e-b1dcee165e11' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.879968 [guppy/info] Read '2bf9e97c-1772-4e07-90e3-4fbf669154e0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.881005 [guppy/info] Read '2e7554f7-b50f-4b0d-857a-c0fc726f4e54' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.910491 [guppy/info] Read '205391f4-c816-42c6-b016-3d9cd7de7ff3' from file "batch_0.fast5" completed.
+2023-06-06 09:58:51.966119 [guppy/info] Read '2d1d4ff5-a7a8-4802-9d1e-7279b1ac1c46' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.039935 [guppy/info] Read '2cca3a96-d175-4fb4-af7e-ec3ada4ae092' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.070103 [guppy/info] Read '2e722265-df86-419d-84d4-b2c6522b7070' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.100761 [guppy/info] Read '2e763c91-8f72-4a73-87e5-e40fb79133fe' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.105144 [guppy/info] Read '258f104d-4357-48e0-8843-4e9ef3ce75fe' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.106605 [guppy/info] Read '2a078991-c3d9-4e60-91a9-23a39fa5c4a9' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.130597 [guppy/info] Read '247fb600-5d7f-42ce-b41d-7e10012c064f' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.169062 [guppy/info] Read '20f13a04-694c-4a0c-b385-49a4e30bd2bb' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.210475 [guppy/info] Read '2b1f5dbb-d83f-405c-8dbb-2b85a0ed2217' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.221463 [guppy/info] Read '2882d7d5-2c39-407e-9bb8-f0dfa2d9fb8c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.224634 [guppy/info] Read '28f877f8-989b-4502-9839-6aa8d6237f56' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.225410 [guppy/info] Read '295de52d-c814-48b7-b4c3-4685fe0150e9' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.288897 [guppy/info] Read '0e2a7096-b777-4e0a-bc5a-221a587f24f4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.368527 [guppy/info] Read '0e2f71cd-a77d-4065-9a80-11ab39df15d9' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.399770 [guppy/info] Read '2df1721f-32f8-4d18-ab80-49318b49a198' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.425303 [guppy/info] Read '2d9b65b3-4c19-4e19-922e-c5e2aff5b095' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.476305 [guppy/info] Read '20f2bc64-935c-4627-a633-1550d8314717' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.477191 [guppy/info] Read '2111114c-c93e-4c00-9176-8fec21a44d78' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.506787 [guppy/info] Read '2c18e93d-b188-433b-b8f3-75dc9eb0cb17' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.537456 [guppy/info] Read '27bd4352-4dbd-447a-90b6-65139a18fcad' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.538307 [guppy/info] Read '27e0d549-859b-4dc4-9273-ba5ef0235491' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.569163 [guppy/info] Read '2ab23179-9650-432c-a5d0-793d56769093' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.657683 [guppy/info] Read '27e91704-a656-49da-a389-89534af7eabf' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.773017 [guppy/info] Read '2e920560-a7d3-4af9-9ba2-c86db7cd1b15' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.803865 [guppy/info] Read '2bcb2060-e2f0-4507-918a-98f0d79b8c37' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.816962 [guppy/info] Read '28341651-d189-467f-a804-8c74a2d27472' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.825187 [guppy/info] Read '290d7557-33f1-4e59-8d8b-c05cbe37c285' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.845442 [guppy/info] Read '2e4dd3b5-03df-44ec-b84d-72c70f75bf57' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.927100 [guppy/info] Read '0e38ab56-1aed-4c3d-a5e6-626c57fbc709' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.940922 [guppy/info] Read '2e5bb084-12e4-4366-979c-e660bf62e2e5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.995525 [guppy/info] Read '2f4b008e-40cc-4bb9-a026-96b0de60b02d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:52.996162 [guppy/info] Read '2f553b21-c408-427e-b0ff-32c0c20a83ae' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.070154 [guppy/info] Read '2c90b8a2-5727-4170-bb57-27fe0b3e36a4' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.070750 [guppy/info] Read '2de264ba-c4b3-4ec0-ac9e-6f561cfa6207' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.117659 [guppy/info] Read '2b33be1d-12bd-4f2a-9170-5286d46a1c7a' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.120690 [guppy/info] Read '0e516878-3762-4f50-b3a0-8c2f2c03a609' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.124543 [guppy/info] Read '21142c58-77c4-4fea-bd69-6a2d5e3177bf' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.185454 [guppy/info] Read '2fec4832-2dfb-418e-9d43-ce7eadbd4ade' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.291898 [guppy/info] Read '2f1d94ea-0537-4bbb-9492-91274b738eeb' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.399231 [guppy/info] Read '2aaecc17-4487-4bec-9d0d-3678ed747e2d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.399813 [guppy/info] Read '2b9c49df-aef8-4791-ae8f-e9b3473a7a29' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.439567 [guppy/info] Read '0e6b69c2-d3d9-4dec-b21c-6972d26c32e5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.502942 [guppy/info] Read '0e79a86f-d004-4473-aa32-d60a98077e1b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.591061 [guppy/info] Read '2f755c7c-177a-4700-b1fb-65aa4f71cb08' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.630512 [guppy/info] Read '2125f207-656e-432c-8f4f-2624d049dc88' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.631606 [guppy/info] Read '212d7544-6c8a-49a7-aa8b-695fbf8b80e5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.632310 [guppy/info] Read '213a1d52-8f07-4891-b518-0367ac0ebf23' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.800926 [guppy/info] Read '2d32e4bd-1ede-42af-8bd2-72ea762516de' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.851568 [guppy/info] Read '2feb12af-e3e0-4ff7-b79a-716b343527c0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.881073 [guppy/info] Read '0e7c4a7e-52e6-44cf-8653-ef72a943c83c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.881466 [guppy/info] Read '0e9fe9ec-489d-45c3-8368-e36e4548fec7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.921133 [guppy/info] Read '0ec01537-80be-4d3c-b192-08c2b9462ee8' from file "batch_0.fast5" completed.
+2023-06-06 09:58:53.922305 [guppy/info] Read '2df7b084-8dfd-4600-b4e4-ce0e772cba02' from file "batch_0.fast5" completed.
+2023-06-06 09:58:54.078958 [guppy/info] Read '2141199b-d9d5-4be9-8190-50eeae44e3d0' from file "batch_0.fast5" completed.
+2023-06-06 09:58:54.121105 [guppy/info] Read '214865f3-409b-43fb-96a9-cfa897f92407' from file "batch_0.fast5" completed.
+2023-06-06 09:58:54.138470 [guppy/info] Read '0ecea8ca-3d71-474e-903b-32cc9007d6b1' from file "batch_0.fast5" completed.
+2023-06-06 09:58:54.189381 [guppy/info] Read '2e404638-6d86-48bf-82ef-38c31b1e2f2b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:54.223279 [guppy/info] Read '2151eba3-5dbf-4860-bc5d-8c49c8679a24' from file "batch_0.fast5" completed.
+2023-06-06 09:58:54.563442 [guppy/info] Read '2155d0a7-1e19-4ee4-8a3a-5e28058d6d1d' from file "batch_0.fast5" completed.
+2023-06-06 09:58:54.717223 [guppy/info] Read '0ecf47d8-f4ea-4599-a072-dadddb0f7da7' from file "batch_0.fast5" completed.
+2023-06-06 09:58:54.965126 [guppy/info] Read '0ed0fbcc-c912-44a6-ba86-7847e8376245' from file "batch_0.fast5" completed.
+2023-06-06 09:58:55.211860 [guppy/info] Read '29e610b6-dcc5-4290-a405-9f489ec54a88' from file "batch_0.fast5" completed.
+2023-06-06 09:58:55.212823 [guppy/info] Read '2b3c691c-b20c-4c9d-926a-b92501a7919c' from file "batch_0.fast5" completed.
+2023-06-06 09:58:55.234121 [guppy/info] Read '0ed5052f-9b7e-4949-afa9-b3b06b71aaa9' from file "batch_0.fast5" completed.
+2023-06-06 09:58:55.663098 [guppy/info] Read '2ca6c5c5-5285-4e9f-a851-62bd261461b5' from file "batch_0.fast5" completed.
+2023-06-06 09:58:55.693781 [guppy/info] Read '2d25c3c2-604c-4abe-9e70-8672562d626b' from file "batch_0.fast5" completed.
+2023-06-06 09:58:55.787657 [guppy/info] Read '0ed5b04a-5c95-44d2-957b-47da6bec9703' from file "batch_0.fast5" completed.
+2023-06-06 09:58:56.121792 [guppy/info] Read '2d2bb5d1-703b-42d6-8e2d-542145151633' from file "batch_0.fast5" completed.
+2023-06-06 09:58:56.387966 [guppy/info] Read '2be7c281-bd80-41e7-bbe5-e42019ae36fd' from file "batch_0.fast5" completed.
+2023-06-06 09:58:56.528648 [guppy/info] Read '2d0fd95f-a932-4616-8125-0ab14c9dcdeb' from file "batch_0.fast5" completed.
+2023-06-06 09:58:56.538557 [guppy/info] Completed batch 0
+2023-06-06 09:58:56.555574 [guppy/message] Caller time: 26130 ms, Samples called: 13396436, samples/s: 512684
+2023-06-06 09:58:56.555703 [guppy/message] Finishing up any open output files.
+2023-06-06 09:59:00.378488 [guppy/message] Basecalling completed successfully.

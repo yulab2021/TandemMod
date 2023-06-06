@@ -1,0 +1,599 @@
+BaseCalled_template:::demo/guppy_single/0/2727b730-d9f8-4e05-b446-2381c2e61889.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/25c77324-c8dc-4505-966b-ab6ef0e9a4f1.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/039096ca-afa3-4182-8197-e218da6b1d8a.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/09c39187-4a42-4f4f-a4d5-2ba8a04f7a4f.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2141199b-d9d5-4be9-8190-50eeae44e3d0.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/028d485d-5964-4eed-a249-274c97c71e9b.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/03664f89-651c-4f90-97a8-eba86498cb82.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0fd25c08-57cd-48a3-95fd-fb581d5fc091.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0bd76eaf-4aaa-4e44-9ee4-739844aad14c.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0c8e7fd7-805f-4f56-92ee-2581d6ed121f.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/258f104d-4357-48e0-8843-4e9ef3ce75fe.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/26f0545b-e926-486b-9e75-c384b7530863.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0cfbe3d2-9a9c-4509-adad-bd4f3ea41b3f.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/219dabb4-8696-443f-b7bb-84e09442d376.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2c18e93d-b188-433b-b8f3-75dc9eb0cb17.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0371eff1-c132-459b-86b3-2e2d27f46b91.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/28454467-10a4-490b-9835-a5a48611b4ec.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0da28aeb-e2f0-4887-9433-adb96eb6da2b.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0d954b43-a4e7-4ce2-83f3-b07adf9e5215.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2b1f5dbb-d83f-405c-8dbb-2b85a0ed2217.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/264f3fbe-e6ea-41dd-ab71-de91f1733693.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0c0b0084-8fc6-49f4-ab9e-a05a78ebdfa3.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2a103e42-0f51-447b-b496-14e1148b4ff3.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/24fa1022-7934-49e3-b103-9c42733b576d.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/006f4a6e-d0d0-41d5-bc9a-b7cdd958d241.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2e7554f7-b50f-4b0d-857a-c0fc726f4e54.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/20f2bc64-935c-4627-a633-1550d8314717.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0d0ed7a3-9b1e-4c62-9382-61e6612a24a2.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0c192d16-ab39-466c-8ed5-1a706942859a.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2bf9e97c-1772-4e07-90e3-4fbf669154e0.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2fb497e2-5642-44b2-aa69-461e2ea44368.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/04278436-7fb4-405d-a938-1752c041a338.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/27051ab5-aa05-4a81-a13a-ac174a661f64.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0d3b5c6e-6ef7-4e39-a194-4af9c39c8346.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0457d4b3-132b-4913-9b84-35184f5a5cd3.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2df7b084-8dfd-4600-b4e4-ce0e772cba02.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2df5a3e1-1cd3-4590-970b-9cffeb8d9d02.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/253c0892-f31a-4635-aa49-a2a617a0f399.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0bd76870-5060-48cc-bdc3-fdb89e25b8df.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0c391d8a-6a7d-4227-b042-7f7ad190b182.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0c9b7e14-efe3-4200-8306-3ea6574722fc.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/27c779b4-7c14-4f25-89d1-734d30c77ffe.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/2c0d3862-cca5-448d-a25a-bbf2b8a27670.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/01c9086f-4549-4487-aa57-1bf474875b1c.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/26d375df-2142-4aad-b24d-013442ade413.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0f70cf3c-3d61-4f98-9b23-ad4623a75867.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/20e01a1c-a706-45db-baef-874502101a57.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/03a97f91-6249-4e33-8580-967589be4c9f.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/044cc9b9-7926-4fc9-913f-562c1e6a54b3.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
+
+BaseCalled_template:::demo/guppy_single/0/0c96826d-cb56-43fc-80d4-b45d9758c79d.fast5
+:::
+Traceback (most recent call last):
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1570, in _resquiggle_worker
+    map_res = adjust_map_res(map_res)
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/resquiggle.py", line 1523, in adjust_map_res
+    map_res.raw_signal, DEFAULT_STALL_PARAMS))
+  File "/home/wuyou/.conda/envs/SQANTI3.env/lib/python3.7/site-packages/tombo/tombo_stats.py", line 313, in identify_stalls
+    stall_metric[:] = np.NAN
+ValueError: cannot convert float NaN to integer
+
