@@ -19,6 +19,7 @@ scikit-learn              |0.22
 torch                     |1.9.1
 scipy                     |1.6.3
 guppy                     |6.1.5
+tombo                     |1.5.1
 
 You can install dependent modules manually or install them through yaml file.
 ```
