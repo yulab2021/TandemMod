@@ -1,6 +1,10 @@
 from __future__ import absolute_import
 import argparse
-import os,sys,re,h5py
+import os
+import sys
+import re
+import h5py
+import glob
 import multiprocessing
 
 import numpy as np
@@ -95,11 +99,9 @@ def get_events(fast5_path, basecall_group, basecall_subgroup,reverse = False):
     Args:
         fast5_path (str): The path to fast5 file.
         basecall_group (str): The default group from tombo output is "RawGenomeCorrected_000".
-	
-        
-
+    	basecall_subgroup (str): The default basecall subgroup is "BaseCalled_template".
     Returns:
-        dict: A dictionary containing base quality and sequence info.
+        dict: A dictionary containing base quality and sequence info.  to be done.
     """
 
 	try:
@@ -110,10 +112,12 @@ def get_events(fast5_path, basecall_group, basecall_subgroup,reverse = False):
 	# Get raw data
 	try:
 		raw_data = list(fast5_data['/Raw/Reads/'].values())[0]
-		# raw_attrs = raw_data.attrs
+		
 		raw_data = raw_data['Signal'][()]
+
 		# ~ .value
-	except:
+	except Exception as e:
+		print(115,e)
 		raise RuntimeError(
 			'Raw data is not stored in Raw/Reads/Read_[read#] so ' +
 			'new segments cannot be identified.')
@@ -147,6 +151,7 @@ def extract_signal(fast5_path):
 	try:
 		signal, sequence, signal_start, signal_length  = get_events(fast5_path, args.basecall_group,args.basecall_subgroup)
 	except Exception as e:
+		#print(152,e)
 		return False, (None, None)
         
 	signal = signal[::-1]
@@ -156,24 +161,24 @@ def extract_signal(fast5_path):
 
 	for i in range(len(signal_length)):
 		signal_list.append("*".join([str(x) for x in signal[signal_start[i]:signal_start[i]+signal_length[i]]]))
-        
+	
 	line="%s\t%s\t%s\n"%(str(fast5_path).split("/")[-1].split(".")[0],sequence,"|".join(signal_list))     
     
 	return line
 
-def subcon(fls):
+def subcon(file_list):
 	base_quality_dict=get_base_quality(args.reference,args.sam)
-	if True:
+	if int(args.process) > 1:
 		results=[]
-		pool = multiprocessing.Pool(processes = int(args.cpu))
+		pool = multiprocessing.Pool(processes = int(args.process))
 
-		for fl in fls:
+		for fl in file_list:
 
 			result=pool.apply_async(extract_signal,(fl,))
 			results.append(result)
 		pool.close()
 
-		pbar=tqdm(total=len(fls),position=0, leave=True)
+		pbar=tqdm(total=len(file_list),position=0, leave=True)
 		nums=[]
 		for result in results:
 			num=result.get()
@@ -186,7 +191,7 @@ def subcon(fls):
 
 	else:
 		nums=[]
-		for fl in fls:
+		for fl in file_list:
 
 			num=extract_file(fl)
 			if num:
@@ -196,6 +201,7 @@ def subcon(fls):
 	for num in nums:
 
 		try:
+
 			id,sequence,signal=num.split("\t")
 
 			if "run" in id:
@@ -208,33 +214,33 @@ def subcon(fls):
 			output.writelines(line)
 		except Exception as e:
 			print(e)
-			pass
+
 
 	output.close()
 
-def main():
 
-    fast5_files=[]
-    with open(args.fast5) as f:
-        for line in f:
-            fast5_files.append(line.rstrip())
-            
-	subcon(fast5_files)
+def get_file_list(fast5_dir):
+    cmd="find %s -name '*.fast5' >%s.txt" %(fast5_dir,fast5_dir)
+    os.system(cmd)
+
+def main():
+    
+    fast5_files= glob.glob(os.path.join(args.fast5, '**/*.fast5'), recursive=True)
+
+    subcon(fast5_files)
 
 
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser(description='Extract current signal from fast5 files.')
-
-	parser.add_argument('-o', '--output', required = True, help="Output file.")
-	parser.add_argument('--basecall_group',default = "RawGenomeCorrected_000", help='The attribute group to extract the training data from. e.g. RawGenomeCorrected_000.')
-	parser.add_argument('--basecall_subgroup', default='BaseCalled_template', help='Basecall subgroup Nanoraw resquiggle into. Default is BaseCalled_template.')
-	parser.add_argument('-p','--process', default=1,help='Process.')
-	parser.add_argument('--clip', default=10,help='The number of bases to be discarded at both ends.')
-	parser.add_argument('--fast5',required = True,help='The file containing fast5 path.')
-	parser.add_argument('-r','--reference',required = True,help='Reference transcripts fasta file.')
-	parser.add_argument('--sam',required = True,help='Sam file.')
-	args = parser.parse_args()
-
+    parser = argparse.ArgumentParser(description='Extract current signal from fast5 files.')
+    
+    parser.add_argument('-o', '--output', required = True, help="Output file.")
+    parser.add_argument('--basecall_group',default = "RawGenomeCorrected_000", help='The attribute group to extract the training data from. e.g. RawGenomeCorrected_000.')
+    parser.add_argument('--basecall_subgroup', default='BaseCalled_template', help='Basecall subgroup Nanoraw resquiggle into. Default is BaseCalled_template.')
+    parser.add_argument('-p','--process', default=1,help='Process.')
+    parser.add_argument('--clip', default=10,help='The number of bases to be discarded at both ends.')
+    parser.add_argument('--fast5',required = True,help='The file containing fast5 path.')
+    parser.add_argument('-r','--reference',required = True,help='Reference transcripts fasta file.')
+    parser.add_argument('--sam',required = True,help='Sam file.')
+    args = parser.parse_args()
+    
     main()
-
-	
