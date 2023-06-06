@@ -52,15 +52,15 @@ minimap2 -ax map-ont data/reference_transcripts.fasta data/m5C.fastq >data/m5C.s
 Extract signal files and features from resquiggled fast5 files using python scripts.
 ```
 find data/guppy_single -name "*.fast5" >data/files.txt 
-python script/extract_signal_from_fast5.py --cpu=40 --fl=data/files.txt -o data/m5C --clip=10
-python extract_feature_from_signal.py -sam_file data/m5C.sam -reference data/reference_transcripts.fasta -signal_file data/m5C.signal.tsv -clip 10 -label m5C -out_dir data
+python scripts/extract_signal_from_fast5.py --cpu=40 --fl=data/files.txt -o data/m5C --clip=10
+python scripts/extract_feature_from_signal.py -sam_file data/m5C.sam -reference data/reference_transcripts.fasta -signal_file data/m5C.signal.tsv -clip 10 -label m5C -out_dir data
 ```
 
 ---
 ### Train your own model
 
 ```
-python TandemMod.py -run_mode train \
+python scripts/TandemMod.py -run_mode train \
   -new_model model/m5C.pkl \
   -train_data_mod data/m5C_train.tsv \
   -train_data_unmod data/C_train.tsv \
@@ -71,7 +71,7 @@ python TandemMod.py -run_mode train \
 ### Predict modifications using pretrained model.
 Pretained models were saved in directory ./models. You can load pretrained models to predict modification for new data.
 ```
-python TandemMod.py -run_mode predict \
+python scripts/TandemMod.py -run_mode predict \
   -pretrained_model model/m6A.pkl \
   -predict_file data/WT.feature.tsv
 ```
@@ -79,7 +79,7 @@ python TandemMod.py -run_mode predict \
 ### Transfer learning to new modification.
 In transfer learning mode, you can used a pretrained model to retrain the bottom layers to identify new modification.
 ```
-python TandemMod.py -run_mode transfer \
+python scripts/TandemMod.py -run_mode transfer \
   -pretrained_model model/m6A.pkl \
   -new_model model/m6Am.pkl
   -train_data_mod data/m6Am_train.tsv \
