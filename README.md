@@ -31,30 +31,30 @@ conda create env -f TandemMod.yaml
 #### Basecalling
 Guppy, as well as the now deprecated Albacore and all other basecallers, uses files in fast5 format as input. In addition to basecalling, Guppy also performs filtering of low quality reads, clipping of Oxford Nanopore adapters.
 ```
-guppy_basecaller -i data/fast5 -s data/guppy --num_callers 40 --recursive --fast5_out --config rna_r9.4.1_70bps_hac.cfg
+guppy_basecaller -i demo/fast5 -s demo/guppy --num_callers 40 --recursive --fast5_out --config rna_r9.4.1_70bps_hac.cfg
 ```
 #### Multi-fast5 to single_fast5
 If fast5 reads are stored at multi-reads format, ont_fast5_api is recommended to convert multi-fast5 reads to single-fast5 reads. The ont_fast5_api is available on PyPI and can be installed via pip:
 ```
 pip install ont-fast5-api
-multi_to_single_fast5 -i data/guppy -s data/guppy_single -t 40 --recursive 
+multi_to_single_fast5 -i demo/guppy -s demo/guppy_single -t 40 --recursive 
 ```
 #### Resquiggle
 The re-squiggle algorithm is the basis for the Tombo framework. The re-squiggle algorithm takes as input a read file (in FAST5 format) containing raw signal and associated base calls. The base calls are mapped to a genome or transcriptome reference and then the raw signal is assigned to the reference sequence based on an expected current level model.
 ```
-tombo resquiggle --overwrite --basecall-group Basecall_1D_001 data/guppy_single  data/reference_transcripts.fasta --processes 40 --fit-global-scale --include-event-stdev
+tombo resquiggle --overwrite --basecall-group Basecall_1D_001 demo/guppy_single  demo/reference_transcripts.fasta --processes 40 --fit-global-scale --include-event-stdev
 ```
 #### Extract features
 minimap2 is used to map basecalled sequences to reference transcripts.
 ```
-cat data/guppy/*.fastq >data/m5C.fastq
-minimap2 -ax map-ont data/reference_transcripts.fasta data/m5C.fastq >data/m5C.sam
+cat demo/guppy/pass/*.fastq >demo/m6A.fastq
+minimap2 -ax map-ont demo/reference_transcripts.fasta demo/m6A.fastq >demo/m6A.sam
 ```
 Extract signal files and features from resquiggled fast5 files using python scripts.
 ```
-find data/guppy_single -name "*.fast5" >data/files.txt 
-python scripts/extract_signal_from_fast5.py --cpu=40 --fl=data/files.txt -o data/m5C --clip=10
-python scripts/extract_feature_from_signal.py -sam_file data/m5C.sam -reference data/reference_transcripts.fasta -signal_file data/m5C.signal.tsv -clip 10 -label m5C -out_dir data
+
+python scripts/extract_signal_from_fast5.py -p=40 --fast5=demo/guppy_single --reference demo/reference_transcripts.fasta --sam demo/m6A.sam -o demo/m6A --clip=10
+python scripts/extract_feature_from_signal.py  -signal_file demo/m6A.signal.tsv -clip 10 -label m6A.tsv -out_dir demo
 ```
 
 ---

@@ -117,7 +117,7 @@ def get_events(fast5_path, basecall_group, basecall_subgroup,reverse = False):
 
 		# ~ .value
 	except Exception as e:
-		print(115,e)
+		
 		raise RuntimeError(
 			'Raw data is not stored in Raw/Reads/Read_[read#] so ' +
 			'new segments cannot be identified.')
@@ -147,7 +147,16 @@ def get_events(fast5_path, basecall_group, basecall_subgroup,reverse = False):
 	return raw_data, event_bases, event_starts, event_lengths
 
     
-def extract_signal(fast5_path):
+def get_signal(fast5_path):
+	"""
+	This function extracts the signal and sequence from a FAST5 file.
+
+	Parameters:
+	- fast5_path: The path to the FAST5 file.
+
+	Returns:
+	- line: A string containing the extracted information in a specific format.
+	"""
 	try:
 		signal, sequence, signal_start, signal_length  = get_events(fast5_path, args.basecall_group,args.basecall_subgroup)
 	except Exception as e:
@@ -166,15 +175,24 @@ def extract_signal(fast5_path):
     
 	return line
 
-def subcon(file_list):
+def extract_signal(file_list):
+	"""
+	This function extracts signals from a list of files.
+
+	Parameters:
+	- file_list: A list of file paths.
+
+	Returns:
+	None
+	"""
 	base_quality_dict=get_base_quality(args.reference,args.sam)
 	if int(args.process) > 1:
 		results=[]
 		pool = multiprocessing.Pool(processes = int(args.process))
 
-		for fl in file_list:
+		for file in file_list:
 
-			result=pool.apply_async(extract_signal,(fl,))
+			result=pool.apply_async(get_signal,(file,))
 			results.append(result)
 		pool.close()
 
@@ -191,9 +209,9 @@ def subcon(file_list):
 
 	else:
 		nums=[]
-		for fl in file_list:
+		for file in file_list:
 
-			num=extract_file(fl)
+			num=get_signal(file)
 			if num:
 				nums.append(num)
 	output=open(args.output+".signal.tsv","w")
@@ -213,7 +231,8 @@ def subcon(file_list):
 
 			output.writelines(line)
 		except Exception as e:
-			print(e)
+			#print(e)
+			pass
 
 
 	output.close()
@@ -227,7 +246,7 @@ def main():
     
     fast5_files= glob.glob(os.path.join(args.fast5, '**/*.fast5'), recursive=True)
 
-    subcon(fast5_files)
+    extract_signal(fast5_files)
 
 
 if __name__ == "__main__":
