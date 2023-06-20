@@ -8,63 +8,27 @@ channels:
 dependencies:
  
   - hdf5=1.8.18=3
-  - heapdict=1.0.1=py_0
   - html5lib=1.0.1=py37_0
-  - htslib=1.10.2=hd3b49d5_1
-  - keras-preprocessing=1.1.2=pyhd8ed1ab_0
-  - kernel-headers_linux-64=2.6.32=h77966d4_13
-  - nanopolish=0.13.2=he3b7ca5_2
-  - notebook=6.0.3=py37_0
-  - pip=20.0.2=py37_3
-  - ply=3.11=py37_0
   - progressbar2=3.37.1=py37_0
-  - pyparsing=2.4.7=py_0
   - pysam=0.16.0=py37ha9a96c6_0
   - python=3.7.6=cpython_he5300dc_6
   - samtools=1.10=h2e538c0_3
-  - scikit-image=0.16.2=py37h0573a6f_0
   - scipy=1.6.3=py37h29e03ee_0
 
 
   - pip:
-    - configparser==5.0.2
     - h5py==3.7.0
     - hdf5plugin==3.3.1
     - matplotlib-venn==0.11.7
-    - multiprocess==0.70.12.2
     - numpy==1.19.5
     - ont-fast5-api==4.0.0
-    - pandas==1.0.0
-    - parse==1.19.0
+    - pandas==1.1.0
     - pathlib==1.0.1
-    - pathos==0.2.8
-    - pathy==0.6.1
     - plotnine==0.8.0
     - progressbar33==2.4
     - scikit-learn==1.0.2
-    - scikit-misc==0.1.4
-    - sklearn==0.0
-    - smart-open==5.2.1
-    - spacy==3.1.3
-    - spacy-legacy==3.0.8
-    - srsly==2.4.2
-    - stereoscope==0.3.1
-    - tensorboard==1.15.0
-    - tensorflow==1.15.0
-    - tensorflow-estimator==1.15.1
-    - thefuck==3.31
-    - thinc==8.0.11
-    - threadpoolctl==3.1.0
-    - tinycss2==1.1.0
-    - tinytimer==0.0.0
     - toml==0.10.2
     - torch==1.9.1
-    - torchsummary==1.5.1
-    - torchtext==0.10.1
-    - torchviz==0.0.2
-    - utils==1.0.1
-    - xgboost==0.90
-    - xmltojson==2.0.1
-    - xpore==0.5.3
+
 
 prefix: /home/wuyou/.conda/envs/TandemMod

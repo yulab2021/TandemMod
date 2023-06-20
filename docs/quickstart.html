@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Start &mdash; nanom6A  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Command line arguments" href="cmd.html" />
+    <link rel="prev" title="Welcome to m6anet’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            nanom6A
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dataprep">Dataprep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inference">Inference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmd.html">Command line arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training.html">Training m6Anet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Getting Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="patch_notes.html">Release Note 2.0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing m6Anet</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">nanom6A</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Quick Start</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/quickstart.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="quick-start">
+<span id="quickstart"></span><h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this heading"></a></h1>
+<section id="dataprep">
+<h2>Dataprep<a class="headerlink" href="#dataprep" title="Permalink to this heading"></a></h2>
+<p>m6Anet dataprep requires eventalign.txt from <code class="docutils literal notranslate"><span class="pre">nanopolish</span> <span class="pre">eventalign</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nanopolish</span> <span class="n">eventalign</span> <span class="o">--</span><span class="n">reads</span> <span class="n">reads</span><span class="o">.</span><span class="n">fastq</span> <span class="o">--</span><span class="n">bam</span> <span class="n">reads</span><span class="o">.</span><span class="n">sorted</span><span class="o">.</span><span class="n">bam</span> <span class="o">--</span><span class="n">genome</span> <span class="n">transcript</span><span class="o">.</span><span class="n">fa</span> <span class="o">--</span><span class="n">scale</span><span class="o">-</span><span class="n">events</span> <span class="o">--</span><span class="n">signal</span><span class="o">-</span><span class="n">index</span> <span class="o">--</span><span class="n">summary</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">summary</span><span class="o">.</span><span class="n">txt</span>  <span class="o">--</span><span class="n">threads</span> <span class="mi">50</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">eventalign</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>This function segments raw fast5 signals to each position within the transcriptome, allowing m6Anet to predict modification based on the segmented signals. In order to run eventalign, users will need:
+* <code class="docutils literal notranslate"><span class="pre">reads.fastq</span></code>: fastq file generated from basecalling the raw .fast5 files
+* <code class="docutils literal notranslate"><span class="pre">reads.sorted.bam</span></code>: sorted bam file obtained from aligning reads.fastq to the reference transcriptome file
+* <code class="docutils literal notranslate"><span class="pre">transcript.fa</span></code>: reference transcriptome file</p>
+<p>We have also provided a demo eventalign.txt dataset in the repository under /path/to/m6anet/m6anet/tests/data/eventalign.txt. Please see <a class="reference external" href="https://github.com/jts/nanopolish">Nanopolish</a> for more information.</p>
+<p>After running nanopolish eventalign, we need to preprocess the segmented raw signal file using ‘m6anet dataprep’:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m6anet</span> <span class="n">dataprep</span> <span class="o">--</span><span class="n">eventalign</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">m6anet</span><span class="o">/</span><span class="n">m6anet</span><span class="o">/</span><span class="n">tests</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">eventalign</span><span class="o">.</span><span class="n">txt</span> \
+                <span class="o">--</span><span class="n">out_dir</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">output</span> <span class="o">--</span><span class="n">n_processes</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<p>The output files are stored in <code class="docutils literal notranslate"><span class="pre">/path/to/output</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">data.json</span></code>: json file containing the features to feed into m6Anet model for prediction</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data.log</span></code>: Log file containing all the transcripts that have been successfully preprocessed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data.info</span></code>: File containing indexing information of data.json for faster file access and the number of reads for each DRACH positions in eventalign.txt</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">eventalign.index</span></code>: Index file created during dataprep to allow faster access of Nanopolish eventalign.txt during dataprep</p></li>
+</ul>
+</section>
+<section id="inference">
+<h2>Inference<a class="headerlink" href="#inference" title="Permalink to this heading"></a></h2>
+<p>Once <code class="docutils literal notranslate"><span class="pre">m6anet</span> <span class="pre">dataprep</span></code> finishes running, we can run <code class="docutils literal notranslate"><span class="pre">m6anet</span> <span class="pre">inference</span></code> on the dataprep output</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m6anet</span> <span class="n">inference</span> <span class="o">--</span><span class="n">input_dir</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">output</span> <span class="o">--</span><span class="n">out_dir</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">output</span>  <span class="o">--</span><span class="n">n_processes</span> <span class="mi">4</span> <span class="o">--</span><span class="n">num_iterations</span> <span class="mi">1000</span>
+</pre></div>
+</div>
+<p>m6anet inference will run default human model trained on the HCT116 cell line. In order to run Arabidopsis-based model, change the inputs to <code class="docutils literal notranslate"><span class="pre">--model_state_dict</span></code>, <code class="docutils literal notranslate"><span class="pre">--read_proba_threshold</span></code> and <code class="docutils literal notranslate"><span class="pre">norm_path</span></code> to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m6anet</span> <span class="n">inference</span> <span class="o">--</span><span class="n">input_dir</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">output</span> <span class="o">--</span><span class="n">out_dir</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">output</span>  <span class="o">--</span><span class="n">read_proba_threshold</span> <span class="mf">0.0032978046219796</span> \
+   <span class="o">--</span><span class="n">model_state_dict</span> <span class="n">m6anet</span><span class="o">/</span><span class="n">m6anet</span><span class="o">/</span><span class="n">model</span><span class="o">/</span><span class="n">model_states</span><span class="o">/</span><span class="n">arabidopsis_virc</span><span class="o">.</span><span class="n">pt</span> <span class="o">--</span><span class="n">norm_path</span> <span class="n">m6anet</span><span class="o">/</span><span class="n">m6anet</span><span class="o">/</span><span class="n">model</span><span class="o">/</span><span class="n">norm_factors</span><span class="o">/</span><span class="n">norm_factors_virc</span><span class="o">.</span><span class="n">joblib</span>\
+   <span class="o">--</span><span class="n">n_processes</span> <span class="mi">4</span> <span class="o">--</span><span class="n">num_iterations</span> <span class="mi">1000</span>
+</pre></div>
+</div>
+<p>m6Anet will sample 20 reads from each candidate site and average the probability of modification across several round of sampling according to the –num_iterations parameter.
+The output file <cite>data.indiv_proba.csv</cite> contains the probability of modification for each read</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">transcript_id</span></code>: The transcript id of the predicted position</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transcript_position</span></code>: The transcript position of the predicted position</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">read_index</span></code>: The read identifier from nanopolish that corresponds to the actual read_id from nanopolish summary.txt</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">probability_modified</span></code>: The probability that a given read is modified</p></li>
+</ul>
+<p>The output file <cite>data.site_proba.csv</cite> contains the probability of modification at each individual position for each transcript. The output file will have 6 columns</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">transcript_id</span></code>: The transcript id of the predicted position</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transcript_position</span></code>: The transcript position of the predicted position</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n_reads</span></code>: The number of reads for that particular position</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">probability_modified</span></code>: The probability that a given site is modified</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">kmer</span></code>: The 5-mer motif of a given site</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mod_ratio</span></code>: The estimated percentage of reads in a given site that is modified</p></li>
+</ul>
+<p>The mod_ratio column is calculated by thresholding the <code class="docutils literal notranslate"><span class="pre">probability_modified</span></code> from <cite>data.indiv_proba.csv</cite> based on the <code class="docutils literal notranslate"><span class="pre">--read_proba_threshold</span></code> parameter during <code class="docutils literal notranslate"><span class="pre">m6anet</span> <span class="pre">inference</span></code> call,
+with a default value of 0.033379376. We also recommend a threshold of 0.9 to select m6A sites from the <code class="docutils literal notranslate"><span class="pre">probability_modified</span></code> column in <code class="docutils literal notranslate"><span class="pre">data.site_proba.csv</span></code>.
+The total run time should not exceed 10 minutes on a normal laptop.</p>
+<p>m6Anet also supports pooling over multiple replicates. To do this, simply input multiple folders containing m6anet-dataprep outputs:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m6anet</span> <span class="n">inference</span> <span class="o">--</span><span class="n">input_dir</span> <span class="n">data_folder_1</span> <span class="n">data_folder_2</span> <span class="o">...</span> <span class="o">--</span><span class="n">out_dir</span> <span class="n">output_folder</span> <span class="o">--</span><span class="n">n_processes</span> <span class="mi">4</span> <span class="o">--</span><span class="n">num_iterations</span> <span class="mi">1000</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to m6anet’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="cmd.html" class="btn btn-neutral float-right" title="Command line arguments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Christopher Hendra.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

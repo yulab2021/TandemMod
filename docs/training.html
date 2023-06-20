@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training m6Anet &mdash; nanom6A  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting Help" href="help.html" />
+    <link rel="prev" title="Command line arguments" href="cmd.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            nanom6A
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmd.html">Command line arguments</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Training m6Anet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Getting Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="patch_notes.html">Release Note 2.0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing m6Anet</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">nanom6A</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Training m6Anet</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/training.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="training-m6anet">
+<span id="training"></span><h1>Training m6Anet<a class="headerlink" href="#training-m6anet" title="Permalink to this heading"></a></h1>
+<p>m6Anet expects a training config file and a model config file, both on TOML format. We have provided examples of the model config file and the training config file in:</p>
+<ul class="simple">
+<li><p>m6anet/m6anet/model/configs/model_configs/m6anet.toml</p></li>
+<li><p>m6anet/m6anet/model/configs/training_configs/m6anet_train_config.toml</p></li>
+</ul>
+<p>Below is the content of m6anet_train_config.toml</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">loss_function</span><span class="p">]</span>
+<span class="n">loss_function_type</span> <span class="o">=</span> <span class="s2">&quot;binary_cross_entropy_loss&quot;</span>
+
+<span class="p">[</span><span class="n">dataset</span><span class="p">]</span>
+<span class="n">root_dir</span> <span class="o">=</span> <span class="s2">&quot;/path/to/m6anet-dataprep/output&quot;</span>
+<span class="n">min_reads</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">norm_path</span> <span class="o">=</span> <span class="s2">&quot;/path/to/m6anet/m6anet/model/norm_factors/norm_dict.joblib&quot;</span>
+<span class="n">num_neighboring_features</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="p">[</span><span class="n">dataloader</span><span class="p">]</span>
+    <span class="p">[</span><span class="n">dataloader</span><span class="o">.</span><span class="n">train</span><span class="p">]</span>
+    <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">256</span>
+    <span class="n">sampler</span> <span class="o">=</span> <span class="s2">&quot;ImbalanceOverSampler&quot;</span>
+
+    <span class="p">[</span><span class="n">dataloader</span><span class="o">.</span><span class="n">val</span><span class="p">]</span>
+    <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">256</span>
+    <span class="n">shuffle</span> <span class="o">=</span> <span class="n">false</span>
+
+    <span class="p">[</span><span class="n">dataloader</span><span class="o">.</span><span class="n">test</span><span class="p">]</span>
+    <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">256</span>
+    <span class="n">shuffle</span> <span class="o">=</span> <span class="n">false</span>
+</pre></div>
+</div>
+<p>User can modify some basic training information such as the batch_size, the number of neighboring features, as well as the minimum number of reads per site to train m6Anet. We have also calculated the normalization factors required under norm_path variable. In principle, one can even change the loss_function_type by choosing one from m6anet/m6anet/utils/loss_functions.py or defining a new one. Sampler can be set to ImbalanceOverSampler (in which the model will perform oversampling to tackle the data imbalance with m6Anet modification) or any other sampler from m6anet/m6anet/utils/data_utils.py</p>
+<p>The training script will look for data.info.labelled file and data.json file under the root_dir directory. While data.info can be obtained by running m6anet dataprep on nanopolish eventalign.txt file, data.info.labelled must be supplied by the user by adding extra columns to the data.info file produced by m6anet dataprep. Additionally, data.info.labelled must be of the following format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">transcript_id</span>   <span class="n">transcript_position</span> <span class="n">n_reads</span> <span class="n">start</span> <span class="n">end</span>  <span class="n">modification_status</span> <span class="n">set_type</span>
+<span class="n">ENST00000361055</span> <span class="mi">549</span>                 <span class="mi">11</span>      <span class="mi">0</span>     <span class="mi">940</span>  <span class="mi">0</span>                   <span class="n">Train</span>
+<span class="n">ENST00000361055</span> <span class="mi">554</span>                 <span class="mi">12</span>      <span class="mi">940</span>   <span class="mi">1969</span> <span class="mi">0</span>                   <span class="n">Train</span>
+<span class="n">ENST00000475035</span> <span class="mi">133</span>                  <span class="mi">3</span>      <span class="mi">1969</span>  <span class="mi">2294</span> <span class="mi">0</span>                   <span class="n">Train</span>
+<span class="n">ENST00000222329</span> <span class="mi">309</span>                 <span class="mi">11</span>      <span class="mi">2299</span>  <span class="mi">3284</span> <span class="mi">0</span>                   <span class="n">Val</span>
+<span class="n">ENST00000222329</span> <span class="mi">2496</span>                <span class="mi">15</span>      <span class="mi">3284</span>  <span class="mi">4593</span> <span class="mi">0</span>                   <span class="n">Val</span>
+<span class="n">ENST00000222329</span> <span class="mi">2631</span>                <span class="mi">23</span>      <span class="mi">4593</span>  <span class="mi">6548</span> <span class="mi">0</span>                   <span class="n">Val</span>
+<span class="n">ENST00000523944</span> <span class="mi">72</span>                   <span class="mi">1</span>      <span class="mi">6548</span>  <span class="mi">6665</span> <span class="mi">0</span>                   <span class="n">Test</span>
+<span class="n">ENST00000523944</span> <span class="mi">2196</span>                <span class="mi">14</span>      <span class="mi">6665</span>  <span class="mi">7853</span> <span class="mi">0</span>                   <span class="n">Test</span>
+</pre></div>
+</div>
+<p>Here modification status tells the model which positions are modified and which positions are not modified. The column set_type informs the training script which part of the data we should train on and which part of the data should be used for validation and testing purpose. Lastly, n_reads corresponds to the number of reads that comes from the corresponding transcript positions and any sites with n_reads less than the min_reads specified in he training config file will not be used for training validation, or testing. We have also provided an example of data.readcount.labelled in m6anet/demo/ folder.</p>
+<p>Below is the content of m6anet.toml:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="s2">&quot;prod_sigmoid_pooling&quot;</span>
+
+<span class="p">[[</span><span class="n">block</span><span class="p">]]</span>
+<span class="n">block_type</span> <span class="o">=</span> <span class="s2">&quot;DeaggregateNanopolish&quot;</span>
+<span class="n">num_neighboring_features</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="p">[[</span><span class="n">block</span><span class="p">]]</span>
+<span class="n">block_type</span> <span class="o">=</span> <span class="s2">&quot;KmerMultipleEmbedding&quot;</span>
+<span class="n">input_channel</span> <span class="o">=</span> <span class="mi">66</span>
+<span class="n">output_channel</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">num_neighboring_features</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="p">[[</span><span class="n">block</span><span class="p">]]</span>
+<span class="n">block_type</span> <span class="o">=</span> <span class="s2">&quot;ConcatenateFeatures&quot;</span>
+
+<span class="p">[[</span><span class="n">block</span><span class="p">]]</span>
+<span class="n">block_type</span> <span class="o">=</span> <span class="s2">&quot;Linear&quot;</span>
+<span class="n">input_channel</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">output_channel</span> <span class="o">=</span> <span class="mi">150</span>
+<span class="n">activation</span> <span class="o">=</span> <span class="s2">&quot;relu&quot;</span>
+<span class="n">batch_norm</span> <span class="o">=</span> <span class="n">true</span>
+
+<span class="p">[[</span><span class="n">block</span><span class="p">]]</span>
+<span class="n">block_type</span> <span class="o">=</span> <span class="s2">&quot;Linear&quot;</span>
+<span class="n">input_channel</span> <span class="o">=</span> <span class="mi">150</span>
+<span class="n">output_channel</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="n">activation</span> <span class="o">=</span> <span class="s2">&quot;relu&quot;</span>
+<span class="n">batch_norm</span> <span class="o">=</span> <span class="n">false</span>
+
+<span class="p">[[</span><span class="n">block</span><span class="p">]]</span>
+<span class="n">block_type</span> <span class="o">=</span> <span class="s2">&quot;SigmoidProdPooling&quot;</span>
+<span class="n">input_channel</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="n">n_reads_per_site</span> <span class="o">=</span> <span class="mi">20</span>
+</pre></div>
+</div>
+<p>The training script will build the model block by block. For additional information on the block type, please check the source code under m6anet/m6anet/model/model_blocks</p>
+<p>In order to train m6Anet, please change the root_dir variable inside prod_pooling.toml to m6anet/demo/. Afterwards, run m6anet-dataprep:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m6anet</span> <span class="n">dataprep</span> <span class="o">--</span><span class="n">eventalign</span> <span class="n">m6anet</span><span class="o">/</span><span class="n">demo</span><span class="o">/</span><span class="n">eventalign</span><span class="o">.</span><span class="n">txt</span> \
+               <span class="o">--</span><span class="n">out_dir</span> <span class="n">m6anet</span><span class="o">/</span><span class="n">demo</span><span class="o">/</span> <span class="o">--</span><span class="n">n_processes</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<p>This will produce data.index file and data.json file that will be used for the script to access the preprocessed data Next, to train m6Anet using the demo data, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m6anet</span> <span class="n">train</span> <span class="o">--</span><span class="n">model_config</span> <span class="n">m6anet</span><span class="o">/</span><span class="n">model</span><span class="o">/</span><span class="n">configs</span><span class="o">/</span><span class="n">model_configs</span><span class="o">/</span><span class="n">m6anet</span><span class="o">.</span><span class="n">toml</span> <span class="o">--</span><span class="n">train_config</span> <span class="o">../</span><span class="n">m6anet</span><span class="o">/</span><span class="n">model</span><span class="o">/</span><span class="n">configs</span><span class="o">/</span><span class="n">training_configs</span><span class="o">/</span><span class="n">m6anet_train_config</span><span class="o">.</span><span class="n">toml</span> <span class="o">--</span><span class="n">save_dir</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">save_dir</span> <span class="o">--</span><span class="n">device</span> <span class="n">cpu</span> <span class="o">--</span><span class="n">lr</span> <span class="mf">0.0001</span> <span class="o">--</span><span class="n">seed</span> <span class="mi">25</span> <span class="o">--</span><span class="n">epochs</span> <span class="mi">30</span> <span class="o">--</span><span class="n">num_workers</span> <span class="mi">4</span> <span class="o">--</span><span class="n">save_per_epoch</span> <span class="mi">1</span> <span class="o">--</span><span class="n">num_iterations</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<p>The model will be trained on cpu for 30 epochs and we will save the model states every 1 epoch. One can replace the device argument with cuda to train with GPU. For complete description of the command line arguments, please see <a class="reference internal" href="cmd.html#cmd"><span class="std std-ref">Command line arguments page</span></a></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="cmd.html" class="btn btn-neutral float-left" title="Command line arguments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="help.html" class="btn btn-neutral float-right" title="Getting Help" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Christopher Hendra.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

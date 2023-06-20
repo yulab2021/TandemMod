@@ -1,0 +1,34 @@
+name: TandemMod
+channels:
+  - pytorch
+  - anaconda
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+ 
+  - hdf5=1.8.18=3
+  - html5lib=1.0.1=py37_0
+  - progressbar2=3.37.1=py37_0
+  - pysam=0.16.0=py37ha9a96c6_0
+  - python=3.7.6=cpython_he5300dc_6
+  - samtools=1.10=h2e538c0_3
+  - scipy=1.6.3=py37h29e03ee_0
+
+
+  - pip:
+    - h5py==3.7.0
+    - hdf5plugin==3.3.1
+    - matplotlib-venn==0.11.7
+    - numpy==1.19.5
+    - ont-fast5-api==4.0.0
+    - pandas==1.1.0
+    - pathlib==1.0.1
+    - plotnine==0.8.0
+    - progressbar33==2.4
+    - scikit-learn==1.0.2
+    - toml==0.10.2
+    - torch==1.9.1
+
+
+prefix: /home/wuyou/.conda/envs/TandemMod
