@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Note 2.0.0 &mdash; nanom6A  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Citing m6Anet" href="citing.html" />
+    <link rel="prev" title="Getting Help" href="help.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            nanom6A
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmd.html">Command line arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training.html">Training m6Anet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Getting Help</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Note 2.0.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#api-changes">API Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faster-and-better-inference-implementation">Faster and Better Inference Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rounding-of-dataprep-output">Rounding of Dataprep Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arabidopsis-trained-m6anet">Arabidopsis Trained m6Anet</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing m6Anet</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">nanom6A</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Release Note 2.0.0</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/patch_notes.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="release-note-2-0-0">
+<span id="patch-notes"></span><h1>Release Note 2.0.0<a class="headerlink" href="#release-note-2-0-0" title="Permalink to this heading"></a></h1>
+<section id="api-changes">
+<h2>API Changes<a class="headerlink" href="#api-changes" title="Permalink to this heading"></a></h2>
+<p>The m6Anet functions for preprocessing, inference, and training have now been simplified. We now provide a single entry point for all m6anet functionalities through the m6anet module. This means
+that all the old functionalities of m6Anet are now available through the m6anet module call,
+such as <code class="docutils literal notranslate"><span class="pre">m6anet</span> <span class="pre">dataprep</span></code>, <code class="docutils literal notranslate"><span class="pre">m6anet</span> <span class="pre">inference</span></code> and <code class="docutils literal notranslate"><span class="pre">m6anet</span> <span class="pre">train</span></code> functions. The command <code class="docutils literal notranslate"><span class="pre">m6anet-dataprep</span></code>,
+<code class="docutils literal notranslate"><span class="pre">m6anet-run_inference</span></code> and <code class="docutils literal notranslate"><span class="pre">m6anet-train</span></code> are deprecated and will be removed in the next version. Please check our updated <a class="reference internal" href="quickstart.html#quickstart"><span class="std std-ref">Quickstart page</span></a>
+and <a class="reference internal" href="training.html#training"><span class="std std-ref">Training page</span></a> for more details on running m6Anet.</p>
+<p>We have also made some changes to the m6anet dataprep function. Previously m6anet-dataprep produces data.index and data.readcount files to run inference,
+and we realized that this can be simplified by combining the two files together. The current m6anet dataprep
+(and also the deprecated m6anet-dataprep) now produces a single data.info file that combines the information
+from both data.index and data.readcount. Furthermore, m6anet inference (also the deprecated m6anet-run_inference) now requires data.info file to be
+present in the input directory. We have also provided a function for users to convert older dataprep output files to the newest format using</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m6anet</span> <span class="n">convert</span> <span class="o">--</span><span class="n">input_dir</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">old</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span><span class="n">output</span> <span class="o">--</span><span class="n">out_dir</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">old</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span><span class="n">output</span>
+</pre></div>
+</div>
+<p>This function will create data.info file by combining the old data.index and data.readcount files. The users still need to make sure that data.info file is located in the same folder as data.json file</p>
+</section>
+<section id="faster-and-better-inference-implementation">
+<h2>Faster and Better Inference Implementation<a class="headerlink" href="#faster-and-better-inference-implementation" title="Permalink to this heading"></a></h2>
+<p>In order to minimize the effect of sequencing depth in m6Anet prediction, a fixed number of reads are sampled from each site during m6Anet training.
+This process is repeated during inference where the sampling will be repeated several times for each candidate site to stabilize the modification probability.
+The number of sampling rounds is controlled through the option <cite>–num_iterations</cite> and the default was set to 5 in the previous version of m6Anet to minimize running time.</p>
+<p>A low number of sampling iterations results in unstable probability value for individual sites and while the overall performance of m6Anet on large datasets remains unaffected, users looking to identify
+and study modifications on individual sites will benefit from a more consistent modification score. In m6Anet 2.0.0, we have improved the inference process so that it can accommodate a higher
+number of sampling iterations while still maintaining a relatively fast inference time. Here we include the comparison between the older m6Anet version against the current release in terms of their peak memory usage and running time
+over a different number of sampling rounds on our HEK293T dataset with 95030 sites and 8019824 reads. The calculation is done on AMD EPYC 7R32 with <cite>–num_processes</cite> set to 25.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Version Number</p></th>
+<th class="head"><p>Peak Memory Usage(MB)</p></th>
+<th class="head"><p>Running Time(s)</p></th>
+<th class="head"><p>Number of Iterations</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>m6Anet v-1.1.1</p></td>
+<td><p>480.5</p></td>
+<td><p>8876.77</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p>m6Anet v-1.1.1</p></td>
+<td><p>677.9</p></td>
+<td><p>18009.92</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-even"><td><p>m6Anet v-2.0.0</p></td>
+<td><p>553.7</p></td>
+<td><p>392.91</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>m6Anet v-2.0.0</p></td>
+<td><p>571.3</p></td>
+<td><p>229.92</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>m6Anet v-2.0.0</p></td>
+<td><p>576.4</p></td>
+<td><p>409.71</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-odd"><td><p>m6Anet v-2.0.0</p></td>
+<td><p>578.5</p></td>
+<td><p>408.17</p></td>
+<td><p>1000</p></td>
+</tr>
+</tbody>
+</table>
+<p>As we can see, the latest version of m6Anet has relatively constant peak memory usage with minimal difference in running time between 100 and 1000 iteration runs. To achieve this, m6Anet
+saves each individual read probability file in <cite>data.indiv_proba.csv</cite> before sampling the required amount of reads for each site in parallel. The site level probability is then
+saved in <cite>data.site_proba.csv</cite>.</p>
+</section>
+<section id="rounding-of-dataprep-output">
+<h2>Rounding of Dataprep Output<a class="headerlink" href="#rounding-of-dataprep-output" title="Permalink to this heading"></a></h2>
+<p>Users can now add <code class="docutils literal notranslate"><span class="pre">--compress</span></code> flag to <code class="docutils literal notranslate"><span class="pre">m6anet</span> <span class="pre">dataprep</span></code> to round the dataprep output features to 3 decimal places. In our experience, this reduces the file size for
+data.json significantly without compromising model performance.</p>
+</section>
+<section id="arabidopsis-trained-m6anet">
+<h2>Arabidopsis Trained m6Anet<a class="headerlink" href="#arabidopsis-trained-m6anet" title="Permalink to this heading"></a></h2>
+<p>We have also included m6Anet model trained on the Arabidopsis <a class="reference external" href="https://elifesciences.org/articles/78808">VIRc dataset</a> from our <a class="reference external" href="https://www.nature.com/articles/s41592-022-01666-1">paper</a> as an option for users who are looking to study
+m6A modification on plant genomes or to aggregate predictions from different m6Anet models on their datasets. Here we present single molecular probability results on synthetic RNA from the <a class="reference external" href="https://www.nature.com/articles/s41467-019-11713-9">curlcake dataset</a></p>
+<hr class="docutils" />
+<hr class="docutils" />
+<p>The single-molecule m6A predictions of the Arabidopsis model seem to be comparable with the human model with ROC AUC of 0.89 and PR AUC of 0.90 on the synthetic. We also validate the ability to predict per-molecule
+modifications of the Arabidopsis model on the human HEK293T METTL3-KO and wild-type samples that were mixed to achieve an expected relative m6A stoichiometry of 0%, 25%, 50%, 75%, and 100% from <a class="reference external" href="https://www.nature.com/articles/s41587-021-00949-w">xPore</a>
+on the sites predicted to be modified in wild-type samples (probability <span class="math notranslate nohighlight">\(\geq 0.7\)</span>)
+) As we can see, from the 1041 shared sites that we inspect across the HEK293T mixtures, the median prediction of the model follows the expected modification ratio.</p>
+<hr class="docutils" />
+<hr class="docutils" />
+<p>In order to run the Arabidopsis model, please add the following command when running m6anet inference</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--read_proba_threshold</span> <span class="pre">:</span> <span class="pre">0.0032978046219796</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--model_state_dict</span> <span class="pre">:</span> <span class="pre">m6anet/m6anet/model/model_states/arabidopsis_virc.pt</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--norm_path</span> <span class="pre">:</span> <span class="pre">m6anet/m6anet/model/norm_factors/norm_factors_virc.joblib</span></code></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="help.html" class="btn btn-neutral float-left" title="Getting Help" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="citing.html" class="btn btn-neutral float-right" title="Citing m6Anet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Christopher Hendra.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
