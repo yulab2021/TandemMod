@@ -1,0 +1,1025 @@
+2023-06-23 23:45:08.260733 [guppy/message] ONT Guppy basecalling software version 6.1.5+446c355, minimap2 version 2.22-r1101
+config file:        /opt/ont/guppy/data/rna_r9.4.1_70bps_hac.cfg
+model file:         /opt/ont/guppy/data/template_rna_r9.4.1_70bps_hac.jsn
+input path:         demo/ELIGOS/ELIGOS_unmod
+save path:          demo/ELIGOS/ELIGOS_unmod_guppy
+chunk size:         2000
+chunks per runner:  512
+minimum qscore:     7
+records per file:   4000
+num basecallers:    40
+cpu mode:           ON
+threads per caller: 4
+
+Use of this software is permitted solely under the terms of the end user license agreement (EULA).By running, copying or accessing this software, you are demonstrating your acceptance of the EULA.
+The EULA may be found in /opt/ont/guppy/bin
+
+2023-06-23 23:45:08.261380 [guppy/info] crashpad_handler not supported on this platform.
+2023-06-23 23:45:10.178211 [guppy/message] Found 1 fast5 files to process.
+2023-06-23 23:45:10.180812 [guppy/message] Init time: 1882 ms
+2023-06-23 23:45:10.289981 [guppy/info] Read '0104c1ce-11d3-4c2f-b4ad-f2fa5bb2e434' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.292307 [guppy/info] Read '013733aa-bf0e-4259-8bdd-824cbb7560dc' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.293420 [guppy/info] Read '0149f2ed-4f73-42a5-9b3d-617b83233986' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.294614 [guppy/info] Read '01c8b11d-30d3-4d05-be07-b5e4d5d744bc' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.295787 [guppy/info] Read '027ff640-db56-4891-972b-0bfb355630cf' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.296911 [guppy/info] Read '0296214e-e3b8-45bc-9d37-4cf9e7b8db38' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.298013 [guppy/info] Read '0322cd19-d1f4-4232-b05a-7b33e0ac9d90' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.300203 [guppy/info] Read '032497e1-e2ec-4aa5-b231-d9aa9ecff5bc' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.301334 [guppy/info] Read '03447706-3a37-4889-9795-dce9a6f5b9d0' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.303622 [guppy/info] Read '0373be08-69d0-4123-abc0-79212def7108' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.303672 [guppy/info] Read '03b61f63-aefb-4fab-9569-65439dff4af3' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.305882 [guppy/info] Read '04170958-9c1f-47b8-a610-b61dbd1ab64b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.307060 [guppy/info] Read '042f6a33-e80a-4c06-8521-a64e15aa7071' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.308237 [guppy/info] Read '055c837a-c8e1-4087-bcbc-d9d2b6ba551f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.310530 [guppy/info] Read '057017a1-fe5b-4bea-971d-0e6191a29856' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.311719 [guppy/info] Read '05cd274e-5b0a-4865-a315-d3c92f3d3986' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.312840 [guppy/info] Read '062578b4-4bfd-409b-adb8-a7087b660066' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.313986 [guppy/info] Read '065540ec-caec-4938-aeca-6d6c43fd9d47' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.315112 [guppy/info] Read '06cda1b2-dca9-4923-9237-1ac142a5f50e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.316285 [guppy/info] Read '06f9e509-7186-4f15-a3ce-a603e49253e4' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.318494 [guppy/info] Read '06fdbffc-7d64-4fcd-b24a-45ca34c9616d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.319704 [guppy/info] Read '07413720-aac8-40df-a191-c8c50d249b4f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.321884 [guppy/info] Read '0861c55d-15f8-4ad0-a05f-d2c62c270174' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.322996 [guppy/info] Read '089af45f-5cc9-4eec-9837-927644d6b701' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.324139 [guppy/info] Read '09524390-d902-42e2-bb13-70b3d6e8f7ff' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.326355 [guppy/info] Read '09755641-de09-4d0f-8a35-48a7beabc81d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.327491 [guppy/info] Read '0bcd5f9c-f36d-463d-9387-b054adcd2f39' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.329640 [guppy/info] Read '0c95843a-32b7-4c6d-af37-416324a627e9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.330806 [guppy/info] Read '0cc6e64d-502f-4fbf-ac4e-22d5b25b0a01' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.331902 [guppy/info] Read '0cf27049-48d3-4945-8bff-75437be9dbcf' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.333037 [guppy/info] Read '0db25074-e8d8-40c2-a12a-22a97bd52e76' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.334129 [guppy/info] Read '0f035924-067e-42cd-a04c-7ca730f1c25f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.338391 [guppy/info] Read '0fb3109e-1036-435b-9d8d-02220f0a0ca5' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.339737 [guppy/info] Read '1084cb4d-0a7d-4a4e-af48-841d8a95e152' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.341910 [guppy/info] Read '111fdd12-53ac-4520-aa7f-8fbc1ff4e900' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.347272 [guppy/info] Read '1121b63d-a75f-437b-bc3a-41a1ad111437' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.416414 [guppy/info] Read '113c59e8-0db9-40ed-8028-431a72c8c333' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.469905 [guppy/info] Read '1173df9f-ad20-4538-85bc-05dcd11f181b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.527731 [guppy/info] Read '11859ac5-e9db-4ed5-ad23-58dcda560740' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.533199 [guppy/info] Read '11aad12f-47ee-4cc1-90e4-4f0341a46adb' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.537603 [guppy/info] Read '122beb29-26ce-4d85-a285-cebedf3aac4d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.539838 [guppy/info] Read '1368c04d-8574-4bfb-8b60-a5038c26f120' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.541311 [guppy/info] Read '13cdc2eb-6fc8-4d44-98b5-0405786a3503' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.583562 [guppy/info] Read '13e7adb8-bc20-409c-83c5-45f8095b454e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.795446 [guppy/info] Read '14372d40-178b-4e06-b6d5-2d8b425745a9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.796633 [guppy/info] Read '145b8847-08b0-4b50-ad5c-8d5ba4247232' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.798056 [guppy/info] Read '14b804bf-b546-426f-9482-f15b30d1a4ef' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.799206 [guppy/info] Read '151302b4-ca26-4c7a-bc5a-b97930fad712' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.804621 [guppy/info] Read '1672ab8d-f66f-4827-8fff-6a68803a190b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.820810 [guppy/info] Read '03447706-3a37-4889-9795-dce9a6f5b9d0' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:10.822649 [guppy/info] Read '1710ef4e-21c3-47da-a04c-5ad62ef447fd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.822715 [guppy/info] Read '1724e7f7-17ed-469d-a7bc-8afb75815534' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.849326 [guppy/info] Read '17586fd9-0a0e-439b-b9a9-f98e16311334' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.861697 [guppy/info] Read '182b6bf3-be14-451b-ba2a-50baa31c97ff' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.908526 [guppy/info] Read '1897fcf4-6005-4bca-a8a3-793b433933c2' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.910752 [guppy/info] Read '19df6eff-6ac9-47ae-94b8-7176d0ec2ab9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.910802 [guppy/info] Read '1a8699f0-b5fc-4fad-9196-bc6907685035' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.932111 [guppy/info] Read '1b6cb959-32b2-49ba-9b75-ad62994a4214' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.948591 [guppy/info] Read '1b89fe43-1174-4098-b75e-d1962d76020e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.950826 [guppy/info] Read '1bbb159e-aed2-447a-a4d8-14212fc7dc05' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.966908 [guppy/info] Read '1bd76107-f8f4-485d-aeba-facd1e35f328' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.972328 [guppy/info] Read '1c061b4f-1580-49d5-ae72-6e03c33526f1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.976665 [guppy/info] Read '1c72f2f2-75e4-4569-98b5-8f14ca4efd08' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:10.989489 [guppy/info] Read '1caf9f63-62c2-4712-b706-ff8e756887f9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.005527 [guppy/info] Read '1e3e15d3-b72a-46b3-9da6-10aafa98027f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.008079 [guppy/info] Read '1e49c6bb-3ba1-4d7d-a088-12aae13b118e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.009273 [guppy/info] Read '1e8e2364-b1bf-41c5-b841-67a2d9f92d8f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.012636 [guppy/info] Read '1e97be4f-696e-4bb7-a346-f42bb5b9f4e8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.013815 [guppy/info] Read '1f18bd04-a8bd-4c18-a4d6-02291ce3f022' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.046706 [guppy/info] Read '1f21940b-4d21-4229-b4ee-c6000203cba1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.069779 [guppy/info] Read '21140270-8940-4e26-9080-8c7c316c5a13' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.111188 [guppy/info] Read '211c9401-0b41-4c16-b7c5-a1646c16966c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.113894 [guppy/info] Read '2186f37f-f171-449f-a662-9f2b5ad5eb50' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.144810 [guppy/info] Read '01c8b11d-30d3-4d05-be07-b5e4d5d744bc' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:11.145057 [guppy/info] Read '22373383-7bb1-4c1d-9a71-615c083657b6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.186910 [guppy/info] Read '226558a9-95ea-42f1-99c0-844ad7b9b034' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.241860 [guppy/info] Read '042f6a33-e80a-4c06-8521-a64e15aa7071' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:11.300375 [guppy/info] Read '0296214e-e3b8-45bc-9d37-4cf9e7b8db38' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:11.317444 [guppy/info] Read '2379f8fa-d73a-45f9-bc74-fa181ac4b78d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.317555 [guppy/info] Read '2392372b-3057-4a59-ac5e-6ac3610826dd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.357369 [guppy/info] Read '239283fb-3abf-4beb-95fe-1cfaff7ccfeb' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.360809 [guppy/info] Read '241a02a9-e2ce-46d2-bf12-2219a6eb087a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.366952 [guppy/info] Read '0373be08-69d0-4123-abc0-79212def7108' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:11.367851 [guppy/info] Read '03b61f63-aefb-4fab-9569-65439dff4af3' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:11.380885 [guppy/info] Read '24b38078-c26d-4cbe-a9a4-6bf5429bccd5' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.402322 [guppy/info] Read '25407741-5ac5-4d34-93b3-dab19aec9d10' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.441684 [guppy/info] Read '04170958-9c1f-47b8-a610-b61dbd1ab64b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:11.447371 [guppy/info] Read '2600aa61-28ef-4d69-9e31-4219df0e3462' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.453446 [guppy/info] Read '261c7407-ab12-465d-87fc-9a9777448218' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.453465 [guppy/info] Read '2690b65e-773b-4794-8215-c1a0748bc06f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.453480 [guppy/info] Read '275799e2-9146-4867-99dc-31d5b47b3f48' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.453495 [guppy/info] Read '280cb225-f92d-4a48-82ff-6fe08f810425' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.453509 [guppy/info] Read '28297282-d871-489a-812b-a27e4ab67349' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.453523 [guppy/info] Read '283b3254-04b4-4f30-8114-f5771b3dd8df' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.454625 [guppy/info] Read '28c75355-d2f0-40e3-b1b7-3b430fb484a8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.457979 [guppy/info] Read '29b4cc1a-21c3-4a6c-8d24-d2c112687865' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.463401 [guppy/info] Read '2b410338-7bd7-4b9e-a380-9a1c119c072a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.471037 [guppy/info] Read '2b6f34bd-8060-4f23-bc21-a984954b5e72' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.478452 [guppy/info] Read '2c0dbe3b-5872-480c-878d-39bc5554a148' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.496039 [guppy/info] Read '2c7ccfd5-4f06-4cfd-8a73-d0ebae138529' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.502475 [guppy/info] Read '2cbdc238-8543-4c81-9c3b-cb69bcfde896' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.544330 [guppy/info] Read '2e7b8f25-516d-456b-a934-0bb0483eed1e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.567550 [guppy/info] Read '2e8c964f-ccbe-4fd7-b044-eb55520e510e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.591125 [guppy/info] Read '2f8e97a3-2e0b-4570-9c76-0ad1140f45dc' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.608243 [guppy/info] Read '2facb3cc-689f-443e-8bab-1fe3b7f805dd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.614842 [guppy/info] Read '0cc6e64d-502f-4fbf-ac4e-22d5b25b0a01' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:11.621634 [guppy/info] Read '30706a38-0ba3-4a13-ac92-b7dc86474cff' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.622805 [guppy/info] Read '30da48bb-3d7c-4af2-a52e-1ab78a027627' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.657008 [guppy/info] Read '3103ceed-9235-4178-bb2e-f1805fcdc4d9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.661401 [guppy/info] Read '313e6dd4-fb20-4576-855c-7f4708c90566' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.681813 [guppy/info] Read '3184aea7-77c2-4d9c-9c40-6f77e76b8486' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.698393 [guppy/info] Read '0149f2ed-4f73-42a5-9b3d-617b83233986' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:11.734114 [guppy/info] Read '3189900d-61d0-4f8b-9c8b-640eef2804a4' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.735303 [guppy/info] Read '319fcef8-3229-4d98-b4f2-640b0c1b2d89' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.751483 [guppy/info] Read '31c9642d-d77f-48fa-99ed-2d27c48b1eb6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.752654 [guppy/info] Read '3222a7f5-0870-440a-9632-06d09b36f106' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.753838 [guppy/info] Read '32c27f7f-e7f6-4e18-91c5-d725928ea88e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.754988 [guppy/info] Read '3339770e-8062-404c-82a0-a045a8d0bcf6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.761570 [guppy/info] Read '334896f9-f63d-4758-b486-9acdd0e8a9a2' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.767070 [guppy/info] Read '34172dda-d131-482b-a636-cd345861cb1c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.813186 [guppy/info] Read '34335b72-867d-4d71-8c35-89fa2336e5da' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.825926 [guppy/info] Read '34848e47-876b-4759-ac2a-2640053a2c15' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.827794 [guppy/info] Read '34f2abfb-ef14-458e-a205-f7046d9e50fd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.850670 [guppy/info] Read '35233bd7-8e24-41bd-9e7c-561dbb2f993f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.852908 [guppy/info] Read '352880f8-5210-4528-9c8c-5ed4a4886c49' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.855153 [guppy/info] Read '35bd27a5-d31a-435c-b0d0-5ae9d715eb03' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.858454 [guppy/info] Read '3612b66e-4bec-4ad4-9b61-156788c0808d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.890584 [guppy/info] Read '36ed3257-24ac-4265-a209-fa51aa5f79a3' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.919342 [guppy/info] Read '37821a13-fdb1-4222-8ce6-4d00c16c4905' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:11.936112 [guppy/info] Read '383dfe0e-ae69-4fd3-b624-33b88ec38dd5' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.008278 [guppy/info] Read '38405c2c-28ef-4aeb-9950-bad843b44412' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.044525 [guppy/info] Read '393bccdc-e17f-4a87-a4e2-5c62f61ea99b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.116012 [guppy/info] Read '3a94b4cf-fdcd-40b1-8e02-e0ab7a46f104' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.163196 [guppy/info] Read '3acb9d2d-580e-4575-ab02-8458abccb863' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.164798 [guppy/info] Read '3acccd18-58d4-4d4f-a44e-04395fe1b5b8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.378192 [guppy/info] Read '3b493911-d006-4331-b180-420608310350' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.442644 [guppy/info] Read '3b568e7d-e846-4672-9edb-89fa064d2e0d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.462404 [guppy/info] Read '3c945674-9455-401a-98c4-49859e47d54c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.486854 [guppy/info] Read '3d657841-b118-474c-8be4-58bb328b11ab' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.615391 [guppy/info] Read '3e0f9a04-ebe9-4c80-b3d2-af425825ada4' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.641826 [guppy/info] Read '3e988fab-8fe1-4294-9924-52dd8056f33a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.746893 [guppy/info] Read '3ec1d1cb-f778-4bdf-8e00-5ea30cde81d6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.747851 [guppy/info] Read '065540ec-caec-4938-aeca-6d6c43fd9d47' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:12.795098 [guppy/info] Read '062578b4-4bfd-409b-adb8-a7087b660066' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:12.795376 [guppy/info] Read '3ec6afa2-0c05-4129-a810-38e49eb92877' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:12.795405 [guppy/info] Read '3f496381-78e8-4171-b2b6-172bfa176b91' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:13.125415 [guppy/info] Read '113c59e8-0db9-40ed-8028-431a72c8c333' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.185923 [guppy/info] Read '11859ac5-e9db-4ed5-ad23-58dcda560740' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.259366 [guppy/info] Read '0cf27049-48d3-4945-8bff-75437be9dbcf' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.356665 [guppy/info] Read '0fb3109e-1036-435b-9d8d-02220f0a0ca5' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.406075 [guppy/info] Read '1121b63d-a75f-437b-bc3a-41a1ad111437' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.449124 [guppy/info] Read '13e7adb8-bc20-409c-83c5-45f8095b454e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.532165 [guppy/info] Read '1710ef4e-21c3-47da-a04c-5ad62ef447fd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.569231 [guppy/info] Read '3fb58279-1a47-438b-8d73-9d939eaa909f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:13.596074 [guppy/info] Read '0322cd19-d1f4-4232-b05a-7b33e0ac9d90' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.650171 [guppy/info] Read '06cda1b2-dca9-4923-9237-1ac142a5f50e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.690882 [guppy/info] Read '06fdbffc-7d64-4fcd-b24a-45ca34c9616d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.728899 [guppy/info] Read '07413720-aac8-40df-a191-c8c50d249b4f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.830906 [guppy/info] Read '0861c55d-15f8-4ad0-a05f-d2c62c270174' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.885800 [guppy/info] Read '089af45f-5cc9-4eec-9837-927644d6b701' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.917766 [guppy/info] Read '0db25074-e8d8-40c2-a12a-22a97bd52e76' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:13.992392 [guppy/info] Read '1084cb4d-0a7d-4a4e-af48-841d8a95e152' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.029146 [guppy/info] Read '1173df9f-ad20-4538-85bc-05dcd11f181b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.093544 [guppy/info] Read '122beb29-26ce-4d85-a285-cebedf3aac4d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.129122 [guppy/info] Read '1724e7f7-17ed-469d-a7bc-8afb75815534' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.176451 [guppy/info] Read '1c72f2f2-75e4-4569-98b5-8f14ca4efd08' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.288355 [guppy/info] Read '3fe20191-37b2-48ca-bf7c-77b521de9f6a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.288529 [guppy/info] Read '40460afb-8e5b-4bf8-a97b-947c58c04b90' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.289525 [guppy/info] Read '06f9e509-7186-4f15-a3ce-a603e49253e4' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.290462 [guppy/info] Read '09524390-d902-42e2-bb13-70b3d6e8f7ff' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.310413 [guppy/info] Read '0f035924-067e-42cd-a04c-7ca730f1c25f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.371579 [guppy/info] Read '111fdd12-53ac-4520-aa7f-8fbc1ff4e900' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.476189 [guppy/info] Read '36ed3257-24ac-4265-a209-fa51aa5f79a3' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.540826 [guppy/info] Read '37821a13-fdb1-4222-8ce6-4d00c16c4905' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.566072 [guppy/info] Read '383dfe0e-ae69-4fd3-b624-33b88ec38dd5' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.584657 [guppy/info] Read '3acb9d2d-580e-4575-ab02-8458abccb863' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.602646 [guppy/info] Read '3acccd18-58d4-4d4f-a44e-04395fe1b5b8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.629638 [guppy/info] Read '4049b869-fdb4-4be4-bf50-baf5d1d71896' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.629912 [guppy/info] Read '416efb22-5627-4f4a-9f41-d4b763698116' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.630026 [guppy/info] Read '41951ec2-450e-4192-b1bb-381f1b567938' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.630045 [guppy/info] Read '430d4f68-1656-4d44-aaba-3704229b6620' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.630074 [guppy/info] Read '43d19648-5e8f-4a2c-8217-43d292549deb' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.679756 [guppy/info] Read '3b493911-d006-4331-b180-420608310350' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.685805 [guppy/info] Read '455c2fa4-2c7c-4312-8c86-b620733370e6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.809128 [guppy/info] Read '463b9302-883b-4d80-8426-53e964ea654e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.886769 [guppy/info] Read '1f21940b-4d21-4229-b4ee-c6000203cba1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.887024 [guppy/info] Read '46444caf-3e14-4936-b214-405c3ca95207' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.915281 [guppy/info] Read '151302b4-ca26-4c7a-bc5a-b97930fad712' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:14.927489 [guppy/info] Read '47a25111-1f31-4644-8536-f52ca265dbee' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:14.979004 [guppy/info] Read '47b1371c-6255-4dda-8064-be0bfed498e6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.021412 [guppy/info] Read '3b568e7d-e846-4672-9edb-89fa064d2e0d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:15.065345 [guppy/info] Read '482248fc-51ec-45e4-a74e-c27fe5b08020' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.168983 [guppy/info] Read '1368c04d-8574-4bfb-8b60-a5038c26f120' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:15.179196 [guppy/info] Read '497edb34-4987-47b4-a10c-cadd59e78434' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.260763 [guppy/info] Read '4a0c0e32-7018-41b6-bba1-359eb4aaaa00' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.285023 [guppy/info] Read '4ae2fdf8-307e-418c-934a-963a83e694fd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.323239 [guppy/info] Read '455c2fa4-2c7c-4312-8c86-b620733370e6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:15.395654 [guppy/info] Read '4b9e29fe-7953-486a-8642-51937eb5c12d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.476150 [guppy/info] Read '4da31a02-b028-4b6e-8fcc-89c9819af63d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.560403 [guppy/info] Read '4dfca45f-a04c-4f29-8bfc-7e5f7fd7986a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.615370 [guppy/info] Read '4e10e631-c95d-430b-a591-8126081384d1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.615447 [guppy/info] Read '4f212b3a-4304-4469-b303-03e07561a8da' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.615461 [guppy/info] Read '4f992a21-6d46-4876-9133-9c9516c1c6cd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.649640 [guppy/info] Read '5181504d-166e-4978-b35e-df68d03b19d9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.692242 [guppy/info] Read '51e25dca-18bc-485c-a503-85510dcbe701' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.717691 [guppy/info] Read '14b804bf-b546-426f-9482-f15b30d1a4ef' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:15.844563 [guppy/info] Read '5246c91d-8c12-4975-9b0f-3dcef6ef4d0f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.916234 [guppy/info] Read '52a664ab-5a47-4855-95b1-0820e35590f7' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.916534 [guppy/info] Read '5339f215-0294-4f5d-b148-50df6bd8b625' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.922618 [guppy/info] Read '5444987c-49b1-487b-b76c-62c5e75c19c9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:15.986776 [guppy/info] Read '1c061b4f-1580-49d5-ae72-6e03c33526f1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.068233 [guppy/info] Read '5484b893-0042-43a3-9808-7ac76a960643' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.082994 [guppy/info] Read '54d12ee0-5b26-460e-96c3-bd129eae211f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.120871 [guppy/info] Read '1bd76107-f8f4-485d-aeba-facd1e35f328' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.141093 [guppy/info] Read '3d657841-b118-474c-8be4-58bb328b11ab' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.150518 [guppy/info] Read '561e6ce7-a69d-49bd-8173-66b47c1252a1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.156730 [guppy/info] Read '563c562c-fccb-42e1-83ba-556b0080c67e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.156943 [guppy/info] Read '56af9985-48fe-4dab-a139-89889d78ae59' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.267290 [guppy/info] Read '2600aa61-28ef-4d69-9e31-4219df0e3462' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.280084 [guppy/info] Read '5702686e-baaa-4715-9a43-63dee3e6e9c7' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.280233 [guppy/info] Read '57e79a3f-62c7-4602-93cf-ff98dbe35f31' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.280254 [guppy/info] Read '586b05df-5a1f-4c15-bd92-41aedb4209cf' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.280275 [guppy/info] Read '58e9c27a-74ef-4865-abbb-ae25111c2357' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.280293 [guppy/info] Read '594ffb68-ff8b-4c2f-85fd-d6bca5f59b4f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.280324 [guppy/info] Read '597bee9a-87d6-40b4-aa35-5a4c6c83aae6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.313761 [guppy/info] Read '055c837a-c8e1-4087-bcbc-d9d2b6ba551f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.372779 [guppy/info] Read '1e8e2364-b1bf-41c5-b841-67a2d9f92d8f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.373879 [guppy/info] Read '226558a9-95ea-42f1-99c0-844ad7b9b034' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.391059 [guppy/info] Read '2b6f34bd-8060-4f23-bc21-a984954b5e72' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.457694 [guppy/info] Read '334896f9-f63d-4758-b486-9acdd0e8a9a2' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.500737 [guppy/info] Read '393bccdc-e17f-4a87-a4e2-5c62f61ea99b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.532426 [guppy/info] Read '3e988fab-8fe1-4294-9924-52dd8056f33a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.532897 [guppy/info] Read '598ffe51-47ea-427f-8b45-d1fdecf02357' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.532933 [guppy/info] Read '5ab6a6ff-2ff4-4d7c-8b1e-c83c0b618d32' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.532948 [guppy/info] Read '5ac38b49-5cb1-457b-9de5-2fca6fd44c0d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.556612 [guppy/info] Read '14372d40-178b-4e06-b6d5-2d8b425745a9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.588114 [guppy/info] Read '17586fd9-0a0e-439b-b9a9-f98e16311334' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.638335 [guppy/info] Read '35233bd7-8e24-41bd-9e7c-561dbb2f993f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.678845 [guppy/info] Read '3c945674-9455-401a-98c4-49859e47d54c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.730735 [guppy/info] Read '482248fc-51ec-45e4-a74e-c27fe5b08020' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.736426 [guppy/info] Read '4b9e29fe-7953-486a-8642-51937eb5c12d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.785499 [guppy/info] Read '4dfca45f-a04c-4f29-8bfc-7e5f7fd7986a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.813957 [guppy/info] Read '5af785b9-6fd3-4701-94d9-796138f62a7c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.814051 [guppy/info] Read '5b45a5eb-87cc-4c52-a38b-2bb35ab671cd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.814089 [guppy/info] Read '5b832836-d1c7-4b3b-b5c6-fa9d7f76bb5c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.814104 [guppy/info] Read '5bacead1-5d43-4286-8b61-e8a316687101' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.814118 [guppy/info] Read '5c34c7cf-9868-41d0-80b2-4bd1fb85b51c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.814131 [guppy/info] Read '5c7248e5-1a38-4ea0-9730-db32fd6da5d5' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.814143 [guppy/info] Read '5cc8bbcd-daf2-499a-ba90-5eae6638f481' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.814156 [guppy/info] Read '5ce79183-5d68-445b-a130-a4dfdf1ba28a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.814174 [guppy/info] Read '5d079f65-bd18-4854-9fa5-8adff43e0607' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.840757 [guppy/info] Read '30da48bb-3d7c-4af2-a52e-1ab78a027627' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.887448 [guppy/info] Read '19df6eff-6ac9-47ae-94b8-7176d0ec2ab9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.926037 [guppy/info] Read '1a8699f0-b5fc-4fad-9196-bc6907685035' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.955503 [guppy/info] Read '1e97be4f-696e-4bb7-a346-f42bb5b9f4e8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:16.959276 [guppy/info] Read '5d203859-ecd6-4ad3-a5aa-db1b9d166ffb' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.959442 [guppy/info] Read '5d7039c0-16b2-452d-a399-01f42695366f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.959464 [guppy/info] Read '5daae5d9-1415-4d2c-8f75-c863cc0e7ec4' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.959483 [guppy/info] Read '5e243188-0559-4317-a13f-70528cca4139' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:16.959500 [guppy/info] Read '60d63869-8b3a-4b05-aaea-a30e7a38cf95' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.033420 [guppy/info] Read '09755641-de09-4d0f-8a35-48a7beabc81d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.077291 [guppy/info] Read '0c95843a-32b7-4c6d-af37-416324a627e9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.089464 [guppy/info] Read '239283fb-3abf-4beb-95fe-1cfaff7ccfeb' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.095556 [guppy/info] Read '46444caf-3e14-4936-b214-405c3ca95207' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.132156 [guppy/info] Read '61dfb388-5c59-4ac2-bc16-809c70a089ef' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.145950 [guppy/info] Read '13cdc2eb-6fc8-4d44-98b5-0405786a3503' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.180620 [guppy/info] Read '145b8847-08b0-4b50-ad5c-8d5ba4247232' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.202803 [guppy/info] Read '1672ab8d-f66f-4827-8fff-6a68803a190b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.220503 [guppy/info] Read '1b89fe43-1174-4098-b75e-d1962d76020e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.236538 [guppy/info] Read '2e7b8f25-516d-456b-a934-0bb0483eed1e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.248246 [guppy/info] Read '3e0f9a04-ebe9-4c80-b3d2-af425825ada4' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.253122 [guppy/info] Read '497edb34-4987-47b4-a10c-cadd59e78434' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.253554 [guppy/info] Read '6253ae40-9882-472c-8ab1-843371c45595' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.253594 [guppy/info] Read '62ac4555-b281-4b15-a7d9-27a89bf4dcf5' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.253609 [guppy/info] Read '63a527ae-6d44-4ca6-b69e-85f9c73a7510' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.253623 [guppy/info] Read '643c764d-425b-4e5c-b342-a8c85fc0ab71' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.253651 [guppy/info] Read '647bae28-7346-41b9-a23b-9ace606bd760' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.253666 [guppy/info] Read '64b7fd2b-8599-4f13-adaa-8993d895f72e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.261208 [guppy/info] Read '0104c1ce-11d3-4c2f-b4ad-f2fa5bb2e434' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.306308 [guppy/info] Read '013733aa-bf0e-4259-8bdd-824cbb7560dc' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.307531 [guppy/info] Read '027ff640-db56-4891-972b-0bfb355630cf' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.334857 [guppy/info] Read '057017a1-fe5b-4bea-971d-0e6191a29856' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.363767 [guppy/info] Read '0bcd5f9c-f36d-463d-9387-b054adcd2f39' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.364754 [guppy/info] Read '182b6bf3-be14-451b-ba2a-50baa31c97ff' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.367000 [guppy/info] Read '211c9401-0b41-4c16-b7c5-a1646c16966c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.367819 [guppy/info] Read '3103ceed-9235-4178-bb2e-f1805fcdc4d9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.368148 [guppy/info] Read '64c7f087-bc24-48b5-b5fe-e642745da6fe' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.368180 [guppy/info] Read '64e340a9-a275-4cdc-b7a6-5a1471e32875' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.368212 [guppy/info] Read '65f49edc-d232-402d-84bc-43787d63d60b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.368226 [guppy/info] Read '664555b2-f5fb-42fd-8383-761fa9e804e2' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.368239 [guppy/info] Read '66eeaa51-c502-481c-bb14-97bb4a61ddb7' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.368253 [guppy/info] Read '670dc839-e25a-4416-bfb6-be40b445d2ea' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.368267 [guppy/info] Read '69841328-c8fe-4d97-92dc-f5d800820405' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.368279 [guppy/info] Read '6a221864-c74c-4c3d-8e83-8c54884bfc0d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.402819 [guppy/info] Read '1e3e15d3-b72a-46b3-9da6-10aafa98027f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.415373 [guppy/info] Read '32c27f7f-e7f6-4e18-91c5-d725928ea88e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.415712 [guppy/info] Read '6ab5d884-4dce-45c5-8520-fe7ab5989920' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.415742 [guppy/info] Read '6abac701-4582-40e4-bf5f-6d70ae34d44f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.415759 [guppy/info] Read '6b6db1a7-ecd8-4d30-a5d5-80c1404251cf' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.415775 [guppy/info] Read '6bc3c3a0-54cc-4fda-983a-897a922bda7a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.415789 [guppy/info] Read '6be4f8ff-3066-4335-855f-96cab720cc46' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.415804 [guppy/info] Read '6c3c005a-f1c6-471d-b19a-0a151cd9f092' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.415818 [guppy/info] Read '6c5f9817-4af4-4ded-8f2e-4bb97a490350' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.415832 [guppy/info] Read '6c8c2355-4dbf-4469-8e26-7e164a137f81' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.433051 [guppy/info] Read '6ca974ff-9447-4f56-8b53-ffc7b024ad67' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.435010 [guppy/info] Read '6cb0d5d4-df99-4505-b566-4630a36ac321' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.437205 [guppy/info] Read '6d99ce70-a464-4610-ac7b-c9f637acc3a9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.438337 [guppy/info] Read '6e3474dc-48c0-4479-8973-49a669c1ee0f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.439468 [guppy/info] Read '6eed9708-5b8e-4978-b61e-882ca20cc121' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.440589 [guppy/info] Read '6f07d894-7989-43ca-a7f5-8a433982e35b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.444911 [guppy/info] Read '6f0b1b74-69c6-416a-aa71-376324f73f33' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.464165 [guppy/info] Read '6f1832ec-8f33-43a5-8ca4-38bbdf5aec01' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.503800 [guppy/info] Read '47b1371c-6255-4dda-8064-be0bfed498e6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.508365 [guppy/info] Read '6ff5a893-2cd1-4387-8a97-b53e5b64ad4a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.508486 [guppy/info] Read '7024709f-411f-42ec-8bf8-7df2f9c499ef' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.508508 [guppy/info] Read '706fdee0-abfe-4f2c-a352-c0160f989ae4' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.509606 [guppy/info] Read '70fbf6b0-424f-407a-a696-51e02e1bdf3b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.511800 [guppy/info] Read '71320054-1c46-4226-9997-7d4c64eccd6a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.512933 [guppy/info] Read '71eccfb2-fe92-4cdd-93cb-f5d7ecdfeef9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.518327 [guppy/info] Read '73194246-3306-49e1-8977-d1cffe352757' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.532291 [guppy/info] Read '73eea0e9-3348-4a76-aff6-0971e42dac0f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.552609 [guppy/info] Read '7511247d-27a0-4235-87f2-e5631d4f8fc8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.558085 [guppy/info] Read '7639705c-26f6-4016-95f9-bada354e3285' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.559236 [guppy/info] Read '76a90a3d-2317-48d1-ae6e-4542bae9445d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.566046 [guppy/info] Read '76ecac60-4181-49f4-9aa6-23ce9bb6ec7e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.568267 [guppy/info] Read '787e330a-b1dc-448c-a762-03e955cc5966' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.569422 [guppy/info] Read '79279efe-5b3d-4a16-99e0-d4f999bff3aa' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.570553 [guppy/info] Read '79422657-f3c8-4ac6-bb53-ca6a599c6283' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.594327 [guppy/info] Read '7966120b-1638-4dd7-bd57-c38ab66365f1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.595475 [guppy/info] Read '7a48914e-9dcc-4217-9e10-71794ca8077a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.597684 [guppy/info] Read '7b7ea79c-4f57-47ad-b04c-fc9db5faefbe' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.601265 [guppy/info] Read '261c7407-ab12-465d-87fc-9a9777448218' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.602182 [guppy/info] Read '2690b65e-773b-4794-8215-c1a0748bc06f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.602381 [guppy/info] Read '7babbd35-70f7-4844-8fff-7840874f3b76' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.625923 [guppy/info] Read '7c3559e7-49ce-40fa-b81c-7a08d5cbfd7f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.630314 [guppy/info] Read '7c974eae-fda5-41a0-a02e-75f01f23540a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.631449 [guppy/info] Read '7c98d304-6d67-4d8e-9b17-29cf4131c0e9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.633662 [guppy/info] Read '7cb57f5e-7507-48b1-8c8a-ad6fbb5d306a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.635077 [guppy/info] Read '7d5a3a8c-2fc4-47d4-81db-92cec4d57ed3' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.656466 [guppy/info] Read '7e7b09d0-58b9-4079-94cd-1a2e226016c9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.658690 [guppy/info] Read '7ef768c6-a775-4536-b493-d6dc10e499eb' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.658749 [guppy/info] Read '7f26ea3e-d2bd-4bc3-b7e7-44ca9df79dfb' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.659842 [guppy/info] Read '7f944c6e-9528-4f53-a41a-d9687ca62dbd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.660978 [guppy/info] Read '7fbdce79-c8ad-4c68-842a-6e24b3855074' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.687655 [guppy/info] Read '7fc275b0-75a3-4637-9d3e-e854975d5de6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.690062 [guppy/info] Read '804375c6-ca35-4d8e-ad0b-b5eb7b6002b9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.697825 [guppy/info] Read '814ef251-f8d3-4d30-8832-f17f145cd667' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.734555 [guppy/info] Read '818d81a7-6301-4a9f-abfe-3ffb1e49ea15' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.746651 [guppy/info] Read '51e25dca-18bc-485c-a503-85510dcbe701' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.751285 [guppy/info] Read '831433ad-c41e-4d04-bdeb-9d1e4468a08f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.768778 [guppy/info] Read '83992afb-5f8e-48c7-9f20-43e31a01a42d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.772251 [guppy/info] Read '84ceb423-1d1b-4eb8-a770-32a3b01017fd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.777961 [guppy/info] Read '85de50f5-cf5b-42c1-86da-824f2103dd38' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.810691 [guppy/info] Read '85fbdb71-5408-4b0b-9ca8-d1ffd1d78c6a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.856890 [guppy/info] Read '864a0962-e935-428d-881f-40c18920dbf1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.858362 [guppy/info] Read '867377b4-b09c-44b3-bd0d-9053779aac84' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.868452 [guppy/info] Read '86758240-ac6b-415c-bb46-15d7c0865dd0' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.870002 [guppy/info] Read '87344d8d-711a-4aec-86e3-51a3a6025683' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.872950 [guppy/info] Read '884037e0-252e-4575-a7e4-c8011dd32a6a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.880563 [guppy/info] Read '8840557c-7642-472d-ae7f-81b8826fb297' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.883761 [guppy/info] Read '47a25111-1f31-4644-8536-f52ca265dbee' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:17.885147 [guppy/info] Read '893c5540-6afc-48b7-ae3b-251b204f566e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.892686 [guppy/info] Read '894e379a-a3f5-4892-bab2-95570d580f7b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.896001 [guppy/info] Read '8af81bff-840c-43b5-9508-97958dbf4aa5' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.907845 [guppy/info] Read '8b1fca96-0a65-4c54-8567-2637454ee625' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.912204 [guppy/info] Read '8b2f71fd-cc6c-4d90-914d-5e5c86397967' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.921887 [guppy/info] Read '8bf9cd09-660a-4c0a-a6a7-d8539663019e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.931639 [guppy/info] Read '8c1b2e20-413f-4e5c-9cb6-802851c627fc' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.933939 [guppy/info] Read '8d3bc83c-d369-4623-8662-812be8137cb9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.954312 [guppy/info] Read '8d5d1178-b201-46b6-8330-6e373833965b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.956586 [guppy/info] Read '8dd2cb6e-dc94-4c57-ae47-11d718223d41' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.968423 [guppy/info] Read '8e013aba-e71f-49f4-b1cd-7d1d70ec512f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.969648 [guppy/info] Read '8e1db29b-5d37-402c-97fb-19c5071e2554' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.971868 [guppy/info] Read '8e41c0fe-6abc-4934-8f83-f1d07d25a30f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.979350 [guppy/info] Read '8e61e90d-ed31-40ae-9121-617e9b2271ec' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:17.995190 [guppy/info] Read '8e8c446c-8021-4d61-a091-006cd4aa185e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.029381 [guppy/info] Read '8ecc7296-516b-4a20-88a3-da7a5b82b1fd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.050853 [guppy/info] Read '908290fb-990e-4352-ace9-2d565432398f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.077994 [guppy/info] Read '909037c2-5723-4853-a567-23a38eb8103c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.086635 [guppy/info] Read '91558274-d512-4b6b-b90d-f02b1c486fe8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.087834 [guppy/info] Read '9303bb60-d0e7-45a8-9c08-0dabc1914e9d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.088975 [guppy/info] Read '9353a0e5-8ff6-4eff-abc9-7c66339415f3' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.093345 [guppy/info] Read '93bbb848-c0b5-4afd-a2e5-557a15d1d124' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.095856 [guppy/info] Read '2c0dbe3b-5872-480c-878d-39bc5554a148' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.099343 [guppy/info] Read '93dbcef3-c90b-47c7-93b0-7bb39ece7f11' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.101617 [guppy/info] Read '96282f3c-557f-4422-b0d5-60c6896ff5f8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.103879 [guppy/info] Read '969a5223-a4c7-47c1-8d1a-7ab1d503b402' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.129638 [guppy/info] Read '97361bb4-98b7-4e85-91d6-a3e720c84e11' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.134043 [guppy/info] Read '97dcc291-9e6a-4962-8126-33253b61c48a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.135220 [guppy/info] Read '984b40e4-a3ed-4157-975a-a0651e856165' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.137564 [guppy/info] Read '997788f0-76cb-4cc3-817e-dd61403ea517' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.149525 [guppy/info] Read '99b244c3-bcd3-4024-81ef-08f4215c22dd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.175348 [guppy/info] Read '99c36366-4631-468a-aea1-10be53a8ac07' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.177651 [guppy/info] Read '99ddb685-5b40-4414-ace3-ffdd82566a50' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.178812 [guppy/info] Read '9a73e25c-b08e-4a75-8492-40ccc97bda93' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.179950 [guppy/info] Read '9a93913c-0dd6-4a87-84d2-7cfc13b4eca2' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.205705 [guppy/info] Read '9b94720d-869b-4263-8c21-7a627140b56d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.206887 [guppy/info] Read '9b9ff9df-0729-4661-9d8c-be7a1b526a49' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.209096 [guppy/info] Read '9bb2ff2c-c916-40b7-8cc8-5def16ba8bba' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.210286 [guppy/info] Read '5702686e-baaa-4715-9a43-63dee3e6e9c7' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.232005 [guppy/info] Read '9bc94152-37f8-4306-9a51-382a94109dd1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.262244 [guppy/info] Read '9cc7c2b9-57f9-4ded-9055-03f10eae81af' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.267007 [guppy/info] Read '9d74797d-7a8a-4546-91e1-e6c3d7d7cfc7' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.268206 [guppy/info] Read '9da7aafc-c245-4e8d-b611-37a4fe749e41' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.273650 [guppy/info] Read '9dc21b5d-ff53-4ed4-8b3b-480d6ff76277' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.275389 [guppy/info] Read '4ae2fdf8-307e-418c-934a-963a83e694fd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.279939 [guppy/info] Read '9dd46557-0397-475e-9aae-a1926fd24d51' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.282240 [guppy/info] Read '9e2c4fd2-db56-4f04-8a5d-55d8f5d89432' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.298402 [guppy/info] Read '9ed4e59c-1373-4bb7-884a-5494a3b6356d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.330541 [guppy/info] Read '9f2a70d6-7195-4b8e-9959-e00c50ec2f9d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.331749 [guppy/info] Read '21140270-8940-4e26-9080-8c7c316c5a13' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.332842 [guppy/info] Read '30706a38-0ba3-4a13-ac92-b7dc86474cff' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.333986 [guppy/info] Read '319fcef8-3229-4d98-b4f2-640b0c1b2d89' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.335191 [guppy/info] Read '34848e47-876b-4759-ac2a-2640053a2c15' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.337384 [guppy/info] Read '9fafce02-6236-4f11-ab1c-a539dc4d12fa' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.337490 [guppy/info] Read 'a02a3cce-aad2-49a5-b894-ac9db1fd93fa' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.339671 [guppy/info] Read 'a02fe213-d2fe-482b-9239-331f928ce566' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.344939 [guppy/info] Read 'a105cc3b-8e31-4155-89af-5a3602f54395' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.347202 [guppy/info] Read 'a1644403-5274-4b54-a62b-a8f93d1f6731' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.356760 [guppy/info] Read '34f2abfb-ef14-458e-a205-f7046d9e50fd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.358124 [guppy/info] Read 'a1698827-2306-4854-826d-5aba0fdf7439' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.359274 [guppy/info] Read 'a184eafc-cba8-45bf-b010-ee23d67204a9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.361488 [guppy/info] Read 'a1cf63ba-5bb5-4ee8-b585-0a17e3bc440c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.364799 [guppy/info] Read '1e49c6bb-3ba1-4d7d-a088-12aae13b118e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.366338 [guppy/info] Read '38405c2c-28ef-4aeb-9950-bad843b44412' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.369121 [guppy/info] Read '3a94b4cf-fdcd-40b1-8e02-e0ab7a46f104' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.380256 [guppy/info] Read 'a203fea7-3011-4ed5-93da-691a81474ef1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.399695 [guppy/info] Read 'a2884ef8-6b41-4956-a97c-60208a2c4c92' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.407290 [guppy/info] Read 'a2ee46c2-b7c7-4df5-8a59-8df765c97775' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.408487 [guppy/info] Read 'a3290a7b-793c-4655-87f4-696159b53d23' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.409641 [guppy/info] Read 'a49ad1df-4467-4bfb-809c-708580945eac' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.410789 [guppy/info] Read 'a54b99c0-f0fd-4969-a162-0d56465113c4' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.423887 [guppy/info] Read '275799e2-9146-4867-99dc-31d5b47b3f48' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.428489 [guppy/info] Read 'a591ed35-a5c6-4a6b-a304-1292fcd96acc' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.440400 [guppy/info] Read 'a69f3d44-cf9e-4623-8bcd-68135c381ebc' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.442668 [guppy/info] Read 'a76277f0-1b1c-4150-8a3b-e5ecdd275d4a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.443841 [guppy/info] Read 'a8fb69de-cec6-4f29-8ddf-5d2a5abb64ce' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.456785 [guppy/info] Read 'a9b58d4a-6bbd-4f79-a7f9-814b70b1c456' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.459062 [guppy/info] Read 'a9d5d9eb-852f-4e61-95cd-412a9331109f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.470987 [guppy/info] Read 'aa51ffce-4d15-4d6c-9611-565e169d606d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.474357 [guppy/info] Read 'aace5f29-5b6a-44f8-93fe-d92d10b17404' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.483098 [guppy/info] Read 'aad85ecf-c553-4d02-82bd-14b1cbcd8a1a' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.510433 [guppy/info] Read 'acf392fb-cb84-4b15-b5f8-0424b57c703e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.514921 [guppy/info] Read 'adc218e5-fff9-446f-8551-feae4e05d383' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.538671 [guppy/info] Read 'ae898609-ab86-400c-be2a-5321f0e05842' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.565875 [guppy/info] Read 'af03cb63-cc93-45db-92d0-1dc7f05c48df' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.572799 [guppy/info] Read '3222a7f5-0870-440a-9632-06d09b36f106' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.574226 [guppy/info] Read '3339770e-8062-404c-82a0-a045a8d0bcf6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.575705 [guppy/info] Read '34335b72-867d-4d71-8c35-89fa2336e5da' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.592192 [guppy/info] Read 'af27d96d-d7a0-4f87-9f49-9723c0d24390' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.598821 [guppy/info] Read 'afa69a93-a35a-45d2-a348-4cb2261a3bd1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.601085 [guppy/info] Read 'b0fb85d4-6314-4cd5-9181-a92a05b1a53d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.608785 [guppy/info] Read 'b11a9dab-cea7-4a49-b5e1-2a88221b12f4' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.634917 [guppy/info] Read '1897fcf4-6005-4bca-a8a3-793b433933c2' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.643916 [guppy/info] Read 'b14f6f4a-9147-496b-a964-c562932df8e3' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.646250 [guppy/info] Read 'b1556118-a7e8-47d3-a4c1-0a743920ca12' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.647503 [guppy/info] Read 'b1772f45-90f3-4a88-9dd0-8bd4ff78c045' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.656171 [guppy/info] Read 'b262b22f-ee98-4fa0-ac77-6ac769972fb1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.671356 [guppy/info] Read 'b28eb93d-a76a-4fe8-b305-abf1c700cf12' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.687724 [guppy/info] Read 'b2e5e531-7054-415c-8998-e6e86bf60173' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.693232 [guppy/info] Read 'b3786013-84f2-463d-9b5d-24f9cf0b45d6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.704108 [guppy/info] Read 'b423802a-00d0-455a-8a57-844b13914fbe' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.731007 [guppy/info] Read 'b4e42651-d92b-41e8-90d2-1a6b4d94c65e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.760129 [guppy/info] Read 'b52f9c00-08b6-48e2-bd08-3891ee74d7da' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.763594 [guppy/info] Read 'b6cf8306-742e-456d-8f2b-a2e0489f5fdc' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.792892 [guppy/info] Read 'b72f4559-8ad6-496a-a64b-d3d02b277619' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.795256 [guppy/info] Read 'b736c467-07bf-4ab0-b36a-789473212099' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.810528 [guppy/info] Read 'b7d72b6b-50e3-47b3-88c8-951e1c9ffdd3' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.820045 [guppy/info] Read '22373383-7bb1-4c1d-9a71-615c083657b6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.826980 [guppy/info] Read '313e6dd4-fb20-4576-855c-7f4708c90566' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.828755 [guppy/info] Read '3fe20191-37b2-48ca-bf7c-77b521de9f6a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:18.831302 [guppy/info] Read 'b88c8600-d8ed-4bb3-abef-9e8ecbbb0601' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.850784 [guppy/info] Read 'b8b7d2b7-98a7-490a-9eea-5f2360b44234' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.893043 [guppy/info] Read 'b8cd9ad0-dd5a-463b-8691-9b0eb98bcb39' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.906114 [guppy/info] Read 'b929372f-b576-4f7a-9624-a11f7f2b5cca' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.919166 [guppy/info] Read 'b95d2f33-e5ee-4150-83cf-283a68691990' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.940816 [guppy/info] Read 'b9856a58-d69b-4df3-9fc0-60c50115eed1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.976317 [guppy/info] Read 'b9b28fc8-89a3-47dd-b67d-de12ce99767c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.978768 [guppy/info] Read 'bcf5e404-d9cd-4898-ac6d-89cfa3b5c121' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:18.995045 [guppy/info] Read 'bdaaf9fa-2e1e-4033-8f7e-860ab887da56' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.014611 [guppy/info] Read 'be0f8ada-81e7-4c3d-96e1-2007d7ad2dcd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.038391 [guppy/info] Read '1caf9f63-62c2-4712-b706-ff8e756887f9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:19.047616 [guppy/info] Read 'be1ee522-4c2f-443b-bd08-df6b3c1d3b19' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.065114 [guppy/info] Read 'bf782d97-5e9d-4b89-a2a2-b195cdba286b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.084677 [guppy/info] Read 'bfed1a71-c7e8-4ccf-9c26-8e0c0746593c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.104224 [guppy/info] Read 'c07be20d-b80e-40b6-a5ec-d0a6abfc03b1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.117569 [guppy/info] Read '598ffe51-47ea-427f-8b45-d1fdecf02357' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:19.128947 [guppy/info] Read 'c0f61127-c42c-4286-8351-8f0f6c19d866' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.163620 [guppy/info] Read 'c2072660-bdce-4dce-b419-16eab4a48bdf' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.173564 [guppy/info] Read 'c24152ca-f0e7-4434-897f-41d43eb4e821' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.186680 [guppy/info] Read 'c26143f6-6535-4193-ade6-10c1af71497c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.187937 [guppy/info] Read 'c261d0e8-7b6a-44da-bfd9-32c02c5d5142' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.234162 [guppy/info] Read 'c33cb3f1-246b-4dc4-9a34-d9a9df13cdf6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.242928 [guppy/info] Read 'c36f3b22-8165-4a56-8986-858f115dc218' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.286989 [guppy/info] Read 'c3802a2b-a86a-470a-8a23-f2e3a350ad50' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.288325 [guppy/info] Read 'c3877d65-3348-42f0-bb15-56d14ce2b68e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.307715 [guppy/info] Read 'c3ff5df9-cf2c-4ed9-82d8-7fa95ae460f7' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.337887 [guppy/info] Read 'c428cf17-ef9f-4238-8981-772e11460d28' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.339190 [guppy/info] Read 'c491e810-e91b-44ef-b94b-d324c17fcd7c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.367032 [guppy/info] Read 'c4da3b98-99ad-4a3d-824e-0c544936e973' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.369405 [guppy/info] Read 'c591e566-30a8-461c-9683-dca37e6fd566' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.400735 [guppy/info] Read 'c6dd3aa1-6c3e-4bce-bb7a-f47fcffa6049' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.403112 [guppy/info] Read 'c7148c85-990e-430d-9b32-6419f24e0099' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.432279 [guppy/info] Read 'c7edaa69-fccc-42bb-a54b-ed418c488530' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.434686 [guppy/info] Read 'c8064a7f-266a-4332-8e89-cef03e101f7d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.465932 [guppy/info] Read 'c8477c7c-381c-44dd-9ccd-4762703c3dd2' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.491859 [guppy/info] Read 'c9606cad-51d5-4b80-b6bc-1fed8e74f13f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.494245 [guppy/info] Read 'c9f527f2-1fd1-4552-9b73-854b36da63fa' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.498508 [guppy/info] Read '4e10e631-c95d-430b-a591-8126081384d1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:19.507780 [guppy/info] Read 'cbe2109b-01aa-452d-ab8c-320d7d199b65' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.531532 [guppy/info] Read 'cbe2680e-92d8-4ac7-8e2b-928c77b0987b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.533932 [guppy/info] Read 'cc6bd193-ceb6-4c6a-b824-eab08527d570' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.535200 [guppy/info] Read 'ccd85b3a-e9a7-4eec-be3f-5ea9cc5193b2' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.558905 [guppy/info] Read 'cd503af3-36a9-4d1a-ad6c-06e1b38347be' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.561253 [guppy/info] Read 'cd6ecb99-d93a-42a3-b786-440bc472f0ee' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.604349 [guppy/info] Read 'ced1f627-2de3-40c2-b2df-291208e5c119' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.627004 [guppy/info] Read 'cf5a6b32-34b0-4a95-9d39-6a4c82b7e20e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.629364 [guppy/info] Read 'd0382996-e533-4aac-b8e2-631ce8ef4343' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.654250 [guppy/info] Read 'd08a1e7c-361c-45b6-baaa-ef91b646cd99' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.674700 [guppy/info] Read 'd1418b07-f9e7-4427-9c5b-f14b92451389' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.688752 [guppy/info] Read 'd14524b2-201f-4703-b86c-5eaa586898eb' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.711405 [guppy/info] Read 'd16cad56-b6d3-44cc-bf06-b09436b91998' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.713781 [guppy/info] Read 'd176a3d3-b2a3-4e80-a7cb-e9dc8e83e411' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.738564 [guppy/info] Read 'd1fd998e-8b1d-42c0-bc3d-327b943f5fd2' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.740900 [guppy/info] Read 'd2179995-3a76-40a7-a23d-6dc02de2fdde' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.764632 [guppy/info] Read 'd2f3b189-e1c9-4e94-8b98-193ce7c74eda' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.767032 [guppy/info] Read 'd32ab0eb-2897-4181-8dd1-1f944697c575' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.787706 [guppy/info] Read '57e79a3f-62c7-4602-93cf-ff98dbe35f31' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:19.792581 [guppy/info] Read 'd3a19ea9-2429-4b5b-b1da-a5407863c39f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.803576 [guppy/info] Read 'd3a4fdd9-6fdf-4cee-b0fa-ff5efb580c73' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.812453 [guppy/info] Read 'd3b024d4-467f-4b58-b573-c14b05aad707' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.833035 [guppy/info] Read 'd3c5cdbe-d386-404f-a11a-6e9d04866ee7' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.852473 [guppy/info] Read 'd4684213-05db-492a-ae3f-f1a7281424d4' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.859167 [guppy/info] Read 'd4f1d7f7-7d39-4e03-96fb-cf76067453f9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.861579 [guppy/info] Read 'd56246c1-8783-4f21-81d9-ee18a75f85c0' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.886445 [guppy/info] Read 'd5b2b41b-8709-4bf8-8108-221a37415567' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.890951 [guppy/info] Read 'd5ff905c-0a7a-496d-bffb-273b21b133d5' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.919015 [guppy/info] Read 'd6aa10d2-6115-4027-a396-8801aa149852' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.922452 [guppy/info] Read 'd724732e-95ed-4986-a4d1-9cd5a3711250' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.946237 [guppy/info] Read 'd72f7741-3b7c-4454-b33b-9239d7bf7cfe' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.949649 [guppy/info] Read 'd7472c7b-a999-4942-bb0d-0b785fd2fb68' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.993725 [guppy/info] Read 'd7c2123c-b511-45f5-ac99-148531d3ccf5' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:19.996114 [guppy/info] Read 'd857dd82-5810-408b-b1be-2605fe76ea46' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.014508 [guppy/info] Read 'd9305d2a-3a05-4e32-bd3e-82b81b355dea' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.037303 [guppy/info] Read 'd94dfcee-fa8e-4e0a-94bb-cededc1173f8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.040824 [guppy/info] Read 'd99ee63b-e60f-4bf8-8899-29cbf36dba7c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.050236 [guppy/info] Read '2e8c964f-ccbe-4fd7-b044-eb55520e510e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:20.052164 [guppy/info] Read '3ec1d1cb-f778-4bdf-8e00-5ea30cde81d6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:20.079309 [guppy/info] Read 'da28119a-d3e1-4b91-9983-868acf1c8121' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.082810 [guppy/info] Read 'dc1e78d5-7bd6-47b1-86f3-a9c25ec81b00' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.105542 [guppy/info] Read 'dcc63395-0afa-4f6c-955e-4b06cad0ebdd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.123997 [guppy/info] Read 'dcd5dd73-0eeb-499c-bdcf-189189c919bf' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.126338 [guppy/info] Read 'dd3bf26f-8149-455a-ba8c-99e4c5325718' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.152201 [guppy/info] Read 'dd55fda3-5cfc-4408-ab1b-e5cc063250f3' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.180243 [guppy/info] Read 'ddb67344-165b-442b-957f-1f315bb184ef' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.204986 [guppy/info] Read 'dde28da1-305e-4a0c-9015-1cfe59d6479e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.207366 [guppy/info] Read 'de49de43-18a0-4852-8ea4-5892d077bf03' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.230121 [guppy/info] Read 'de4b6868-5288-40d2-a379-9783b243e261' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.255864 [guppy/info] Read '3184aea7-77c2-4d9c-9c40-6f77e76b8486' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:20.258371 [guppy/info] Read '3189900d-61d0-4f8b-9c8b-640eef2804a4' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:20.258924 [guppy/info] Read 'df5f4f0f-c313-4397-85f0-d097419985b1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.287874 [guppy/info] Read 'df9a9e5a-43ec-49aa-8be8-253c5219c676' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.296655 [guppy/info] Read 'e02c944a-8f46-48c3-96e9-ddf71bc873cf' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.323578 [guppy/info] Read 'e097055a-30d5-470f-bded-e7449bbcfc54' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.325941 [guppy/info] Read 'e125f87c-feb6-4f2f-baf1-cc6a68b8ffe6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.344217 [guppy/info] Read 'e2034c8f-f720-4ed1-be4c-543eb5742e38' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.346595 [guppy/info] Read 'e28d7d6a-843a-471d-a247-50cf22404b20' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.373557 [guppy/info] Read 'e31966f5-b66d-4a7a-ae96-78e7ddd27689' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.375940 [guppy/info] Read 'e35b4600-3030-461c-9b52-2e356de2b354' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.378261 [guppy/info] Read 'e45969b7-1ff6-446d-9dd4-c1c2242929b6' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.402005 [guppy/info] Read 'e46fa62a-5c4e-4d4e-a975-31a537e5bfd7' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.416091 [guppy/info] Read 'e7a581b5-8b19-4211-81eb-6e3c6d0d4b63' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.417343 [guppy/info] Read 'e85a81e2-ade0-4d24-b739-d9b9c7221524' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.440025 [guppy/info] Read 'e8efe34e-6691-4395-b3e0-4774201411a8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.454118 [guppy/info] Read 'e9a84dab-1990-4190-a62b-baf0f4205232' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.456493 [guppy/info] Read 'eabb0654-0999-403b-ac7b-221c9f2c46c3' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.475897 [guppy/info] Read 'eaca9053-1ed6-45ee-9ed4-4734cc39b6cf' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.478274 [guppy/info] Read 'ead9aa20-6920-4d0c-bffd-0db86ac3b317' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.501011 [guppy/info] Read 'eb03d253-bca3-47d7-b26f-7ee1437adbb1' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.515153 [guppy/info] Read 'eb118ad1-5f6c-4d60-9b1b-cb354f3a8b75' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.517548 [guppy/info] Read 'eb4930b7-9ece-40c1-b2aa-d9da522bf984' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.540250 [guppy/info] Read 'eb8de300-35ed-4251-8afa-7f0736f5d75f' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.542636 [guppy/info] Read 'ebf59d18-50de-43ee-a6a3-8b48475f45eb' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.557832 [guppy/info] Read 'ed620e03-7648-47ae-9f89-d731bbdaaf28' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.560217 [guppy/info] Read 'ee2511da-5373-4039-9469-a76f3d780aa8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.587212 [guppy/info] Read 'eef0fa34-43ed-43fc-81ca-3ff20fcc24a8' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.589605 [guppy/info] Read 'ef2958fe-c0de-4b5f-b9e1-cfc69700b13b' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.612183 [guppy/info] Read 'f0172838-1903-44a8-b231-3670fae3b2b7' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.626442 [guppy/info] Read 'f04567ad-3ee3-4b76-94c5-25b516e3da75' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.628849 [guppy/info] Read 'f0d2bd77-e4cc-4d60-ab65-8c265a993c60' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.652557 [guppy/info] Read 'f13e93f7-c137-431d-b70e-08e643282819' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.675338 [guppy/info] Read 'f18ae710-a37a-4c5e-9bba-519fcd96b893' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.677737 [guppy/info] Read 'f1d9675c-95c9-43f5-9988-4bdf00340a4c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.680105 [guppy/info] Read 'f1e46b8c-5776-4b87-ae44-4faeef1ae358' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.682496 [guppy/info] Read 'f298da3a-ffe4-45f5-be8c-978d041acbcd' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.684933 [guppy/info] Read 'f33da41e-200f-4de8-a639-371f2c78c09e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.707536 [guppy/info] Read 'f369442b-4e0b-43f3-aff3-5b22dfb2ae47' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.709948 [guppy/info] Read 'f3bc434a-a4cb-486f-b825-d6df3188d82e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.736935 [guppy/info] Read 'f486b031-990c-4dd2-90f0-6e105d3fd955' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.740428 [guppy/info] Read 'f4929c34-bd09-48f5-8746-efa92611dc0c' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.763239 [guppy/info] Read 'f4c2f514-ea43-43ee-b4b6-672c53187848' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.777370 [guppy/info] Read 'f51d0dd8-eb39-41d3-b8cd-c88e36bbe864' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.779805 [guppy/info] Read 'f54e9e69-b087-494c-91b2-481519bba1a9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.782151 [guppy/info] Read 'f5709fea-926e-41c5-9c85-174cbaf8c0cf' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.791472 [guppy/info] Read '4a0c0e32-7018-41b6-bba1-359eb4aaaa00' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:20.829672 [guppy/info] Read 'f5c6047f-c8e1-4c3a-9bb2-acb12395a768' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.841791 [guppy/info] Read 'f605de60-78db-46fe-8ff2-e574a82ba1fe' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.845312 [guppy/info] Read 'f6e2ad1a-c4df-4be3-9105-c50faf675e8e' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.870168 [guppy/info] Read 'f6f573d3-d8b7-409c-9f79-00020b6fc576' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.883278 [guppy/info] Read 'f70a37d7-33bd-4f8c-84ae-fd4a1ac17609' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.885697 [guppy/info] Read 'f753fa79-62c2-47e1-b8c6-a16571fee2eb' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.886965 [guppy/info] Read 'f7b8b246-8f7a-44f8-adae-0dad1da50525' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.910572 [guppy/info] Read 'f8c29344-1dca-438e-9b35-d01d32ae91fe' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.920444 [guppy/info] Read 'f92b8c06-ff07-4c89-8999-2d6a9368ea74' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.934647 [guppy/info] Read 'fabe8bfc-888e-4141-aaec-d75e158617ea' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.938160 [guppy/info] Read 'fbdba5e6-6202-4065-9a7e-38f79cfb1c00' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.962976 [guppy/info] Read 'fc4cf048-0713-42ef-965b-a2b71209503d' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.977143 [guppy/info] Read 'fd3c2e19-12cb-499e-a399-14f8fad28b78' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:20.978490 [guppy/info] Read 'fd789534-42c6-4952-a904-a9a1caf040a4' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:21.006430 [guppy/info] Read 'fea624bb-56cb-436f-9b23-038b10dad7c0' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:21.008836 [guppy/info] Read 'febf68e4-fd18-448c-a977-d14b224109d9' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:21.263419 [guppy/info] Read 'ff959eb7-96d8-47ba-bb47-29fa101d6512' from file "ELIGOS_unmod.fast5" has been loaded.
+2023-06-23 23:45:21.264999 [guppy/info] Dispatched batch 0 containing 1 inputs:
+2023-06-23 23:45:21.265148 [guppy/info] Batch input 0 : demo/ELIGOS/ELIGOS_unmod/ELIGOS_unmod.fast5
+2023-06-23 23:45:21.281401 [guppy/info] Read '6f0b1b74-69c6-416a-aa71-376324f73f33' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:21.282717 [guppy/info] Read '71eccfb2-fe92-4cdd-93cb-f5d7ecdfeef9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:21.701643 [guppy/info] Read '032497e1-e2ec-4aa5-b231-d9aa9ecff5bc' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:21.959907 [guppy/info] Read '31c9642d-d77f-48fa-99ed-2d27c48b1eb6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:21.964450 [guppy/info] Read '6ab5d884-4dce-45c5-8520-fe7ab5989920' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:21.989242 [guppy/info] Read '3fb58279-1a47-438b-8d73-9d939eaa909f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:22.278322 [guppy/info] Read '2379f8fa-d73a-45f9-bc74-fa181ac4b78d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:22.335173 [guppy/info] Read '5d203859-ecd6-4ad3-a5aa-db1b9d166ffb' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:22.336563 [guppy/info] Read '5d7039c0-16b2-452d-a399-01f42695366f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:22.464090 [guppy/info] Read '6abac701-4582-40e4-bf5f-6d70ae34d44f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:22.602102 [guppy/info] Read '83992afb-5f8e-48c7-9f20-43e31a01a42d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:22.820405 [guppy/info] Read '87344d8d-711a-4aec-86e3-51a3a6025683' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:22.900437 [guppy/info] Read '352880f8-5210-4528-9c8c-5ed4a4886c49' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:22.908570 [guppy/info] Read '64c7f087-bc24-48b5-b5fe-e642745da6fe' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:22.966353 [guppy/info] Read '40460afb-8e5b-4bf8-a97b-947c58c04b90' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.224846 [guppy/info] Read '25407741-5ac5-4d34-93b3-dab19aec9d10' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.341039 [guppy/info] Read '5444987c-49b1-487b-b76c-62c5e75c19c9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.370124 [guppy/info] Read 'b14f6f4a-9147-496b-a964-c562932df8e3' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.371254 [guppy/info] Read 'b1556118-a7e8-47d3-a4c1-0a743920ca12' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.461821 [guppy/info] Read '2186f37f-f171-449f-a662-9f2b5ad5eb50' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.576661 [guppy/info] Read '4049b869-fdb4-4be4-bf50-baf5d1d71896' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.578033 [guppy/info] Read '416efb22-5627-4f4a-9f41-d4b763698116' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.594283 [guppy/info] Read '5246c91d-8c12-4975-9b0f-3dcef6ef4d0f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.672048 [guppy/info] Read '6f1832ec-8f33-43a5-8ca4-38bbdf5aec01' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.673049 [guppy/info] Read 'b52f9c00-08b6-48e2-bd08-3891ee74d7da' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.714104 [guppy/info] Read '586b05df-5a1f-4c15-bd92-41aedb4209cf' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.866003 [guppy/info] Read '4f212b3a-4304-4469-b303-03e07561a8da' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.909276 [guppy/info] Read 'c24152ca-f0e7-4434-897f-41d43eb4e821' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.934348 [guppy/info] Read '24b38078-c26d-4cbe-a9a4-6bf5429bccd5' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:23.960944 [guppy/info] Read '280cb225-f92d-4a48-82ff-6fe08f810425' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:24.158350 [guppy/info] Read '71320054-1c46-4226-9997-7d4c64eccd6a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:24.211000 [guppy/info] Read '6b6db1a7-ecd8-4d30-a5d5-80c1404251cf' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:24.327698 [guppy/info] Read '28297282-d871-489a-812b-a27e4ab67349' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:24.369824 [guppy/info] Read 'b1772f45-90f3-4a88-9dd0-8bd4ff78c045' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:24.414246 [guppy/info] Read '85de50f5-cf5b-42c1-86da-824f2103dd38' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:24.487177 [guppy/info] Read '1b6cb959-32b2-49ba-9b75-ad62994a4214' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:24.552832 [guppy/info] Read '9b9ff9df-0729-4661-9d8c-be7a1b526a49' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:24.954558 [guppy/info] Read '35bd27a5-d31a-435c-b0d0-5ae9d715eb03' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:24.976944 [guppy/info] Read '76a90a3d-2317-48d1-ae6e-4542bae9445d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.060802 [guppy/info] Read '7639705c-26f6-4016-95f9-bada354e3285' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.071022 [guppy/info] Read 'b929372f-b576-4f7a-9624-a11f7f2b5cca' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.075859 [guppy/info] Read 'c8064a7f-266a-4332-8e89-cef03e101f7d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.178201 [guppy/info] Read '3ec6afa2-0c05-4129-a810-38e49eb92877' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.179205 [guppy/info] Read '3f496381-78e8-4171-b2b6-172bfa176b91' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.220512 [guppy/info] Read 'afa69a93-a35a-45d2-a348-4cb2261a3bd1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.221780 [guppy/info] Read 'b423802a-00d0-455a-8a57-844b13914fbe' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.278714 [guppy/info] Read '7fc275b0-75a3-4637-9d3e-e854975d5de6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.279526 [guppy/info] Read '804375c6-ca35-4d8e-ad0b-b5eb7b6002b9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.358928 [guppy/info] Read '73eea0e9-3348-4a76-aff6-0971e42dac0f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.384132 [guppy/info] Read '58e9c27a-74ef-4865-abbb-ae25111c2357' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.388892 [guppy/info] Read '4f992a21-6d46-4876-9133-9c9516c1c6cd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.393386 [guppy/info] Read '5181504d-166e-4978-b35e-df68d03b19d9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.395019 [guppy/info] Read '7c98d304-6d67-4d8e-9b17-29cf4131c0e9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.430739 [guppy/info] Read '283b3254-04b4-4f30-8114-f5771b3dd8df' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.601026 [guppy/info] Read '561e6ce7-a69d-49bd-8173-66b47c1252a1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.684055 [guppy/info] Read 'aad85ecf-c553-4d02-82bd-14b1cbcd8a1a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.697860 [guppy/info] Read 'a76277f0-1b1c-4150-8a3b-e5ecdd275d4a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.742984 [guppy/info] Read '9ed4e59c-1373-4bb7-884a-5494a3b6356d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.919648 [guppy/info] Read '5ab6a6ff-2ff4-4d7c-8b1e-c83c0b618d32' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.930763 [guppy/info] Read '787e330a-b1dc-448c-a762-03e955cc5966' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.942370 [guppy/info] Read '867377b4-b09c-44b3-bd0d-9053779aac84' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:25.972160 [guppy/info] Read 'a203fea7-3011-4ed5-93da-691a81474ef1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.030120 [guppy/info] Read '9bb2ff2c-c916-40b7-8cc8-5def16ba8bba' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.031335 [guppy/info] Read 'e8efe34e-6691-4395-b3e0-4774201411a8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.111997 [guppy/info] Read 'be0f8ada-81e7-4c3d-96e1-2007d7ad2dcd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.174064 [guppy/info] Read '52a664ab-5a47-4855-95b1-0820e35590f7' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.480121 [guppy/info] Read 'adc218e5-fff9-446f-8551-feae4e05d383' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.512635 [guppy/info] Read '5daae5d9-1415-4d2c-8f75-c863cc0e7ec4' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.591331 [guppy/info] Read '563c562c-fccb-42e1-83ba-556b0080c67e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.595937 [guppy/info] Read '28c75355-d2f0-40e3-b1b7-3b430fb484a8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.628732 [guppy/info] Read '97361bb4-98b7-4e85-91d6-a3e720c84e11' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.749463 [guppy/info] Read '05cd274e-5b0a-4865-a315-d3c92f3d3986' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:26.775915 [guppy/info] Read 'b9b28fc8-89a3-47dd-b67d-de12ce99767c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:27.379499 [guppy/info] Read 'b7d72b6b-50e3-47b3-88c8-951e1c9ffdd3' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:27.470797 [guppy/info] Read '5ac38b49-5cb1-457b-9de5-2fca6fd44c0d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:27.527484 [guppy/info] Read '8e013aba-e71f-49f4-b1cd-7d1d70ec512f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:27.528754 [guppy/info] Read '8e1db29b-5d37-402c-97fb-19c5071e2554' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:27.643051 [guppy/info] Read 'bfed1a71-c7e8-4ccf-9c26-8e0c0746593c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:27.811351 [guppy/info] Read '984b40e4-a3ed-4157-975a-a0651e856165' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.002691 [guppy/info] Read '6bc3c3a0-54cc-4fda-983a-897a922bda7a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.019351 [guppy/info] Read 'd7472c7b-a999-4942-bb0d-0b785fd2fb68' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.064412 [guppy/info] Read '7f944c6e-9528-4f53-a41a-d9687ca62dbd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.078381 [guppy/info] Read 'b28eb93d-a76a-4fe8-b305-abf1c700cf12' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.277891 [guppy/info] Read '3612b66e-4bec-4ad4-9b61-156788c0808d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.431120 [guppy/info] Read '73194246-3306-49e1-8977-d1cffe352757' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.535200 [guppy/info] Read '64e340a9-a275-4cdc-b7a6-5a1471e32875' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.537146 [guppy/info] Read '65f49edc-d232-402d-84bc-43787d63d60b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.687755 [guppy/info] Read '9fafce02-6236-4f11-ab1c-a539dc4d12fa' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.832288 [guppy/info] Read '594ffb68-ff8b-4c2f-85fd-d6bca5f59b4f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.854590 [guppy/info] Read '41951ec2-450e-4192-b1bb-381f1b567938' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:28.963180 [guppy/info] Read '7fbdce79-c8ad-4c68-842a-6e24b3855074' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:29.773929 [guppy/info] Read 'a54b99c0-f0fd-4969-a162-0d56465113c4' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:29.804545 [guppy/info] Read 'cd6ecb99-d93a-42a3-b786-440bc472f0ee' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:29.809955 [guppy/info] Read '884037e0-252e-4575-a7e4-c8011dd32a6a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:29.922718 [guppy/info] Read '597bee9a-87d6-40b4-aa35-5a4c6c83aae6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:30.229540 [guppy/info] Read '6be4f8ff-3066-4335-855f-96cab720cc46' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:30.438070 [guppy/info] Read 'c261d0e8-7b6a-44da-bfd9-32c02c5d5142' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:30.983102 [guppy/info] Read 'a02a3cce-aad2-49a5-b894-ac9db1fd93fa' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:31.509050 [guppy/info] Read 'b3786013-84f2-463d-9b5d-24f9cf0b45d6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:31.511151 [guppy/info] Read 'bf782d97-5e9d-4b89-a2a2-b195cdba286b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:31.692854 [guppy/info] Read '5484b893-0042-43a3-9808-7ac76a960643' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:31.694647 [guppy/info] Read '54d12ee0-5b26-460e-96c3-bd129eae211f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:32.207748 [guppy/info] Read '7ef768c6-a775-4536-b493-d6dc10e499eb' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:32.209827 [guppy/info] Read '7f26ea3e-d2bd-4bc3-b7e7-44ca9df79dfb' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:32.386397 [guppy/info] Read '5339f215-0294-4f5d-b148-50df6bd8b625' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:32.529092 [guppy/info] Read '2392372b-3057-4a59-ac5e-6ac3610826dd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:32.874315 [guppy/info] Read '76ecac60-4181-49f4-9aa6-23ce9bb6ec7e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:32.894226 [guppy/info] Read '5e243188-0559-4317-a13f-70528cca4139' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:32.896325 [guppy/info] Read '60d63869-8b3a-4b05-aaea-a30e7a38cf95' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:33.549360 [guppy/info] Read 'c491e810-e91b-44ef-b94b-d324c17fcd7c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:33.588475 [guppy/info] Read '1bbb159e-aed2-447a-a4d8-14212fc7dc05' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:33.590494 [guppy/info] Read '241a02a9-e2ce-46d2-bf12-2219a6eb087a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:34.057880 [guppy/info] Read '908290fb-990e-4352-ace9-2d565432398f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:34.450931 [guppy/info] Read 'c33cb3f1-246b-4dc4-9a34-d9a9df13cdf6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:34.452732 [guppy/info] Read 'c3877d65-3348-42f0-bb15-56d14ce2b68e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:34.455665 [guppy/info] Read '5af785b9-6fd3-4701-94d9-796138f62a7c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:34.768643 [guppy/info] Read '831433ad-c41e-4d04-bdeb-9d1e4468a08f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:34.963497 [guppy/info] Read 'f0d2bd77-e4cc-4d60-ab65-8c265a993c60' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:35.764183 [guppy/info] Read '2b410338-7bd7-4b9e-a380-9a1c119c072a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:35.824974 [guppy/info] Read 'a2884ef8-6b41-4956-a97c-60208a2c4c92' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:36.047987 [guppy/info] Read 'a02fe213-d2fe-482b-9239-331f928ce566' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:36.050264 [guppy/info] Read 'd32ab0eb-2897-4181-8dd1-1f944697c575' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:36.259515 [guppy/info] Read '6c3c005a-f1c6-471d-b19a-0a151cd9f092' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:36.290128 [guppy/info] Read 'cc6bd193-ceb6-4c6a-b824-eab08527d570' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:36.378804 [guppy/info] Read 'e85a81e2-ade0-4d24-b739-d9b9c7221524' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:36.629254 [guppy/info] Read '29b4cc1a-21c3-4a6c-8d24-d2c112687865' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:37.278395 [guppy/info] Read 'd08a1e7c-361c-45b6-baaa-ef91b646cd99' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:37.406651 [guppy/info] Read 'af27d96d-d7a0-4f87-9f49-9723c0d24390' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:37.409046 [guppy/info] Read 'b11a9dab-cea7-4a49-b5e1-2a88221b12f4' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:37.426201 [guppy/info] Read 'd14524b2-201f-4703-b86c-5eaa586898eb' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:37.646444 [guppy/info] Read '864a0962-e935-428d-881f-40c18920dbf1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:38.238570 [guppy/info] Read '56af9985-48fe-4dab-a139-89889d78ae59' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:38.768537 [guppy/info] Read 'a105cc3b-8e31-4155-89af-5a3602f54395' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:39.030118 [guppy/info] Read '2f8e97a3-2e0b-4570-9c76-0ad1140f45dc' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:39.031871 [guppy/info] Read '70fbf6b0-424f-407a-a696-51e02e1bdf3b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:39.179481 [guppy/info] Read '6eed9708-5b8e-4978-b61e-882ca20cc121' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:39.531538 [guppy/info] Read '7b7ea79c-4f57-47ad-b04c-fc9db5faefbe' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:39.540970 [guppy/info] Read 'ae898609-ab86-400c-be2a-5321f0e05842' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:39.596377 [guppy/info] Read 'b4e42651-d92b-41e8-90d2-1a6b4d94c65e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:40.165997 [guppy/info] Read 'b8cd9ad0-dd5a-463b-8691-9b0eb98bcb39' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:40.611359 [guppy/info] Read '34172dda-d131-482b-a636-cd345861cb1c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:40.873430 [guppy/info] Read '9dc21b5d-ff53-4ed4-8b3b-480d6ff76277' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:40.903566 [guppy/info] Read '11aad12f-47ee-4cc1-90e4-4f0341a46adb' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:40.905087 [guppy/info] Read '1f18bd04-a8bd-4c18-a4d6-02291ce3f022' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:41.659252 [guppy/info] Read 'b2e5e531-7054-415c-8998-e6e86bf60173' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:41.953808 [guppy/info] Read '430d4f68-1656-4d44-aaba-3704229b6620' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:41.955484 [guppy/info] Read '43d19648-5e8f-4a2c-8217-43d292549deb' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:41.957288 [guppy/info] Read '463b9302-883b-4d80-8426-53e964ea654e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:42.250270 [guppy/info] Read '2c7ccfd5-4f06-4cfd-8a73-d0ebae138529' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:42.541142 [guppy/info] Read 'cbe2680e-92d8-4ac7-8e2b-928c77b0987b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:42.574516 [guppy/info] Read 'c26143f6-6535-4193-ade6-10c1af71497c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:43.126849 [guppy/info] Read 'f13e93f7-c137-431d-b70e-08e643282819' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:43.128363 [guppy/info] Read 'f7b8b246-8f7a-44f8-adae-0dad1da50525' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:43.149239 [guppy/info] Read '6253ae40-9882-472c-8ab1-843371c45595' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:43.324925 [guppy/info] Read 'c36f3b22-8165-4a56-8986-858f115dc218' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:43.462449 [guppy/info] Read '664555b2-f5fb-42fd-8383-761fa9e804e2' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:43.464263 [guppy/info] Read '66eeaa51-c502-481c-bb14-97bb4a61ddb7' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:43.774252 [guppy/info] Read '9e2c4fd2-db56-4f04-8a5d-55d8f5d89432' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:43.871951 [guppy/info] Read '4da31a02-b028-4b6e-8fcc-89c9819af63d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:44.100737 [guppy/info] Read 'fd3c2e19-12cb-499e-a399-14f8fad28b78' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:44.313597 [guppy/info] Read 'a184eafc-cba8-45bf-b010-ee23d67204a9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:44.465269 [guppy/info] Read 'd3b024d4-467f-4b58-b573-c14b05aad707' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:44.506653 [guppy/info] Read '7d5a3a8c-2fc4-47d4-81db-92cec4d57ed3' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:44.796046 [guppy/info] Read 'fabe8bfc-888e-4141-aaec-d75e158617ea' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:44.845368 [guppy/info] Read '84ceb423-1d1b-4eb8-a770-32a3b01017fd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:44.857677 [guppy/info] Read 'eabb0654-0999-403b-ac7b-221c9f2c46c3' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:44.914013 [guppy/info] Read 'a3290a7b-793c-4655-87f4-696159b53d23' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:44.918220 [guppy/info] Read '5b45a5eb-87cc-4c52-a38b-2bb35ab671cd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.021845 [guppy/info] Read 'd9305d2a-3a05-4e32-bd3e-82b81b355dea' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.126480 [guppy/info] Read 'b72f4559-8ad6-496a-a64b-d3d02b277619' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.164261 [guppy/info] Read 'eb4930b7-9ece-40c1-b2aa-d9da522bf984' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.166177 [guppy/info] Read 'eb8de300-35ed-4251-8afa-7f0736f5d75f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.264401 [guppy/info] Read '2cbdc238-8543-4c81-9c3b-cb69bcfde896' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.377764 [guppy/info] Read 'd6aa10d2-6115-4027-a396-8801aa149852' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.398529 [guppy/info] Read '893c5540-6afc-48b7-ae3b-251b204f566e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.408000 [guppy/info] Read '814ef251-f8d3-4d30-8832-f17f145cd667' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.410234 [guppy/info] Read '997788f0-76cb-4cc3-817e-dd61403ea517' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.412373 [guppy/info] Read 'fbdba5e6-6202-4065-9a7e-38f79cfb1c00' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.496632 [guppy/info] Read '5b832836-d1c7-4b3b-b5c6-fa9d7f76bb5c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.498021 [guppy/info] Read '5bacead1-5d43-4286-8b61-e8a316687101' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.518729 [guppy/info] Read '62ac4555-b281-4b15-a7d9-27a89bf4dcf5' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.526468 [guppy/info] Read 'a9d5d9eb-852f-4e61-95cd-412a9331109f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.528136 [guppy/info] Read 'aa51ffce-4d15-4d6c-9611-565e169d606d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.529675 [guppy/info] Read 'aace5f29-5b6a-44f8-93fe-d92d10b17404' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.544157 [guppy/info] Read '6c5f9817-4af4-4ded-8f2e-4bb97a490350' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.546378 [guppy/info] Read '6c8c2355-4dbf-4469-8e26-7e164a137f81' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.547677 [guppy/info] Read 'dcc63395-0afa-4f6c-955e-4b06cad0ebdd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.579360 [guppy/info] Read '99c36366-4631-468a-aea1-10be53a8ac07' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.591136 [guppy/info] Read 'be1ee522-4c2f-443b-bd08-df6b3c1d3b19' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.654077 [guppy/info] Read 'd2179995-3a76-40a7-a23d-6dc02de2fdde' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.662804 [guppy/info] Read 'c4da3b98-99ad-4a3d-824e-0c544936e973' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.663634 [guppy/info] Read 'c591e566-30a8-461c-9683-dca37e6fd566' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.664550 [guppy/info] Read 'c7148c85-990e-430d-9b32-6419f24e0099' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.741426 [guppy/info] Read 'f298da3a-ffe4-45f5-be8c-978d041acbcd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.849289 [guppy/info] Read '7c3559e7-49ce-40fa-b81c-7a08d5cbfd7f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:45.911447 [guppy/info] Read 'f5c6047f-c8e1-4c3a-9bb2-acb12395a768' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.112187 [guppy/info] Read '86758240-ac6b-415c-bb46-15d7c0865dd0' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.156344 [guppy/info] Read '61dfb388-5c59-4ac2-bc16-809c70a089ef' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.162019 [guppy/info] Read '6ff5a893-2cd1-4387-8a97-b53e5b64ad4a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.164096 [guppy/info] Read '7024709f-411f-42ec-8bf8-7df2f9c499ef' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.230058 [guppy/info] Read 'c0f61127-c42c-4286-8351-8f0f6c19d866' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.288759 [guppy/info] Read 'de49de43-18a0-4852-8ea4-5892d077bf03' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.300155 [guppy/info] Read '93bbb848-c0b5-4afd-a2e5-557a15d1d124' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.386549 [guppy/info] Read 'a591ed35-a5c6-4a6b-a304-1292fcd96acc' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.408800 [guppy/info] Read '6ca974ff-9447-4f56-8b53-ffc7b024ad67' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.436065 [guppy/info] Read '2facb3cc-689f-443e-8bab-1fe3b7f805dd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.458278 [guppy/info] Read 'dd3bf26f-8149-455a-ba8c-99e4c5325718' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.465591 [guppy/info] Read 'af03cb63-cc93-45db-92d0-1dc7f05c48df' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.496871 [guppy/info] Read '7511247d-27a0-4235-87f2-e5631d4f8fc8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.504747 [guppy/info] Read '706fdee0-abfe-4f2c-a352-c0160f989ae4' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.505715 [guppy/info] Read 'c9f527f2-1fd1-4552-9b73-854b36da63fa' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.619320 [guppy/info] Read '9bc94152-37f8-4306-9a51-382a94109dd1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.671898 [guppy/info] Read '63a527ae-6d44-4ca6-b69e-85f9c73a7510' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.767502 [guppy/info] Read 'eaca9053-1ed6-45ee-9ed4-4734cc39b6cf' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.862900 [guppy/info] Read 'b95d2f33-e5ee-4150-83cf-283a68691990' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.926725 [guppy/info] Read '8b1fca96-0a65-4c54-8567-2637454ee625' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.935854 [guppy/info] Read '643c764d-425b-4e5c-b342-a8c85fc0ab71' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:46.947698 [guppy/info] Read '9dd46557-0397-475e-9aae-a1926fd24d51' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.052535 [guppy/info] Read '79279efe-5b3d-4a16-99e0-d4f999bff3aa' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.055019 [guppy/info] Read '7c974eae-fda5-41a0-a02e-75f01f23540a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.153070 [guppy/info] Read 'e31966f5-b66d-4a7a-ae96-78e7ddd27689' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.189819 [guppy/info] Read 'e097055a-30d5-470f-bded-e7449bbcfc54' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.198320 [guppy/info] Read '894e379a-a3f5-4892-bab2-95570d580f7b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.205402 [guppy/info] Read '79422657-f3c8-4ac6-bb53-ca6a599c6283' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.345992 [guppy/info] Read '6cb0d5d4-df99-4505-b566-4630a36ac321' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.532209 [guppy/info] Read 'acf392fb-cb84-4b15-b5f8-0424b57c703e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.586006 [guppy/info] Read '9f2a70d6-7195-4b8e-9959-e00c50ec2f9d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.598401 [guppy/info] Read 'eb03d253-bca3-47d7-b26f-7ee1437adbb1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.614260 [guppy/info] Read 'de4b6868-5288-40d2-a379-9783b243e261' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.632434 [guppy/info] Read '670dc839-e25a-4416-bfb6-be40b445d2ea' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.633334 [guppy/info] Read '69841328-c8fe-4d97-92dc-f5d800820405' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.783744 [guppy/info] Read '7966120b-1638-4dd7-bd57-c38ab66365f1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:47.832615 [guppy/info] Read 'd1fd998e-8b1d-42c0-bc3d-327b943f5fd2' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.015666 [guppy/info] Read 'c7edaa69-fccc-42bb-a54b-ed418c488530' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.097236 [guppy/info] Read 'ff959eb7-96d8-47ba-bb47-29fa101d6512' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.135528 [guppy/info] Read 'c3802a2b-a86a-470a-8a23-f2e3a350ad50' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.139151 [guppy/info] Read 'd724732e-95ed-4986-a4d1-9cd5a3711250' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.216772 [guppy/info] Read '5c34c7cf-9868-41d0-80b2-4bd1fb85b51c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.217484 [guppy/info] Read '5c7248e5-1a38-4ea0-9730-db32fd6da5d5' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.218192 [guppy/info] Read '5cc8bbcd-daf2-499a-ba90-5eae6638f481' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.236414 [guppy/info] Read '7e7b09d0-58b9-4079-94cd-1a2e226016c9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.262861 [guppy/info] Read '647bae28-7346-41b9-a23b-9ace606bd760' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.363635 [guppy/info] Read '8b2f71fd-cc6c-4d90-914d-5e5c86397967' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.534092 [guppy/info] Read 'd94dfcee-fa8e-4e0a-94bb-cededc1173f8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.535311 [guppy/info] Read 'ead9aa20-6920-4d0c-bffd-0db86ac3b317' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.566827 [guppy/info] Read '6a221864-c74c-4c3d-8e83-8c54884bfc0d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.692457 [guppy/info] Read '7a48914e-9dcc-4217-9e10-71794ca8077a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.702926 [guppy/info] Read 'd3a4fdd9-6fdf-4cee-b0fa-ff5efb580c73' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.705972 [guppy/info] Read '7cb57f5e-7507-48b1-8c8a-ad6fbb5d306a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.777821 [guppy/info] Read 'fea624bb-56cb-436f-9b23-038b10dad7c0' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.786452 [guppy/info] Read 'cf5a6b32-34b0-4a95-9d39-6a4c82b7e20e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.791305 [guppy/info] Read '5ce79183-5d68-445b-a130-a4dfdf1ba28a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.859960 [guppy/info] Read '8d5d1178-b201-46b6-8330-6e373833965b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.862560 [guppy/info] Read 'f04567ad-3ee3-4b76-94c5-25b516e3da75' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:48.903140 [guppy/info] Read '8d3bc83c-d369-4623-8662-812be8137cb9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.075266 [guppy/info] Read 'a1644403-5274-4b54-a62b-a8f93d1f6731' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.106777 [guppy/info] Read 'f0172838-1903-44a8-b231-3670fae3b2b7' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.107969 [guppy/info] Read 'f3bc434a-a4cb-486f-b825-d6df3188d82e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.144719 [guppy/info] Read '5d079f65-bd18-4854-9fa5-8adff43e0607' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.179019 [guppy/info] Read '6d99ce70-a464-4610-ac7b-c9f637acc3a9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.206842 [guppy/info] Read 'e46fa62a-5c4e-4d4e-a975-31a537e5bfd7' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.213202 [guppy/info] Read 'ced1f627-2de3-40c2-b2df-291208e5c119' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.219021 [guppy/info] Read '8dd2cb6e-dc94-4c57-ae47-11d718223d41' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.322625 [guppy/info] Read 'c8477c7c-381c-44dd-9ccd-4762703c3dd2' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.335985 [guppy/info] Read 'f4929c34-bd09-48f5-8746-efa92611dc0c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.494637 [guppy/info] Read 'eb118ad1-5f6c-4d60-9b1b-cb354f3a8b75' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.529702 [guppy/info] Read 'a1cf63ba-5bb5-4ee8-b585-0a17e3bc440c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.546275 [guppy/info] Read '64b7fd2b-8599-4f13-adaa-8993d895f72e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.556883 [guppy/info] Read '9cc7c2b9-57f9-4ded-9055-03f10eae81af' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.558108 [guppy/info] Read 'ebf59d18-50de-43ee-a6a3-8b48475f45eb' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.620000 [guppy/info] Read 'cd503af3-36a9-4d1a-ad6c-06e1b38347be' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.693955 [guppy/info] Read 'd5b2b41b-8709-4bf8-8108-221a37415567' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.772129 [guppy/info] Read 'd0382996-e533-4aac-b8e2-631ce8ef4343' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.874427 [guppy/info] Read 'e2034c8f-f720-4ed1-be4c-543eb5742e38' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.995935 [guppy/info] Read '8af81bff-840c-43b5-9508-97958dbf4aa5' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:49.997506 [guppy/info] Read 'b88c8600-d8ed-4bb3-abef-9e8ecbbb0601' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.075582 [guppy/info] Read 'f605de60-78db-46fe-8ff2-e574a82ba1fe' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.127689 [guppy/info] Read 'd176a3d3-b2a3-4e80-a7cb-e9dc8e83e411' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.146153 [guppy/info] Read '9d74797d-7a8a-4546-91e1-e6c3d7d7cfc7' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.265757 [guppy/info] Read 'a2ee46c2-b7c7-4df5-8a59-8df765c97775' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.266498 [guppy/info] Read 'a49ad1df-4467-4bfb-809c-708580945eac' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.420684 [guppy/info] Read '6e3474dc-48c0-4479-8973-49a669c1ee0f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.499737 [guppy/info] Read '8840557c-7642-472d-ae7f-81b8826fb297' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.576668 [guppy/info] Read '8e41c0fe-6abc-4934-8f83-f1d07d25a30f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.650555 [guppy/info] Read '6f07d894-7989-43ca-a7f5-8a433982e35b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.699868 [guppy/info] Read 'e35b4600-3030-461c-9b52-2e356de2b354' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.711858 [guppy/info] Read 'd1418b07-f9e7-4427-9c5b-f14b92451389' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.735941 [guppy/info] Read 'dd55fda3-5cfc-4408-ab1b-e5cc063250f3' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.737041 [guppy/info] Read 'f18ae710-a37a-4c5e-9bba-519fcd96b893' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.744674 [guppy/info] Read 'ddb67344-165b-442b-957f-1f315bb184ef' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.758083 [guppy/info] Read '7babbd35-70f7-4844-8fff-7840874f3b76' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.790991 [guppy/info] Read '8e8c446c-8021-4d61-a091-006cd4aa185e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.801843 [guppy/info] Read 'a69f3d44-cf9e-4623-8bcd-68135c381ebc' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.807325 [guppy/info] Read '9da7aafc-c245-4e8d-b611-37a4fe749e41' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.856843 [guppy/info] Read 'e9a84dab-1990-4190-a62b-baf0f4205232' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:50.868351 [guppy/info] Read 'a1698827-2306-4854-826d-5aba0fdf7439' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.108618 [guppy/info] Read '8ecc7296-516b-4a20-88a3-da7a5b82b1fd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.318354 [guppy/info] Read 'd2f3b189-e1c9-4e94-8b98-193ce7c74eda' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.332090 [guppy/info] Read 'febf68e4-fd18-448c-a977-d14b224109d9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.339139 [guppy/info] Read 'bdaaf9fa-2e1e-4033-8f7e-860ab887da56' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.412839 [guppy/info] Read 'a8fb69de-cec6-4f29-8ddf-5d2a5abb64ce' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.462959 [guppy/info] Read 'b736c467-07bf-4ab0-b36a-789473212099' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.481343 [guppy/info] Read 'da28119a-d3e1-4b91-9983-868acf1c8121' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.507002 [guppy/info] Read 'eef0fa34-43ed-43fc-81ca-3ff20fcc24a8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.518737 [guppy/info] Read '85fbdb71-5408-4b0b-9ca8-d1ffd1d78c6a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.595405 [guppy/info] Read '818d81a7-6301-4a9f-abfe-3ffb1e49ea15' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.663555 [guppy/info] Read 'b0fb85d4-6314-4cd5-9181-a92a05b1a53d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.724356 [guppy/info] Read 'd3a19ea9-2429-4b5b-b1da-a5407863c39f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.736837 [guppy/info] Read 'f1e46b8c-5776-4b87-ae44-4faeef1ae358' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.882152 [guppy/info] Read '909037c2-5723-4853-a567-23a38eb8103c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.889274 [guppy/info] Read 'fc4cf048-0713-42ef-965b-a2b71209503d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.963882 [guppy/info] Read 'd4f1d7f7-7d39-4e03-96fb-cf76067453f9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:51.969171 [guppy/info] Read 'a9b58d4a-6bbd-4f79-a7f9-814b70b1c456' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.106882 [guppy/info] Read 'b8b7d2b7-98a7-490a-9eea-5f2360b44234' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.176755 [guppy/info] Read '8bf9cd09-660a-4c0a-a6a7-d8539663019e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.225277 [guppy/info] Read 'ccd85b3a-e9a7-4eec-be3f-5ea9cc5193b2' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.242471 [guppy/info] Read 'c3ff5df9-cf2c-4ed9-82d8-7fa95ae460f7' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.339017 [guppy/info] Read 'f369442b-4e0b-43f3-aff3-5b22dfb2ae47' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.456937 [guppy/info] Read 'f51d0dd8-eb39-41d3-b8cd-c88e36bbe864' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.457814 [guppy/info] Read 'f70a37d7-33bd-4f8c-84ae-fd4a1ac17609' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.473390 [guppy/info] Read 'd56246c1-8783-4f21-81d9-ee18a75f85c0' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.501986 [guppy/info] Read '8c1b2e20-413f-4e5c-9cb6-802851c627fc' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.567694 [guppy/info] Read '91558274-d512-4b6b-b90d-f02b1c486fe8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.604921 [guppy/info] Read 'd5ff905c-0a7a-496d-bffb-273b21b133d5' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.619699 [guppy/info] Read 'd72f7741-3b7c-4454-b33b-9239d7bf7cfe' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.686048 [guppy/info] Read '9303bb60-d0e7-45a8-9c08-0dabc1914e9d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.711816 [guppy/info] Read 'c428cf17-ef9f-4238-8981-772e11460d28' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.737712 [guppy/info] Read 'd3c5cdbe-d386-404f-a11a-6e9d04866ee7' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.844533 [guppy/info] Read '8e61e90d-ed31-40ae-9121-617e9b2271ec' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.863666 [guppy/info] Read '9353a0e5-8ff6-4eff-abc9-7c66339415f3' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.892969 [guppy/info] Read 'd99ee63b-e60f-4bf8-8899-29cbf36dba7c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.940221 [guppy/info] Read 'b262b22f-ee98-4fa0-ac77-6ac769972fb1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:52.940967 [guppy/info] Read 'b6cf8306-742e-456d-8f2b-a2e0489f5fdc' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.011411 [guppy/info] Read '9b94720d-869b-4263-8c21-7a627140b56d' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.012208 [guppy/info] Read 'bcf5e404-d9cd-4898-ac6d-89cfa3b5c121' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.032505 [guppy/info] Read 'f8c29344-1dca-438e-9b35-d01d32ae91fe' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.033364 [guppy/info] Read 'fd789534-42c6-4952-a904-a9a1caf040a4' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.059680 [guppy/info] Read '93dbcef3-c90b-47c7-93b0-7bb39ece7f11' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.161394 [guppy/info] Read 'e45969b7-1ff6-446d-9dd4-c1c2242929b6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.238429 [guppy/info] Read 'b9856a58-d69b-4df3-9fc0-60c50115eed1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.262340 [guppy/info] Read 'c07be20d-b80e-40b6-a5ec-d0a6abfc03b1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.366659 [guppy/info] Read 'dc1e78d5-7bd6-47b1-86f3-a9c25ec81b00' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.387702 [guppy/info] Read 'c2072660-bdce-4dce-b419-16eab4a48bdf' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.390408 [guppy/info] Read '96282f3c-557f-4422-b0d5-60c6896ff5f8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.412531 [guppy/info] Read 'c6dd3aa1-6c3e-4bce-bb7a-f47fcffa6049' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.413416 [guppy/info] Read 'cbe2109b-01aa-452d-ab8c-320d7d199b65' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.708734 [guppy/info] Read 'f6f573d3-d8b7-409c-9f79-00020b6fc576' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.752154 [guppy/info] Read 'c9606cad-51d5-4b80-b6bc-1fed8e74f13f' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.847856 [guppy/info] Read 'dde28da1-305e-4a0c-9015-1cfe59d6479e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.964674 [guppy/info] Read '969a5223-a4c7-47c1-8d1a-7ab1d503b402' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:53.977673 [guppy/info] Read 'd4684213-05db-492a-ae3f-f1a7281424d4' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:54.371557 [guppy/info] Read '97dcc291-9e6a-4962-8126-33253b61c48a' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:54.458131 [guppy/info] Read 'df5f4f0f-c313-4397-85f0-d097419985b1' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:54.525462 [guppy/info] Read 'd7c2123c-b511-45f5-ac99-148531d3ccf5' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:54.664840 [guppy/info] Read 'd857dd82-5810-408b-b1be-2605fe76ea46' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:54.933767 [guppy/info] Read '99b244c3-bcd3-4024-81ef-08f4215c22dd' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:55.003445 [guppy/info] Read 'dcd5dd73-0eeb-499c-bdcf-189189c919bf' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:55.185698 [guppy/info] Read '99ddb685-5b40-4414-ace3-ffdd82566a50' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:55.226887 [guppy/info] Read 'df9a9e5a-43ec-49aa-8be8-253c5219c676' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:55.300098 [guppy/info] Read 'e125f87c-feb6-4f2f-baf1-cc6a68b8ffe6' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:55.434278 [guppy/info] Read 'ef2958fe-c0de-4b5f-b9e1-cfc69700b13b' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:55.589596 [guppy/info] Read 'f4c2f514-ea43-43ee-b4b6-672c53187848' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:55.626079 [guppy/info] Read '9a73e25c-b08e-4a75-8492-40ccc97bda93' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:55.769991 [guppy/info] Read 'e28d7d6a-843a-471d-a247-50cf22404b20' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:55.884763 [guppy/info] Read '9a93913c-0dd6-4a87-84d2-7cfc13b4eca2' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:56.320367 [guppy/info] Read 'ed620e03-7648-47ae-9f89-d731bbdaaf28' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:56.363632 [guppy/info] Read 'ee2511da-5373-4039-9469-a76f3d780aa8' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:56.517606 [guppy/info] Read 'd16cad56-b6d3-44cc-bf06-b09436b91998' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:56.691335 [guppy/info] Read 'e02c944a-8f46-48c3-96e9-ddf71bc873cf' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:56.703777 [guppy/info] Read 'f1d9675c-95c9-43f5-9988-4bdf00340a4c' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:56.841227 [guppy/info] Read 'f33da41e-200f-4de8-a639-371f2c78c09e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:57.231336 [guppy/info] Read 'e7a581b5-8b19-4211-81eb-6e3c6d0d4b63' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:57.232627 [guppy/info] Read 'f5709fea-926e-41c5-9c85-174cbaf8c0cf' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:57.238527 [guppy/info] Read 'f486b031-990c-4dd2-90f0-6e105d3fd955' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:57.395683 [guppy/info] Read 'f54e9e69-b087-494c-91b2-481519bba1a9' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:57.667134 [guppy/info] Read 'f6e2ad1a-c4df-4be3-9105-c50faf675e8e' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:57.823724 [guppy/info] Read 'f753fa79-62c2-47e1-b8c6-a16571fee2eb' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:58.250923 [guppy/info] Read 'f92b8c06-ff07-4c89-8999-2d6a9368ea74' from file "ELIGOS_unmod.fast5" completed.
+2023-06-23 23:45:58.263601 [guppy/info] Completed batch 0
+2023-06-23 23:45:58.325477 [guppy/message] Caller time: 48145 ms, Samples called: 17859492, samples/s: 370952
+2023-06-23 23:45:58.325583 [guppy/message] Finishing up any open output files.
+2023-06-23 23:46:02.820025 [guppy/message] Basecalling completed successfully.

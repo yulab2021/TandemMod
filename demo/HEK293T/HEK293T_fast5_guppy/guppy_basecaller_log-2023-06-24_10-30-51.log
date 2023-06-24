@@ -1,0 +1,1225 @@
+2023-06-24 10:30:51.982169 [guppy/message] ONT Guppy basecalling software version 6.1.5+446c355, minimap2 version 2.22-r1101
+config file:        /opt/ont/guppy/data/rna_r9.4.1_70bps_hac.cfg
+model file:         /opt/ont/guppy/data/template_rna_r9.4.1_70bps_hac.jsn
+input path:         demo/HEK293T/HEK293T_fast5
+save path:          demo/HEK293T/HEK293T_fast5_guppy
+chunk size:         2000
+chunks per runner:  512
+minimum qscore:     7
+records per file:   4000
+num basecallers:    40
+cpu mode:           ON
+threads per caller: 4
+
+Use of this software is permitted solely under the terms of the end user license agreement (EULA).By running, copying or accessing this software, you are demonstrating your acceptance of the EULA.
+The EULA may be found in /opt/ont/guppy/bin
+
+2023-06-24 10:30:51.982819 [guppy/info] crashpad_handler not supported on this platform.
+2023-06-24 10:30:53.875096 [guppy/message] Found 1 fast5 files to process.
+2023-06-24 10:30:53.877545 [guppy/message] Init time: 1858 ms
+2023-06-24 10:30:53.973083 [guppy/info] Read '005a1f4b-7523-4927-8eb2-0cbd00a601f7' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.974257 [guppy/info] Read '0127ead0-1962-46c6-ab8f-3a2698a362ef' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.975341 [guppy/info] Read '016cd19d-76f2-4d82-b31b-8dc3ff471451' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.976423 [guppy/info] Read '018f1d3d-85d2-4bf6-a49e-955e9af16625' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.978561 [guppy/info] Read '01cbe9a3-5bc4-47f7-b074-ff2b3c08366f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.980704 [guppy/info] Read '02020806-df89-4763-b75e-5d758f5ffcd9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.981786 [guppy/info] Read '02ae5e67-d70c-4a9d-a758-706e11f365da' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.983927 [guppy/info] Read '02ca971d-2976-4980-9e55-2e209269b711' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.985010 [guppy/info] Read '036a5fdd-ef28-4e7e-b838-bd6d5a73e514' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.986157 [guppy/info] Read '04518ecd-9202-4067-9572-9f22da9c4213' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.988383 [guppy/info] Read '046579a1-2a54-4c0d-98fa-4a3adc9916ce' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.989542 [guppy/info] Read '046e1c69-528d-4ed8-b26b-fbf3c5e25456' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.990654 [guppy/info] Read '0501ae68-c740-4852-af66-0f6b3de273f5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.992831 [guppy/info] Read '05034fc8-43a7-4054-8185-ddee8482fa76' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.994979 [guppy/info] Read '05414375-0b5b-43a8-9849-020a78735ccf' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:53.998227 [guppy/info] Read '05f8c52b-58a4-4fa3-9874-3f3ce3a17ff5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.000406 [guppy/info] Read '0662ebaf-5b2b-463a-8d37-dda813a4b0af' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.002576 [guppy/info] Read '069b8a69-f188-46ab-82ba-457991ed80f4' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.003663 [guppy/info] Read '06b22f10-2fde-47fd-9d25-865a4b8dd97e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.005806 [guppy/info] Read '07507b8c-addc-413a-9e68-ca3b8f751c7a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.007961 [guppy/info] Read '0875b450-9f57-420b-b495-cbc38316203e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.012275 [guppy/info] Read '0955e616-7a3f-4c14-abbe-f1ae3ed29ecc' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.014464 [guppy/info] Read '09d2feb6-e7b1-48bf-9324-faa16c3fcd13' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.015630 [guppy/info] Read '0a111119-1be6-4715-b9ba-2838843bb3cd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.016758 [guppy/info] Read '0a3f2b0a-651a-465e-addd-4cc277d10c8d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.019092 [guppy/info] Read '0a5a05c5-e9aa-4461-b0a8-161898c43e9c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.024521 [guppy/info] Read '0acb0223-7c56-4cec-ae92-3f4247130f12' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.025684 [guppy/info] Read '0b8814a9-5d87-4ec5-8c03-e4fc51bab8f9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.026818 [guppy/info] Read '0bfaeff4-ff77-40d2-9651-ab5eb2363dc1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.029016 [guppy/info] Read '0c175e9b-2a47-41ed-84e1-b487ddbbaa1f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.030192 [guppy/info] Read '0c30eb0d-b2dc-4df0-b0e8-dc58c3ab1adc' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.052825 [guppy/info] Read '0c5de1c5-0803-4d2f-bd61-cde39ec8b409' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.406300 [guppy/info] Read '0c97c3e3-57bf-4158-92df-d5a4e84cc5d2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.407742 [guppy/info] Read '0d696913-52b2-4ac4-83c0-ae26de55cac1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.408862 [guppy/info] Read '0d8f6d6c-cb0c-4134-9c1c-2aa7ded7463b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.412091 [guppy/info] Read '0da488d8-6136-4b57-86c3-242b71f4eaf2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.449423 [guppy/info] Read '0a111119-1be6-4715-b9ba-2838843bb3cd' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:54.461269 [guppy/info] Read '018f1d3d-85d2-4bf6-a49e-955e9af16625' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:54.500047 [guppy/info] Read '0dc2d59f-b5f2-484f-8708-08f9643d778d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.502294 [guppy/info] Read '0e102192-db5f-470a-b503-3477803a9e5b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.555566 [guppy/info] Read '0e243461-a6ea-4dfe-ae8d-59afef0ace39' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.557636 [guppy/info] Read '0ea5d97f-cbaa-42e6-bdf3-c76edcc9a88c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.586785 [guppy/info] Read '0fc86d31-bc81-4200-8860-c1decc6eb290' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.589027 [guppy/info] Read '1023a0cd-b649-4d11-adf5-527ca8794abe' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.590115 [guppy/info] Read '104a13ed-9c02-43ff-8e71-a64bbdb38491' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.671111 [guppy/info] Read '1092c65d-2f6b-4df0-b217-5303dcc89fbf' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.691603 [guppy/info] Read '10a0b91e-e1a3-4fce-baa4-76f7f70e19c3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.721404 [guppy/info] Read '11005f28-a3e0-42db-8bee-8f39030c8ac6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.738512 [guppy/info] Read '117feb88-bc68-48e2-a81e-0fd1dd05e675' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.739776 [guppy/info] Read '118f3f24-5012-4d6f-9601-fcd30e7581bf' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.740802 [guppy/info] Read '1227a73c-0c9b-43e7-91a4-981ec7050775' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.749068 [guppy/info] Read '138f9a01-230d-496f-ad4a-75284ef230a9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.759201 [guppy/info] Read '0127ead0-1962-46c6-ab8f-3a2698a362ef' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:54.851725 [guppy/info] Read '13ceb011-0a39-434a-a031-2a6525c656ef' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.862190 [guppy/info] Read '02020806-df89-4763-b75e-5d758f5ffcd9' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:54.862468 [guppy/info] Read '1434ad16-efae-478d-a58e-96e65dd72e87' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.862496 [guppy/info] Read '144d7ea7-0936-46c5-87b7-03895be4fa53' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.862528 [guppy/info] Read '14e54f71-7428-4ac9-b879-0a4fb1047a67' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.912369 [guppy/info] Read '016cd19d-76f2-4d82-b31b-8dc3ff471451' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:54.924288 [guppy/info] Read '005a1f4b-7523-4927-8eb2-0cbd00a601f7' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:54.934732 [guppy/info] Read '15290b67-da46-400b-94f3-c075e9e6eddd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.935879 [guppy/info] Read '15584224-febc-4ab1-a853-187110f302fa' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.938047 [guppy/info] Read '155ff6ae-129e-4937-bb54-8883f7a54602' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.943344 [guppy/info] Read '0a3f2b0a-651a-465e-addd-4cc277d10c8d' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:54.955943 [guppy/info] Read '01cbe9a3-5bc4-47f7-b074-ff2b3c08366f' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:54.960483 [guppy/info] Read '1685333a-129f-48d7-95c4-4fb0f5996f42' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:54.963190 [guppy/info] Read '16d061f5-3c67-457a-bd55-1f340c9ce0ce' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.000353 [guppy/info] Read '175d53fc-7a8e-4842-9cad-7e96bc18f8fd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.001613 [guppy/info] Read '17aa8c0a-d519-411a-a17f-bc498844447b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.001766 [guppy/info] Read '17e880e1-5c3d-4cd2-985d-8415dd62b816' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.047651 [guppy/info] Read '18cf51d0-9cc6-400c-ad8b-3e827818757b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.067153 [guppy/info] Read '18e6413d-cee7-4a5a-bde0-ec00426763e6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.068305 [guppy/info] Read '1998ecb7-d1a9-4fda-bd3d-e64b6c4ff3b5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.075814 [guppy/info] Read '1a46ed10-a0ec-4a63-b119-18efe9ce237a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.076942 [guppy/info] Read '1a8d4d27-be6f-4aaa-9214-2818d0a622df' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.078061 [guppy/info] Read '1a9813ad-3e99-411f-9288-c50609498d68' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.079195 [guppy/info] Read '1b2ec95e-60bb-40f7-a7e0-d1f47e1703c1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.114307 [guppy/info] Read '1b757992-49c3-4ff1-94ee-3cb3b0a2829b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.161395 [guppy/info] Read '1bab66c6-d682-4e20-801a-1df163b168a6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.215714 [guppy/info] Read '1c9d274b-129c-4820-a66d-51787abdf6f7' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.220712 [guppy/info] Read '1d4accd0-5e43-4207-bce2-f4eb4f038dae' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.222137 [guppy/info] Read '02ca971d-2976-4980-9e55-2e209269b711' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:55.233605 [guppy/info] Read '1ef651a6-14c8-4796-8f68-ac50898c0137' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.236841 [guppy/info] Read '036a5fdd-ef28-4e7e-b838-bd6d5a73e514' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:55.251999 [guppy/info] Read '1fba6a7b-b2e6-48cf-9dce-684cfa274ffe' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.257733 [guppy/info] Read '1fbfc27e-8d30-4b86-b85b-12ab7e571c4c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.264236 [guppy/info] Read '203072a3-0574-46e2-90af-339b3b92e526' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.269666 [guppy/info] Read '20b2e7bf-0cd5-450f-919e-d9d5fdcb2325' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.272961 [guppy/info] Read '20c4d716-989e-452c-829b-903e84769cea' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.278358 [guppy/info] Read '20d6251e-cc62-4c17-9512-dc4cfba77e61' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.298064 [guppy/info] Read '210433d3-7bba-448e-b631-fe7c25e9c3cb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.304519 [guppy/info] Read '21046496-a7c5-4cc3-ae8d-9f6a8f9cdc50' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.327980 [guppy/info] Read '212bbf30-2e8a-4a2c-a2a1-98213fe97ea3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.329417 [guppy/info] Read '2146d97f-a5b7-4345-a741-c9cc9126f245' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.363534 [guppy/info] Read '226eb0d2-5a40-43c3-8363-d81c9267d126' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.365754 [guppy/info] Read '22b608f3-2c77-4335-9f1b-699da1c417a8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.387185 [guppy/info] Read '230ae3ce-ae18-4cd4-aa35-105e17adcc03' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.388323 [guppy/info] Read '2351309b-9b71-46e6-82b3-554291a98d9d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.435204 [guppy/info] Read '24254751-1952-40fa-989e-db186697f2af' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.436321 [guppy/info] Read '24800e54-b919-4df7-b252-741a8770174b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.466237 [guppy/info] Read '2487b101-b48a-4dea-b9f5-8a0ba1ff18ff' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.467397 [guppy/info] Read '24ecdc0d-d7dd-477b-989d-0169afd754d8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.469650 [guppy/info] Read '252e451d-0478-469d-9beb-27cb020c0b97' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.477171 [guppy/info] Read '25bc791e-9bc0-4e3b-ab02-7b6517476694' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.479391 [guppy/info] Read '25c77c15-ddc9-4dfc-87fe-742f0b24114e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.555606 [guppy/info] Read '25ce0a9e-3823-48fb-b8ee-df38e13c29f9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.660156 [guppy/info] Read '26564a53-c679-4262-9f9d-73f95d491c60' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.725572 [guppy/info] Read '26621c08-1ce8-49a0-9aca-37a47b8e7806' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.737389 [guppy/info] Read '2665f3b9-3e78-4c03-9296-2f9f69d7fbe1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.791716 [guppy/info] Read '270c299c-1dc1-4e12-a69f-d299b0461b54' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.791836 [guppy/info] Read '27eca506-2b6e-4cab-b20e-86c85392f6e8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.805380 [guppy/info] Read '27ee07b7-ec03-456f-a737-e1b2d3d8b2f3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.808713 [guppy/info] Read '28f2c2ab-968d-49a9-8c78-8c0f8f0a808c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.811491 [guppy/info] Read '292718a6-b1c2-4238-9a71-9ba52ce7f24f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.815328 [guppy/info] Read '2a6890da-d879-4347-8c5d-cddafcfbbdb5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:55.902267 [guppy/info] Read '2b371d0a-a266-4f6e-b9ac-f8994c2dfdd9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:56.130136 [guppy/info] Read '2b93e152-d297-4e8b-ada8-3428d6627469' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:56.374251 [guppy/info] Read '2baf032a-0110-41ca-9286-04cc414525de' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:56.403534 [guppy/info] Read '2bc029c3-84b8-4ddf-b51f-4a649a4c2952' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:56.408713 [guppy/info] Read '2c43a2cd-dcad-49ff-9bc1-2a04cbea49d8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:56.581844 [guppy/info] Read '2d785590-f6ae-42bc-ba34-c2e3133bf8d0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:56.716365 [guppy/info] Read '2fea7b7c-04e8-41ff-ab5b-3ad3cf65ce83' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:56.741548 [guppy/info] Read '304ce079-31a2-43e9-a7b5-ecfa6473c07c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:56.849400 [guppy/info] Read '04518ecd-9202-4067-9572-9f22da9c4213' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:56.850973 [guppy/info] Read '046e1c69-528d-4ed8-b26b-fbf3c5e25456' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:56.988630 [guppy/info] Read '06b22f10-2fde-47fd-9d25-865a4b8dd97e' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:57.080164 [guppy/info] Read '24ecdc0d-d7dd-477b-989d-0169afd754d8' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:57.199030 [guppy/info] Read '05034fc8-43a7-4054-8185-ddee8482fa76' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:57.239532 [guppy/info] Read '0662ebaf-5b2b-463a-8d37-dda813a4b0af' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:57.263310 [guppy/info] Read '306863d1-5ace-4b0e-8d79-15f4ef71339a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:57.410508 [guppy/info] Read '252e451d-0478-469d-9beb-27cb020c0b97' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:57.421644 [guppy/info] Read '30888821-27cd-4de8-a771-3ed24bca20f2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:57.522219 [guppy/info] Read '02ae5e67-d70c-4a9d-a758-706e11f365da' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:57.582090 [guppy/info] Read '2b371d0a-a266-4f6e-b9ac-f8994c2dfdd9' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:57.601103 [guppy/info] Read '30a72802-e71b-4b7e-bbad-cf82ed336416' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:57.601377 [guppy/info] Read '30adc084-545e-4a60-b94f-ae857479e2ac' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:57.700123 [guppy/info] Read '046579a1-2a54-4c0d-98fa-4a3adc9916ce' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:57.704669 [guppy/info] Read '30e5adb6-dcdc-4f35-9a4c-77d25aaf9f5a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:57.791706 [guppy/info] Read '2baf032a-0110-41ca-9286-04cc414525de' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:57.792357 [guppy/info] Read '3110b2cb-5a37-4047-9f48-37c88c3581b3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.039290 [guppy/info] Read '2665f3b9-3e78-4c03-9296-2f9f69d7fbe1' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:58.093745 [guppy/info] Read '292718a6-b1c2-4238-9a71-9ba52ce7f24f' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:58.123978 [guppy/info] Read '314f6379-56e9-422c-baee-41ea789a5541' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.229446 [guppy/info] Read '31d0f785-b8b5-4151-b86a-b735359d4332' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.288463 [guppy/info] Read '32cb3b13-9d44-4e38-8020-38b436f27618' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.288646 [guppy/info] Read '33d79651-401b-4420-91d2-1b79bd686d83' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.415248 [guppy/info] Read '2d785590-f6ae-42bc-ba34-c2e3133bf8d0' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:58.463040 [guppy/info] Read '34cbe39c-ccf0-43fd-aa00-d41d83c0297b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.614697 [guppy/info] Read '351e1696-9eb5-4a5c-b746-238937463052' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.731852 [guppy/info] Read '3590d654-f870-4a98-905c-f6a7a41e75ea' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.805082 [guppy/info] Read '36587cdb-6a14-456d-a63d-e8efa78cb96d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.906623 [guppy/info] Read '36a8d6ab-93cc-4e82-bb5e-5c9c4500ce56' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:58.907803 [guppy/info] Read '36bcefc3-a371-4dfb-a946-028be5799bc9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:59.134454 [guppy/info] Read '138f9a01-230d-496f-ad4a-75284ef230a9' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:59.162287 [guppy/info] Read '270c299c-1dc1-4e12-a69f-d299b0461b54' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:59.208329 [guppy/info] Read '30e5adb6-dcdc-4f35-9a4c-77d25aaf9f5a' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:59.620713 [guppy/info] Read '27eca506-2b6e-4cab-b20e-86c85392f6e8' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:59.701178 [guppy/info] Read '25ce0a9e-3823-48fb-b8ee-df38e13c29f9' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:59.719089 [guppy/info] Read '3750b7a7-63bf-40ed-8339-a90dfad333c8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:59.926843 [guppy/info] Read '117feb88-bc68-48e2-a81e-0fd1dd05e675' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:59.955502 [guppy/info] Read '378461fe-220f-4326-896b-dee96763db59' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:30:59.962126 [guppy/info] Read '118f3f24-5012-4d6f-9601-fcd30e7581bf' from file "HEK293T.fast5" completed.
+2023-06-24 10:30:59.978569 [guppy/info] Read '28f2c2ab-968d-49a9-8c78-8c0f8f0a808c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:00.015558 [guppy/info] Read '3864a332-1d48-413e-9e60-546d45263b83' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.140587 [guppy/info] Read '38b90b6c-e383-464c-be95-1b62d497420b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.165341 [guppy/info] Read '396eec9c-b550-4400-a3d4-aec1c4470be3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.173272 [guppy/info] Read '39742209-26c8-49ab-959d-d98497a4e86f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.174851 [guppy/info] Read '3a859b64-9b14-4049-af45-dbe6211c2159' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.241736 [guppy/info] Read '30888821-27cd-4de8-a771-3ed24bca20f2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:00.335255 [guppy/info] Read '26621c08-1ce8-49a0-9aca-37a47b8e7806' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:00.371506 [guppy/info] Read '3aba31dd-cebc-4478-b7e7-cc048c489bad' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.475652 [guppy/info] Read '3abd5036-1ed4-488f-b17d-1b3274161045' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.508843 [guppy/info] Read '07507b8c-addc-413a-9e68-ca3b8f751c7a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:00.548123 [guppy/info] Read '3bc34c91-6aa4-4e50-8a53-05242e9c1c64' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.660556 [guppy/info] Read '1998ecb7-d1a9-4fda-bd3d-e64b6c4ff3b5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:00.673128 [guppy/info] Read '3c124af5-0a88-4c0b-ae0c-17df92a18c88' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.673261 [guppy/info] Read '3c562057-b424-4b87-bf24-8ea2731f8a34' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.673278 [guppy/info] Read '3d2a44ac-e4f9-4e62-a369-72aaf14d6b02' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.673294 [guppy/info] Read '3d3c9b97-9e58-4dae-b56e-79a0f4528747' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.724475 [guppy/info] Read '3110b2cb-5a37-4047-9f48-37c88c3581b3' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:00.733431 [guppy/info] Read '0ea5d97f-cbaa-42e6-bdf3-c76edcc9a88c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:00.864017 [guppy/info] Read '3fe36103-21df-456e-9ad8-a693fe6d13a3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:00.880565 [guppy/info] Read '0501ae68-c740-4852-af66-0f6b3de273f5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:00.908448 [guppy/info] Read '22b608f3-2c77-4335-9f1b-699da1c417a8' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.213413 [guppy/info] Read '1a46ed10-a0ec-4a63-b119-18efe9ce237a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.227753 [guppy/info] Read '407afefd-e3cd-4b91-8933-8f1173681d2e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.227845 [guppy/info] Read '4182707d-1348-46ca-88cb-5fc4d1aa07ea' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.227863 [guppy/info] Read '425e07b4-908c-4fcf-a7f6-a82478d0d06d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.247642 [guppy/info] Read '0d696913-52b2-4ac4-83c0-ae26de55cac1' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.310613 [guppy/info] Read '0e102192-db5f-470a-b503-3477803a9e5b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.335461 [guppy/info] Read '1227a73c-0c9b-43e7-91a4-981ec7050775' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.419190 [guppy/info] Read '15290b67-da46-400b-94f3-c075e9e6eddd' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.538807 [guppy/info] Read '2fea7b7c-04e8-41ff-ab5b-3ad3cf65ce83' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.542826 [guppy/info] Read '42f75b5f-17a0-43fe-9c7b-6879983d0bcb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.543041 [guppy/info] Read '433d0fc7-9161-444b-8855-e552a999d57f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.575559 [guppy/info] Read '0875b450-9f57-420b-b495-cbc38316203e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.587805 [guppy/info] Read '0a5a05c5-e9aa-4461-b0a8-161898c43e9c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.614679 [guppy/info] Read '0c5de1c5-0803-4d2f-bd61-cde39ec8b409' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.634133 [guppy/info] Read '104a13ed-9c02-43ff-8e71-a64bbdb38491' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.640476 [guppy/info] Read '1092c65d-2f6b-4df0-b217-5303dcc89fbf' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.650838 [guppy/info] Read '1685333a-129f-48d7-95c4-4fb0f5996f42' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.668794 [guppy/info] Read '20c4d716-989e-452c-829b-903e84769cea' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.694323 [guppy/info] Read '05414375-0b5b-43a8-9849-020a78735ccf' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.789528 [guppy/info] Read '0acb0223-7c56-4cec-ae92-3f4247130f12' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.825742 [guppy/info] Read '306863d1-5ace-4b0e-8d79-15f4ef71339a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.945369 [guppy/info] Read '18e6413d-cee7-4a5a-bde0-ec00426763e6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.946475 [guppy/info] Read '3864a332-1d48-413e-9e60-546d45263b83' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.946883 [guppy/info] Read '433d917c-4304-4fa7-b14b-0681eac83419' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.946921 [guppy/info] Read '4379ceeb-c4ae-4744-96a2-98db83428e6e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.946938 [guppy/info] Read '43b285bd-ee43-46f5-878c-f783ece9ba04' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.960922 [guppy/info] Read '155ff6ae-129e-4937-bb54-8883f7a54602' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:01.972163 [guppy/info] Read '455704b0-08d3-47c8-a163-cfe266612a5b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.986410 [guppy/info] Read '45c85999-095f-48db-95c6-aefd90d07f96' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.986489 [guppy/info] Read '4612148d-69dc-4b73-a7db-681593a25e25' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:01.987589 [guppy/info] Read '461d689f-7320-4c5d-813f-f8fec6123d84' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.007638 [guppy/info] Read '25c77c15-ddc9-4dfc-87fe-742f0b24114e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.017967 [guppy/info] Read '3abd5036-1ed4-488f-b17d-1b3274161045' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.029015 [guppy/info] Read '474054d7-30d7-4ba0-9971-0b1f191ec1fe' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.034126 [guppy/info] Read '4748cfc8-3e4c-4ad4-827d-c52725d2a4bd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.035413 [guppy/info] Read '479f706a-3761-42ff-a639-8f8ee6d38f4f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.040763 [guppy/info] Read '0bfaeff4-ff77-40d2-9651-ab5eb2363dc1' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.041112 [guppy/info] Read '47aa02df-fcd9-4d1d-ad17-6a55745fe8cb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.041149 [guppy/info] Read '48222429-1311-4a67-863d-9232f2eab1ea' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.074706 [guppy/info] Read '09d2feb6-e7b1-48bf-9324-faa16c3fcd13' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.082452 [guppy/info] Read '25bc791e-9bc0-4e3b-ab02-7b6517476694' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.089434 [guppy/info] Read '494b1e8b-b75f-4f28-a057-ce76bfc5bde9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.094925 [guppy/info] Read '49a0adb3-6545-4ca9-b41a-7ad7b8ff8a41' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.097165 [guppy/info] Read '49a60f40-9260-4af3-aa7c-8e5b6aca5e71' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.151740 [guppy/info] Read '49f28d66-e82f-4d1f-b68f-dc865b8b1c4a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.152926 [guppy/info] Read '4a499b89-f5be-48b0-974c-2f020a53836d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.171169 [guppy/info] Read '4ad0f60c-5c03-4d2f-ac55-da872315aab6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.173406 [guppy/info] Read '4b79b8cd-ac0d-4709-beb5-8637040a2a00' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.175662 [guppy/info] Read '4d338bef-6cef-4430-b570-c5ea65955418' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.177897 [guppy/info] Read '4d3a6840-d36a-4ca2-9ab6-11c30536cb20' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.180104 [guppy/info] Read '4d74e73c-94ee-416a-a64b-69d71c35ab55' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.181249 [guppy/info] Read '4e574e7f-e0f7-4149-b879-07be085852b5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.191735 [guppy/info] Read '3590d654-f870-4a98-905c-f6a7a41e75ea' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.221571 [guppy/info] Read '4ec44284-5014-45ac-b4b2-c99fcd4f26f5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.223850 [guppy/info] Read '4f0e6b82-1190-4806-8602-074aaafcc79f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.226073 [guppy/info] Read '4f4d05d0-0717-46d0-b7e1-f9e630cdaae1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.258269 [guppy/info] Read '507a2a6f-dd48-4d76-a0fd-dafa6a78a53a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.281007 [guppy/info] Read '50a3e16e-9468-44dd-80e7-c7d66ce7bc82' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.282225 [guppy/info] Read '50ab02c5-f0bb-43ab-b540-4e34da914847' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.284447 [guppy/info] Read '50ac3a7c-aa67-416c-8058-6595bac51e12' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.285653 [guppy/info] Read '50f20962-9f2b-48da-8702-70af202e99de' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.286811 [guppy/info] Read '514be08a-1e97-463c-af73-c074570274df' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.309290 [guppy/info] Read '516648dc-6343-4581-aa91-80eb13e0b6a4' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.311543 [guppy/info] Read '520144cf-1df0-4976-a4b6-3997b34a893c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.319168 [guppy/info] Read '52522351-6a7d-4c2e-8299-b62117885fb4' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.337484 [guppy/info] Read '52a496f4-064b-48d5-a347-3ec1995fa3ee' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.339781 [guppy/info] Read '536fa273-21ce-4587-8209-4f8c80ff2789' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.340941 [guppy/info] Read '53f335c5-f7c4-4d31-9ec5-11312c21d7d9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.342090 [guppy/info] Read '540d1f83-8562-4280-9d7f-99946ab87873' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.362495 [guppy/info] Read '543c88cc-5e96-468c-ac9c-f866cfcf681b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.364792 [guppy/info] Read '54675bdc-2151-4aae-af84-e6e0288d9aa3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.367059 [guppy/info] Read '54712581-df49-403f-b3c6-92ea0e9fb383' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.369268 [guppy/info] Read '54c37f66-229f-4848-919c-857050678183' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.370464 [guppy/info] Read '54d5a48c-7ec3-4117-b0a3-d89674560b06' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.405918 [guppy/info] Read '559be414-a2ac-47c3-9e0c-ce485ab776b1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.408214 [guppy/info] Read '55c2b93a-e353-4cfe-aac1-ec7a6dc2b4a1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.409342 [guppy/info] Read '5672f7fc-33d1-472b-9e46-bed17c02eb34' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.411592 [guppy/info] Read '568d2849-a4df-4133-a49f-6d6e1819afdc' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.434102 [guppy/info] Read '56bdeeb1-00ad-4595-8dac-ed2fe7740e6a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.436336 [guppy/info] Read '5700430e-913f-44cd-9e8c-b8aa88e314d9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.437501 [guppy/info] Read '581e3d76-094a-4b3f-b38b-15d53ba1d82b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.438681 [guppy/info] Read '586d62a8-a5a4-456e-9dee-3b2462978cad' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.441988 [guppy/info] Read '58f58f77-6238-4865-8b32-0239b4c1d6f2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.461320 [guppy/info] Read '58f61150-0eef-4bdc-935a-8a2f2ac8680d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.465726 [guppy/info] Read '58fbf7ec-1ad9-48e0-8046-5bf20391455e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.467967 [guppy/info] Read '591251b2-cd78-4f20-9862-2bd797ab4ce0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.487281 [guppy/info] Read '59475c12-ae83-4b8b-8a2c-899afeb9df63' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.489536 [guppy/info] Read '59be22bf-0515-4525-a5f8-efc10ec72130' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.490730 [guppy/info] Read '59ffc6ea-f384-4b24-a811-90036baeba08' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.491881 [guppy/info] Read '5a4963b3-3b1c-4033-8bfc-4c64d810c560' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.494122 [guppy/info] Read '5a8fa77a-56f2-42f6-aff5-581b9af18704' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.495271 [guppy/info] Read '5b10c9c5-90ba-434b-bde9-304137fcbd2f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.514478 [guppy/info] Read '5b1142b7-6fc7-4ada-ae26-0e697a5b76e6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.516762 [guppy/info] Read '5b3a5819-0e1e-4395-8601-77d1f5f86fd6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.518985 [guppy/info] Read '5c2deee9-e43f-4368-9fd7-294e4fb5b171' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.520141 [guppy/info] Read '5c4a57d5-6ee1-40f5-ae5e-e2d353df4bf9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.536220 [guppy/info] Read '5cea6b37-8896-439b-8c62-d5b5fe7620b3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.538488 [guppy/info] Read '5d21d465-0a0a-4cb9-a2bd-9aa45ca29815' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.540757 [guppy/info] Read '5d8d97dc-4b1d-41ad-bb21-3b330a077cdb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.542977 [guppy/info] Read '5e27b22d-035f-42b1-97d6-84e9c69416f5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.580575 [guppy/info] Read '5e8069f3-c7a7-48b9-b402-562ee8954744' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.582846 [guppy/info] Read '5ea0b456-5010-42ad-91e3-6a10a9d22726' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.585076 [guppy/info] Read '5ed8eccd-04e5-4336-abba-213a42cc1a92' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.586225 [guppy/info] Read '5f2933e9-bce8-4ad6-bce0-faff93d0f65a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.587335 [guppy/info] Read '5ff7ae1f-cdff-4a64-9d8a-bd8b92c550a0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.631343 [guppy/info] Read '60e0f6a3-2166-4730-9a10-8f8aaa750b37' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.634467 [guppy/info] Read '15584224-febc-4ab1-a853-187110f302fa' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.635864 [guppy/info] Read '31d0f785-b8b5-4151-b86a-b735359d4332' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.636099 [guppy/info] Read '6230669b-45f5-4a6a-a5fc-69938d4f0ae1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.636127 [guppy/info] Read '62718555-4590-4774-b3b1-a4ba208596b3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.637238 [guppy/info] Read '637aa9ab-150a-4a47-a301-cea2f931de86' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.638410 [guppy/info] Read '63f71993-0668-44aa-a2f0-a06d661b2ba2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.665280 [guppy/info] Read '643a6779-ebf4-4d38-b84e-421ef4d5530b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.666534 [guppy/info] Read '64e030b3-6933-4417-a04b-03f68ad37d14' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.667738 [guppy/info] Read '64ec50b1-c906-4b4b-8ef2-0a43e07c8abd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.671689 [guppy/info] Read '0c175e9b-2a47-41ed-84e1-b487ddbbaa1f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.673642 [guppy/info] Read '212bbf30-2e8a-4a2c-a2a1-98213fe97ea3' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:02.673909 [guppy/info] Read '652e42ad-2701-421d-bc06-e2ea390f404e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.685821 [guppy/info] Read '65798189-f4a6-4802-8f4c-08477de456fd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.694560 [guppy/info] Read '65bc3bff-b85c-4baa-a559-68d679c8c8f6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.707558 [guppy/info] Read '66c99f02-d422-47d1-b5a5-3b6cf51a5e05' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.716269 [guppy/info] Read '678618bf-7b46-4306-9c2f-056baf83d947' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.721776 [guppy/info] Read '68423401-e3a5-48bd-841e-7441b16009d1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.737912 [guppy/info] Read '688c2227-36b8-4338-b93e-7bdb8dc67c96' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.749769 [guppy/info] Read '68f992ff-26dd-4da5-a32d-592686038530' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.755215 [guppy/info] Read '6915a21b-7145-4c54-988a-0cefccd9810b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.785281 [guppy/info] Read '694aabc1-fffb-40fb-8c35-85996578d80b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.796114 [guppy/info] Read '6975b53f-2b01-4917-9384-2e55820a66f0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.801554 [guppy/info] Read '69de5c60-d648-4d79-86e9-4912f54e2638' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.807007 [guppy/info] Read '6a03b9a3-f2e3-4d28-a0d4-57db25bfe7dd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.817832 [guppy/info] Read '6a129534-88d2-43d1-b33c-c079c4e76a16' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.826506 [guppy/info] Read '6a93e4ff-402e-4698-818a-25d3edf29f37' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.834177 [guppy/info] Read '6c45a881-e6bc-4ab8-bc5f-c8adf2891f8d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.836409 [guppy/info] Read '6da3c219-e84a-4008-b17d-73f4b0fa2b10' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.837594 [guppy/info] Read '6ed64cb1-37c5-4ad8-aacd-9549b3988365' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.838764 [guppy/info] Read '6ed95132-05c9-498b-8f0a-fcb82d70b618' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.839948 [guppy/info] Read '6efd5312-956c-48d1-b80a-3bc5c8c82173' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.842163 [guppy/info] Read '6f1d4547-189b-4fbb-ad38-691737b6ce31' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.863725 [guppy/info] Read '6f69c79e-7011-480f-9ac0-e075aafbfdb3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.864917 [guppy/info] Read '6fb3b42f-3d0f-4fcb-a9b1-ce2bf73fa0b2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.867162 [guppy/info] Read '7182f6b4-3031-4701-bfea-f3919e830661' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.887618 [guppy/info] Read '71d8c658-9885-4365-9ca1-c22987a8f7c4' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.889871 [guppy/info] Read '72e0f77e-2540-44a6-8aa3-b1778cdb1df6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.892104 [guppy/info] Read '733b0601-b4ff-411d-8135-fa5caff2b31e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.893268 [guppy/info] Read '734f69cd-1c9f-46e1-92cc-6b08fdafb6f1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.894471 [guppy/info] Read '73545ae4-f2eb-4faa-b0a3-70ba9696c0c2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.895684 [guppy/info] Read '7415e930-7ece-421e-96df-12d7766b2a6e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.896894 [guppy/info] Read '74842ab2-7ea7-4e41-968f-2a887a854d1b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.915216 [guppy/info] Read '74df5ae4-1546-42bd-b3dd-95de481b8fa9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.916329 [guppy/info] Read '75c5e78b-3015-4a1d-8854-78a73792811d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.917488 [guppy/info] Read '76120b8a-7f14-47b7-9ce1-19be6ed50f34' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.918651 [guppy/info] Read '761d8fb6-628a-4e1d-b289-940c1345973c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.919826 [guppy/info] Read '76b705b3-69a4-4734-9828-404e51d3d951' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.921007 [guppy/info] Read '76ea4bd1-f97b-4f8e-9952-eaa7ca53565d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.922282 [guppy/info] Read '7702ec61-adbf-4ac2-bd5f-05830d9b28f6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.942778 [guppy/info] Read '7762f7d2-7d3e-4114-9e78-f5a2fd44d6e3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.943945 [guppy/info] Read '77fdb1e8-4228-4a7c-b889-6d720f753ec8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.945093 [guppy/info] Read '78054de6-e08b-44a4-923d-d86d33bbb202' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.947316 [guppy/info] Read '7861ae88-5e19-46ae-a917-113e2bb466eb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.949605 [guppy/info] Read '7875a75e-01d2-4d4c-a240-1711bbfe4c8f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.987227 [guppy/info] Read '791510e9-1b77-4274-89b0-f768c473e8fe' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.989544 [guppy/info] Read '79c28e3c-65d8-4f9b-83b9-bc205abb398b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.989674 [guppy/info] Read '79caeeb0-6f95-40bb-a99f-f4a3c28a8c6a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.990802 [guppy/info] Read '7a10ef14-7be9-4560-a227-1228ff889cbc' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.994112 [guppy/info] Read '7a29a4d7-faff-4662-bec1-039242add012' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:02.995272 [guppy/info] Read '7acff283-9302-4aeb-918b-168e70e31def' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.015751 [guppy/info] Read '7b0bd529-4ae8-41e8-81b6-8e0a6a429e79' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.016984 [guppy/info] Read '7b219da7-c9cb-4f04-91f6-1d68f1e7982e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.018132 [guppy/info] Read '7b4fb2ea-a0bc-48d9-ae4e-39e85a690353' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.019275 [guppy/info] Read '7ba3729e-c035-4992-ba09-dc16b15b7192' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.020448 [guppy/info] Read '7c1f8958-337b-4d32-9212-c5e02690dd01' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.026549 [guppy/info] Read '069b8a69-f188-46ab-82ba-457991ed80f4' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:03.028221 [guppy/info] Read '0b8814a9-5d87-4ec5-8c03-e4fc51bab8f9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:03.030224 [guppy/info] Read '0d8f6d6c-cb0c-4134-9c1c-2aa7ded7463b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:03.034926 [guppy/info] Read '7d6e8653-612f-4dc2-b0e2-a2c138907b5a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.044411 [guppy/info] Read '7dfb9658-68de-4de2-8167-bd867d27ebf0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.047711 [guppy/info] Read '7e30fece-5b14-47ef-a943-a0490e4991c8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.054251 [guppy/info] Read '7e3590eb-adb5-401e-902b-ef826793a159' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.059758 [guppy/info] Read '7e784487-e613-4ce5-981d-4d377dff3040' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.069496 [guppy/info] Read '7e80d895-1270-4b54-952d-80beaa4f5c16' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.077125 [guppy/info] Read '7e9ae822-6b44-47e4-b31c-a0b6dacc7f47' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.084672 [guppy/info] Read '7edbfb81-5b83-4186-b336-a857931f9c3c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.123085 [guppy/info] Read '7fb1da1f-255a-4099-b20c-fc7ad6b007e3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.128534 [guppy/info] Read '7fe47759-84d9-42f0-b9bf-cbf6e14789d2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.146827 [guppy/info] Read '80472b15-6659-43e6-860a-c8ad78f05a47' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.162008 [guppy/info] Read '80b0bfe4-6ad3-4b82-a6d7-0fafa505479d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.176067 [guppy/info] Read '80dd483d-2d25-4a8b-b8e1-010b6e0c0e1f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.187982 [guppy/info] Read '80e43931-88a1-40d5-aacb-fee2c355c123' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.193407 [guppy/info] Read '80eadf7f-0ab5-4c5f-a8a0-54ebd6e245c0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.204263 [guppy/info] Read '820e5510-cb37-47ef-a8d7-fbea965a3104' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.216148 [guppy/info] Read '8283ea64-4903-446a-a34f-f77a91a21161' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.221637 [guppy/info] Read '82b496e6-a6eb-438b-a42e-647c7544c650' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.237905 [guppy/info] Read '82d45807-03a3-4f96-9b6e-30fbca313d4f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.259348 [guppy/info] Read '83046e91-db48-448b-b86a-a25a2682e56f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.264839 [guppy/info] Read '8374cb18-3f35-490f-89ea-8f6b39f7828b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.275634 [guppy/info] Read '83a9db59-3caf-4bd0-b02a-061329ebc8d2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.284309 [guppy/info] Read '83ceda47-a37d-45c0-b1b8-d396dd80a0a3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.295131 [guppy/info] Read '840af30d-78e6-4615-ac5d-7c29af9f2255' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.331598 [guppy/info] Read '8535c01c-5117-41a0-9224-d70205a87b5c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.332795 [guppy/info] Read '858d7a7f-73bd-4f68-9663-d80fb7c4ebd6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.335792 [guppy/info] Read '85b57197-54d8-4778-b283-93d590ad31c1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.360242 [guppy/info] Read '85d3359c-5452-4931-a46c-415214dcd484' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.366791 [guppy/info] Read '85da8c48-0906-4dfa-890b-5237a59d6a91' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.379781 [guppy/info] Read '87e3fa0f-2a6a-4371-b2c4-9817cfcf9859' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.393843 [guppy/info] Read '87f8240f-a50a-4453-aedb-e6857aa28122' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.402543 [guppy/info] Read '88273da6-a63a-42ec-b147-3fff719fd531' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.406960 [guppy/info] Read '885686fa-c774-4f5f-a64a-3c62fff8f0cd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.423092 [guppy/info] Read '885eb764-1616-418a-8704-0356dbaf69a8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.424260 [guppy/info] Read '886cf475-ae08-4d2b-82e7-bce17d9e824b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.447992 [guppy/info] Read '88825e56-93d5-42e1-a568-ddb0f94ac012' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.449151 [guppy/info] Read '8884e99b-1ee3-4c9c-a39d-31401bf42f31' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.450282 [guppy/info] Read '896c319b-c23e-417e-80ab-b1cb5ead9fa0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.451449 [guppy/info] Read '899a45c1-e3d2-480b-b866-96cc8af9d610' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.474055 [guppy/info] Read '89c03277-03fc-499f-80f6-01ff55e4b354' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.497677 [guppy/info] Read '89f1c24a-ceb7-4641-a9be-3572ff23ea7c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.498834 [guppy/info] Read '8abe99a7-cc5b-4cee-a7e4-8930290f31ed' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.501066 [guppy/info] Read '8b56e309-ff4f-4a8a-93d5-14eb0c43f11b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.521454 [guppy/info] Read '8b6d5b66-6e2f-4e95-a942-260b002cdc5d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.522640 [guppy/info] Read '8c366c1c-bff9-4281-98a4-79e7b9606866' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.524857 [guppy/info] Read '8c6370fc-4070-4ac0-b2aa-1ece38bbb000' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.526011 [guppy/info] Read '8d700a33-e156-4336-9ba2-e449d4d3080c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.548470 [guppy/info] Read '8d8a4646-68e0-46c0-9ebf-b961810de6a4' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.550724 [guppy/info] Read '8d8fd573-ad9c-4895-acdf-cbd7318c8fe4' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.572238 [guppy/info] Read '8dc1cc9a-538b-458b-bf5c-bba84d46f859' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.596880 [guppy/info] Read '8e421658-d6ad-4544-91fb-517f440c96fd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.598023 [guppy/info] Read '8e8ad9e0-02da-44d4-8a4c-7f523a40ad5b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.626890 [guppy/info] Read '8eb30525-b61b-4e8c-9ea4-49eafb6632ff' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.628058 [guppy/info] Read '8ed72d1d-d4e0-4325-bed3-ce0be2afaf0b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.645411 [guppy/info] Read '8f69d982-ed18-47ba-a424-655cc2f59788' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.647752 [guppy/info] Read '8f6fba20-a22d-4cfb-933e-acd1cdd9dae2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.648941 [guppy/info] Read '9044666a-ff25-4723-b2b8-28bac73004c9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.650107 [guppy/info] Read '906e35ea-e882-47cd-b1d9-ddfb5bf492fb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.771753 [guppy/info] Read '90cc2657-0a4d-448b-8b50-bd25b3a01c81' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.773969 [guppy/info] Read '36bcefc3-a371-4dfb-a946-028be5799bc9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:03.814914 [guppy/info] Read '2bc029c3-84b8-4ddf-b51f-4a649a4c2952' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:03.821821 [guppy/info] Read '91914c2d-1033-4ad6-9a94-68906b957ecc' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.825149 [guppy/info] Read '92d47761-1ace-4bde-884e-87503e33ad4d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.896227 [guppy/info] Read '9316896b-a739-457a-9d72-1a669cb00697' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.898498 [guppy/info] Read '93534730-d7ca-4fad-9163-17b0be3f13fb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.899708 [guppy/info] Read '95133dbf-cf2d-43e8-a7cd-400e7899f38d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.945483 [guppy/info] Read '95552198-09fc-4811-95f7-7186d8617a08' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.949953 [guppy/info] Read '05f8c52b-58a4-4fa3-9874-3f3ce3a17ff5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:03.950200 [guppy/info] Read '959dd40f-137f-40b9-8dbb-1d0f5aa150a0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:03.950229 [guppy/info] Read '95b3c3a4-80a8-4231-a479-c088744f829d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.013794 [guppy/info] Read '96598bf1-dcca-4e7c-909c-6cbacf4e0003' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.039939 [guppy/info] Read '9669f690-2951-4ecc-b78c-fe1c5321993d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.042225 [guppy/info] Read '9679818a-5248-47af-a5b2-652705a38963' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.085510 [guppy/info] Read '977c1c3f-595f-43dd-a6ea-adddc69b60b0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.087809 [guppy/info] Read '98ad3467-99e9-415b-ad1d-3daa4a048721' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.088984 [guppy/info] Read '99236815-3e4d-4aa5-85ad-fcba49f775ca' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.172291 [guppy/info] Read '996d6dc7-febf-4a90-aebe-b7a9c8680172' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.173560 [guppy/info] Read '9a1308ad-8e47-4d81-aad6-a64a938d6b86' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.180158 [guppy/info] Read '9a24035f-2834-414e-8ded-b13d5ea277d5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.181325 [guppy/info] Read '9a34643f-aa80-4676-b894-0271df2a8b09' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.182477 [guppy/info] Read '9a4ac080-a3d6-434c-80e3-7f2435889614' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.195998 [guppy/info] Read '0955e616-7a3f-4c14-abbe-f1ae3ed29ecc' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:04.203836 [guppy/info] Read '9b4bf0f4-076d-4968-a651-3fa90be7bdce' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.205009 [guppy/info] Read '9b815e67-5c63-4061-8a34-abf6099b3ce0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.207224 [guppy/info] Read '9b86d7f0-d004-42aa-bcaa-63df6f23da74' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.209403 [guppy/info] Read '9d99ba87-138b-45ff-9412-dc25c3f894f0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.230905 [guppy/info] Read '9daa7da4-9ec3-4b9e-85c4-6b55500e1e6c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.233151 [guppy/info] Read '9dc1ba45-fb47-4bce-9348-0fc18cdeb9e5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.251408 [guppy/info] Read '9dee073d-d338-43ed-bcfe-7ec07a5986df' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.252600 [guppy/info] Read '9f0e4e2c-5821-4826-afc6-7b5147de4bec' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.254857 [guppy/info] Read '9f32c9af-a259-420b-b51f-073ecc63b37c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.276526 [guppy/info] Read 'a0907917-0de7-4321-8ab9-29a21ef3fc5c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.277713 [guppy/info] Read 'a0c11e79-c5bc-4f0c-b542-cc37257095d5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.301315 [guppy/info] Read 'a0ddd269-5d6e-40eb-80c3-34e697a5bcd5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.327095 [guppy/info] Read 'a1dfb705-50b7-4512-8533-56037957ce22' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.328258 [guppy/info] Read 'a2ff568e-934c-4c5d-9859-2a74a4829c5a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.329436 [guppy/info] Read 'a32848b6-c671-4794-8446-ee78b7610ae0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.330596 [guppy/info] Read 'a41bbef9-3d86-41d9-b2a0-7474f4046f64' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.359536 [guppy/info] Read 'a43b61ad-d05c-4f62-869a-0913588998a9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.360725 [guppy/info] Read 'a464344b-7ae2-4305-89df-d85d1e46d608' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.387624 [guppy/info] Read 'a4c336f3-4092-4643-92f6-b5d700877af0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.388804 [guppy/info] Read 'a5994ce9-0f7d-4442-8208-43e98205c8f9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.391078 [guppy/info] Read 'a5a4acfd-8d55-4cba-9d77-887c37b2b28d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.414747 [guppy/info] Read 'a5f026bf-2e61-4433-9f71-d7f15e586c26' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.436154 [guppy/info] Read 'a79606e4-592f-442f-808d-15f1797f8e72' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.438416 [guppy/info] Read 'a8f2ba2c-5afa-4c56-b1cf-1f7fc80a551e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.462120 [guppy/info] Read 'a909a44b-f342-4e34-8d23-67f686ff5193' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.464330 [guppy/info] Read 'a9420064-f004-455b-8a14-58887184be76' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.465491 [guppy/info] Read 'a9995194-d141-4532-8a81-62c1f9f0eee6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.483766 [guppy/info] Read 'a9d97c4b-5625-49f4-95d4-37f7d641507e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.484933 [guppy/info] Read 'a9da77ab-8d7c-4d0a-9b8e-0bc32aab6d82' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.503140 [guppy/info] Read 'a9ec1610-29b9-4c33-9419-bdd1b881a0a0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.504311 [guppy/info] Read 'aacb7467-4b0f-40c2-9123-744d220d88aa' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.506615 [guppy/info] Read 'ab623f88-8489-477f-b449-6c8faa8b8abc' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.528116 [guppy/info] Read 'abfe86a3-0f6b-4734-bdbb-35e65d6ecadb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.531400 [guppy/info] Read 'ac04eac5-5cba-4625-ab5b-1a67ab9ee74c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.552808 [guppy/info] Read 'acf8c111-06f3-4a99-bf81-d286141e8e21' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.555035 [guppy/info] Read 'ad2b0cf1-47eb-48c0-8a27-6f88a19b74b7' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.556179 [guppy/info] Read 'ade58d11-f37d-4679-9dd7-07d1124adc66' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.578692 [guppy/info] Read 'ae0dc943-961b-4296-89e0-2330e9b4dd6a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.579904 [guppy/info] Read 'ae443290-7880-4eab-9491-2f6bff6b0752' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.581047 [guppy/info] Read 'ae45f484-5a41-4474-ae03-941249afe9eb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.603546 [guppy/info] Read 'ae7397f5-04e0-4d02-a222-c20be50848db' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.627185 [guppy/info] Read 'aea34abc-1941-470d-8814-3e6729bb9474' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.628339 [guppy/info] Read 'aed13040-e190-4a16-985d-16729faa1612' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.631662 [guppy/info] Read 'af3f63bc-efbf-4ec3-9303-8ee52ed46c2e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.658411 [guppy/info] Read 'af8ae5aa-5239-4ce1-89bb-27bc41441f0a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.660697 [guppy/info] Read 'af97c121-8c3b-4f74-88b0-2aa8a7cc62fd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.662960 [guppy/info] Read 'affe327e-a113-4f04-8d7b-cfd7cf9d8166' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.684483 [guppy/info] Read 'b0fdfbc5-7484-437a-bc92-a8aff11fcf19' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.686761 [guppy/info] Read 'b19e1cb8-938f-470f-b188-168b7c09713e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.708243 [guppy/info] Read 'b2115d7f-617a-437f-b321-1920a95be4c8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.710505 [guppy/info] Read 'b220353f-5535-49ea-a46c-23f20b395793' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.711678 [guppy/info] Read 'b2a10a88-ae97-4048-a8bf-6f45c02fea7d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.712825 [guppy/info] Read 'b2e79efb-42b1-4577-9ef5-07d95fc0c968' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.758902 [guppy/info] Read 'b3fb1865-1c42-4ca9-88a2-5935b80b7291' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.760067 [guppy/info] Read 'b49204bb-51d7-47c9-93a7-a6aa942cd1fc' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.763350 [guppy/info] Read 'b58ed930-dd96-4f99-90c5-2ba026957165' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.789169 [guppy/info] Read 'b5d5097b-ccd6-4ec6-9cee-53a2f1f236b1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.790340 [guppy/info] Read 'b5e00982-9ed6-421b-9a58-ed0c8fa6fe03' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.792621 [guppy/info] Read 'b6144d44-f10a-4de8-a4e4-cacfadc647bb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.818345 [guppy/info] Read 'b6315766-5f3b-4fdb-8ebe-c0ab1cbaeaf2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.820677 [guppy/info] Read 'b652841b-fe75-457e-80d5-1ae941a72175' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.821834 [guppy/info] Read 'b6759788-b93d-41e5-be70-dc63cb08b1a1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.844332 [guppy/info] Read 'b678b61d-e72c-4b77-96b3-02232a1a6f78' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.846599 [guppy/info] Read 'b71c874c-802a-430b-a7f1-e0199776bccd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.847778 [guppy/info] Read 'b72ccef8-cc3b-4e04-8c2e-d9c067a0a267' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.870357 [guppy/info] Read 'b75b74cb-d6d2-472f-9809-020965c5916f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.872679 [guppy/info] Read 'b7b21ade-0cd4-476c-a15e-ba458ad2f418' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.895252 [guppy/info] Read 'b7e94ff5-0d7c-4ae5-8a74-dcb73d5fa4da' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.898599 [guppy/info] Read 'b84da5ba-2dca-4dfd-bebd-f2927643865e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.929825 [guppy/info] Read 'b8a821ed-a397-4cab-9347-15ee63575db9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.932076 [guppy/info] Read 'b9a514c6-8d83-4937-a2d4-1b3b6caa36d6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.934304 [guppy/info] Read 'b9ded60e-ec31-4ba0-ba41-2d7929c498c5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.950481 [guppy/info] Read 'ba5a12eb-3ca6-401f-a16c-0044187f7ad9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.952725 [guppy/info] Read 'ba5e69ac-1ffc-4e75-baf3-b603364e587e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.953880 [guppy/info] Read 'ba698c08-213b-4dbf-b6ff-45416831b711' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:04.997779 [guppy/info] Read 'badc7ebd-bb84-4efe-9316-2dd9cecc4aee' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.016087 [guppy/info] Read 'bb14e1e7-dfb9-44ed-bf8c-819c094c958f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.040744 [guppy/info] Read 'bba4cbe4-2825-453c-bb85-b7addc74e4b8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.042993 [guppy/info] Read 'bbe35647-bf53-45f0-ac5d-d33378b19bd1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.044153 [guppy/info] Read 'bc6afade-1ab5-4a5c-a0d3-08a93c2023c8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.063409 [guppy/info] Read 'bdc2ca60-3aff-4d1e-8bf5-8680a48876f8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.065027 [guppy/info] Read '461d689f-7320-4c5d-813f-f8fec6123d84' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:05.065286 [guppy/info] Read 'be50098b-95e5-4a21-aede-2e1ea050d979' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.067495 [guppy/info] Read 'bed9813d-1cb1-4f68-8307-f45c62ddc3fd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.096407 [guppy/info] Read 'bf59ce35-213b-4f26-ae1e-cf9aa2c8d3e8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.104035 [guppy/info] Read 'bf5d35cb-89b8-40ea-9302-be653f9ad578' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.106314 [guppy/info] Read 'bfb97c05-9e8f-4162-9430-34318d6b13a8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.128914 [guppy/info] Read 'c0cfd5b2-ec89-440d-931c-11728992eb6a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.130072 [guppy/info] Read 'c10bedb9-03df-412b-81ed-69ce6a620814' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.148269 [guppy/info] Read 'c11864d1-8f84-4821-98be-6658b2296a72' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.150542 [guppy/info] Read 'c121e79c-d89a-4831-81f8-3c365b4995b9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.174213 [guppy/info] Read 'c16ba239-125f-45cd-89f3-0b92f224eaac' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.194679 [guppy/info] Read 'c1fc93b8-8b3c-4f81-a2c5-be7a5355175d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.196928 [guppy/info] Read 'c1fceb45-72d9-48e1-aadd-c07bb3e53809' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.198123 [guppy/info] Read 'c22bd188-bb39-4d84-9070-a685e9672636' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.216340 [guppy/info] Read 'c2428a23-7115-4147-b534-cc7820acc947' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.218643 [guppy/info] Read 'c28014cb-05d3-4ab6-b897-e36ada3cfe0b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.236983 [guppy/info] Read 'c29a2e5e-7d6e-4640-b203-b7ce3ea94ae0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.238161 [guppy/info] Read 'c2c18d94-4f24-447b-b915-d9d9eaf06858' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.260770 [guppy/info] Read 'c2c544f1-7e54-4b3f-92bd-317d3426b9ba' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.261959 [guppy/info] Read 'c39111c5-8749-43c3-a309-8e0f93a6c65c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.283464 [guppy/info] Read 'c4793f27-6856-4462-8560-0e3bdb658f66' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.285786 [guppy/info] Read 'c50e7c0d-858d-4c29-b0de-9a3c3ca451a9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.286981 [guppy/info] Read 'c5223ad4-8fe4-4605-ae77-fb7edc4fe989' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.319354 [guppy/info] Read 'c55456ef-acf0-46b9-b825-f019ac29e327' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.321779 [guppy/info] Read 'c7dc0f19-9d82-4cb3-9e07-17063a640657' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.323036 [guppy/info] Read 'c8043e6f-aa4d-45ae-ad1e-5fc46bd76690' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.325259 [guppy/info] Read 'c80bee11-4018-40c2-83a3-45964c809113' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.337170 [guppy/info] Read 'c80c77c2-424a-4ab6-b1d8-e1607960bbf9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.354429 [guppy/info] Read 'c9762d13-2504-486c-8aa4-5089a12b977b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.374906 [guppy/info] Read 'c9be31ab-f627-4ae2-9361-cf13b57ee0da' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.378110 [guppy/info] Read '0dc2d59f-b5f2-484f-8708-08f9643d778d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:05.387740 [guppy/info] Read 'c9ec4bcf-7090-4cf6-88e8-44de372e0997' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.428417 [guppy/info] Read 'c9f3ffca-b95f-46a8-97ec-0a113da998ae' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.458736 [guppy/info] Read 'ca76331a-df92-41f2-90e1-d3118974da01' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.471381 [guppy/info] Read 'cab49f14-4d57-4e40-a845-11fb4ddeeb70' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.473594 [guppy/info] Read '1d4accd0-5e43-4207-bce2-f4eb4f038dae' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:05.482867 [guppy/info] Read 'cacfd164-5398-4fb0-85a0-aae85da574c2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.487277 [guppy/info] Read 'caffe090-d7c6-4c97-a2f0-f9ec4443b701' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.497039 [guppy/info] Read 'cb286094-74fd-401f-8be4-047616986e7f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.501992 [guppy/info] Read '0fc86d31-bc81-4200-8860-c1decc6eb290' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:05.507927 [guppy/info] Read '34cbe39c-ccf0-43fd-aa00-d41d83c0297b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:05.512837 [guppy/info] Read 'cbbc07bd-410d-4368-9700-e4a2bdf9cf35' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.514021 [guppy/info] Read 'cbedda1d-3458-4760-99bd-61d311d1f776' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.515164 [guppy/info] Read 'cbf6f09b-2442-4e9f-9737-afd66ee962bc' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.528038 [guppy/info] Read 'cc8520f3-1444-4092-bb6a-3c69fa1c91c7' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.542146 [guppy/info] Read 'cd21d570-5d3d-44c2-8c1a-a093a4b5037e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.548710 [guppy/info] Read 'cd2d8c53-f979-414c-8588-312e701bf7f7' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.567076 [guppy/info] Read 'cd5b878a-c6f1-4833-9f60-b9c0f483c414' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.587576 [guppy/info] Read 'cd8dbfff-2286-4f1a-90ee-0ca030c271bf' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.601640 [guppy/info] Read 'cda72692-5c72-47ea-bdfe-ce8d5bf28c10' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.608200 [guppy/info] Read 'ce228125-b823-46b1-a787-481567e5b5c9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.621353 [guppy/info] Read 'cf03d3bd-8ae7-4d2a-9b5b-ff73c64ab104' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.630099 [guppy/info] Read 'cf0a1db1-cb75-4430-9ae9-ea78ab789556' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.648407 [guppy/info] Read 'cf8d53c0-b839-4e4e-8c54-233a78f5b4b5' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.669185 [guppy/info] Read 'cfa21b41-e8d6-4902-95f0-ece3d29ef387' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.678841 [guppy/info] Read 'd06f75d2-17ba-4519-be81-86623bf9571e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.726177 [guppy/info] Read 'd1bb5cd2-6296-4821-b514-18f93a37163c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.738384 [guppy/info] Read 'd1c13005-d70a-44bb-8b70-9f745fc17eaf' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.738535 [guppy/info] Read 'd2046245-d3c6-404b-b940-3c4c940a54cc' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.740719 [guppy/info] Read 'd31a01f0-3df9-4066-8850-544fcfe22bff' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.741940 [guppy/info] Read 'd41c70dd-c4f3-40ae-826e-987710e05516' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.744167 [guppy/info] Read 'd4905ca5-5495-4496-ad4a-c927cca3d1db' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.750723 [guppy/info] Read 'd4e78b15-0070-4e38-8dc4-fb6605ff768f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.758356 [guppy/info] Read 'd5583715-1e5b-465d-94e7-81352dc1d275' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.845516 [guppy/info] Read 'd5a7a0bb-c6f6-4cea-9781-914441b80fb2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.864774 [guppy/info] Read 'd625acd9-cc07-412e-bb69-7d0c163fccfa' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.865999 [guppy/info] Read 'd69c7a92-a7a6-482d-827a-b9b099c33a0b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.867165 [guppy/info] Read 'd6b85ca5-4ae7-4c64-8eca-0048f0708c2f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.869421 [guppy/info] Read 'd6cac01d-610f-414a-81ab-57e6e58dd11c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.889891 [guppy/info] Read 'd730cc9a-8d11-433f-89d7-2650b273ad97' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.891084 [guppy/info] Read 'd7c3401c-fb7a-44d5-874e-6b2c4e46729f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.918115 [guppy/info] Read 'da10b127-2648-4627-8afa-4281cd0defc2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.941092 [guppy/info] Read 'da5e3695-57f7-4997-8112-e6b0dd27fc97' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:05.955073 [guppy/info] Read '378461fe-220f-4326-896b-dee96763db59' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:05.985631 [guppy/info] Read 'dae95eab-14cb-4c34-81b6-2f7b529571c2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.073418 [guppy/info] Read '407afefd-e3cd-4b91-8933-8f1173681d2e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:06.098351 [guppy/info] Read 'db10ba4d-8cdf-4038-a7d4-9045df50db1b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.098502 [guppy/info] Read 'dbb6c469-897a-453e-a70c-0aec88c9999d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.116954 [guppy/info] Read 'dbf5455e-a56e-46f6-93f4-4e4ab8aef240' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.119234 [guppy/info] Read 'def09044-eaa2-4b23-9079-def0cba1d9d8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.121252 [guppy/info] Read 'df6a59cc-3977-4e51-92e7-62009977fb6d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.137411 [guppy/info] Read 'dfb8295f-4b9d-46e0-87ad-54abc0d29c08' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.139713 [guppy/info] Read 'e041b33b-feac-42d4-a104-46a70560e6dd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.160093 [guppy/info] Read 'e184000a-b2ac-4ead-8df3-4a8722321bb2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.249204 [guppy/info] Read 'e18e2c05-79a0-4568-a214-73ab58861c07' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.250385 [guppy/info] Read 'e1cc389a-7d4c-46b7-bb45-fde78d81eef6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.287104 [guppy/info] Read 'e29816fd-26de-41fc-afe8-ea43e293064a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.288291 [guppy/info] Read 'e2cb1f5a-b0a3-4b94-9947-04900d185993' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.397844 [guppy/info] Read 'e2f4ec8f-597b-441c-88be-46322f584157' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.430755 [guppy/info] Read 'e3a62282-808a-4a5e-9e17-10695d812b0e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.469458 [guppy/info] Read 'e4bb4fbf-61aa-45b1-bc86-1779dfac40f3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.470804 [guppy/info] Read 'e4f57793-12b4-43ec-a441-6aa9079e4f9b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.584116 [guppy/info] Read 'e52137ad-197e-4815-a602-f07066271a70' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.585285 [guppy/info] Read 'e5796bb3-973a-4fdd-b7da-6c99e20d9cd9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.586442 [guppy/info] Read 'e597f097-1a74-4559-b905-69e96f2ae4e0' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.595123 [guppy/info] Read '5a4963b3-3b1c-4033-8bfc-4c64d810c560' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:06.596086 [guppy/info] Read '5d21d465-0a0a-4cb9-a2bd-9aa45ca29815' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:06.602718 [guppy/info] Read 'e6129cf3-808f-40e4-aea0-afe0b79dbfe3' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.894050 [guppy/info] Read 'e6564288-d19c-4e9f-9d78-240df0658f28' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:06.968846 [guppy/info] Read '47aa02df-fcd9-4d1d-ad17-6a55745fe8cb' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:07.016320 [guppy/info] Read 'e684bafe-3e6b-42ef-8916-bfa292a3f854' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.092418 [guppy/info] Read 'e7a07a5b-753e-4bdd-acd6-e99f08e3bfa2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.163202 [guppy/info] Read '0c30eb0d-b2dc-4df0-b0e8-dc58c3ab1adc' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:07.167513 [guppy/info] Read 'e7ae5227-c265-4b1d-b696-5bba6d6b26ce' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.214534 [guppy/info] Read 'e897d90b-2b75-4da9-98c9-ecb60f4b4d76' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.404518 [guppy/info] Read 'e9ae1cae-b013-4dcf-bbce-02de543e14cb' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.404679 [guppy/info] Read 'ea0fe799-67ca-4e8f-b251-9e10e378db04' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.404702 [guppy/info] Read 'ea118782-cf46-4290-8d29-42d5e47fbd09' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.411418 [guppy/info] Read 'ea18dc89-23b6-49c6-9df6-a08517754526' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.412569 [guppy/info] Read 'ea3cf0a2-2a78-4d40-852f-2771cfc82548' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.449540 [guppy/info] Read 'ea5d014c-d2f9-419f-94a9-a07bf343b975' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.450707 [guppy/info] Read 'eb49b01c-233b-4462-a60b-f151bf5b175e' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.519267 [guppy/info] Read 'eb49fa34-ad1a-43fa-aa66-a55b88a97923' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.545008 [guppy/info] Read 'ec1a002c-c4f8-4daf-8c54-d1329d7e8c72' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.545353 [guppy/info] Read 'ec1e3a56-51cf-43e6-92e9-da37d6947c82' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.636094 [guppy/info] Read 'ec2ac3fe-3858-4d73-8e3e-399943421a3b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.680908 [guppy/info] Read 'ec37e080-6f3f-424e-bd9d-89e2bd6027a6' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.846424 [guppy/info] Read 'edecc752-c0ad-4c8e-a32b-35b50a828bdd' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:07.852704 [guppy/info] Read 'ee17725b-943c-41cd-ac3e-972462dc5c73' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.072043 [guppy/info] Read 'ee222266-0705-4d9e-92f8-0b45bcaf614b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.072206 [guppy/info] Read 'ee369b5b-d492-4842-8bd8-d9309bd4fa5f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.076575 [guppy/info] Read '761d8fb6-628a-4e1d-b289-940c1345973c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:08.116387 [guppy/info] Read 'eeb7187e-0368-4617-93e4-a5243c4abcea' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.145098 [guppy/info] Read 'ef1109de-6e31-4a2d-8d01-f3642ca73390' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.148802 [guppy/info] Read 'ef15b262-cd1a-4c0c-8b32-5b7cdaaed010' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.171708 [guppy/info] Read '32cb3b13-9d44-4e38-8020-38b436f27618' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:08.172858 [guppy/info] Read '33d79651-401b-4420-91d2-1b79bd686d83' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:08.215434 [guppy/info] Read '4182707d-1348-46ca-88cb-5fc4d1aa07ea' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:08.257024 [guppy/info] Read '474054d7-30d7-4ba0-9971-0b1f191ec1fe' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:08.277667 [guppy/info] Read 'ef581a2e-2905-41fd-9060-7f823c4e6105' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.279078 [guppy/info] Read 'f029d585-e4bf-4cc3-b588-813719108e52' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.281393 [guppy/info] Read 'f04afacd-fbd2-4036-8dc4-352855a3a863' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.288963 [guppy/info] Read 'f07c706a-3126-43fc-b82c-308fbb942f3a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.493529 [guppy/info] Read 'f08f3402-babc-432c-9141-01999bfe9e5f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.520639 [guppy/info] Read '9316896b-a739-457a-9d72-1a669cb00697' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:08.548666 [guppy/info] Read '8abe99a7-cc5b-4cee-a7e4-8930290f31ed' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:08.666213 [guppy/info] Read 'f10a3101-266a-437a-960f-440d728d3b7c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.731354 [guppy/info] Read 'f1163207-a8c4-4a2f-9f17-58dfe6c83fb4' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.745828 [guppy/info] Read 'f1a0ce40-4b9b-4824-9f64-f850e0c52144' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.765071 [guppy/info] Read 'f1bc2ff4-639a-425c-a5d3-b39eabbe3693' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.767777 [guppy/info] Read '3c124af5-0a88-4c0b-ae0c-17df92a18c88' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:08.792967 [guppy/info] Read 'f2c49395-041b-4da8-8e3c-e6df3bace887' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.793088 [guppy/info] Read 'f2e76dec-a589-46d1-9ba7-b7902a4e535c' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.794195 [guppy/info] Read 'f2f428d7-fd5d-4607-8973-91bc43e80a72' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.840386 [guppy/info] Read 'f31b6dab-6e8c-4922-847e-bf8537d193e8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.840483 [guppy/info] Read 'f39b1bce-7744-4684-934b-af4e5a94c976' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.903256 [guppy/info] Read 'f4cfa6f2-47d3-4a0b-b8d6-bf4cb4abe7b2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.932333 [guppy/info] Read 'f4d7e1e6-dd26-4546-a9a6-cb58982740d8' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.932450 [guppy/info] Read 'f534a285-aa68-4553-b099-6e6165b5701b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.932470 [guppy/info] Read 'f551385c-de44-46ec-82aa-f9701ec0b968' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:08.963534 [guppy/info] Read 'f5d936f2-c71e-42a2-af7b-581e9dd4dfc1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.069398 [guppy/info] Read 'f62c1de9-a8e3-4cb2-a75e-86ff61a7051f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.069533 [guppy/info] Read 'f6431f0c-2506-4010-b593-3b3debf5fc2a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.069577 [guppy/info] Read 'f66ddba2-8f49-4666-8d3b-bcaddfdea1ad' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.071759 [guppy/info] Read 'f74fbad5-7a38-4927-ad36-7caf0af18061' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.097895 [guppy/info] Read '11005f28-a3e0-42db-8bee-8f39030c8ac6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:09.098782 [guppy/info] Read '1434ad16-efae-478d-a58e-96e65dd72e87' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:09.142149 [guppy/info] Read 'f76e3ea3-fee0-4018-b698-fb5929121940' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.165260 [guppy/info] Read 'f77f120b-44f8-4408-a6fd-43e8fb431707' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.165348 [guppy/info] Read 'f7b5f5b9-1567-42b0-8c73-a67674e5883b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.213351 [guppy/info] Read 'f7fa846c-3bee-4743-8632-bc4fcccbce56' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.222604 [guppy/info] Read 'f8d6415d-dd2a-471c-94b9-6649868e005f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.222714 [guppy/info] Read 'f9963993-5445-4c02-92ac-2cc4cef1bfd1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.230532 [guppy/info] Read '175d53fc-7a8e-4842-9cad-7e96bc18f8fd' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:09.230881 [guppy/info] Read 'f9c6711b-667e-4141-a95c-5e063f9ec886' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.230917 [guppy/info] Read 'f9f982c8-cdd4-4dc7-80b0-ba50504ddf73' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.230932 [guppy/info] Read 'fb0559fb-e172-4a42-aa9b-a7239b31335d' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.260926 [guppy/info] Read 'fb38df27-52c4-4fc1-a39a-4c781bbb53ff' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.263138 [guppy/info] Read 'fb3adcf8-b4d5-4349-9cde-4520b798cec2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.264276 [guppy/info] Read 'fbe847d0-b04c-41f4-a0ea-ec4d86199cb2' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.294412 [guppy/info] Read 'fc07c39a-146d-4092-ab22-08c5fd93f8c7' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.432711 [guppy/info] Read 'fc47a6ee-4746-4777-b583-7d976e6605c9' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.441381 [guppy/info] Read 'fc956276-f25a-4faf-b8df-aae49417e16f' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.442548 [guppy/info] Read 'fcbba468-6c3a-44cb-b036-9b4d53381180' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.514549 [guppy/info] Read 'fec1c8b2-2ef4-4e3a-aa0b-293a38106de1' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.516447 [guppy/info] Read '479f706a-3761-42ff-a639-8f8ee6d38f4f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:09.564080 [guppy/info] Read 'fee84908-35f8-4672-bbe0-baaee36d042a' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.863737 [guppy/info] Read 'ffa6a10b-adb3-4ccf-937b-3115fd25b25b' from file "HEK293T.fast5" has been loaded.
+2023-06-24 10:31:09.866098 [guppy/info] Read '1023a0cd-b649-4d11-adf5-527ca8794abe' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:09.873003 [guppy/info] Read '30a72802-e71b-4b7e-bbad-cf82ed336416' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:09.873053 [guppy/info] Dispatched batch 0 containing 1 inputs:
+2023-06-24 10:31:09.873220 [guppy/info] Batch input 0 : demo/HEK293T/HEK293T_fast5/HEK293T.fast5
+2023-06-24 10:31:09.874574 [guppy/info] Read '30adc084-545e-4a60-b94f-ae857479e2ac' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:09.878444 [guppy/info] Read '4d74e73c-94ee-416a-a64b-69d71c35ab55' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:09.904637 [guppy/info] Read '85da8c48-0906-4dfa-890b-5237a59d6a91' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.000456 [guppy/info] Read '1fba6a7b-b2e6-48cf-9dce-684cfa274ffe' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.001716 [guppy/info] Read '1fbfc27e-8d30-4b86-b85b-12ab7e571c4c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.186013 [guppy/info] Read '26564a53-c679-4262-9f9d-73f95d491c60' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.206215 [guppy/info] Read '80472b15-6659-43e6-860a-c8ad78f05a47' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.285655 [guppy/info] Read '38b90b6c-e383-464c-be95-1b62d497420b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.378454 [guppy/info] Read '6c45a881-e6bc-4ab8-bc5f-c8adf2891f8d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.379598 [guppy/info] Read '6ed64cb1-37c5-4ad8-aacd-9549b3988365' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.476929 [guppy/info] Read '8b6d5b66-6e2f-4e95-a942-260b002cdc5d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.498992 [guppy/info] Read '45c85999-095f-48db-95c6-aefd90d07f96' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.726204 [guppy/info] Read '7861ae88-5e19-46ae-a917-113e2bb466eb' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.840042 [guppy/info] Read 'a5a4acfd-8d55-4cba-9d77-887c37b2b28d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:10.967176 [guppy/info] Read '7edbfb81-5b83-4186-b336-a857931f9c3c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:11.074178 [guppy/info] Read '49a60f40-9260-4af3-aa7c-8e5b6aca5e71' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:11.075824 [guppy/info] Read '64e030b3-6933-4417-a04b-03f68ad37d14' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:11.112767 [guppy/info] Read '5c4a57d5-6ee1-40f5-ae5e-e2d353df4bf9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:11.348947 [guppy/info] Read '494b1e8b-b75f-4f28-a057-ce76bfc5bde9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:11.534174 [guppy/info] Read '3aba31dd-cebc-4478-b7e7-cc048c489bad' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:11.535470 [guppy/info] Read '50ab02c5-f0bb-43ab-b540-4e34da914847' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:11.603699 [guppy/info] Read '63f71993-0668-44aa-a2f0-a06d661b2ba2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:11.756327 [guppy/info] Read '95552198-09fc-4811-95f7-7186d8617a08' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:12.098396 [guppy/info] Read '3bc34c91-6aa4-4e50-8a53-05242e9c1c64' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:12.101722 [guppy/info] Read '96598bf1-dcca-4e7c-909c-6cbacf4e0003' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:12.102522 [guppy/info] Read '9a4ac080-a3d6-434c-80e3-7f2435889614' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:12.250617 [guppy/info] Read '0c97c3e3-57bf-4158-92df-d5a4e84cc5d2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:12.273797 [guppy/info] Read '8374cb18-3f35-490f-89ea-8f6b39f7828b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:12.274884 [guppy/info] Read '85b57197-54d8-4778-b283-93d590ad31c1' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:12.309143 [guppy/info] Read '144d7ea7-0936-46c5-87b7-03895be4fa53' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:12.310670 [guppy/info] Read '14e54f71-7428-4ac9-b879-0a4fb1047a67' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:12.867445 [guppy/info] Read '48222429-1311-4a67-863d-9232f2eab1ea' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:13.254272 [guppy/info] Read '4a499b89-f5be-48b0-974c-2f020a53836d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:13.607858 [guppy/info] Read '7dfb9658-68de-4de2-8167-bd867d27ebf0' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:13.620104 [guppy/info] Read '17aa8c0a-d519-411a-a17f-bc498844447b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:13.755857 [guppy/info] Read '5ed8eccd-04e5-4336-abba-213a42cc1a92' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:13.757017 [guppy/info] Read '83a9db59-3caf-4bd0-b02a-061329ebc8d2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:14.089433 [guppy/info] Read '1c9d274b-129c-4820-a66d-51787abdf6f7' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:14.109823 [guppy/info] Read '0e243461-a6ea-4dfe-ae8d-59afef0ace39' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:14.996458 [guppy/info] Read '3c562057-b424-4b87-bf24-8ea2731f8a34' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:15.142661 [guppy/info] Read 'a9995194-d141-4532-8a81-62c1f9f0eee6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:15.171697 [guppy/info] Read '425e07b4-908c-4fcf-a7f6-a82478d0d06d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:15.172779 [guppy/info] Read '42f75b5f-17a0-43fe-9c7b-6879983d0bcb' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:15.465135 [guppy/info] Read '203072a3-0574-46e2-90af-339b3b92e526' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:15.558252 [guppy/info] Read 'b5d5097b-ccd6-4ec6-9cee-53a2f1f236b1' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:15.636142 [guppy/info] Read '50f20962-9f2b-48da-8702-70af202e99de' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.039776 [guppy/info] Read '455704b0-08d3-47c8-a163-cfe266612a5b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.245103 [guppy/info] Read '17e880e1-5c3d-4cd2-985d-8415dd62b816' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.354550 [guppy/info] Read '20b2e7bf-0cd5-450f-919e-d9d5fdcb2325' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.371360 [guppy/info] Read '5b1142b7-6fc7-4ada-ae26-0e697a5b76e6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.426884 [guppy/info] Read '16d061f5-3c67-457a-bd55-1f340c9ce0ce' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.429589 [guppy/info] Read 'b7b21ade-0cd4-476c-a15e-ba458ad2f418' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.570709 [guppy/info] Read '8e8ad9e0-02da-44d4-8a4c-7f523a40ad5b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.571717 [guppy/info] Read '9a1308ad-8e47-4d81-aad6-a64a938d6b86' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.627278 [guppy/info] Read 'c80c77c2-424a-4ab6-b1d8-e1607960bbf9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.628205 [guppy/info] Read 'cbf6f09b-2442-4e9f-9737-afd66ee962bc' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.676473 [guppy/info] Read '5e27b22d-035f-42b1-97d6-84e9c69416f5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:16.854882 [guppy/info] Read '49a0adb3-6545-4ca9-b41a-7ad7b8ff8a41' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.010848 [guppy/info] Read '2487b101-b48a-4dea-b9f5-8a0ba1ff18ff' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.013151 [guppy/info] Read '2a6890da-d879-4347-8c5d-cddafcfbbdb5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.016054 [guppy/info] Read '52522351-6a7d-4c2e-8299-b62117885fb4' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.065092 [guppy/info] Read 'aacb7467-4b0f-40c2-9123-744d220d88aa' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.087731 [guppy/info] Read '733b0601-b4ff-411d-8135-fa5caff2b31e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.476502 [guppy/info] Read 'c1fceb45-72d9-48e1-aadd-c07bb3e53809' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.512897 [guppy/info] Read '18cf51d0-9cc6-400c-ad8b-3e827818757b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.553239 [guppy/info] Read '4f4d05d0-0717-46d0-b7e1-f9e630cdaae1' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.617178 [guppy/info] Read '652e42ad-2701-421d-bc06-e2ea390f404e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.816066 [guppy/info] Read '351e1696-9eb5-4a5c-b746-238937463052' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.890658 [guppy/info] Read '4612148d-69dc-4b73-a7db-681593a25e25' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:17.960590 [guppy/info] Read '433d0fc7-9161-444b-8855-e552a999d57f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:18.197399 [guppy/info] Read '226eb0d2-5a40-43c3-8363-d81c9267d126' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:18.198387 [guppy/info] Read '2c43a2cd-dcad-49ff-9bc1-2a04cbea49d8' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:18.253715 [guppy/info] Read 'cbbc07bd-410d-4368-9700-e4a2bdf9cf35' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:18.254462 [guppy/info] Read 'cbedda1d-3458-4760-99bd-61d311d1f776' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:18.257924 [guppy/info] Read '8d8a4646-68e0-46c0-9ebf-b961810de6a4' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:18.666994 [guppy/info] Read '13ceb011-0a39-434a-a031-2a6525c656ef' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:18.668439 [guppy/info] Read '2b93e152-d297-4e8b-ada8-3428d6627469' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:18.952013 [guppy/info] Read 'ae7397f5-04e0-4d02-a222-c20be50848db' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:19.162594 [guppy/info] Read '8d8fd573-ad9c-4895-acdf-cbd7318c8fe4' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:19.229470 [guppy/info] Read '4ad0f60c-5c03-4d2f-ac55-da872315aab6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:19.496011 [guppy/info] Read '82d45807-03a3-4f96-9b6e-30fbca313d4f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:19.749446 [guppy/info] Read '68f992ff-26dd-4da5-a32d-592686038530' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:19.750329 [guppy/info] Read '6ed95132-05c9-498b-8f0a-fcb82d70b618' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:19.774459 [guppy/info] Read 'ad2b0cf1-47eb-48c0-8a27-6f88a19b74b7' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:20.134166 [guppy/info] Read 'eb49fa34-ad1a-43fa-aa66-a55b88a97923' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:20.560040 [guppy/info] Read '53f335c5-f7c4-4d31-9ec5-11312c21d7d9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:20.564089 [guppy/info] Read '59ffc6ea-f384-4b24-a811-90036baeba08' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:20.730005 [guppy/info] Read 'bdc2ca60-3aff-4d1e-8bf5-8680a48876f8' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:20.790741 [guppy/info] Read '1a8d4d27-be6f-4aaa-9214-2818d0a622df' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:20.899743 [guppy/info] Read '6f1d4547-189b-4fbb-ad38-691737b6ce31' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:20.960537 [guppy/info] Read '76120b8a-7f14-47b7-9ce1-19be6ed50f34' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:21.047530 [guppy/info] Read '20d6251e-cc62-4c17-9512-dc4cfba77e61' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:21.080710 [guppy/info] Read '210433d3-7bba-448e-b631-fe7c25e9c3cb' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:21.439448 [guppy/info] Read 'f2f428d7-fd5d-4607-8973-91bc43e80a72' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:21.612964 [guppy/info] Read '36587cdb-6a14-456d-a63d-e8efa78cb96d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:21.624006 [guppy/info] Read '5ff7ae1f-cdff-4a64-9d8a-bd8b92c550a0' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:21.678955 [guppy/info] Read '76b705b3-69a4-4734-9828-404e51d3d951' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:21.688156 [guppy/info] Read '72e0f77e-2540-44a6-8aa3-b1778cdb1df6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:21.864563 [guppy/info] Read '3d2a44ac-e4f9-4e62-a369-72aaf14d6b02' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:22.020417 [guppy/info] Read 'ec37e080-6f3f-424e-bd9d-89e2bd6027a6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:22.257123 [guppy/info] Read '9dc1ba45-fb47-4bce-9348-0fc18cdeb9e5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:22.264109 [guppy/info] Read 'b19e1cb8-938f-470f-b188-168b7c09713e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:22.928582 [guppy/info] Read '54675bdc-2151-4aae-af84-e6e0288d9aa3' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:23.055902 [guppy/info] Read '0da488d8-6136-4b57-86c3-242b71f4eaf2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:23.443739 [guppy/info] Read '36a8d6ab-93cc-4e82-bb5e-5c9c4500ce56' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:23.545226 [guppy/info] Read '5f2933e9-bce8-4ad6-bce0-faff93d0f65a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:23.700761 [guppy/info] Read '21046496-a7c5-4cc3-ae8d-9f6a8f9cdc50' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:23.888643 [guppy/info] Read '820e5510-cb37-47ef-a8d7-fbea965a3104' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:24.589701 [guppy/info] Read 'c11864d1-8f84-4821-98be-6658b2296a72' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:24.969604 [guppy/info] Read '10a0b91e-e1a3-4fce-baa4-76f7f70e19c3' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:25.088705 [guppy/info] Read 'ab623f88-8489-477f-b449-6c8faa8b8abc' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:25.089973 [guppy/info] Read 'aed13040-e190-4a16-985d-16729faa1612' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:25.714985 [guppy/info] Read '7702ec61-adbf-4ac2-bd5f-05830d9b28f6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:25.916863 [guppy/info] Read '4d3a6840-d36a-4ca2-9ab6-11c30536cb20' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:25.918505 [guppy/info] Read '514be08a-1e97-463c-af73-c074570274df' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:26.005220 [guppy/info] Read 'b58ed930-dd96-4f99-90c5-2ba026957165' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:26.472044 [guppy/info] Read '54c37f66-229f-4848-919c-857050678183' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:26.670184 [guppy/info] Read '27ee07b7-ec03-456f-a737-e1b2d3d8b2f3' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:26.754413 [guppy/info] Read '74842ab2-7ea7-4e41-968f-2a887a854d1b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:26.755731 [guppy/info] Read '9044666a-ff25-4723-b2b8-28bac73004c9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:26.937855 [guppy/info] Read '6230669b-45f5-4a6a-a5fc-69938d4f0ae1' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:27.367454 [guppy/info] Read 'b2115d7f-617a-437f-b321-1920a95be4c8' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:27.608014 [guppy/info] Read '1a9813ad-3e99-411f-9288-c50609498d68' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:27.830038 [guppy/info] Read '516648dc-6343-4581-aa91-80eb13e0b6a4' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:27.920524 [guppy/info] Read 'cd21d570-5d3d-44c2-8c1a-a093a4b5037e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:27.921919 [guppy/info] Read 'cd2d8c53-f979-414c-8588-312e701bf7f7' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:27.923097 [guppy/info] Read 'cda72692-5c72-47ea-bdfe-ce8d5bf28c10' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:28.545778 [guppy/info] Read '1b2ec95e-60bb-40f7-a7e0-d1f47e1703c1' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:28.710245 [guppy/info] Read '62718555-4590-4774-b3b1-a4ba208596b3' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:28.744873 [guppy/info] Read 'cc8520f3-1444-4092-bb6a-3c69fa1c91c7' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:28.747572 [guppy/info] Read 'def09044-eaa2-4b23-9079-def0cba1d9d8' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:28.749105 [guppy/info] Read 'fc07c39a-146d-4092-ab22-08c5fd93f8c7' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:28.850730 [guppy/info] Read '66c99f02-d422-47d1-b5a5-3b6cf51a5e05' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:28.852564 [guppy/info] Read '68423401-e3a5-48bd-841e-7441b16009d1' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:29.582367 [guppy/info] Read '5700430e-913f-44cd-9e8c-b8aa88e314d9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:29.835544 [guppy/info] Read '304ce079-31a2-43e9-a7b5-ecfa6473c07c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:29.837401 [guppy/info] Read '76ea4bd1-f97b-4f8e-9952-eaa7ca53565d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:29.838981 [guppy/info] Read '7b4fb2ea-a0bc-48d9-ae4e-39e85a690353' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:30.220697 [guppy/info] Read 'f029d585-e4bf-4cc3-b588-813719108e52' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:30.668964 [guppy/info] Read '58fbf7ec-1ad9-48e0-8046-5bf20391455e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:30.672292 [guppy/info] Read '5ea0b456-5010-42ad-91e3-6a10a9d22726' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.191078 [guppy/info] Read 'aea34abc-1941-470d-8814-3e6729bb9474' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.192258 [guppy/info] Read 'b5e00982-9ed6-421b-9a58-ed0c8fa6fe03' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.305680 [guppy/info] Read '396eec9c-b550-4400-a3d4-aec1c4470be3' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.307271 [guppy/info] Read '858d7a7f-73bd-4f68-9663-d80fb7c4ebd6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.378628 [guppy/info] Read '314f6379-56e9-422c-baee-41ea789a5541' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.605265 [guppy/info] Read '1b757992-49c3-4ff1-94ee-3cb3b0a2829b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.817358 [guppy/info] Read '1ef651a6-14c8-4796-8f68-ac50898c0137' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.819406 [guppy/info] Read '7fe47759-84d9-42f0-b9bf-cbf6e14789d2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.822728 [guppy/info] Read 'a464344b-7ae2-4305-89df-d85d1e46d608' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.886976 [guppy/info] Read 'fc956276-f25a-4faf-b8df-aae49417e16f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:31.899059 [guppy/info] Read '2146d97f-a5b7-4345-a741-c9cc9126f245' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:32.022401 [guppy/info] Read '4748cfc8-3e4c-4ad4-827d-c52725d2a4bd' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:32.024131 [guppy/info] Read '64ec50b1-c906-4b4b-8ef2-0a43e07c8abd' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:32.480012 [guppy/info] Read '643a6779-ebf4-4d38-b84e-421ef4d5530b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:32.608581 [guppy/info] Read '637aa9ab-150a-4a47-a301-cea2f931de86' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:32.687576 [guppy/info] Read 'c9f3ffca-b95f-46a8-97ec-0a113da998ae' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:32.710467 [guppy/info] Read '230ae3ce-ae18-4cd4-aa35-105e17adcc03' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:32.983843 [guppy/info] Read 'df6a59cc-3977-4e51-92e7-62009977fb6d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:32.999941 [guppy/info] Read 'dfb8295f-4b9d-46e0-87ad-54abc0d29c08' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:33.545642 [guppy/info] Read '87e3fa0f-2a6a-4371-b2c4-9817cfcf9859' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:33.547452 [guppy/info] Read '9daa7da4-9ec3-4b9e-85c4-6b55500e1e6c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:33.653407 [guppy/info] Read '6efd5312-956c-48d1-b80a-3bc5c8c82173' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:33.795152 [guppy/info] Read 'cf0a1db1-cb75-4430-9ae9-ea78ab789556' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:34.349731 [guppy/info] Read 'a4c336f3-4092-4643-92f6-b5d700877af0' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:34.384924 [guppy/info] Read '60e0f6a3-2166-4730-9a10-8f8aaa750b37' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:34.386490 [guppy/info] Read '678618bf-7b46-4306-9c2f-056baf83d947' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:34.647316 [guppy/info] Read '3a859b64-9b14-4049-af45-dbe6211c2159' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:35.178969 [guppy/info] Read '7182f6b4-3031-4701-bfea-f3919e830661' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:35.280856 [guppy/info] Read '6a93e4ff-402e-4698-818a-25d3edf29f37' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:35.612777 [guppy/info] Read 'a0c11e79-c5bc-4f0c-b542-cc37257095d5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:35.614020 [guppy/info] Read 'ae443290-7880-4eab-9491-2f6bff6b0752' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:35.616230 [guppy/info] Read 'ae45f484-5a41-4474-ae03-941249afe9eb' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:36.340956 [guppy/info] Read '9f32c9af-a259-420b-b51f-073ecc63b37c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:36.380113 [guppy/info] Read 'a32848b6-c671-4794-8446-ee78b7610ae0' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:36.547769 [guppy/info] Read 'b2a10a88-ae97-4048-a8bf-6f45c02fea7d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:36.549127 [guppy/info] Read 'b652841b-fe75-457e-80d5-1ae941a72175' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:36.681105 [guppy/info] Read '65bc3bff-b85c-4baa-a559-68d679c8c8f6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:37.108783 [guppy/info] Read 'affe327e-a113-4f04-8d7b-cfd7cf9d8166' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:37.110245 [guppy/info] Read 'b0fdfbc5-7484-437a-bc92-a8aff11fcf19' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:37.247595 [guppy/info] Read '7acff283-9302-4aeb-918b-168e70e31def' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:37.384946 [guppy/info] Read 'e7a07a5b-753e-4bdd-acd6-e99f08e3bfa2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:37.608997 [guppy/info] Read '3d3c9b97-9e58-4dae-b56e-79a0f4528747' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:37.612068 [guppy/info] Read '9679818a-5248-47af-a5b2-652705a38963' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:37.670149 [guppy/info] Read 'a41bbef9-3d86-41d9-b2a0-7474f4046f64' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:37.714991 [guppy/info] Read '78054de6-e08b-44a4-923d-d86d33bbb202' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:38.157042 [guppy/info] Read 'c9762d13-2504-486c-8aa4-5089a12b977b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:38.404994 [guppy/info] Read '87f8240f-a50a-4453-aedb-e6857aa28122' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:38.750528 [guppy/info] Read 'cf8d53c0-b839-4e4e-8c54-233a78f5b4b5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:39.199720 [guppy/info] Read '52a496f4-064b-48d5-a347-3ec1995fa3ee' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:39.204110 [guppy/info] Read 'da10b127-2648-4627-8afa-4281cd0defc2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:39.208356 [guppy/info] Read '65798189-f4a6-4802-8f4c-08477de456fd' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:39.545454 [guppy/info] Read '2351309b-9b71-46e6-82b3-554291a98d9d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:39.934904 [guppy/info] Read '586d62a8-a5a4-456e-9dee-3b2462978cad' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:39.938731 [guppy/info] Read '59be22bf-0515-4525-a5f8-efc10ec72130' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:40.606111 [guppy/info] Read '520144cf-1df0-4976-a4b6-3997b34a893c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:40.608108 [guppy/info] Read '54d5a48c-7ec3-4117-b0a3-d89674560b06' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:40.853239 [guppy/info] Read '5b10c9c5-90ba-434b-bde9-304137fcbd2f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:40.874529 [guppy/info] Read '6915a21b-7145-4c54-988a-0cefccd9810b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:40.915594 [guppy/info] Read '6da3c219-e84a-4008-b17d-73f4b0fa2b10' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:42.069046 [guppy/info] Read '80dd483d-2d25-4a8b-b8e1-010b6e0c0e1f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:42.565256 [guppy/info] Read '507a2a6f-dd48-4d76-a0fd-dafa6a78a53a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:42.638128 [guppy/info] Read '6a129534-88d2-43d1-b33c-c079c4e76a16' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:42.669335 [guppy/info] Read '8c6370fc-4070-4ac0-b2aa-1ece38bbb000' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:42.670944 [guppy/info] Read 'e18e2c05-79a0-4568-a214-73ab58861c07' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:42.762191 [guppy/info] Read '8b56e309-ff4f-4a8a-93d5-14eb0c43f11b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:44.092986 [guppy/info] Read 'ef581a2e-2905-41fd-9060-7f823c4e6105' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:44.475419 [guppy/info] Read 'b9ded60e-ec31-4ba0-ba41-2d7929c498c5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:45.941237 [guppy/info] Read '3750b7a7-63bf-40ed-8339-a90dfad333c8' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:46.284057 [guppy/info] Read '71d8c658-9885-4365-9ca1-c22987a8f7c4' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:46.471228 [guppy/info] Read '8e421658-d6ad-4544-91fb-517f440c96fd' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:46.477793 [guppy/info] Read '7e3590eb-adb5-401e-902b-ef826793a159' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:46.737436 [guppy/info] Read 'cd8dbfff-2286-4f1a-90ee-0ca030c271bf' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:46.739481 [guppy/info] Read '7b219da7-c9cb-4f04-91f6-1d68f1e7982e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:46.919227 [guppy/info] Read 'cf03d3bd-8ae7-4d2a-9b5b-ff73c64ab104' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:47.163953 [guppy/info] Read 'ec2ac3fe-3858-4d73-8e3e-399943421a3b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:47.434194 [guppy/info] Read 'b72ccef8-cc3b-4e04-8c2e-d9c067a0a267' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:47.436887 [guppy/info] Read 'b7e94ff5-0d7c-4ae5-8a74-dcb73d5fa4da' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:47.551797 [guppy/info] Read 'd4e78b15-0070-4e38-8dc4-fb6605ff768f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:47.552698 [guppy/info] Read 'd5583715-1e5b-465d-94e7-81352dc1d275' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:47.553899 [guppy/info] Read 'e4f57793-12b4-43ec-a441-6aa9079e4f9b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:47.696656 [guppy/info] Read '7a29a4d7-faff-4662-bec1-039242add012' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:47.704792 [guppy/info] Read '688c2227-36b8-4338-b93e-7bdb8dc67c96' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:47.873690 [guppy/info] Read '3fe36103-21df-456e-9ad8-a693fe6d13a3' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:48.146195 [guppy/info] Read '79c28e3c-65d8-4f9b-83b9-bc205abb398b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:48.147227 [guppy/info] Read '79caeeb0-6f95-40bb-a99f-f4a3c28a8c6a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:48.148858 [guppy/info] Read '7b0bd529-4ae8-41e8-81b6-8e0a6a429e79' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:48.667556 [guppy/info] Read '9d99ba87-138b-45ff-9412-dc25c3f894f0' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:48.670039 [guppy/info] Read 'c28014cb-05d3-4ab6-b897-e36ada3cfe0b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:48.717113 [guppy/info] Read '6fb3b42f-3d0f-4fcb-a9b1-ce2bf73fa0b2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:48.718721 [guppy/info] Read '73545ae4-f2eb-4faa-b0a3-70ba9696c0c2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:49.565633 [guppy/info] Read '7e784487-e613-4ce5-981d-4d377dff3040' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:49.651551 [guppy/info] Read 'a5f026bf-2e61-4433-9f71-d7f15e586c26' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:49.720966 [guppy/info] Read '4d338bef-6cef-4430-b570-c5ea65955418' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:50.582102 [guppy/info] Read 'be50098b-95e5-4a21-aede-2e1ea050d979' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:50.716797 [guppy/info] Read '5b3a5819-0e1e-4395-8601-77d1f5f86fd6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:50.792156 [guppy/info] Read 'af3f63bc-efbf-4ec3-9303-8ee52ed46c2e' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:50.932422 [guppy/info] Read 'fc47a6ee-4746-4777-b583-7d976e6605c9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:50.967600 [guppy/info] Read '1bab66c6-d682-4e20-801a-1df163b168a6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:50.968639 [guppy/info] Read '24800e54-b919-4df7-b252-741a8770174b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.114510 [guppy/info] Read 'a43b61ad-d05c-4f62-869a-0913588998a9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.193288 [guppy/info] Read 'c9be31ab-f627-4ae2-9361-cf13b57ee0da' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.196153 [guppy/info] Read 'ca76331a-df92-41f2-90e1-d3118974da01' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.201290 [guppy/info] Read '50ac3a7c-aa67-416c-8058-6595bac51e12' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.655177 [guppy/info] Read '8d700a33-e156-4336-9ba2-e449d4d3080c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.663540 [guppy/info] Read '95133dbf-cf2d-43e8-a7cd-400e7899f38d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.703977 [guppy/info] Read 'ba5a12eb-3ca6-401f-a16c-0044187f7ad9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.705428 [guppy/info] Read 'c10bedb9-03df-412b-81ed-69ce6a620814' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.706751 [guppy/info] Read 'f77f120b-44f8-4408-a6fd-43e8fb431707' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.835995 [guppy/info] Read '536fa273-21ce-4587-8209-4f8c80ff2789' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.925465 [guppy/info] Read 'b220353f-5535-49ea-a46c-23f20b395793' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.963093 [guppy/info] Read '49f28d66-e82f-4d1f-b68f-dc865b8b1c4a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:51.964756 [guppy/info] Read '4b79b8cd-ac0d-4709-beb5-8637040a2a00' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:52.329776 [guppy/info] Read 'a0ddd269-5d6e-40eb-80c3-34e697a5bcd5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:52.374311 [guppy/info] Read 'f7b5f5b9-1567-42b0-8c73-a67674e5883b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:52.457313 [guppy/info] Read '885686fa-c774-4f5f-a64a-3c62fff8f0cd' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:52.532058 [guppy/info] Read '7ba3729e-c035-4992-ba09-dc16b15b7192' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:52.832820 [guppy/info] Read '896c319b-c23e-417e-80ab-b1cb5ead9fa0' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:52.840187 [guppy/info] Read '559be414-a2ac-47c3-9e0c-ce485ab776b1' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:52.888280 [guppy/info] Read 'a79606e4-592f-442f-808d-15f1797f8e72' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.022483 [guppy/info] Read '7e9ae822-6b44-47e4-b31c-a0b6dacc7f47' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.129386 [guppy/info] Read '7e30fece-5b14-47ef-a943-a0490e4991c8' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.197092 [guppy/info] Read '77fdb1e8-4228-4a7c-b889-6d720f753ec8' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.381143 [guppy/info] Read '4e574e7f-e0f7-4149-b879-07be085852b5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.520027 [guppy/info] Read 'd31a01f0-3df9-4066-8850-544fcfe22bff' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.545708 [guppy/info] Read '7d6e8653-612f-4dc2-b0e2-a2c138907b5a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.663405 [guppy/info] Read 'f08f3402-babc-432c-9141-01999bfe9e5f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.709766 [guppy/info] Read '5672f7fc-33d1-472b-9e46-bed17c02eb34' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.769343 [guppy/info] Read '80b0bfe4-6ad3-4b82-a6d7-0fafa505479d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.770604 [guppy/info] Read '82b496e6-a6eb-438b-a42e-647c7544c650' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.782115 [guppy/info] Read '80e43931-88a1-40d5-aacb-fee2c355c123' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.797282 [guppy/info] Read 'eeb7187e-0368-4617-93e4-a5243c4abcea' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.798901 [guppy/info] Read 'ef1109de-6e31-4a2d-8d01-f3642ca73390' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.807651 [guppy/info] Read '899a45c1-e3d2-480b-b866-96cc8af9d610' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.825888 [guppy/info] Read 'd6b85ca5-4ae7-4c64-8eca-0048f0708c2f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:53.828415 [guppy/info] Read 'e29816fd-26de-41fc-afe8-ea43e293064a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:54.106918 [guppy/info] Read 'c0cfd5b2-ec89-440d-931c-11728992eb6a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:54.430344 [guppy/info] Read 'fbe847d0-b04c-41f4-a0ea-ec4d86199cb2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:54.854018 [guppy/info] Read 'ee222266-0705-4d9e-92f8-0b45bcaf614b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:54.890267 [guppy/info] Read '791510e9-1b77-4274-89b0-f768c473e8fe' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:55.254887 [guppy/info] Read '694aabc1-fffb-40fb-8c35-85996578d80b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:55.394204 [guppy/info] Read '885eb764-1616-418a-8704-0356dbaf69a8' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:55.523363 [guppy/info] Read 'f07c706a-3126-43fc-b82c-308fbb942f3a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:55.622541 [guppy/info] Read '8535c01c-5117-41a0-9224-d70205a87b5c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:55.855771 [guppy/info] Read 'af8ae5aa-5239-4ce1-89bb-27bc41441f0a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:55.857228 [guppy/info] Read 'b2e79efb-42b1-4577-9ef5-07d95fc0c968' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:55.948453 [guppy/info] Read 'c16ba239-125f-45cd-89f3-0b92f224eaac' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.087003 [guppy/info] Read 'a909a44b-f342-4e34-8d23-67f686ff5193' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.255371 [guppy/info] Read '540d1f83-8562-4280-9d7f-99946ab87873' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.278588 [guppy/info] Read '5cea6b37-8896-439b-8c62-d5b5fe7620b3' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.280249 [guppy/info] Read '7a10ef14-7be9-4560-a227-1228ff889cbc' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.385372 [guppy/info] Read 'ffa6a10b-adb3-4ccf-937b-3115fd25b25b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.443384 [guppy/info] Read '9f0e4e2c-5821-4826-afc6-7b5147de4bec' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.625147 [guppy/info] Read 'cab49f14-4d57-4e40-a845-11fb4ddeeb70' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.630238 [guppy/info] Read 'caffe090-d7c6-4c97-a2f0-f9ec4443b701' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.741662 [guppy/info] Read '996d6dc7-febf-4a90-aebe-b7a9c8680172' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.789431 [guppy/info] Read '4f0e6b82-1190-4806-8602-074aaafcc79f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.853402 [guppy/info] Read 'ee369b5b-d492-4842-8bd8-d9309bd4fa5f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:56.938472 [guppy/info] Read '8283ea64-4903-446a-a34f-f77a91a21161' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.025541 [guppy/info] Read '9a24035f-2834-414e-8ded-b13d5ea277d5' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.026836 [guppy/info] Read 'a0907917-0de7-4321-8ab9-29a21ef3fc5c' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.328395 [guppy/info] Read 'badc7ebd-bb84-4efe-9316-2dd9cecc4aee' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.428843 [guppy/info] Read '24254751-1952-40fa-989e-db186697f2af' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.452159 [guppy/info] Read '886cf475-ae08-4d2b-82e7-bce17d9e824b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.603857 [guppy/info] Read '91914c2d-1033-4ad6-9a94-68906b957ecc' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.683741 [guppy/info] Read 'e5796bb3-973a-4fdd-b7da-6c99e20d9cd9' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.687469 [guppy/info] Read '568d2849-a4df-4133-a49f-6d6e1819afdc' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.688661 [guppy/info] Read '959dd40f-137f-40b9-8dbb-1d0f5aa150a0' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.701220 [guppy/info] Read '6975b53f-2b01-4917-9384-2e55820a66f0' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.729407 [guppy/info] Read 'e1cc389a-7d4c-46b7-bb45-fde78d81eef6' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.772681 [guppy/info] Read '8f69d982-ed18-47ba-a424-655cc2f59788' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.811785 [guppy/info] Read 'ade58d11-f37d-4679-9dd7-07d1124adc66' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:57.992321 [guppy/info] Read 'a2ff568e-934c-4c5d-9859-2a74a4829c5a' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:58.030979 [guppy/info] Read 'a9420064-f004-455b-8a14-58887184be76' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:58.150964 [guppy/info] Read '75c5e78b-3015-4a1d-8854-78a73792811d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:58.243672 [guppy/info] Read '7e80d895-1270-4b54-952d-80beaa4f5c16' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:58.382001 [guppy/info] Read '543c88cc-5e96-468c-ac9c-f866cfcf681b' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:58.647288 [guppy/info] Read 'b6144d44-f10a-4de8-a4e4-cacfadc647bb' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:58.708263 [guppy/info] Read '7c1f8958-337b-4d32-9212-c5e02690dd01' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:58.943977 [guppy/info] Read 'cacfd164-5398-4fb0-85a0-aae85da574c2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:58.969496 [guppy/info] Read 'a9da77ab-8d7c-4d0a-9b8e-0bc32aab6d82' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.054131 [guppy/info] Read '39742209-26c8-49ab-959d-d98497a4e86f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.107743 [guppy/info] Read 'ef15b262-cd1a-4c0c-8b32-5b7cdaaed010' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.435809 [guppy/info] Read '8f6fba20-a22d-4cfb-933e-acd1cdd9dae2' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.558522 [guppy/info] Read '95b3c3a4-80a8-4231-a479-c088744f829d' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.568955 [guppy/info] Read '85d3359c-5452-4931-a46c-415214dcd484' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.801928 [guppy/info] Read '80eadf7f-0ab5-4c5f-a8a0-54ebd6e245c0' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.831258 [guppy/info] Read '5d8d97dc-4b1d-41ad-bb21-3b330a077cdb' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.842710 [guppy/info] Read 'bb14e1e7-dfb9-44ed-bf8c-819c094c958f' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.843698 [guppy/info] Read 'c5223ad4-8fe4-4605-ae77-fb7edc4fe989' from file "HEK293T.fast5" completed.
+2023-06-24 10:31:59.885639 [guppy/info] Read 'e2f4ec8f-597b-441c-88be-46322f584157' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.153019 [guppy/info] Read '83046e91-db48-448b-b86a-a25a2682e56f' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.258089 [guppy/info] Read 'c7dc0f19-9d82-4cb3-9e07-17063a640657' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.302836 [guppy/info] Read '5c2deee9-e43f-4368-9fd7-294e4fb5b171' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.468257 [guppy/info] Read 'b6315766-5f3b-4fdb-8ebe-c0ab1cbaeaf2' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.501719 [guppy/info] Read '4ec44284-5014-45ac-b4b2-c99fcd4f26f5' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.547987 [guppy/info] Read '92d47761-1ace-4bde-884e-87503e33ad4d' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.605466 [guppy/info] Read 'a9ec1610-29b9-4c33-9419-bdd1b881a0a0' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.624665 [guppy/info] Read 'f4d7e1e6-dd26-4546-a9a6-cb58982740d8' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.806965 [guppy/info] Read 'abfe86a3-0f6b-4734-bdbb-35e65d6ecadb' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:00.808628 [guppy/info] Read 'ae0dc943-961b-4296-89e0-2330e9b4dd6a' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:01.225505 [guppy/info] Read '7fb1da1f-255a-4099-b20c-fc7ad6b007e3' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:01.369424 [guppy/info] Read '54712581-df49-403f-b3c6-92ea0e9fb383' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:01.377532 [guppy/info] Read 'f534a285-aa68-4553-b099-6e6165b5701b' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:01.608189 [guppy/info] Read '9a34643f-aa80-4676-b894-0271df2a8b09' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:01.787719 [guppy/info] Read '840af30d-78e6-4615-ac5d-7c29af9f2255' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:01.923743 [guppy/info] Read '977c1c3f-595f-43dd-a6ea-adddc69b60b0' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.017059 [guppy/info] Read '55c2b93a-e353-4cfe-aac1-ec7a6dc2b4a1' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.040593 [guppy/info] Read 'b6759788-b93d-41e5-be70-dc63cb08b1a1' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.195718 [guppy/info] Read 'bf5d35cb-89b8-40ea-9302-be653f9ad578' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.233715 [guppy/info] Read 'f7fa846c-3bee-4743-8632-bc4fcccbce56' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.396529 [guppy/info] Read '93534730-d7ca-4fad-9163-17b0be3f13fb' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.587375 [guppy/info] Read '9b4bf0f4-076d-4968-a651-3fa90be7bdce' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.728285 [guppy/info] Read '99236815-3e4d-4aa5-85ad-fcba49f775ca' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.740701 [guppy/info] Read 'cfa21b41-e8d6-4902-95f0-ece3d29ef387' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.835668 [guppy/info] Read '581e3d76-094a-4b3f-b38b-15d53ba1d82b' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.847028 [guppy/info] Read 'a9d97c4b-5625-49f4-95d4-37f7d641507e' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.894316 [guppy/info] Read '433d917c-4304-4fa7-b14b-0681eac83419' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.987838 [guppy/info] Read 'e041b33b-feac-42d4-a104-46a70560e6dd' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:02.992509 [guppy/info] Read 'edecc752-c0ad-4c8e-a32b-35b50a828bdd' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:03.137665 [guppy/info] Read '8884e99b-1ee3-4c9c-a39d-31401bf42f31' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:03.273575 [guppy/info] Read 'f551385c-de44-46ec-82aa-f9701ec0b968' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:03.356203 [guppy/info] Read 'e597f097-1a74-4559-b905-69e96f2ae4e0' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:03.480335 [guppy/info] Read 'bfb97c05-9e8f-4162-9430-34318d6b13a8' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:03.501713 [guppy/info] Read '98ad3467-99e9-415b-ad1d-3daa4a048721' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:03.545103 [guppy/info] Read 'e52137ad-197e-4815-a602-f07066271a70' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:03.557248 [guppy/info] Read 'b3fb1865-1c42-4ca9-88a2-5935b80b7291' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:03.710906 [guppy/info] Read 'c121e79c-d89a-4831-81f8-3c365b4995b9' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:03.718452 [guppy/info] Read 'b678b61d-e72c-4b77-96b3-02232a1a6f78' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.166805 [guppy/info] Read 'ee17725b-943c-41cd-ac3e-972462dc5c73' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.195972 [guppy/info] Read 'a5994ce9-0f7d-4442-8208-43e98205c8f9' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.217499 [guppy/info] Read 'b71c874c-802a-430b-a7f1-e0199776bccd' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.235222 [guppy/info] Read 'f8d6415d-dd2a-471c-94b9-6649868e005f' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.236707 [guppy/info] Read 'f9963993-5445-4c02-92ac-2cc4cef1bfd1' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.292987 [guppy/info] Read 'b9a514c6-8d83-4937-a2d4-1b3b6caa36d6' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.368715 [guppy/info] Read 'e897d90b-2b75-4da9-98c9-ecb60f4b4d76' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.432873 [guppy/info] Read '5e8069f3-c7a7-48b9-b402-562ee8954744' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.441928 [guppy/info] Read '89f1c24a-ceb7-4641-a9be-3572ff23ea7c' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.862313 [guppy/info] Read 'bc6afade-1ab5-4a5c-a0d3-08a93c2023c8' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.930702 [guppy/info] Read 'd1c13005-d70a-44bb-8b70-9f745fc17eaf' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.931920 [guppy/info] Read 'd2046245-d3c6-404b-b940-3c4c940a54cc' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:04.935311 [guppy/info] Read '58f58f77-6238-4865-8b32-0239b4c1d6f2' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.014067 [guppy/info] Read 'b84da5ba-2dca-4dfd-bebd-f2927643865e' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.079473 [guppy/info] Read 'c2c18d94-4f24-447b-b915-d9d9eaf06858' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.103015 [guppy/info] Read 'b75b74cb-d6d2-472f-9809-020965c5916f' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.175368 [guppy/info] Read 'ea18dc89-23b6-49c6-9df6-a08517754526' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.264223 [guppy/info] Read 'a8f2ba2c-5afa-4c56-b1cf-1f7fc80a551e' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.269783 [guppy/info] Read '89c03277-03fc-499f-80f6-01ff55e4b354' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.410440 [guppy/info] Read '8c366c1c-bff9-4281-98a4-79e7b9606866' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.417361 [guppy/info] Read 'ba698c08-213b-4dbf-b6ff-45416831b711' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.626172 [guppy/info] Read '58f61150-0eef-4bdc-935a-8a2f2ac8680d' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.708714 [guppy/info] Read '9dee073d-d338-43ed-bcfe-7ec07a5986df' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.715213 [guppy/info] Read '8dc1cc9a-538b-458b-bf5c-bba84d46f859' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.748538 [guppy/info] Read 'c4793f27-6856-4462-8560-0e3bdb658f66' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.749661 [guppy/info] Read 'd41c70dd-c4f3-40ae-826e-987710e05516' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.868055 [guppy/info] Read 'ea5d014c-d2f9-419f-94a9-a07bf343b975' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.918874 [guppy/info] Read '734f69cd-1c9f-46e1-92cc-6b08fdafb6f1' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.942493 [guppy/info] Read '591251b2-cd78-4f20-9862-2bd797ab4ce0' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.947706 [guppy/info] Read 'fee84908-35f8-4672-bbe0-baaee36d042a' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:05.958348 [guppy/info] Read 'f5d936f2-c71e-42a2-af7b-581e9dd4dfc1' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:06.188902 [guppy/info] Read 'c2c544f1-7e54-4b3f-92bd-317d3426b9ba' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:06.407715 [guppy/info] Read 'c2428a23-7115-4147-b534-cc7820acc947' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:06.443172 [guppy/info] Read 'e184000a-b2ac-4ead-8df3-4a8722321bb2' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:06.556489 [guppy/info] Read 'b8a821ed-a397-4cab-9347-15ee63575db9' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:06.677996 [guppy/info] Read '56bdeeb1-00ad-4595-8dac-ed2fe7740e6a' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:06.722723 [guppy/info] Read '4379ceeb-c4ae-4744-96a2-98db83428e6e' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:06.796502 [guppy/info] Read 'ac04eac5-5cba-4625-ab5b-1a67ab9ee74c' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:06.824631 [guppy/info] Read '906e35ea-e882-47cd-b1d9-ddfb5bf492fb' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.044255 [guppy/info] Read 'db10ba4d-8cdf-4038-a7d4-9045df50db1b' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.223407 [guppy/info] Read '59475c12-ae83-4b8b-8a2c-899afeb9df63' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.278611 [guppy/info] Read '69de5c60-d648-4d79-86e9-4912f54e2638' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.362286 [guppy/info] Read 'bf59ce35-213b-4f26-ae1e-cf9aa2c8d3e8' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.409514 [guppy/info] Read 'c39111c5-8749-43c3-a309-8e0f93a6c65c' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.555293 [guppy/info] Read '7415e930-7ece-421e-96df-12d7766b2a6e' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.584543 [guppy/info] Read '43b285bd-ee43-46f5-878c-f783ece9ba04' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.585255 [guppy/info] Read '50a3e16e-9468-44dd-80e7-c7d66ce7bc82' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.609973 [guppy/info] Read 'c29a2e5e-7d6e-4640-b203-b7ce3ea94ae0' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.654387 [guppy/info] Read 'acf8c111-06f3-4a99-bf81-d286141e8e21' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.729584 [guppy/info] Read 'c50e7c0d-858d-4c29-b0de-9a3c3ca451a9' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:07.918722 [guppy/info] Read 'bed9813d-1cb1-4f68-8307-f45c62ddc3fd' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.003517 [guppy/info] Read 'da5e3695-57f7-4997-8112-e6b0dd27fc97' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.120184 [guppy/info] Read '5a8fa77a-56f2-42f6-aff5-581b9af18704' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.120967 [guppy/info] Read '6a03b9a3-f2e3-4d28-a0d4-57db25bfe7dd' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.242371 [guppy/info] Read 'dbb6c469-897a-453e-a70c-0aec88c9999d' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.256836 [guppy/info] Read 'f62c1de9-a8e3-4cb2-a75e-86ff61a7051f' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.471762 [guppy/info] Read 'a1dfb705-50b7-4512-8533-56037957ce22' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.547657 [guppy/info] Read 'd625acd9-cc07-412e-bb69-7d0c163fccfa' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.674182 [guppy/info] Read 'c55456ef-acf0-46b9-b825-f019ac29e327' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.816712 [guppy/info] Read 'e6564288-d19c-4e9f-9d78-240df0658f28' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:08.887477 [guppy/info] Read '9b86d7f0-d004-42aa-bcaa-63df6f23da74' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.113400 [guppy/info] Read '90cc2657-0a4d-448b-8b50-bd25b3a01c81' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.157806 [guppy/info] Read 'e6129cf3-808f-40e4-aea0-afe0b79dbfe3' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.319091 [guppy/info] Read 'e684bafe-3e6b-42ef-8916-bfa292a3f854' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.339206 [guppy/info] Read 'fec1c8b2-2ef4-4e3a-aa0b-293a38106de1' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.393446 [guppy/info] Read 'e4bb4fbf-61aa-45b1-bc86-1779dfac40f3' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.449716 [guppy/info] Read '88825e56-93d5-42e1-a568-ddb0f94ac012' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.574607 [guppy/info] Read 'ba5e69ac-1ffc-4e75-baf3-b603364e587e' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.793458 [guppy/info] Read 'f10a3101-266a-437a-960f-440d728d3b7c' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.806585 [guppy/info] Read 'c8043e6f-aa4d-45ae-ad1e-5fc46bd76690' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.807754 [guppy/info] Read 'c80bee11-4018-40c2-83a3-45964c809113' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.909619 [guppy/info] Read 'c1fc93b8-8b3c-4f81-a2c5-be7a5355175d' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.922089 [guppy/info] Read 'f4cfa6f2-47d3-4a0b-b8d6-bf4cb4abe7b2' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:09.975898 [guppy/info] Read 'fb38df27-52c4-4fc1-a39a-4c781bbb53ff' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.051024 [guppy/info] Read 'f1163207-a8c4-4a2f-9f17-58dfe6c83fb4' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.052551 [guppy/info] Read 'fcbba468-6c3a-44cb-b036-9b4d53381180' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.120096 [guppy/info] Read '6f69c79e-7011-480f-9ac0-e075aafbfdb3' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.278614 [guppy/info] Read 'c9ec4bcf-7090-4cf6-88e8-44de372e0997' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.296391 [guppy/info] Read 'bbe35647-bf53-45f0-ac5d-d33378b19bd1' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.415231 [guppy/info] Read 'd1bb5cd2-6296-4821-b514-18f93a37163c' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.438944 [guppy/info] Read '74df5ae4-1546-42bd-b3dd-95de481b8fa9' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.462755 [guppy/info] Read 'f9c6711b-667e-4141-a95c-5e063f9ec886' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.525369 [guppy/info] Read 'f9f982c8-cdd4-4dc7-80b0-ba50504ddf73' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.606608 [guppy/info] Read 'f1a0ce40-4b9b-4824-9f64-f850e0c52144' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.629255 [guppy/info] Read '9669f690-2951-4ecc-b78c-fe1c5321993d' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.695733 [guppy/info] Read 'f1bc2ff4-639a-425c-a5d3-b39eabbe3693' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.849309 [guppy/info] Read 'd5a7a0bb-c6f6-4cea-9781-914441b80fb2' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:10.973601 [guppy/info] Read 'ea3cf0a2-2a78-4d40-852f-2771cfc82548' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.018472 [guppy/info] Read '7762f7d2-7d3e-4114-9e78-f5a2fd44d6e3' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.174479 [guppy/info] Read '9b815e67-5c63-4061-8a34-abf6099b3ce0' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.279016 [guppy/info] Read '8eb30525-b61b-4e8c-9ea4-49eafb6632ff' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.286737 [guppy/info] Read 'fb0559fb-e172-4a42-aa9b-a7239b31335d' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.339679 [guppy/info] Read 'd7c3401c-fb7a-44d5-874e-6b2c4e46729f' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.391654 [guppy/info] Read 'f6431f0c-2506-4010-b593-3b3debf5fc2a' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.528181 [guppy/info] Read 'cb286094-74fd-401f-8be4-047616986e7f' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.596596 [guppy/info] Read 'cd5b878a-c6f1-4833-9f60-b9c0f483c414' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.604561 [guppy/info] Read 'c22bd188-bb39-4d84-9070-a685e9672636' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.711806 [guppy/info] Read 'f2c49395-041b-4da8-8e3c-e6df3bace887' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.748110 [guppy/info] Read 'f66ddba2-8f49-4666-8d3b-bcaddfdea1ad' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.752017 [guppy/info] Read '7875a75e-01d2-4d4c-a240-1711bbfe4c8f' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.895016 [guppy/info] Read 'ce228125-b823-46b1-a787-481567e5b5c9' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:11.904744 [guppy/info] Read 'dbf5455e-a56e-46f6-93f4-4e4ab8aef240' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.136521 [guppy/info] Read 'dae95eab-14cb-4c34-81b6-2f7b529571c2' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.137351 [guppy/info] Read 'e2cb1f5a-b0a3-4b94-9947-04900d185993' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.175683 [guppy/info] Read 'f74fbad5-7a38-4927-ad36-7caf0af18061' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.216244 [guppy/info] Read 'f2e76dec-a589-46d1-9ba7-b7902a4e535c' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.381013 [guppy/info] Read '83ceda47-a37d-45c0-b1b8-d396dd80a0a3' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.381826 [guppy/info] Read '88273da6-a63a-42ec-b147-3fff719fd531' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.560265 [guppy/info] Read 'd06f75d2-17ba-4519-be81-86623bf9571e' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.571805 [guppy/info] Read 'bba4cbe4-2825-453c-bb85-b7addc74e4b8' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.689047 [guppy/info] Read '8ed72d1d-d4e0-4325-bed3-ce0be2afaf0b' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.729398 [guppy/info] Read 'f04afacd-fbd2-4036-8dc4-352855a3a863' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:12.983213 [guppy/info] Read 'af97c121-8c3b-4f74-88b0-2aa8a7cc62fd' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:13.038972 [guppy/info] Read 'fb3adcf8-b4d5-4349-9cde-4520b798cec2' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:13.103564 [guppy/info] Read 'd4905ca5-5495-4496-ad4a-c927cca3d1db' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:13.146086 [guppy/info] Read 'b49204bb-51d7-47c9-93a7-a6aa942cd1fc' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:13.407520 [guppy/info] Read 'f31b6dab-6e8c-4922-847e-bf8537d193e8' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:13.519094 [guppy/info] Read 'd69c7a92-a7a6-482d-827a-b9b099c33a0b' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:13.657792 [guppy/info] Read 'd6cac01d-610f-414a-81ab-57e6e58dd11c' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:13.843789 [guppy/info] Read 'f39b1bce-7744-4684-934b-af4e5a94c976' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:14.177153 [guppy/info] Read 'e3a62282-808a-4a5e-9e17-10695d812b0e' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:14.274171 [guppy/info] Read 'd730cc9a-8d11-433f-89d7-2650b273ad97' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:14.796836 [guppy/info] Read 'e7ae5227-c265-4b1d-b696-5bba6d6b26ce' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:14.964573 [guppy/info] Read 'eb49b01c-233b-4462-a60b-f151bf5b175e' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:15.364992 [guppy/info] Read 'ec1a002c-c4f8-4daf-8c54-d1329d7e8c72' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:15.496170 [guppy/info] Read 'e9ae1cae-b013-4dcf-bbce-02de543e14cb' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:15.560766 [guppy/info] Read 'ea0fe799-67ca-4e8f-b251-9e10e378db04' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:15.574783 [guppy/info] Read 'ec1e3a56-51cf-43e6-92e9-da37d6947c82' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:15.820376 [guppy/info] Read 'ea118782-cf46-4290-8d29-42d5e47fbd09' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:15.877271 [guppy/info] Read 'f76e3ea3-fee0-4018-b698-fb5929121940' from file "HEK293T.fast5" completed.
+2023-06-24 10:32:15.886713 [guppy/info] Completed batch 0
+2023-06-24 10:32:15.886863 [guppy/message] Caller time: 82009 ms, Samples called: 34179624, samples/s: 416779
+2023-06-24 10:32:15.886916 [guppy/message] Finishing up any open output files.
+2023-06-24 10:32:19.839903 [guppy/message] Basecalling completed successfully.

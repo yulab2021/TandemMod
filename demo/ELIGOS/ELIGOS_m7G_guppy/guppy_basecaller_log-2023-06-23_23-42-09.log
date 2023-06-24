@@ -1,0 +1,1025 @@
+2023-06-23 23:42:09.670418 [guppy/message] ONT Guppy basecalling software version 6.1.5+446c355, minimap2 version 2.22-r1101
+config file:        /opt/ont/guppy/data/rna_r9.4.1_70bps_hac.cfg
+model file:         /opt/ont/guppy/data/template_rna_r9.4.1_70bps_hac.jsn
+input path:         demo/ELIGOS/ELIGOS_m7G
+save path:          demo/ELIGOS/ELIGOS_m7G_guppy
+chunk size:         2000
+chunks per runner:  512
+minimum qscore:     7
+records per file:   4000
+num basecallers:    40
+cpu mode:           ON
+threads per caller: 4
+
+Use of this software is permitted solely under the terms of the end user license agreement (EULA).By running, copying or accessing this software, you are demonstrating your acceptance of the EULA.
+The EULA may be found in /opt/ont/guppy/bin
+
+2023-06-23 23:42:09.671150 [guppy/info] crashpad_handler not supported on this platform.
+2023-06-23 23:42:11.576749 [guppy/message] Found 1 fast5 files to process.
+2023-06-23 23:42:11.579474 [guppy/message] Init time: 1872 ms
+2023-06-23 23:42:11.686258 [guppy/info] Read '01836502-d7fc-41b7-be09-3bb38797a702' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.687507 [guppy/info] Read '018867b2-10ec-49ba-8a2c-314e7822e47f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.688631 [guppy/info] Read '019f4fce-5512-41b7-abd1-34c7acc2ce25' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.690810 [guppy/info] Read '01a2a588-6bb6-4ef1-83d4-788d61b79f49' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.691952 [guppy/info] Read '01e6c26f-a718-4a57-8293-e9ae61eeffbc' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.693166 [guppy/info] Read '0263bb60-1404-49d3-9568-dfbeb7bea45c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.695538 [guppy/info] Read '02929012-4797-4935-95b6-dc0db7a3f844' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.696786 [guppy/info] Read '02b276ee-7f8d-4a79-bc9c-5be29a634cc3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.698044 [guppy/info] Read '02d16811-1e4c-42bd-b5a9-ae3ef7173b21' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.699284 [guppy/info] Read '02eeefc6-f8e0-4878-982f-8f949b22de42' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.700459 [guppy/info] Read '0312ce16-167f-4ed6-9ff3-67bdb57d84ef' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.701576 [guppy/info] Read '03427b9f-40a3-4c07-b323-523eae9c6996' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.703841 [guppy/info] Read '0397cd38-a0d2-4e82-afec-9a5472ec966c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.705008 [guppy/info] Read '04dd01ab-7927-4d2e-b8be-3f0b613aaa30' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.707231 [guppy/info] Read '051a40b6-3d5d-4ce9-825b-299a7cf11366' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.708357 [guppy/info] Read '059145c7-698a-4372-850b-385503161ab4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.710531 [guppy/info] Read '05df6021-1a03-4849-9bda-4ea0a1bc8ab4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.711655 [guppy/info] Read '05fa7268-3c0a-4db0-820b-fa498b5fa1a1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.713873 [guppy/info] Read '06c709c8-fa88-47d0-9f33-c5b404fb8eaa' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.713915 [guppy/info] Read '088f14cc-1257-493c-af46-625945960250' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.715044 [guppy/info] Read '08ba44cc-5f79-4bf5-b91b-0e5f77b44166' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.718333 [guppy/info] Read '08d3f92c-3bdf-4a2a-8e24-300388e467b3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.720538 [guppy/info] Read '09c34b6f-6cee-4325-94f7-102f267633e7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.722794 [guppy/info] Read '0a636a01-f069-49ac-abd4-d6eec5fe06d3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.723999 [guppy/info] Read '0b7d48d7-7b2c-468e-8f9d-35c3b03971d3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.726653 [guppy/info] Read '0c92c2c5-6b7d-4576-8b4a-a9a3bce417a0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.731324 [guppy/info] Read '0e501bf9-5346-4bf1-9b7a-4f856eb5fd2a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.750027 [guppy/info] Read '0f4ce4da-0a68-427b-b96b-5a3936b9c06b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.751188 [guppy/info] Read '0f655e43-27ae-431b-92e6-c672bdfce80b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.766327 [guppy/info] Read '0fbf6a56-1593-45d7-8530-c3705f9e5dce' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.802522 [guppy/info] Read '0fd62cc4-6eb0-443b-bca5-9a468387d804' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.912218 [guppy/info] Read '0ff3feea-5322-496d-9155-504eda3af515' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:11.914130 [guppy/info] Read '111b6044-2fc4-414b-83ad-82d7bb306006' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.045806 [guppy/info] Read '12f5e958-bdef-46a1-bfb4-53ee6a67059c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.045885 [guppy/info] Read '1330fa04-9b2a-413b-8f63-40ef765f6703' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.046981 [guppy/info] Read '1348c5b3-0623-46e8-8e9a-b0d9919b3cdd' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.057476 [guppy/info] Read '1469f37e-d44a-4bc7-bc73-d6c4aa63dd2c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.152119 [guppy/info] Read '147fd855-dce1-4bc2-a323-14520ef08857' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.154322 [guppy/info] Read '149ef081-e60a-479a-9925-ef682dd68fd2' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.156517 [guppy/info] Read '1563f41e-c053-4af9-9b1f-73d3127bf20b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.222451 [guppy/info] Read '15a4962d-f2b7-4cf8-9304-f99714a47371' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.225727 [guppy/info] Read '162d927f-d88b-4159-80a4-f9f6fbaac3d4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.226851 [guppy/info] Read '166049b8-30bb-40b6-beea-91a324cead3e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.229023 [guppy/info] Read '16a34660-3f38-4f67-91ba-dab79124cfcc' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.274437 [guppy/info] Read '16c08611-ccbe-4493-b025-4a758217e98a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.276661 [guppy/info] Read '1767a807-15ad-4903-b5ed-fe0585c70d99' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.278842 [guppy/info] Read '179cf981-f02a-4081-9778-17163dd1f23a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.283389 [guppy/info] Read '17a7eae7-a08d-4876-9ff4-36d069ffbca4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.326415 [guppy/info] Read '185755df-6c21-4a27-b9cd-7e0f18b3e1b0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.327561 [guppy/info] Read '1a1aa98b-3610-44d9-a1dc-9fdba94abc41' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.328673 [guppy/info] Read '1bbb2780-9f2c-4a82-b281-90f931f6a286' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.332984 [guppy/info] Read '1bec3783-a0dd-4e04-ab01-8e56e230bb55' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.335204 [guppy/info] Read '1c82d306-9dd0-427d-b110-2195cc818dbb' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.336331 [guppy/info] Read '1da83f48-6f6b-4d8a-8965-aa21c2ade71a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.336391 [guppy/info] Read '1e1e9845-11dc-449c-814f-78e030af9bd0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.339608 [guppy/info] Read '1e6f6081-98b2-43f4-9a9a-af66a63579c7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.340741 [guppy/info] Read '1ef36c76-6643-4ef4-ac64-6ebfcaad0078' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.366781 [guppy/info] Read '1f6889b5-00ce-4dba-8e81-85a4683535f0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.385324 [guppy/info] Read '0b7d48d7-7b2c-468e-8f9d-35c3b03971d3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:12.454034 [guppy/info] Read '01e6c26f-a718-4a57-8293-e9ae61eeffbc' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:12.465438 [guppy/info] Read '01a2a588-6bb6-4ef1-83d4-788d61b79f49' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:12.645935 [guppy/info] Read '018867b2-10ec-49ba-8a2c-314e7822e47f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:12.658066 [guppy/info] Read '1f75efac-883a-4c03-acd2-3c15e22275e4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.661941 [guppy/info] Read '20124d8b-cf00-4177-a83c-a07d69f33372' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.662032 [guppy/info] Read '20b84a48-f929-4b53-b08d-a4ff152209d4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.662049 [guppy/info] Read '20d47fd1-e7bf-4af2-b5d6-8af1c6a8f282' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.683242 [guppy/info] Read '219ea72d-0129-4ee7-b8e1-a318a39adcfb' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.703422 [guppy/info] Read '0312ce16-167f-4ed6-9ff3-67bdb57d84ef' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:12.713507 [guppy/info] Read '21c2c4e0-bf2a-422d-a477-5bebdd755915' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.730398 [guppy/info] Read '21fe47f3-5366-49cd-b96d-26054e6b4eef' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.739967 [guppy/info] Read '2250826b-9307-41b9-bc88-67cf84a7d1ec' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.776778 [guppy/info] Read '231251ff-2cfd-4851-b95e-32112653a4e1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.816462 [guppy/info] Read '232696df-6105-48da-a16e-d9da2f3d06a5' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.871308 [guppy/info] Read '01836502-d7fc-41b7-be09-3bb38797a702' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:12.880497 [guppy/info] Read '17a7eae7-a08d-4876-9ff4-36d069ffbca4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:12.880790 [guppy/info] Read '23f35ddf-923d-4467-bf97-08ce28c03079' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.902210 [guppy/info] Read '2440a748-32d9-4de5-bdef-47d3a3dad94d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.903330 [guppy/info] Read '2471b165-92e5-45b5-97ac-9f44d53f9b08' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.905547 [guppy/info] Read '25b59fec-af70-49c4-813e-385d34f88172' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.906697 [guppy/info] Read '262063b2-fbe2-46f3-b65e-b79de63e0083' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.914245 [guppy/info] Read '26b47e30-af2c-4191-b9d6-d9cc0870ce28' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.915399 [guppy/info] Read '26b497db-11c4-4749-a919-a5927552051b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.929316 [guppy/info] Read '26d82633-b614-4d98-b298-d2fa803dd7bc' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.930459 [guppy/info] Read '27a68ef9-893c-4ef3-b7d9-34fc8a64376b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.931592 [guppy/info] Read '289d20aa-ff32-4505-8ce2-f01f10d7f726' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.932731 [guppy/info] Read '2942e22a-afe5-445e-864d-6986617119c7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.939190 [guppy/info] Read '2943538d-55ca-4798-82b3-45329bccff27' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.940526 [guppy/info] Read '02eeefc6-f8e0-4878-982f-8f949b22de42' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:12.941887 [guppy/info] Read '29703904-38de-4285-8e5c-75da8ef92ec1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.945175 [guppy/info] Read '29d66fd9-95cd-426e-b909-11ac3fb2ddbe' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.948453 [guppy/info] Read '2a9ac7ef-c6d4-44e7-8dd4-b02ab9bbc74c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.949594 [guppy/info] Read '2b53d057-2d82-423c-a3ea-ba02acebe474' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.953927 [guppy/info] Read '2b683215-1911-45b3-8f6b-eff06822b666' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:12.967857 [guppy/info] Read '2b6f978a-82e0-4215-aa3b-c8fcc9452b88' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.068546 [guppy/info] Read '2b717a3f-178d-4e55-8965-d279a0145bea' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.087740 [guppy/info] Read '05df6021-1a03-4849-9bda-4ea0a1bc8ab4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:13.107551 [guppy/info] Read '2b965acd-ebb1-4367-a632-d9c92e06cb5b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.108736 [guppy/info] Read '2c5301ff-c5b8-4004-b7a3-2ed51acd7ee4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.148248 [guppy/info] Read '2d4d411d-8ebf-45ff-8a78-d602cf82528f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.168595 [guppy/info] Read '2d9a9617-7484-43af-af80-565464a0d695' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.225334 [guppy/info] Read '2da74247-b5c1-4519-a998-bcb567b50046' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.227574 [guppy/info] Read '2daadc5d-1ccf-4f00-9e36-fededa358f96' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.257535 [guppy/info] Read '2db0e963-85a7-42b1-b6ca-9bed04b8b8c1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.259756 [guppy/info] Read '2e6bf391-a5dd-4005-8466-97d9afe5e406' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.261961 [guppy/info] Read '2e98c3ca-b695-43d7-97ff-5b0276f8934e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.351718 [guppy/info] Read '302bc31c-42c1-4af2-93fa-c30631fd7635' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.353605 [guppy/info] Read '1da83f48-6f6b-4d8a-8965-aa21c2ade71a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:13.354936 [guppy/info] Read '3032f933-e16a-4cfc-8313-4b0e74801060' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.356095 [guppy/info] Read '30411463-88cf-4706-8964-a4ea5526b0bd' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.357255 [guppy/info] Read '30cf5a80-db8c-4c55-b580-c512d61c4d59' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.379040 [guppy/info] Read '322f7f62-8387-4261-9fb1-7b983eb36354' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.380193 [guppy/info] Read '3397d064-0238-4510-b78e-916bedf6f1f6' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.389871 [guppy/info] Read '33c76874-2ae6-4cbf-b5f6-f82ec553fe19' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.444425 [guppy/info] Read '34c2f21c-38af-46a9-ba5d-c77923a115ac' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.629854 [guppy/info] Read '051a40b6-3d5d-4ce9-825b-299a7cf11366' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:13.661849 [guppy/info] Read '34d95963-298e-4a91-9801-60870f01bff6' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.705587 [guppy/info] Read '35acbbc1-8f98-4f57-bf6c-7a93c2d4f597' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.711006 [guppy/info] Read '35ee3c0d-eae1-44c4-8693-0a5e339fb37e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.743943 [guppy/info] Read '06c709c8-fa88-47d0-9f33-c5b404fb8eaa' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:13.899535 [guppy/info] Read '36092b05-cc80-45e3-aa42-af3433b7a48c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.962381 [guppy/info] Read '36557f05-dcbc-4f7b-b78e-4a85a4235ee1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:13.962648 [guppy/info] Read '36bad2fb-db86-4b0e-948f-f193dbaf2ee7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:14.029533 [guppy/info] Read '36dcdbc9-7b79-45e7-b90e-7ec258838a6b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:14.173403 [guppy/info] Read '37bd9f78-8f50-4eb8-8d40-0a825165864d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:14.358030 [guppy/info] Read '385b86de-1008-4ce5-b1b2-0f6682332946' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:14.476213 [guppy/info] Read '019f4fce-5512-41b7-abd1-34c7acc2ce25' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:14.487765 [guppy/info] Read '3874b549-ee26-406c-81c1-1a86c8d2018e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:14.554896 [guppy/info] Read '0f655e43-27ae-431b-92e6-c672bdfce80b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:14.663325 [guppy/info] Read '08ba44cc-5f79-4bf5-b91b-0e5f77b44166' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:14.781096 [guppy/info] Read '0ff3feea-5322-496d-9155-504eda3af515' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:14.799811 [guppy/info] Read '111b6044-2fc4-414b-83ad-82d7bb306006' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:14.830336 [guppy/info] Read '02b276ee-7f8d-4a79-bc9c-5be29a634cc3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:14.896485 [guppy/info] Read '02d16811-1e4c-42bd-b5a9-ae3ef7173b21' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:14.967745 [guppy/info] Read '0263bb60-1404-49d3-9568-dfbeb7bea45c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:15.016341 [guppy/info] Read '05fa7268-3c0a-4db0-820b-fa498b5fa1a1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:15.085690 [guppy/info] Read '16c08611-ccbe-4493-b025-4a758217e98a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:15.105392 [guppy/info] Read '3a864752-bd8c-4228-832c-eecd80761afb' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.142723 [guppy/info] Read '0a636a01-f069-49ac-abd4-d6eec5fe06d3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:15.147696 [guppy/info] Read '3afc1f48-4732-4690-8bb0-3376eb5069d7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.196179 [guppy/info] Read '09c34b6f-6cee-4325-94f7-102f267633e7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:15.326393 [guppy/info] Read '3b1cdf70-ef58-4b5c-8a4e-0af17fc0d3e5' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.363378 [guppy/info] Read '3c9ee514-30cb-4c5a-a97a-a2c50d0123f3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.363478 [guppy/info] Read '3db20112-13bb-4af8-a26a-c1a985b15c52' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.364594 [guppy/info] Read '3e079dc9-6849-489f-87d1-eedb34650fc1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.393866 [guppy/info] Read '0c92c2c5-6b7d-4576-8b4a-a9a3bce417a0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:15.394086 [guppy/info] Read '3e5e003a-924a-4f26-aee0-94b5952a34b4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.395223 [guppy/info] Read '3ffc169e-c9e6-4a2c-bb94-5eb6d174e716' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.493160 [guppy/info] Read '179cf981-f02a-4081-9778-17163dd1f23a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:15.650901 [guppy/info] Read '40390794-158e-4885-9767-1e521c6cc28a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.751570 [guppy/info] Read '405adfd4-a60b-46fd-89d7-541e19116455' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.832858 [guppy/info] Read '4085db21-7c38-4296-a3bb-fecd57902e99' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.846953 [guppy/info] Read '34c2f21c-38af-46a9-ba5d-c77923a115ac' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:15.908517 [guppy/info] Read '36092b05-cc80-45e3-aa42-af3433b7a48c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:15.928852 [guppy/info] Read '40e4d8c0-3feb-4c3d-a315-c0210d670622' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.952475 [guppy/info] Read '4112621c-4994-43e0-888a-4cecc6e10c91' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.958104 [guppy/info] Read '412cd751-0a97-43ee-9862-1b18ce0982b2' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.964854 [guppy/info] Read '41763684-eb0e-43ca-8a8e-fb271410576e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:15.973519 [guppy/info] Read '41e2ab18-c299-485a-b272-98f2ce36e920' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.026968 [guppy/info] Read '4384e077-6a1a-4b54-9fcb-7623f711d7fd' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.118520 [guppy/info] Read '438d4e3d-89fd-44a8-8176-813ea38e15c9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.317807 [guppy/info] Read '447f6572-2957-4da7-bcea-cf188bd9a698' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.319012 [guppy/info] Read '44e2c753-d84e-4e1d-8165-3e6fd7ad4832' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.343228 [guppy/info] Read '466136c2-652e-4b46-a71a-cdb27a60523b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.356077 [guppy/info] Read '466935ae-8270-4822-9b70-974297de1cf0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.380625 [guppy/info] Read '0397cd38-a0d2-4e82-afec-9a5472ec966c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:16.450002 [guppy/info] Read '46b80137-7f36-4fc8-901c-713295b03263' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.455810 [guppy/info] Read '4783fe0c-2f2d-498c-b450-ad7fd341ad8d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.586375 [guppy/info] Read '36557f05-dcbc-4f7b-b78e-4a85a4235ee1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:16.654648 [guppy/info] Read '12f5e958-bdef-46a1-bfb4-53ee6a67059c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:16.665978 [guppy/info] Read '47c55706-3da5-47f8-92fb-52d4a448bf7a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.728500 [guppy/info] Read '47d9e7ea-93b1-478b-82b6-4da9ffc80805' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.749397 [guppy/info] Read '47fa0cd2-0f14-4f46-b312-3ca4d9367870' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.823015 [guppy/info] Read '4822e680-4c69-47dc-a12e-523f80333a46' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.857131 [guppy/info] Read '4833ee94-2b64-4cda-bbd4-6113496e04c9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.947718 [guppy/info] Read '4937524e-e343-4fdd-bd0a-d02caba3434d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:16.979285 [guppy/info] Read '49e4d535-2f3e-4058-a3f4-08a0091b3867' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.091254 [guppy/info] Read '4a404c79-5f9c-4007-8a17-5ec60670a9ff' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.104901 [guppy/info] Read '4ab4fe27-1a8e-4d28-9f53-66cbd9b1d8fd' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.106201 [guppy/info] Read '4ba40402-ed98-4993-861e-6d7d9086c833' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.242593 [guppy/info] Read '4bf5f1a1-d080-4a75-8817-033b7498c23c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.281549 [guppy/info] Read '4c03749f-cc54-41de-9429-f82c4c89b68a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.408506 [guppy/info] Read '30411463-88cf-4706-8964-a4ea5526b0bd' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:17.487707 [guppy/info] Read '3ffc169e-c9e6-4a2c-bb94-5eb6d174e716' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:17.505198 [guppy/info] Read '4c3a0aaa-fb09-4793-b394-898d332ead28' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.794272 [guppy/info] Read '36bad2fb-db86-4b0e-948f-f193dbaf2ee7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:17.863664 [guppy/info] Read '4c509804-9ba3-46d7-996c-79278afc34a1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.906277 [guppy/info] Read '4c631ede-ff77-4223-ae5f-d7bc5022178b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.965032 [guppy/info] Read '4cdacf69-0f60-4978-9868-18b1e9744914' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:17.965284 [guppy/info] Read '4d2b981a-4cc0-4b90-8d23-a053d6c17717' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:18.029760 [guppy/info] Read '219ea72d-0129-4ee7-b8e1-a318a39adcfb' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:18.144780 [guppy/info] Read '4d6a791c-e292-4b69-983c-6a7b0813782d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:18.379756 [guppy/info] Read '231251ff-2cfd-4851-b95e-32112653a4e1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:18.401621 [guppy/info] Read '4dcc8a9d-f5ed-4033-ad7e-2d28b8b291d7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:18.480657 [guppy/info] Read '2c5301ff-c5b8-4004-b7a3-2ed51acd7ee4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:18.676496 [guppy/info] Read '21fe47f3-5366-49cd-b96d-26054e6b4eef' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:18.676799 [guppy/info] Read '4f2ca6bc-ce85-4081-b9b8-af901615e293' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:18.676830 [guppy/info] Read '4ffe3b98-f420-4d49-b09c-516c729b3718' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:18.800448 [guppy/info] Read '30cf5a80-db8c-4c55-b580-c512d61c4d59' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:18.833494 [guppy/info] Read '1e1e9845-11dc-449c-814f-78e030af9bd0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:18.962331 [guppy/info] Read '34d95963-298e-4a91-9801-60870f01bff6' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:18.964504 [guppy/info] Read '36dcdbc9-7b79-45e7-b90e-7ec258838a6b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:18.976225 [guppy/info] Read '507a9140-5932-413d-9fc6-587c7b944ea7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.216686 [guppy/info] Read '08d3f92c-3bdf-4a2a-8e24-300388e467b3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.224148 [guppy/info] Read '185755df-6c21-4a27-b9cd-7e0f18b3e1b0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.315198 [guppy/info] Read '1bbb2780-9f2c-4a82-b281-90f931f6a286' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.399109 [guppy/info] Read '2e6bf391-a5dd-4005-8466-97d9afe5e406' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.469940 [guppy/info] Read '3397d064-0238-4510-b78e-916bedf6f1f6' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.587886 [guppy/info] Read '37bd9f78-8f50-4eb8-8d40-0a825165864d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.633102 [guppy/info] Read '385b86de-1008-4ce5-b1b2-0f6682332946' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.693550 [guppy/info] Read '3a864752-bd8c-4228-832c-eecd80761afb' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.699167 [guppy/info] Read '50b41803-af41-41b0-bf26-7782aecdaebf' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699308 [guppy/info] Read '50eb0a1b-b032-4c1e-be00-31b974330ea6' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699329 [guppy/info] Read '513d3c3f-c168-4df6-af1d-a4341645da08' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699345 [guppy/info] Read '51b19526-006c-4e31-b0b6-9ad20d0734ec' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699362 [guppy/info] Read '51be17b6-bf59-413d-a39d-2ddf7b2d5e9c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699378 [guppy/info] Read '522471c4-1520-4d11-9608-35bdb4b3b964' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699412 [guppy/info] Read '525911c0-9704-40ff-bbe3-9141b38b42c4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699428 [guppy/info] Read '52f07928-c11a-453d-8113-05856d2a8b8d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699444 [guppy/info] Read '539ff6cc-5c9a-4a3c-a2be-04ec96a170d9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699461 [guppy/info] Read '5424567d-f599-4694-abb7-a58c5f99c16a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699477 [guppy/info] Read '5430471f-27f1-4956-b07f-4dfb802a1ae0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699494 [guppy/info] Read '54886823-d7d6-4600-9253-6dbd92551628' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699510 [guppy/info] Read '54c5afc5-cb86-4076-8425-a37bec45620b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.699528 [guppy/info] Read '5578708e-b278-4171-91c8-056de75282d0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:19.749995 [guppy/info] Read '059145c7-698a-4372-850b-385503161ab4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.784436 [guppy/info] Read '0fbf6a56-1593-45d7-8530-c3705f9e5dce' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.847689 [guppy/info] Read '1330fa04-9b2a-413b-8f63-40ef765f6703' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.889671 [guppy/info] Read '1469f37e-d44a-4bc7-bc73-d6c4aa63dd2c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.901883 [guppy/info] Read '149ef081-e60a-479a-9925-ef682dd68fd2' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.937437 [guppy/info] Read '2943538d-55ca-4798-82b3-45329bccff27' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.940154 [guppy/info] Read '2b53d057-2d82-423c-a3ea-ba02acebe474' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.964350 [guppy/info] Read '2b717a3f-178d-4e55-8965-d279a0145bea' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:19.978268 [guppy/info] Read '2b965acd-ebb1-4367-a632-d9c92e06cb5b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.000684 [guppy/info] Read '2e98c3ca-b695-43d7-97ff-5b0276f8934e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.044325 [guppy/info] Read '412cd751-0a97-43ee-9862-1b18ce0982b2' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.068098 [guppy/info] Read '447f6572-2957-4da7-bcea-cf188bd9a698' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.074416 [guppy/info] Read '47c55706-3da5-47f8-92fb-52d4a448bf7a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.077041 [guppy/info] Read '47d9e7ea-93b1-478b-82b6-4da9ffc80805' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.078930 [guppy/info] Read '4c509804-9ba3-46d7-996c-79278afc34a1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.079508 [guppy/info] Read '5649156f-388c-4f72-9797-da63f58b0da0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079555 [guppy/info] Read '57330618-cc61-4862-8bf6-3d1beaffaf57' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079570 [guppy/info] Read '576f943d-744a-4399-ad31-e646be35e4b9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079584 [guppy/info] Read '57be405d-048e-4d46-bcd7-a9f4efb5671f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079598 [guppy/info] Read '57e03b7e-7fde-415e-991a-54a679a14133' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079611 [guppy/info] Read '58f25b32-448f-4046-a2d9-289c90abb8cf' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079624 [guppy/info] Read '59d37a2d-9bb8-4b51-acba-c85f3047a208' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079637 [guppy/info] Read '59ea7ee1-06d9-4ea9-9937-dc23f9a102aa' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079649 [guppy/info] Read '5a845120-e778-4305-9e95-161d2e3a209f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079678 [guppy/info] Read '5adc6dd5-5174-4f54-8e5c-78c9b71212ed' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079692 [guppy/info] Read '5b22830a-4063-47f8-9563-859370ce924c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079705 [guppy/info] Read '5bba4383-5a50-4975-b2fc-aa6dfbe28db0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079718 [guppy/info] Read '5cdd8f10-f68a-4530-8dcb-a0d04cc9192a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079731 [guppy/info] Read '5d4534b0-9c79-48fe-9bd4-548e7f216cb7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.079743 [guppy/info] Read '5d8d78eb-e82c-4c73-8370-0e75496d0dec' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.103159 [guppy/info] Read '088f14cc-1257-493c-af46-625945960250' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.126117 [guppy/info] Read '0f4ce4da-0a68-427b-b96b-5a3936b9c06b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.133591 [guppy/info] Read '1348c5b3-0623-46e8-8e9a-b0d9919b3cdd' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.148566 [guppy/info] Read '1e6f6081-98b2-43f4-9a9a-af66a63579c7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.153144 [guppy/info] Read '2250826b-9307-41b9-bc88-67cf84a7d1ec' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.164495 [guppy/info] Read '23f35ddf-923d-4467-bf97-08ce28c03079' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.168989 [guppy/info] Read '2471b165-92e5-45b5-97ac-9f44d53f9b08' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.170517 [guppy/info] Read '5dac0ad1-fc69-41e8-990f-26372af50e8b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170595 [guppy/info] Read '5dc1cf78-680b-4df1-870b-8a71a7c55058' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170613 [guppy/info] Read '5e9b97fa-45a9-4d45-8fd1-15af98c14867' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170631 [guppy/info] Read '5ecff0c3-32eb-4362-8c9a-2bcb7fd36cb1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170651 [guppy/info] Read '5efee7c0-3175-4bdd-a912-05e38f0a80e1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170668 [guppy/info] Read '6019623e-16df-4d46-8f03-9b9542d5af29' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170685 [guppy/info] Read '60439b01-5422-47e6-ac67-f0eca17ed163' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170703 [guppy/info] Read '61406313-18b2-4e9f-a59d-4e6a944b5c42' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170718 [guppy/info] Read '61be03b1-5162-49ca-afdc-ecb04493c537' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170734 [guppy/info] Read '61ebb067-9a12-40bb-8c50-e8ce1ec0e222' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170750 [guppy/info] Read '62ba0a25-e3d1-409c-be8b-ee753337ca84' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170766 [guppy/info] Read '633e5ed4-e800-4cfb-8ab6-0816721474b0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170783 [guppy/info] Read '6480d334-0528-4760-b247-0ddae29930df' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170799 [guppy/info] Read '64fcc13f-955c-4758-9a1b-3dc72d397ec2' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170815 [guppy/info] Read '662f7b28-abe8-4056-82d8-4a6241da4a4b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.170832 [guppy/info] Read '66c00e7f-9893-45e0-a9d9-a43e809cf723' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.174844 [guppy/info] Read '0e501bf9-5346-4bf1-9b7a-4f856eb5fd2a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.179929 [guppy/info] Read '0fd62cc4-6eb0-443b-bca5-9a468387d804' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.181355 [guppy/info] Read '6773ca76-7c38-4881-baf7-8343253a8eea' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.192853 [guppy/info] Read '67a4776a-698c-463b-9894-19e9dd9e3736' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.195070 [guppy/info] Read '683fa4af-8e2d-4264-af1b-791306e91391' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.225031 [guppy/info] Read '686d444f-aad6-4609-acbf-4258e08e4a0b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.241110 [guppy/info] Read '68fedb87-c0ac-443e-b122-5af25f356db3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.243321 [guppy/info] Read '699f560f-07f3-41c6-a2eb-68fa29f1c6fb' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.245532 [guppy/info] Read '6a084373-55dc-48da-8ff9-7ffbb55cbcc6' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.247754 [guppy/info] Read '6a787580-e8a1-44d9-bb77-9f5d36f78a11' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.261051 [guppy/info] Read '2db0e963-85a7-42b1-b6ca-9bed04b8b8c1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.261321 [guppy/info] Read '6a8c0d78-ca1f-4ed1-940c-24161d67f0ed' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.281702 [guppy/info] Read '6b0d55d4-a5f9-4bb8-97b3-455304773840' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.282867 [guppy/info] Read '6ba9073c-d1f4-4f95-ad8a-feb902e69cc8' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.286148 [guppy/info] Read '6be8a4dd-3a18-4fa0-b848-8418252c4917' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.288794 [guppy/info] Read '03427b9f-40a3-4c07-b323-523eae9c6996' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.300496 [guppy/info] Read '6c16f075-c98f-492c-b3a1-eab1b0cbd464' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.309744 [guppy/info] Read '6cbd8d98-efdb-47c8-9262-77c6218ca310' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.311991 [guppy/info] Read '6e582efa-390e-4505-bcf2-cdd2ea9c0fe3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.323145 [guppy/info] Read '1ef36c76-6643-4ef4-ac64-6ebfcaad0078' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.325648 [guppy/info] Read '262063b2-fbe2-46f3-b65e-b79de63e0083' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.326650 [guppy/info] Read '6e76c007-28cc-4780-8bc4-aa407d14d510' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.326752 [guppy/info] Read '6f244d55-3ea5-4c22-9e5f-19515e9758a2' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.340985 [guppy/info] Read '6f3ede63-103e-4c57-a845-7af9d13ee747' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.349955 [guppy/info] Read '2a9ac7ef-c6d4-44e7-8dd4-b02ab9bbc74c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.351111 [guppy/info] Read '44e2c753-d84e-4e1d-8165-3e6fd7ad4832' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.357264 [guppy/info] Read '6fe38ba8-c9dc-4f0f-90dc-08fc34b5bd9c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.360657 [guppy/info] Read '6ff9b5c7-637a-4af9-a2f6-a15561cee4c0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.360727 [guppy/info] Read '7020bbd8-6b64-4e75-b8c5-f68a10b9d9ee' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.364485 [guppy/info] Read '70d7b49b-a5a0-4ff2-a3b5-95e944784903' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.365248 [guppy/info] Read '72165716-4c39-403e-b174-a60120c800e1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.373270 [guppy/info] Read '72836807-4562-48fb-819a-18fc53556e55' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.382012 [guppy/info] Read '72a2d7a4-67ea-41a2-9647-606451c62800' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.405647 [guppy/info] Read '72fbb2c3-4456-4697-8766-b4bad58da582' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.407912 [guppy/info] Read '742f95ce-deaa-4f4b-9d8e-a05b09c518f5' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.409069 [guppy/info] Read '74647454-c9b6-41b1-9e65-fb4ed53722f1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.410206 [guppy/info] Read '747a8cd5-f22a-4e26-ab24-894715906aa0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.428504 [guppy/info] Read '74ad5fd3-05a9-49ee-959b-ec14698b6ede' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.429771 [guppy/info] Read '7560dc38-413c-4d36-a10c-6471dbb285e4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.431967 [guppy/info] Read '75753154-869b-4335-91a8-d3ad8e41f6d8' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.433120 [guppy/info] Read '757e28bf-4d23-447a-a083-ee43e081de42' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.455881 [guppy/info] Read '76abb79b-4d75-4c46-bd4f-6413fd969e25' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.479525 [guppy/info] Read '7763d369-5b91-4f0c-a872-aace363ffb1d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.497242 [guppy/info] Read '77798bd4-db01-4687-850d-3bf4d2f4c018' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.530352 [guppy/info] Read '779cf363-1e86-4938-916d-9dadcbd4afcf' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.530439 [guppy/info] Read '77a636f5-b541-48f1-b844-599abb987dbd' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.530461 [guppy/info] Read '77c9d652-3d64-4025-baec-43daffd40a25' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.530482 [guppy/info] Read '782b4d1e-6ee8-43c6-ac75-b9217f592fce' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.547322 [guppy/info] Read '162d927f-d88b-4159-80a4-f9f6fbaac3d4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.548951 [guppy/info] Read '166049b8-30bb-40b6-beea-91a324cead3e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.550217 [guppy/info] Read '40e4d8c0-3feb-4c3d-a315-c0210d670622' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.556351 [guppy/info] Read '787ef8d5-d595-4dff-b25e-eb2e63c0e355' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.556489 [guppy/info] Read '7961e9d9-84ee-4069-b569-07c4b46a39ec' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.557592 [guppy/info] Read '796d21c7-af78-4079-884f-009cc673d39a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.566563 [guppy/info] Read '02929012-4797-4935-95b6-dc0db7a3f844' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.572640 [guppy/info] Read '1563f41e-c053-4af9-9b1f-73d3127bf20b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.574948 [guppy/info] Read '1a1aa98b-3610-44d9-a1dc-9fdba94abc41' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.590015 [guppy/info] Read '26d82633-b614-4d98-b298-d2fa803dd7bc' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.590473 [guppy/info] Read '79910cc5-59bf-4f74-8392-1b274bdd0ad4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.590506 [guppy/info] Read '79b81490-9a5e-4882-9df5-8c587dec0033' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.590528 [guppy/info] Read '7a01f8db-78bd-4ff0-ae8a-a192b07fbc81' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.590543 [guppy/info] Read '7ab13c09-1881-47fb-b2d2-e312f02286b6' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.590558 [guppy/info] Read '7aff982a-55f8-4bc6-a71b-a42e3d477eb2' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.590572 [guppy/info] Read '7bde1e4c-2385-439f-ac91-eb005322e3f1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.595014 [guppy/info] Read '7cef0fa8-b7cc-443b-8061-02d2a44e5da8' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.601656 [guppy/info] Read '7d87d90d-2952-4718-b349-8a2522ba7b5b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.605032 [guppy/info] Read '7eb862c0-f799-483c-a6b8-6523ba5c128f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.620858 [guppy/info] Read '7f4f5fd1-6b6b-4fae-9435-73726d6fc3da' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.652367 [guppy/info] Read '7f6405bf-237a-49d3-a2bb-72c93519d9c8' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.652484 [guppy/info] Read '7f9e6d5e-b9cd-4084-858c-d542c9d3b539' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.657711 [guppy/info] Read '7fe6b897-d9dc-4fef-bb9c-c322432162c4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.661943 [guppy/info] Read '7fed7ca5-198f-4c44-92e0-b220e0141753' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.666346 [guppy/info] Read '800bf498-d027-4005-9670-1cae8c867d2f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.671847 [guppy/info] Read '811fa2be-9d78-4a77-aa45-739cbb555020' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.679491 [guppy/info] Read '82259eab-64c8-45e4-9ec1-e26ad836a23c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.693575 [guppy/info] Read '83348564-6755-4e37-9178-df0a358c8b21' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.718344 [guppy/info] Read '836e3189-cf19-4a4b-a734-60768efc5eab' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.720604 [guppy/info] Read '83af0b93-ac56-43eb-9760-eb85278783e3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.729337 [guppy/info] Read '8403ff83-dc66-4e7b-81fb-549c62fb8727' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.738083 [guppy/info] Read '84bce090-4abf-43c2-86ea-d010e70733d8' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.754327 [guppy/info] Read '8536d7a8-70b8-44b3-8fc5-3df5f8c89330' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.779129 [guppy/info] Read '854fbf04-ac67-4340-aa0e-02a6dd75d7c9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.781403 [guppy/info] Read '86b398e9-b7d5-434c-b56a-8cabf19806e4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.791203 [guppy/info] Read '875895cc-0de1-417a-9d4f-f9269614e03b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.794579 [guppy/info] Read '884f5b1f-9f84-468f-b185-4ed88c7631f3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.811870 [guppy/info] Read '88704259-9669-4989-ab76-336a37ca6e16' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.816330 [guppy/info] Read '89775f63-06c9-4f92-b409-bc8464312929' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.827214 [guppy/info] Read '8b28553e-93e7-4d52-9a91-09344ae460da' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.833792 [guppy/info] Read '8b3ad2f4-c003-42d3-9ec7-d71dc0b0b201' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.840342 [guppy/info] Read '8b706a3d-d08b-4cab-96e3-60b0bdb5dff2' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.845909 [guppy/info] Read '8c484ed3-3ecb-4475-a1af-2af2b2e6a95b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.854659 [guppy/info] Read '8c852881-fffe-46f0-8748-0dc65855fe27' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.879377 [guppy/info] Read '8cf9f0ba-e9bc-4229-a93f-0e49c484b59e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.885968 [guppy/info] Read '8d018212-2179-4f0d-80ce-d9450c45cdec' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.891542 [guppy/info] Read '8d465352-3de3-4ef2-98f1-6b7be8527f81' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.897141 [guppy/info] Read '8d8076a2-5a87-4411-a741-259a03e4dac6' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.899401 [guppy/info] Read '8e1d0b42-219c-4a57-97a1-ba027adc6d13' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.900668 [guppy/info] Read '8e3d6bcc-78c6-4986-b2af-2b194282f976' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.927070 [guppy/info] Read '8ea09f59-1b2a-4555-80b6-18e8232247af' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.928251 [guppy/info] Read '90ea7eb6-d46e-4bcf-a449-6149d6ecef55' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.930482 [guppy/info] Read '90edc03d-7fbf-4076-9168-16a280dbf887' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.935986 [guppy/info] Read '911661d6-af6d-4417-af15-ebc88bd3ca4f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.940442 [guppy/info] Read '913d09ce-28ae-40bb-9752-dc2de4e53854' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.957855 [guppy/info] Read '913edb93-1139-46ad-9367-196c7084de3c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.966217 [guppy/info] Read '4384e077-6a1a-4b54-9fcb-7623f711d7fd' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:20.974189 [guppy/info] Read '917a8d81-1f63-4cd9-8a88-a4fe74d2dcd6' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.975334 [guppy/info] Read '91d71f84-2757-40e3-8a08-4a64f5b52d0f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.982978 [guppy/info] Read '9272abd0-7cec-4cae-ada9-b81eaae1e944' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.992786 [guppy/info] Read '92f4a808-44e8-4d27-b1f0-22264106c6a9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:20.997195 [guppy/info] Read '933555f4-9b54-4dbe-975e-02f34f09613e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.005863 [guppy/info] Read '9354ac87-804a-4387-8568-4731b1f4800a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.016232 [guppy/info] Read '232696df-6105-48da-a16e-d9da2f3d06a5' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:21.018822 [guppy/info] Read '937b7e50-2b20-4075-b894-152b3bb81fcc' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.074498 [guppy/info] Read '93817723-a44c-448a-a9b1-0ccc2cf12e49' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.084762 [guppy/info] Read '93d9c5b4-c13e-43a7-a244-d4b40aeb058a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.085984 [guppy/info] Read '93e0b2a1-9277-46f4-9ab5-18ec305bfdef' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.090196 [guppy/info] Read '2b683215-1911-45b3-8f6b-eff06822b666' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:21.092282 [guppy/info] Read '2d4d411d-8ebf-45ff-8a78-d602cf82528f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:21.092601 [guppy/info] Read '9473bee9-b8a2-4692-827a-2121aa134f3e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.092649 [guppy/info] Read '94c79ad6-7f91-4f96-9fd2-d5c3612f7c64' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.092670 [guppy/info] Read '95706e83-7162-4a20-a4bc-5e1e13b46922' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.096359 [guppy/info] Read '9608b34d-6ac2-48b3-a569-b602bf2d91a3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.123415 [guppy/info] Read '9641120d-9516-4d63-9a00-b361f436c364' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.125721 [guppy/info] Read '9675699b-755a-45c6-ac3c-eaab7569f031' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.126927 [guppy/info] Read '96841c6d-8c38-466b-80fc-001c46ea0a4b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.151564 [guppy/info] Read '96961836-3c03-4b62-be67-1f9b28558de2' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.152819 [guppy/info] Read '96a86fb9-fca7-494a-a5cf-1ac8caa8d59f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.160428 [guppy/info] Read '976aa221-1cf8-443a-96e7-f16bf31ac6ff' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.162723 [guppy/info] Read '97de1b44-6b55-4f86-bf52-0cfd04a1806e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.174646 [guppy/info] Read '980ae3b8-e48e-488b-a315-cee2b4514bde' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.176955 [guppy/info] Read '99410ff2-4f86-47d9-bf28-9eff249f75d9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.199953 [guppy/info] Read '99590bde-d32a-4741-8918-72c94b132eef' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.208677 [guppy/info] Read '1767a807-15ad-4903-b5ed-fe0585c70d99' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:21.209906 [guppy/info] Read '4783fe0c-2f2d-498c-b450-ad7fd341ad8d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:21.212349 [guppy/info] Read '99d1d467-d146-4623-a933-0653bad6524d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.213585 [guppy/info] Read '9ae9ba3c-daa4-4f70-b098-1e0749f64d86' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.239408 [guppy/info] Read '9c1f59b2-3a77-48d7-b216-894468f0319e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.249152 [guppy/info] Read '9c5db721-f836-489b-b7f2-6a5f38569876' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.251432 [guppy/info] Read '9df8c907-fb90-40c5-8810-1d8be29bf286' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.252691 [guppy/info] Read '9eabf715-3706-4f95-b490-788e20efb090' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.254934 [guppy/info] Read '9ed0e660-dae6-4726-a28e-3f719c0e678b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.256134 [guppy/info] Read '9f44f8d1-db76-4133-8de8-6cd55d8d3ce1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.297692 [guppy/info] Read '04dd01ab-7927-4d2e-b8be-3f0b613aaa30' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:21.299562 [guppy/info] Read '466136c2-652e-4b46-a71a-cdb27a60523b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:21.300436 [guppy/info] Read '9fb0ea08-f381-4bf9-96b5-2e0c7e3740e3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.311277 [guppy/info] Read 'a0cc5461-6a5e-4d43-8325-14aede269423' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.317891 [guppy/info] Read 'a0d53bed-0c2a-41f3-9deb-f2f204e9614c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.325491 [guppy/info] Read 'a235002f-5706-4bd2-9047-902b51b78d94' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.327788 [guppy/info] Read 'a2933dc2-93ad-4d7c-b724-84c9bfa4ee15' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.349103 [guppy/info] Read 'a30e3099-548e-440f-b47f-40c13632e41e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.353570 [guppy/info] Read 'a32e1aee-0170-453b-949b-0e4a49bb35eb' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.356993 [guppy/info] Read 'a396c11b-41fd-43cd-9962-39e60d6f9f2a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.366765 [guppy/info] Read 'a3f991dd-f6ed-4a2e-ac46-422d1466947a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.384072 [guppy/info] Read 'a4ac8aee-e2ba-432d-983b-0a9509693b9a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.394956 [guppy/info] Read 'a5915d25-59f7-4862-b6f9-dcb2fb02fb00' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.410184 [guppy/info] Read 'a65bd970-2dfb-4988-a64a-f2e5c1d14a4a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.428686 [guppy/info] Read 'a6e26251-8bb5-4b6f-a065-56001d912c62' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.442375 [guppy/info] Read '1f6889b5-00ce-4dba-8e81-85a4683535f0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:21.448264 [guppy/info] Read 'a71d783c-a2f8-4f51-97d2-b685fb6d4a38' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.467293 [guppy/info] Read 'a74ac38e-1ef6-4b20-8421-dda569444cd7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.487918 [guppy/info] Read 'a769fd79-96a6-4999-a611-70d79fd30b6d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.507505 [guppy/info] Read 'a7885494-0a44-4393-8e78-05ccc3917bd8' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.523803 [guppy/info] Read 'a7d34b63-196b-4802-9123-938491fd98c9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.541295 [guppy/info] Read 'a8b2a824-7d31-4496-9e39-279bfc8a5a41' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.557734 [guppy/info] Read 'a98ab041-bbec-43e4-98b5-614e078815fb' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.576158 [guppy/info] Read 'aa043e81-0840-482f-b568-ad1318bba134' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.603230 [guppy/info] Read 'aae598d8-cdff-4caa-b5cf-e6a6518f30b5' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.620666 [guppy/info] Read 'aafd66a0-0c5b-4de7-bae9-9cc3142d6bef' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.640313 [guppy/info] Read 'ab01548e-ed20-4e9a-9147-640c2791b63c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.657676 [guppy/info] Read 'aec02c06-bd0c-490c-9b3b-4466c35186bd' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.684807 [guppy/info] Read 'af797b5b-f506-430c-b23e-eb3490096e94' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.702249 [guppy/info] Read 'b041efd3-b33f-4db5-94fb-08294d9e038f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.713246 [guppy/info] Read 'b11135d5-7fff-4a2a-83cf-a76357063564' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.741528 [guppy/info] Read 'b126a98f-9bbd-41a2-b962-e0ded568641e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.756908 [guppy/info] Read 'b29206c8-1009-49c8-aea2-7827fc33e8ab' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.785104 [guppy/info] Read 'b2c15f42-dac3-46da-bb92-56c422649352' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.796068 [guppy/info] Read 'b318728d-576e-4f32-86ea-87d87779e144' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.817808 [guppy/info] Read 'b3b29174-dbf7-456e-97ae-6714deb1a9d9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.835253 [guppy/info] Read 'b3e5566f-d27e-43bc-93a0-11d1533e23f4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.851698 [guppy/info] Read 'b44a6caf-37b3-4899-a2b5-e357aeb48032' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.874528 [guppy/info] Read 'b552ee52-84fd-4fff-ad48-0f69913a98bb' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.889782 [guppy/info] Read 'b5cfbb7f-8a3f-490c-b7a2-6b1cf4efc1c9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.916884 [guppy/info] Read 'b5ee28a8-b6d4-41e0-97a9-c6a8cc38d82d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.938666 [guppy/info] Read 'b632563c-b35a-4864-b1ed-951fa1e9e573' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.954031 [guppy/info] Read 'b63c8a02-ed03-4bf1-8fc9-6f77975adce5' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.972581 [guppy/info] Read 'b70c1d12-4c5f-4ba2-90ad-52bbe1e4cb12' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:21.989977 [guppy/info] Read 'b79d0d3f-2b89-4c69-8443-0446e21085a3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.006356 [guppy/info] Read 'b91fda7f-a90f-4a11-8477-e74fe0d10c14' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.029127 [guppy/info] Read 'b9ce7827-3f22-41d3-bda9-041b88490ec0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.050902 [guppy/info] Read 'b9d045d0-6913-49bf-a381-6a919c8948e0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.075989 [guppy/info] Read 'b9e724e8-a772-459e-b139-c2219125c65b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.086925 [guppy/info] Read 'ba4cc07f-f5d1-4374-86a9-86072db03860' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.114002 [guppy/info] Read 'bcc0f798-66b2-4da7-838c-f5768b1da3c0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.141099 [guppy/info] Read 'bd4830fe-c2f4-488a-9aaa-5fc118ba81e8' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.157511 [guppy/info] Read 'bd8de67c-195f-4982-8c28-c64d8cbb7404' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.173982 [guppy/info] Read 'bde5ab8d-1e30-46fc-832c-dbfcae33d902' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.196797 [guppy/info] Read 'be00bccb-ab3b-4b2d-aced-005582754e82' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.213182 [guppy/info] Read 'be540726-feaa-44c5-8bcb-d5c9767b86b3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.215963 [guppy/info] Read '322f7f62-8387-4261-9fb1-7b983eb36354' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:22.220613 [guppy/info] Read '35ee3c0d-eae1-44c4-8693-0a5e339fb37e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:22.245179 [guppy/info] Read 'bedd2f35-8af3-4290-9c12-69e483e7360c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.268029 [guppy/info] Read 'c0158cc8-b89b-432d-91b3-87e9c1b69f6d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.270336 [guppy/info] Read 'c04717af-995d-4a03-9606-56fc730ed4e0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.272635 [guppy/info] Read 'c150e8f2-a199-4f07-9bf7-978bfeba91f2' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.274378 [guppy/info] Read '4833ee94-2b64-4cda-bbd4-6113496e04c9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:22.300744 [guppy/info] Read 'c265fac9-6bf1-4391-a0c8-f7e33d80d532' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.318196 [guppy/info] Read 'c2fedbcf-875e-4a43-85b5-15b4d2658674' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.321593 [guppy/info] Read 'c389ecde-0ec4-4c2a-963f-ac629b04ac87' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.330361 [guppy/info] Read 'c39638cc-f6e1-427e-9083-fca670139a6d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.333784 [guppy/info] Read 'c526142d-d2cd-4bb1-a211-82e5a9383e45' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.356513 [guppy/info] Read 'c5c8a110-638d-463b-93ca-b9604f37965a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.380438 [guppy/info] Read 'c6d83dd5-bc02-42e7-b657-69dc23aa1683' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.382818 [guppy/info] Read 'c77cfa17-d6ab-4388-8265-e1bc4a5d3e39' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.383993 [guppy/info] Read 'c7c18370-0a2c-44e2-b054-8f8e3ff4d416' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.407808 [guppy/info] Read 'c96916af-e553-4526-968f-0a266b82e441' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.410111 [guppy/info] Read 'c9a67830-7708-4918-9a7c-2664e159d178' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.433977 [guppy/info] Read 'c9b08f20-6ffb-4677-927b-84afdb06512f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.455710 [guppy/info] Read 'ca12d1f0-4ff2-4ef7-affe-d30ba9236cf7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.458078 [guppy/info] Read 'ca2b017f-3d0f-49ee-a5b9-b0ec2301f507' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.480716 [guppy/info] Read 'cb0bfc43-4726-4950-a5cf-5d2ed664b40c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.483085 [guppy/info] Read 'cb548fba-47bb-475c-ad70-9cbc5d17b899' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.510185 [guppy/info] Read 'cb711969-a07e-4fd1-babc-4f8fba9f1035' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.512499 [guppy/info] Read 'cbed50fa-faac-4d60-9376-2356de7c9bf7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.535269 [guppy/info] Read 'cd280faa-9a29-4ba3-a53e-1a8b243af1b7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.537665 [guppy/info] Read 'ce6cbd57-b926-4faa-acf1-74ad4aa5ed8c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.545043 [guppy/info] Read '26b47e30-af2c-4191-b9d6-d9cc0870ce28' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:22.560357 [guppy/info] Read 'cedec891-3c95-4936-ae3a-3221b51bfa3e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.562753 [guppy/info] Read 'ceeed98f-6066-4e36-9c8e-dd2ec1ce22fd' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.585582 [guppy/info] Read 'cfa9bfe6-6a66-455c-ad0e-c9f17f46633f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.587982 [guppy/info] Read 'cfb8f631-d2ba-448b-acb2-3c7e296e24b5' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.610578 [guppy/info] Read 'd05f22f7-1689-43ab-aaed-bcf2a9fdc0b9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.655901 [guppy/info] Read 'd082479a-b6bf-4b87-b311-13a115b0ca4d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.657266 [guppy/info] Read 'd08982cb-eb88-43ca-a8d5-55fc6d5acc7f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.659620 [guppy/info] Read 'd0c0633a-dbd5-4a9e-8931-5abfa21f17ee' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.670686 [guppy/info] Read 'd1bcd3aa-7c08-4fca-802c-5b39e46e6af3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.673125 [guppy/info] Read 'd201ca86-1145-43a0-b7ed-90a5b322dcec' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.690525 [guppy/info] Read 'd236ba61-b088-4983-a532-4d6462deff6e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.691908 [guppy/info] Read 'd27040c4-7000-4e82-80b6-16e26e0c3c6f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.693160 [guppy/info] Read 'd2bea0a2-a439-4dd2-83c3-8546d4d10339' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.694354 [guppy/info] Read 'd2f9e1e3-ba7a-40fd-bf2d-b6f93da8b001' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.714972 [guppy/info] Read 'd360f357-6f99-467b-b683-c973a7551884' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.717431 [guppy/info] Read 'd3e789ca-00ab-4fdc-a95b-edf6d523f82f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.719807 [guppy/info] Read 'd4a67918-503d-41b7-9e73-84bca9db7835' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.740393 [guppy/info] Read 'd501e53c-e9d7-488b-81fb-3ffa960d0f22' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.742856 [guppy/info] Read 'd52cb76e-7b4c-49b6-9c6d-be9eb2c2bc0d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.744177 [guppy/info] Read 'd662b7ff-d76a-403d-a732-6a351202833a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.752288 [guppy/info] Read '2da74247-b5c1-4519-a998-bcb567b50046' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:22.755751 [guppy/info] Read '3e5e003a-924a-4f26-aee0-94b5952a34b4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:22.777655 [guppy/info] Read 'd79b6d76-3129-4cf1-b4aa-fd1c6b20ec62' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.780165 [guppy/info] Read 'd88bad5c-85a7-41f9-b0b8-0855975efa76' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.781505 [guppy/info] Read 'd8ad4326-ebe4-4e87-8253-cb9a11286d3e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.793505 [guppy/info] Read 'da6d7eeb-0382-4bd3-b086-0d64406aaffc' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.795956 [guppy/info] Read 'da8d98a1-1b0a-4ec5-8342-ef5d66c3cf37' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.797293 [guppy/info] Read 'daaccf8a-bde5-4c55-ba0f-6902d4d62144' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.815725 [guppy/info] Read 'daca5f37-f8ab-4723-a004-66e9e2d50816' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.818143 [guppy/info] Read 'db2a193a-307b-4ecd-80c5-955c945eb758' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.819596 [guppy/info] Read 'dbe05e7b-3bcc-41c7-b400-7f10601f6766' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.847681 [guppy/info] Read 'dbecfb72-bd9a-4220-b317-69906a3a2b3c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.849038 [guppy/info] Read 'dd0610d2-d1da-43e0-b95c-7d9a23b5e335' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.850362 [guppy/info] Read 'de5484b6-9592-4bd4-ae2b-c2f1d6f9119b' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.873207 [guppy/info] Read 'de5813dd-e0ad-429e-8c1e-a750fed82007' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.873428 [guppy/info] Read 'dea6317b-a921-4a07-8e67-13e447bb119a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.875648 [guppy/info] Read 'dfa796d8-1971-4c33-9f29-7d5882079920' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.897344 [guppy/info] Read 'dff165c0-68fb-4cb2-b627-ba646698cff0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.899841 [guppy/info] Read 'e0285fd9-4e2b-4db9-b60d-b853b5548a64' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.901214 [guppy/info] Read 'e05a07bd-beab-44be-b0f5-78921978108a' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.906107 [guppy/info] Read '35acbbc1-8f98-4f57-bf6c-7a93c2d4f597' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:22.931774 [guppy/info] Read 'e08202df-aba6-47de-a29e-ba788a48ba0c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.933241 [guppy/info] Read 'e0cdb8d0-2a33-468e-8ed3-305e8b5a3b61' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.934570 [guppy/info] Read 'e14171de-cad2-4089-95d5-d836991d0834' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.943377 [guppy/info] Read 'e2f149a7-410f-4902-ab2b-f6984b7a4475' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.944789 [guppy/info] Read 'e34ba4a6-722f-4b27-9b6e-47af1bd337ca' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.961137 [guppy/info] Read 'e3e1a8c9-8e09-4277-b74a-263a3dc9dcc8' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.962518 [guppy/info] Read 'e48703a1-45b6-4ca6-af35-c87e8653d966' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.979890 [guppy/info] Read 'e4d0cec8-6ab9-4936-80aa-79f1811168f0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.981312 [guppy/info] Read 'e4e4b79a-ff25-4ba7-949e-da6d7baa05bc' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:22.982625 [guppy/info] Read 'e54a2a1e-332d-4c3b-a522-bbd44fea92ec' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.005103 [guppy/info] Read '289d20aa-ff32-4505-8ce2-f01f10d7f726' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:23.005945 [guppy/info] Read 'e7449487-c4dc-43b0-8dfb-f401785bac05' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.006072 [guppy/info] Read 'e869017d-12a9-4271-9854-fd67de2ed23e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.022957 [guppy/info] Read 'e91864d6-bd3c-4c0f-81ec-9e362574d5de' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.024515 [guppy/info] Read 'e921682b-1dc0-4a2c-89c1-cc98e4da0c21' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.025886 [guppy/info] Read 'e9296e26-77c4-409f-8f40-76b638a8d7ec' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.049675 [guppy/info] Read 'e99dd9dd-03b3-4d9e-b8db-e92ab9393804' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.051141 [guppy/info] Read 'e9ad8291-293f-41da-84e3-c5a987aa4103' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.051318 [guppy/info] Read 'ea02f90f-a4ac-4342-8e97-ac1597007758' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.065471 [guppy/info] Read 'ea4d2d2a-d299-4b0a-add3-84e2301c5391' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.066930 [guppy/info] Read 'ea92d2a6-6818-4b14-82aa-bb0ceb5e7129' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.088786 [guppy/info] Read 'eb36af62-8188-4aca-8ada-28548940f45c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.090257 [guppy/info] Read 'ebdb2857-ab5e-47a7-8657-0fc3877ad6c0' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.112947 [guppy/info] Read 'ecd9b268-861c-4e3a-9ac7-4248c4575d14' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.114307 [guppy/info] Read 'ed13bd48-0599-433d-b06b-7434d740c3c9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.115608 [guppy/info] Read 'eec26655-3781-4458-ac54-aa2a9e53a06f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.116836 [guppy/info] Read 'ef1227ce-e14f-475c-8063-7475e9f30f59' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.139571 [guppy/info] Read 'ef6d1523-7f3f-450d-b978-252c04f3562c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.140946 [guppy/info] Read 'f0bb81d1-75e5-4490-88a8-93f3a4894f59' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.142183 [guppy/info] Read 'f0bcb3a1-58cc-425d-9bbc-1fc041072316' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.163860 [guppy/info] Read 'f27b651f-c06a-48d1-b2f4-6cc90c5b2898' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.174961 [guppy/info] Read 'f2808c06-b3fa-47e1-916e-65000ef4b2c9' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.177466 [guppy/info] Read 'f2905947-9cf5-4ade-9cc5-4bacad72d07e' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.178895 [guppy/info] Read 'f2b841e4-ad04-4081-b345-623ef2e73be7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.200597 [guppy/info] Read 'f335a312-72e8-49ca-a984-9eefed0c0284' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.203095 [guppy/info] Read 'f3ee79e6-691c-4c08-ac18-30f7f7a06c1d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.224898 [guppy/info] Read 'f4dadb29-263a-449a-80fd-6467658b962f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.226323 [guppy/info] Read 'f508e162-64dc-4ca3-a28e-2f2efd628a08' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.240456 [guppy/info] Read 'f5d0a237-fa7f-4828-a1b2-4c61746be95d' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.251607 [guppy/info] Read 'f65fb2e2-f4c5-47b0-a0dc-a3686a9fe2f4' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.254121 [guppy/info] Read 'f69d57ec-e8bf-4277-bebf-16939ae2cdf8' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.255565 [guppy/info] Read 'f712281b-416b-49c5-9062-a96da61a4447' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.277144 [guppy/info] Read 'f7b156be-a8c5-44f1-b583-b8214f2d6af1' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.279636 [guppy/info] Read 'f7be0756-e430-4b3f-a47e-5721c4cdf664' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.281102 [guppy/info] Read 'f840526a-40f8-43b5-bce2-fbb89514660f' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.302759 [guppy/info] Read 'f8b0742d-735d-4ea9-abec-3f879d662787' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.304190 [guppy/info] Read 'f8bda59e-e107-45aa-94cd-124ba3e1c684' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.305417 [guppy/info] Read 'f9725146-6d3e-41ef-9cd7-39ed5ef46593' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.399577 [guppy/info] Read 'f981455e-29ae-42b1-b8ed-29178ce6c808' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.516507 [guppy/info] Read 'f9f0584f-b0d4-48aa-8681-9ae05663fb82' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.516655 [guppy/info] Read 'fa0e1bd0-589d-49d1-afb8-e0eb1c982608' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.516678 [guppy/info] Read 'fc208958-2ae5-46e7-9d5b-6e117ff92cc3' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.516719 [guppy/info] Read 'fce1bc13-4423-42e5-8669-b9652547fdc7' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.516738 [guppy/info] Read 'fdb0eea6-205f-417b-b70e-d5b7da7a50f6' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.518271 [guppy/info] Read '33c76874-2ae6-4cbf-b5f6-f82ec553fe19' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:23.521080 [guppy/info] Read 'fdc3388f-e1a1-4c56-b35d-95b5fe2fa741' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.560445 [guppy/info] Read 'fe9a263b-dd68-4e17-96c1-9e080ae9fd2c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.560570 [guppy/info] Read 'fea7cae9-93bd-4a10-829e-57d8e93db524' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.565983 [guppy/info] Read '41e2ab18-c299-485a-b272-98f2ce36e920' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:23.567344 [guppy/info] Read 'fefc2e0a-bc97-4f45-be00-515dcc3ee8de' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.569627 [guppy/info] Read 'ff441c74-bbf0-4e8a-96d1-8a2dc0a8101c' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.670511 [guppy/info] Read 'ff6dc441-7644-413a-ad41-134888bdcefa' from file "ELIGOS_m7G.fast5" has been loaded.
+2023-06-23 23:42:23.681117 [guppy/info] Dispatched batch 0 containing 1 inputs:
+2023-06-23 23:42:23.681279 [guppy/info] Batch input 0 : demo/ELIGOS/ELIGOS_m7G/ELIGOS_m7G.fast5
+2023-06-23 23:42:23.861172 [guppy/info] Read '147fd855-dce1-4bc2-a323-14520ef08857' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:23.863740 [guppy/info] Read '25b59fec-af70-49c4-813e-385d34f88172' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:23.894904 [guppy/info] Read '3874b549-ee26-406c-81c1-1a86c8d2018e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:23.910979 [guppy/info] Read '3e079dc9-6849-489f-87d1-eedb34650fc1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:24.294600 [guppy/info] Read '2d9a9617-7484-43af-af80-565464a0d695' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:24.296949 [guppy/info] Read '2daadc5d-1ccf-4f00-9e36-fededa358f96' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:24.353385 [guppy/info] Read '3b1cdf70-ef58-4b5c-8a4e-0af17fc0d3e5' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:24.391768 [guppy/info] Read '29d66fd9-95cd-426e-b909-11ac3fb2ddbe' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:24.687709 [guppy/info] Read '74647454-c9b6-41b1-9e65-fb4ed53722f1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:24.759998 [guppy/info] Read '46b80137-7f36-4fc8-901c-713295b03263' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:24.845017 [guppy/info] Read '302bc31c-42c1-4af2-93fa-c30631fd7635' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:24.855943 [guppy/info] Read '15a4962d-f2b7-4cf8-9304-f99714a47371' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:24.908582 [guppy/info] Read '16a34660-3f38-4f67-91ba-dab79124cfcc' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:25.225693 [guppy/info] Read '4bf5f1a1-d080-4a75-8817-033b7498c23c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:25.243126 [guppy/info] Read '41763684-eb0e-43ca-8a8e-fb271410576e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:25.412892 [guppy/info] Read '5649156f-388c-4f72-9797-da63f58b0da0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:25.440628 [guppy/info] Read '4a404c79-5f9c-4007-8a17-5ec60670a9ff' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:25.541526 [guppy/info] Read '1c82d306-9dd0-427d-b110-2195cc818dbb' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:25.570024 [guppy/info] Read '466935ae-8270-4822-9b70-974297de1cf0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:25.804267 [guppy/info] Read 'a32e1aee-0170-453b-949b-0e4a49bb35eb' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:26.097318 [guppy/info] Read '742f95ce-deaa-4f4b-9d8e-a05b09c518f5' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:26.109851 [guppy/info] Read '7f4f5fd1-6b6b-4fae-9435-73726d6fc3da' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:26.476108 [guppy/info] Read '6c16f075-c98f-492c-b3a1-eab1b0cbd464' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:26.732295 [guppy/info] Read '4ba40402-ed98-4993-861e-6d7d9086c833' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:26.735200 [guppy/info] Read '5dac0ad1-fc69-41e8-990f-26372af50e8b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:26.781289 [guppy/info] Read '74ad5fd3-05a9-49ee-959b-ec14698b6ede' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.002510 [guppy/info] Read '917a8d81-1f63-4cd9-8a88-a4fe74d2dcd6' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.273920 [guppy/info] Read '7fe6b897-d9dc-4fef-bb9c-c322432162c4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.323008 [guppy/info] Read '7fed7ca5-198f-4c44-92e0-b220e0141753' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.336328 [guppy/info] Read '6e76c007-28cc-4780-8bc4-aa407d14d510' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.405430 [guppy/info] Read '4822e680-4c69-47dc-a12e-523f80333a46' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.569055 [guppy/info] Read '507a9140-5932-413d-9fc6-587c7b944ea7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.571608 [guppy/info] Read 'c7c18370-0a2c-44e2-b054-8f8e3ff4d416' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.584603 [guppy/info] Read '67a4776a-698c-463b-9894-19e9dd9e3736' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.706725 [guppy/info] Read '47fa0cd2-0f14-4f46-b312-3ca4d9367870' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:27.707991 [guppy/info] Read '787ef8d5-d595-4dff-b25e-eb2e63c0e355' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.081706 [guppy/info] Read '7763d369-5b91-4f0c-a872-aace363ffb1d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.127485 [guppy/info] Read '9354ac87-804a-4387-8568-4731b1f4800a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.150709 [guppy/info] Read '2440a748-32d9-4de5-bdef-47d3a3dad94d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.244778 [guppy/info] Read 'b318728d-576e-4f32-86ea-87d87779e144' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.245967 [guppy/info] Read 'b3b29174-dbf7-456e-97ae-6714deb1a9d9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.419449 [guppy/info] Read 'a0d53bed-0c2a-41f3-9deb-f2f204e9614c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.523831 [guppy/info] Read '49e4d535-2f3e-4058-a3f4-08a0091b3867' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.567430 [guppy/info] Read '3c9ee514-30cb-4c5a-a97a-a2c50d0123f3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.668142 [guppy/info] Read '7560dc38-413c-4d36-a10c-6471dbb285e4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:28.863530 [guppy/info] Read '9eabf715-3706-4f95-b490-788e20efb090' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:29.334125 [guppy/info] Read '97de1b44-6b55-4f86-bf52-0cfd04a1806e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:29.455424 [guppy/info] Read '6f244d55-3ea5-4c22-9e5f-19515e9758a2' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:29.888862 [guppy/info] Read '911661d6-af6d-4417-af15-ebc88bd3ca4f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:29.892725 [guppy/info] Read '4ab4fe27-1a8e-4d28-9f53-66cbd9b1d8fd' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.088090 [guppy/info] Read '3032f933-e16a-4cfc-8313-4b0e74801060' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.217035 [guppy/info] Read 'a6e26251-8bb5-4b6f-a065-56001d912c62' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.380259 [guppy/info] Read 'b70c1d12-4c5f-4ba2-90ad-52bbe1e4cb12' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.391004 [guppy/info] Read '8403ff83-dc66-4e7b-81fb-549c62fb8727' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.454944 [guppy/info] Read '1bec3783-a0dd-4e04-ab01-8e56e230bb55' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.497045 [guppy/info] Read '1f75efac-883a-4c03-acd2-3c15e22275e4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.499240 [guppy/info] Read '20124d8b-cf00-4177-a83c-a07d69f33372' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.553893 [guppy/info] Read '68fedb87-c0ac-443e-b122-5af25f356db3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.839073 [guppy/info] Read '4085db21-7c38-4296-a3bb-fecd57902e99' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.903909 [guppy/info] Read '7961e9d9-84ee-4069-b569-07c4b46a39ec' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.925429 [guppy/info] Read '9ae9ba3c-daa4-4f70-b098-1e0749f64d86' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:30.972542 [guppy/info] Read '683fa4af-8e2d-4264-af1b-791306e91391' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:31.433674 [guppy/info] Read '57330618-cc61-4862-8bf6-3d1beaffaf57' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:31.743154 [guppy/info] Read 'be540726-feaa-44c5-8bcb-d5c9767b86b3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:31.796815 [guppy/info] Read '875895cc-0de1-417a-9d4f-f9269614e03b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:32.158266 [guppy/info] Read '26b497db-11c4-4749-a919-a5927552051b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:32.160537 [guppy/info] Read '27a68ef9-893c-4ef3-b7d9-34fc8a64376b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:32.162263 [guppy/info] Read '2942e22a-afe5-445e-864d-6986617119c7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:32.357755 [guppy/info] Read '3db20112-13bb-4af8-a26a-c1a985b15c52' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:33.274399 [guppy/info] Read 'e921682b-1dc0-4a2c-89c1-cc98e4da0c21' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:33.476351 [guppy/info] Read 'c9b08f20-6ffb-4677-927b-84afdb06512f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:33.899681 [guppy/info] Read '7d87d90d-2952-4718-b349-8a2522ba7b5b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:34.030460 [guppy/info] Read 'bedd2f35-8af3-4290-9c12-69e483e7360c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:34.074965 [guppy/info] Read '82259eab-64c8-45e4-9ec1-e26ad836a23c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:34.097721 [guppy/info] Read '4c631ede-ff77-4223-ae5f-d7bc5022178b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:34.102279 [guppy/info] Read '5dc1cf78-680b-4df1-870b-8a71a7c55058' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:34.104749 [guppy/info] Read '5e9b97fa-45a9-4d45-8fd1-15af98c14867' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:34.913880 [guppy/info] Read 'a4ac8aee-e2ba-432d-983b-0a9509693b9a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:34.937901 [guppy/info] Read '699f560f-07f3-41c6-a2eb-68fa29f1c6fb' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.147818 [guppy/info] Read '6b0d55d4-a5f9-4bb8-97b3-455304773840' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.180412 [guppy/info] Read 'cfa9bfe6-6a66-455c-ad0e-c9f17f46633f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.223138 [guppy/info] Read 'b29206c8-1009-49c8-aea2-7827fc33e8ab' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.508872 [guppy/info] Read '70d7b49b-a5a0-4ff2-a3b5-95e944784903' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.511153 [guppy/info] Read '72165716-4c39-403e-b174-a60120c800e1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.514167 [guppy/info] Read '75753154-869b-4335-91a8-d3ad8e41f6d8' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.626066 [guppy/info] Read '21c2c4e0-bf2a-422d-a477-5bebdd755915' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.843528 [guppy/info] Read 'cb548fba-47bb-475c-ad70-9cbc5d17b899' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.859191 [guppy/info] Read '4112621c-4994-43e0-888a-4cecc6e10c91' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.908435 [guppy/info] Read '20b84a48-f929-4b53-b08d-a4ff152209d4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:35.910610 [guppy/info] Read '20d47fd1-e7bf-4af2-b5d6-8af1c6a8f282' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.116805 [guppy/info] Read '405adfd4-a60b-46fd-89d7-541e19116455' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.205512 [guppy/info] Read '79910cc5-59bf-4f74-8392-1b274bdd0ad4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.207970 [guppy/info] Read '79b81490-9a5e-4882-9df5-8c587dec0033' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.442212 [guppy/info] Read '686d444f-aad6-4609-acbf-4258e08e4a0b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.444542 [guppy/info] Read '757e28bf-4d23-447a-a083-ee43e081de42' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.585657 [guppy/info] Read '86b398e9-b7d5-434c-b56a-8cabf19806e4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.606467 [guppy/info] Read 'af797b5b-f506-430c-b23e-eb3490096e94' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.788500 [guppy/info] Read '6a8c0d78-ca1f-4ed1-940c-24161d67f0ed' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.926761 [guppy/info] Read '4cdacf69-0f60-4978-9868-18b1e9744914' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:36.928525 [guppy/info] Read '4d2b981a-4cc0-4b90-8d23-a053d6c17717' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:37.373716 [guppy/info] Read '438d4e3d-89fd-44a8-8176-813ea38e15c9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:37.958984 [guppy/info] Read '50b41803-af41-41b0-bf26-7782aecdaebf' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:37.962519 [guppy/info] Read '50eb0a1b-b032-4c1e-be00-31b974330ea6' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:37.965232 [guppy/info] Read 'd0c0633a-dbd5-4a9e-8931-5abfa21f17ee' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:38.296582 [guppy/info] Read '5ecff0c3-32eb-4362-8c9a-2bcb7fd36cb1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:38.332984 [guppy/info] Read 'b9d045d0-6913-49bf-a381-6a919c8948e0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:38.335168 [guppy/info] Read 'ceeed98f-6066-4e36-9c8e-dd2ec1ce22fd' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:38.552677 [guppy/info] Read '3afc1f48-4732-4690-8bb0-3376eb5069d7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:38.576074 [guppy/info] Read '6773ca76-7c38-4881-baf7-8343253a8eea' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:38.865216 [guppy/info] Read '8b28553e-93e7-4d52-9a91-09344ae460da' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.146329 [guppy/info] Read 'd8ad4326-ebe4-4e87-8253-cb9a11286d3e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.516072 [guppy/info] Read '9df8c907-fb90-40c5-8810-1d8be29bf286' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.648270 [guppy/info] Read '9fb0ea08-f381-4bf9-96b5-2e0c7e3740e3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.692879 [guppy/info] Read '88704259-9669-4989-ab76-336a37ca6e16' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.762145 [guppy/info] Read '29703904-38de-4285-8e5c-75da8ef92ec1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.764994 [guppy/info] Read 'f981455e-29ae-42b1-b8ed-29178ce6c808' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.865645 [guppy/info] Read '576f943d-744a-4399-ad31-e646be35e4b9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.899464 [guppy/info] Read 'a5915d25-59f7-4862-b6f9-dcb2fb02fb00' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.947560 [guppy/info] Read '6a084373-55dc-48da-8ff9-7ffbb55cbcc6' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:39.995880 [guppy/info] Read '8b3ad2f4-c003-42d3-9ec7-d71dc0b0b201' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.080244 [guppy/info] Read 'c265fac9-6bf1-4391-a0c8-f7e33d80d532' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.112910 [guppy/info] Read '9272abd0-7cec-4cae-ada9-b81eaae1e944' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.142491 [guppy/info] Read '980ae3b8-e48e-488b-a315-cee2b4514bde' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.179674 [guppy/info] Read '5efee7c0-3175-4bdd-a912-05e38f0a80e1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.181003 [guppy/info] Read '6019623e-16df-4d46-8f03-9b9542d5af29' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.278841 [guppy/info] Read '4c03749f-cc54-41de-9429-f82c4c89b68a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.475631 [guppy/info] Read 'a74ac38e-1ef6-4b20-8421-dda569444cd7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.489377 [guppy/info] Read 'c9a67830-7708-4918-9a7c-2664e159d178' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.526372 [guppy/info] Read 'be00bccb-ab3b-4b2d-aced-005582754e82' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.764023 [guppy/info] Read '513d3c3f-c168-4df6-af1d-a4341645da08' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:40.883800 [guppy/info] Read '4d6a791c-e292-4b69-983c-6a7b0813782d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.157356 [guppy/info] Read 'aec02c06-bd0c-490c-9b3b-4466c35186bd' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.169031 [guppy/info] Read '40390794-158e-4885-9767-1e521c6cc28a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.187676 [guppy/info] Read '4937524e-e343-4fdd-bd0a-d02caba3434d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.304976 [guppy/info] Read '9473bee9-b8a2-4692-827a-2121aa134f3e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.338487 [guppy/info] Read '6e582efa-390e-4505-bcf2-cdd2ea9c0fe3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.392648 [guppy/info] Read 'c39638cc-f6e1-427e-9083-fca670139a6d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.602082 [guppy/info] Read '2b6f978a-82e0-4215-aa3b-c8fcc9452b88' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.646928 [guppy/info] Read 'd05f22f7-1689-43ab-aaed-bcf2a9fdc0b9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.649939 [guppy/info] Read 'e0285fd9-4e2b-4db9-b60d-b853b5548a64' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.675274 [guppy/info] Read 'a0cc5461-6a5e-4d43-8325-14aede269423' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.725783 [guppy/info] Read 'e05a07bd-beab-44be-b0f5-78921978108a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.785709 [guppy/info] Read 'bcc0f798-66b2-4da7-838c-f5768b1da3c0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.804466 [guppy/info] Read '57be405d-048e-4d46-bcd7-a9f4efb5671f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.846896 [guppy/info] Read 'bd8de67c-195f-4982-8c28-c64d8cbb7404' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.848531 [guppy/info] Read 'bde5ab8d-1e30-46fc-832c-dbfcae33d902' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.897234 [guppy/info] Read '6be8a4dd-3a18-4fa0-b848-8418252c4917' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:41.992204 [guppy/info] Read 'd082479a-b6bf-4b87-b311-13a115b0ca4d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.092204 [guppy/info] Read '7a01f8db-78bd-4ff0-ae8a-a192b07fbc81' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.094002 [guppy/info] Read '7ab13c09-1881-47fb-b2d2-e312f02286b6' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.172795 [guppy/info] Read 'f9f0584f-b0d4-48aa-8681-9ae05663fb82' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.174598 [guppy/info] Read 'fa0e1bd0-589d-49d1-afb8-e0eb1c982608' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.175970 [guppy/info] Read 'fc208958-2ae5-46e7-9d5b-6e117ff92cc3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.233438 [guppy/info] Read '72a2d7a4-67ea-41a2-9647-606451c62800' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.235934 [guppy/info] Read '747a8cd5-f22a-4e26-ab24-894715906aa0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.250029 [guppy/info] Read 'd1bcd3aa-7c08-4fca-802c-5b39e46e6af3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.257768 [guppy/info] Read '51b19526-006c-4e31-b0b6-9ad20d0734ec' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.431605 [guppy/info] Read 'ca2b017f-3d0f-49ee-a5b9-b0ec2301f507' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.433736 [guppy/info] Read 'd4a67918-503d-41b7-9e73-84bca9db7835' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.514775 [guppy/info] Read '4dcc8a9d-f5ed-4033-ad7e-2d28b8b291d7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.518425 [guppy/info] Read '8536d7a8-70b8-44b3-8fc5-3df5f8c89330' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.549289 [guppy/info] Read 'ed13bd48-0599-433d-b06b-7434d740c3c9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.553045 [guppy/info] Read 'f3ee79e6-691c-4c08-ac18-30f7f7a06c1d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.604922 [guppy/info] Read 'a65bd970-2dfb-4988-a64a-f2e5c1d14a4a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.606954 [guppy/info] Read 'a7885494-0a44-4393-8e78-05ccc3917bd8' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.633467 [guppy/info] Read 'c04717af-995d-4a03-9606-56fc730ed4e0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.634458 [guppy/info] Read 'd360f357-6f99-467b-b683-c973a7551884' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.636082 [guppy/info] Read 'f2808c06-b3fa-47e1-916e-65000ef4b2c9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.801932 [guppy/info] Read '8b706a3d-d08b-4cab-96e3-60b0bdb5dff2' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:42.841674 [guppy/info] Read '4c3a0aaa-fb09-4793-b394-898d332ead28' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.424469 [guppy/info] Read '8d8076a2-5a87-4411-a741-259a03e4dac6' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.426139 [guppy/info] Read '937b7e50-2b20-4075-b894-152b3bb81fcc' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.428122 [guppy/info] Read '93817723-a44c-448a-a9b1-0ccc2cf12e49' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.460785 [guppy/info] Read '77798bd4-db01-4687-850d-3bf4d2f4c018' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.463815 [guppy/info] Read '6cbd8d98-efdb-47c8-9262-77c6218ca310' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.469676 [guppy/info] Read '913d09ce-28ae-40bb-9752-dc2de4e53854' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.663038 [guppy/info] Read 'bd4830fe-c2f4-488a-9aaa-5fc118ba81e8' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.710980 [guppy/info] Read '60439b01-5422-47e6-ac67-f0eca17ed163' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.716329 [guppy/info] Read '913edb93-1139-46ad-9367-196c7084de3c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.852112 [guppy/info] Read 'cfb8f631-d2ba-448b-acb2-3c7e296e24b5' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.900903 [guppy/info] Read 'cb0bfc43-4726-4950-a5cf-5d2ed664b40c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.926334 [guppy/info] Read 'f7b156be-a8c5-44f1-b583-b8214f2d6af1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.967673 [guppy/info] Read 'e0cdb8d0-2a33-468e-8ed3-305e8b5a3b61' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:43.974578 [guppy/info] Read '4f2ca6bc-ce85-4081-b9b8-af901615e293' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.029728 [guppy/info] Read '57e03b7e-7fde-415e-991a-54a679a14133' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.082984 [guppy/info] Read '6fe38ba8-c9dc-4f0f-90dc-08fc34b5bd9c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.163950 [guppy/info] Read 'a7d34b63-196b-4802-9123-938491fd98c9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.171304 [guppy/info] Read '6ff9b5c7-637a-4af9-a2f6-a15561cee4c0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.225818 [guppy/info] Read '7aff982a-55f8-4bc6-a71b-a42e3d477eb2' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.280289 [guppy/info] Read 'b552ee52-84fd-4fff-ad48-0f69913a98bb' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.430457 [guppy/info] Read '58f25b32-448f-4046-a2d9-289c90abb8cf' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.495677 [guppy/info] Read 'da8d98a1-1b0a-4ec5-8342-ef5d66c3cf37' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.525415 [guppy/info] Read '796d21c7-af78-4079-884f-009cc673d39a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.550626 [guppy/info] Read 'a30e3099-548e-440f-b47f-40c13632e41e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.672961 [guppy/info] Read '51be17b6-bf59-413d-a39d-2ddf7b2d5e9c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.771870 [guppy/info] Read 'fce1bc13-4423-42e5-8669-b9652547fdc7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.773082 [guppy/info] Read 'fdb0eea6-205f-417b-b70e-d5b7da7a50f6' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.867807 [guppy/info] Read '9c5db721-f836-489b-b7f2-6a5f38569876' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.988919 [guppy/info] Read 'e08202df-aba6-47de-a29e-ba788a48ba0c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:44.993573 [guppy/info] Read '7bde1e4c-2385-439f-ac91-eb005322e3f1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.066494 [guppy/info] Read 'aafd66a0-0c5b-4de7-bae9-9cc3142d6bef' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.118347 [guppy/info] Read '93d9c5b4-c13e-43a7-a244-d4b40aeb058a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.149083 [guppy/info] Read 'da6d7eeb-0382-4bd3-b086-0d64406aaffc' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.249424 [guppy/info] Read 'd08982cb-eb88-43ca-a8d5-55fc6d5acc7f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.373158 [guppy/info] Read '522471c4-1520-4d11-9608-35bdb4b3b964' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.455170 [guppy/info] Read 'a396c11b-41fd-43cd-9962-39e60d6f9f2a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.489371 [guppy/info] Read '99410ff2-4f86-47d9-bf28-9eff249f75d9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.544736 [guppy/info] Read 'ebdb2857-ab5e-47a7-8657-0fc3877ad6c0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.576397 [guppy/info] Read '94c79ad6-7f91-4f96-9fd2-d5c3612f7c64' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.728201 [guppy/info] Read 'e4d0cec8-6ab9-4936-80aa-79f1811168f0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.766730 [guppy/info] Read '779cf363-1e86-4938-916d-9dadcbd4afcf' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.802480 [guppy/info] Read 'cedec891-3c95-4936-ae3a-3221b51bfa3e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.803781 [guppy/info] Read 'd2f9e1e3-ba7a-40fd-bf2d-b6f93da8b001' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.812425 [guppy/info] Read 'e99dd9dd-03b3-4d9e-b8db-e92ab9393804' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.817860 [guppy/info] Read '61406313-18b2-4e9f-a59d-4e6a944b5c42' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.845157 [guppy/info] Read 'db2a193a-307b-4ecd-80c5-955c945eb758' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.846549 [guppy/info] Read '7020bbd8-6b64-4e75-b8c5-f68a10b9d9ee' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.891798 [guppy/info] Read '6f3ede63-103e-4c57-a845-7af9d13ee747' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.979876 [guppy/info] Read 'f27b651f-c06a-48d1-b2f4-6cc90c5b2898' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:45.996385 [guppy/info] Read 'e9ad8291-293f-41da-84e3-c5a987aa4103' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.010751 [guppy/info] Read '61be03b1-5162-49ca-afdc-ecb04493c537' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.150217 [guppy/info] Read '4ffe3b98-f420-4d49-b09c-516c729b3718' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.256697 [guppy/info] Read '95706e83-7162-4a20-a4bc-5e1e13b46922' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.314362 [guppy/info] Read '59d37a2d-9bb8-4b51-acba-c85f3047a208' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.351093 [guppy/info] Read '7cef0fa8-b7cc-443b-8061-02d2a44e5da8' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.389151 [guppy/info] Read '59ea7ee1-06d9-4ea9-9937-dc23f9a102aa' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.477708 [guppy/info] Read 'b041efd3-b33f-4db5-94fb-08294d9e038f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.539035 [guppy/info] Read 'fefc2e0a-bc97-4f45-be00-515dcc3ee8de' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.610179 [guppy/info] Read 'f69d57ec-e8bf-4277-bebf-16939ae2cdf8' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.633025 [guppy/info] Read '77a636f5-b541-48f1-b844-599abb987dbd' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.668569 [guppy/info] Read 'd201ca86-1145-43a0-b7ed-90a5b322dcec' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.671620 [guppy/info] Read 'ea02f90f-a4ac-4342-8e97-ac1597007758' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.677897 [guppy/info] Read 'a71d783c-a2f8-4f51-97d2-b685fb6d4a38' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.800008 [guppy/info] Read '72836807-4562-48fb-819a-18fc53556e55' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.845694 [guppy/info] Read 'dd0610d2-d1da-43e0-b95c-7d9a23b5e335' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.898291 [guppy/info] Read '525911c0-9704-40ff-bbe3-9141b38b42c4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.904717 [guppy/info] Read 'd2bea0a2-a439-4dd2-83c3-8546d4d10339' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.942652 [guppy/info] Read 'dbecfb72-bd9a-4220-b317-69906a3a2b3c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:46.963748 [guppy/info] Read '96a86fb9-fca7-494a-a5cf-1ac8caa8d59f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.178680 [guppy/info] Read 'ef6d1523-7f3f-450d-b978-252c04f3562c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.194984 [guppy/info] Read 'f4dadb29-263a-449a-80fd-6467658b962f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.199118 [guppy/info] Read '7f6405bf-237a-49d3-a2bb-72c93519d9c8' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.244600 [guppy/info] Read '7eb862c0-f799-483c-a6b8-6523ba5c128f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.407957 [guppy/info] Read 'aae598d8-cdff-4caa-b5cf-e6a6518f30b5' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.461805 [guppy/info] Read '5a845120-e778-4305-9e95-161d2e3a209f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.491628 [guppy/info] Read 'e48703a1-45b6-4ca6-af35-c87e8653d966' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.652131 [guppy/info] Read 'b126a98f-9bbd-41a2-b962-e0ded568641e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.731305 [guppy/info] Read '77c9d652-3d64-4025-baec-43daffd40a25' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.771570 [guppy/info] Read 'c5c8a110-638d-463b-93ca-b9604f37965a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.773141 [guppy/info] Read 'ea92d2a6-6818-4b14-82aa-bb0ceb5e7129' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.780286 [guppy/info] Read 'b91fda7f-a90f-4a11-8477-e74fe0d10c14' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.782597 [guppy/info] Read '7f9e6d5e-b9cd-4084-858c-d542c9d3b539' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.888143 [guppy/info] Read '9c1f59b2-3a77-48d7-b216-894468f0319e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:47.908852 [guppy/info] Read 'd236ba61-b088-4983-a532-4d6462deff6e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.073471 [guppy/info] Read 'e91864d6-bd3c-4c0f-81ec-9e362574d5de' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.109957 [guppy/info] Read '5adc6dd5-5174-4f54-8e5c-78c9b71212ed' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.142467 [guppy/info] Read 'f5d0a237-fa7f-4828-a1b2-4c61746be95d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.219622 [guppy/info] Read 'd662b7ff-d76a-403d-a732-6a351202833a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.272148 [guppy/info] Read '61ebb067-9a12-40bb-8c50-e8ce1ec0e222' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.318863 [guppy/info] Read '72fbb2c3-4456-4697-8766-b4bad58da582' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.320235 [guppy/info] Read '62ba0a25-e3d1-409c-be8b-ee753337ca84' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.353340 [guppy/info] Read 'b11135d5-7fff-4a2a-83cf-a76357063564' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.355130 [guppy/info] Read 'd501e53c-e9d7-488b-81fb-3ffa960d0f22' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.419772 [guppy/info] Read '800bf498-d027-4005-9670-1cae8c867d2f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.552943 [guppy/info] Read '52f07928-c11a-453d-8113-05856d2a8b8d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.817427 [guppy/info] Read 'b2c15f42-dac3-46da-bb92-56c422649352' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.820715 [guppy/info] Read 'b9e724e8-a772-459e-b139-c2219125c65b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.916462 [guppy/info] Read 'de5484b6-9592-4bd4-ae2b-c2f1d6f9119b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.934959 [guppy/info] Read 'cb711969-a07e-4fd1-babc-4f8fba9f1035' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:48.985104 [guppy/info] Read 'ff441c74-bbf0-4e8a-96d1-8a2dc0a8101c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.030822 [guppy/info] Read '633e5ed4-e800-4cfb-8ab6-0816721474b0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.078456 [guppy/info] Read '782b4d1e-6ee8-43c6-ac75-b9217f592fce' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.079938 [guppy/info] Read '96841c6d-8c38-466b-80fc-001c46ea0a4b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.186766 [guppy/info] Read '5b22830a-4063-47f8-9563-859370ce924c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.190012 [guppy/info] Read '6480d334-0528-4760-b247-0ddae29930df' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.212674 [guppy/info] Read 'd88bad5c-85a7-41f9-b0b8-0855975efa76' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.312922 [guppy/info] Read 'f0bb81d1-75e5-4490-88a8-93f3a4894f59' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.426369 [guppy/info] Read '83348564-6755-4e37-9178-df0a358c8b21' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.562480 [guppy/info] Read '811fa2be-9d78-4a77-aa45-739cbb555020' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.628794 [guppy/info] Read '539ff6cc-5c9a-4a3c-a2be-04ec96a170d9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.662283 [guppy/info] Read '5424567d-f599-4694-abb7-a58c5f99c16a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.778845 [guppy/info] Read 'cd280faa-9a29-4ba3-a53e-1a8b243af1b7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.782691 [guppy/info] Read '836e3189-cf19-4a4b-a734-60768efc5eab' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:49.972125 [guppy/info] Read 'dff165c0-68fb-4cb2-b627-ba646698cff0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.002731 [guppy/info] Read 'dbe05e7b-3bcc-41c7-b400-7f10601f6766' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.038179 [guppy/info] Read 'f8bda59e-e107-45aa-94cd-124ba3e1c684' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.052481 [guppy/info] Read '5bba4383-5a50-4975-b2fc-aa6dfbe28db0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.068878 [guppy/info] Read '64fcc13f-955c-4758-9a1b-3dc72d397ec2' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.168426 [guppy/info] Read '8ea09f59-1b2a-4555-80b6-18e8232247af' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.182263 [guppy/info] Read '83af0b93-ac56-43eb-9760-eb85278783e3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.304317 [guppy/info] Read 'ce6cbd57-b926-4faa-acf1-74ad4aa5ed8c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.305129 [guppy/info] Read 'd27040c4-7000-4e82-80b6-16e26e0c3c6f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.381303 [guppy/info] Read '92f4a808-44e8-4d27-b1f0-22264106c6a9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.604801 [guppy/info] Read '662f7b28-abe8-4056-82d8-4a6241da4a4b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.674470 [guppy/info] Read '5430471f-27f1-4956-b07f-4dfb802a1ae0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.748064 [guppy/info] Read '96961836-3c03-4b62-be67-1f9b28558de2' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.749629 [guppy/info] Read '976aa221-1cf8-443a-96e7-f16bf31ac6ff' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.768683 [guppy/info] Read 'ecd9b268-861c-4e3a-9ac7-4248c4575d14' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.781174 [guppy/info] Read '5cdd8f10-f68a-4530-8dcb-a0d04cc9192a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:50.805550 [guppy/info] Read 'eb36af62-8188-4aca-8ada-28548940f45c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.034049 [guppy/info] Read '84bce090-4abf-43c2-86ea-d010e70733d8' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.038481 [guppy/info] Read 'ef1227ce-e14f-475c-8063-7475e9f30f59' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.055085 [guppy/info] Read '54886823-d7d6-4600-9253-6dbd92551628' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.089331 [guppy/info] Read 'f0bcb3a1-58cc-425d-9bbc-1fc041072316' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.121081 [guppy/info] Read '9641120d-9516-4d63-9a00-b361f436c364' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.145736 [guppy/info] Read 'daaccf8a-bde5-4c55-ba0f-6902d4d62144' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.153407 [guppy/info] Read '66c00e7f-9893-45e0-a9d9-a43e809cf723' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.195903 [guppy/info] Read 'f9725146-6d3e-41ef-9cd7-39ed5ef46593' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.296818 [guppy/info] Read '54c5afc5-cb86-4076-8425-a37bec45620b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.397854 [guppy/info] Read '5d4534b0-9c79-48fe-9bd4-548e7f216cb7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.410991 [guppy/info] Read 'a98ab041-bbec-43e4-98b5-614e078815fb' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.427003 [guppy/info] Read '5d8d78eb-e82c-4c73-8370-0e75496d0dec' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.482458 [guppy/info] Read '854fbf04-ac67-4340-aa0e-02a6dd75d7c9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.508290 [guppy/info] Read '6ba9073c-d1f4-4f95-ad8a-feb902e69cc8' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.619798 [guppy/info] Read 'a235002f-5706-4bd2-9047-902b51b78d94' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.641015 [guppy/info] Read '884f5b1f-9f84-468f-b185-4ed88c7631f3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.745849 [guppy/info] Read 'a2933dc2-93ad-4d7c-b724-84c9bfa4ee15' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.926175 [guppy/info] Read '5578708e-b278-4171-91c8-056de75282d0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:51.927291 [guppy/info] Read '6a787580-e8a1-44d9-bb77-9f5d36f78a11' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.035066 [guppy/info] Read 'c0158cc8-b89b-432d-91b3-87e9c1b69f6d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.063787 [guppy/info] Read 'c2fedbcf-875e-4a43-85b5-15b4d2658674' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.071680 [guppy/info] Read '8c852881-fffe-46f0-8748-0dc65855fe27' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.113677 [guppy/info] Read '76abb79b-4d75-4c46-bd4f-6413fd969e25' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.114770 [guppy/info] Read 'c96916af-e553-4526-968f-0a266b82e441' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.248261 [guppy/info] Read '8cf9f0ba-e9bc-4229-a93f-0e49c484b59e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.301188 [guppy/info] Read '89775f63-06c9-4f92-b409-bc8464312929' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.302309 [guppy/info] Read '8c484ed3-3ecb-4475-a1af-2af2b2e6a95b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.381044 [guppy/info] Read 'e2f149a7-410f-4902-ab2b-f6984b7a4475' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.416358 [guppy/info] Read 'e4e4b79a-ff25-4ba7-949e-da6d7baa05bc' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.713542 [guppy/info] Read 'c389ecde-0ec4-4c2a-963f-ac629b04ac87' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.733231 [guppy/info] Read '8d465352-3de3-4ef2-98f1-6b7be8527f81' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.737624 [guppy/info] Read '8e1d0b42-219c-4a57-97a1-ba027adc6d13' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.831067 [guppy/info] Read '8d018212-2179-4f0d-80ce-d9450c45cdec' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.835175 [guppy/info] Read 'd3e789ca-00ab-4fdc-a95b-edf6d523f82f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:52.913910 [guppy/info] Read '8e3d6bcc-78c6-4986-b2af-2b194282f976' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.156721 [guppy/info] Read '90ea7eb6-d46e-4bcf-a449-6149d6ecef55' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.200108 [guppy/info] Read 'a769fd79-96a6-4999-a611-70d79fd30b6d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.238147 [guppy/info] Read '90edc03d-7fbf-4076-9168-16a280dbf887' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.362341 [guppy/info] Read 'daca5f37-f8ab-4723-a004-66e9e2d50816' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.363926 [guppy/info] Read '91d71f84-2757-40e3-8a08-4a64f5b52d0f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.393869 [guppy/info] Read '99590bde-d32a-4741-8918-72c94b132eef' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.415073 [guppy/info] Read '9608b34d-6ac2-48b3-a569-b602bf2d91a3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.749540 [guppy/info] Read 'a8b2a824-7d31-4496-9e39-279bfc8a5a41' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.763261 [guppy/info] Read 'b3e5566f-d27e-43bc-93a0-11d1533e23f4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.765387 [guppy/info] Read '933555f4-9b54-4dbe-975e-02f34f09613e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.847235 [guppy/info] Read '93e0b2a1-9277-46f4-9ab5-18ec305bfdef' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:53.975809 [guppy/info] Read '9f44f8d1-db76-4133-8de8-6cd55d8d3ce1' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.124242 [guppy/info] Read 'b44a6caf-37b3-4899-a2b5-e357aeb48032' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.187780 [guppy/info] Read 'aa043e81-0840-482f-b568-ad1318bba134' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.237729 [guppy/info] Read 'ab01548e-ed20-4e9a-9147-640c2791b63c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.397845 [guppy/info] Read '9675699b-755a-45c6-ac3c-eaab7569f031' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.631327 [guppy/info] Read 'c6d83dd5-bc02-42e7-b657-69dc23aa1683' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.740000 [guppy/info] Read 'b5cfbb7f-8a3f-490c-b7a2-6b1cf4efc1c9' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.835423 [guppy/info] Read 'c77cfa17-d6ab-4388-8265-e1bc4a5d3e39' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.903950 [guppy/info] Read '99d1d467-d146-4623-a933-0653bad6524d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.931055 [guppy/info] Read 'b5ee28a8-b6d4-41e0-97a9-c6a8cc38d82d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:54.932143 [guppy/info] Read 'b632563c-b35a-4864-b1ed-951fa1e9e573' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.261650 [guppy/info] Read 'c526142d-d2cd-4bb1-a211-82e5a9383e45' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.308926 [guppy/info] Read '9ed0e660-dae6-4726-a28e-3f719c0e678b' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.359715 [guppy/info] Read 'cbed50fa-faac-4d60-9376-2356de7c9bf7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.413642 [guppy/info] Read 'b63c8a02-ed03-4bf1-8fc9-6f77975adce5' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.486834 [guppy/info] Read 'ca12d1f0-4ff2-4ef7-affe-d30ba9236cf7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.554863 [guppy/info] Read 'b79d0d3f-2b89-4c69-8443-0446e21085a3' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.639575 [guppy/info] Read 'a3f991dd-f6ed-4a2e-ac46-422d1466947a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.875900 [guppy/info] Read 'd52cb76e-7b4c-49b6-9c6d-be9eb2c2bc0d' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.877360 [guppy/info] Read 'd79b6d76-3129-4cf1-b4aa-fd1c6b20ec62' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:55.910928 [guppy/info] Read 'e34ba4a6-722f-4b27-9b6e-47af1bd337ca' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:56.050454 [guppy/info] Read 'e14171de-cad2-4089-95d5-d836991d0834' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:56.109823 [guppy/info] Read 'b9ce7827-3f22-41d3-bda9-041b88490ec0' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:56.399292 [guppy/info] Read 'e9296e26-77c4-409f-8f40-76b638a8d7ec' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:56.411131 [guppy/info] Read 'ba4cc07f-f5d1-4374-86a9-86072db03860' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:56.515632 [guppy/info] Read 'de5813dd-e0ad-429e-8c1e-a750fed82007' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:56.516248 [guppy/info] Read 'dea6317b-a921-4a07-8e67-13e447bb119a' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:56.519698 [guppy/info] Read 'c150e8f2-a199-4f07-9bf7-978bfeba91f2' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:57.052431 [guppy/info] Read 'dfa796d8-1971-4c33-9f29-7d5882079920' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:57.260837 [guppy/info] Read 'ea4d2d2a-d299-4b0a-add3-84e2301c5391' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:57.481731 [guppy/info] Read 'eec26655-3781-4458-ac54-aa2a9e53a06f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:57.500656 [guppy/info] Read 'e3e1a8c9-8e09-4277-b74a-263a3dc9dcc8' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:57.863943 [guppy/info] Read 'e54a2a1e-332d-4c3b-a522-bbd44fea92ec' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:58.041888 [guppy/info] Read 'e7449487-c4dc-43b0-8dfb-f401785bac05' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:58.189352 [guppy/info] Read 'f2905947-9cf5-4ade-9cc5-4bacad72d07e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:58.272937 [guppy/info] Read 'f2b841e4-ad04-4081-b345-623ef2e73be7' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:58.547487 [guppy/info] Read 'e869017d-12a9-4271-9854-fd67de2ed23e' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:58.548637 [guppy/info] Read 'f335a312-72e8-49ca-a984-9eefed0c0284' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:58.875833 [guppy/info] Read 'f7be0756-e430-4b3f-a47e-5721c4cdf664' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:59.154553 [guppy/info] Read 'f508e162-64dc-4ca3-a28e-2f2efd628a08' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:59.155346 [guppy/info] Read 'f65fb2e2-f4c5-47b0-a0dc-a3686a9fe2f4' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:59.169256 [guppy/info] Read 'fdc3388f-e1a1-4c56-b35d-95b5fe2fa741' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:59.307001 [guppy/info] Read 'fe9a263b-dd68-4e17-96c1-9e080ae9fd2c' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:59.389998 [guppy/info] Read 'fea7cae9-93bd-4a10-829e-57d8e93db524' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:59.427071 [guppy/info] Read 'f712281b-416b-49c5-9062-a96da61a4447' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:42:59.624273 [guppy/info] Read 'f840526a-40f8-43b5-bce2-fbb89514660f' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:43:00.171391 [guppy/info] Read 'f8b0742d-735d-4ea9-abec-3f879d662787' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:43:00.172463 [guppy/info] Read 'ff6dc441-7644-413a-ad41-134888bdcefa' from file "ELIGOS_m7G.fast5" completed.
+2023-06-23 23:43:00.185493 [guppy/info] Completed batch 0
+2023-06-23 23:43:00.240553 [guppy/message] Caller time: 48661 ms, Samples called: 21322697, samples/s: 438189
+2023-06-23 23:43:00.240673 [guppy/message] Finishing up any open output files.
+2023-06-23 23:43:29.375129 [guppy/message] Basecalling completed successfully.

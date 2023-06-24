@@ -1,0 +1,315 @@
+2023-06-23 21:50:15.903732 [guppy/message] ONT Guppy basecalling software version 6.1.5+446c355, minimap2 version 2.22-r1101
+config file:        /opt/ont/guppy/data/rna_r9.4.1_70bps_hac.cfg
+model file:         /opt/ont/guppy/data/template_rna_r9.4.1_70bps_hac.jsn
+input path:         demo/curlcake/curlcake_unmod
+save path:          demo/curlcake/curlcake_unmod_guppy
+chunk size:         2000
+chunks per runner:  512
+minimum qscore:     7
+records per file:   4000
+num basecallers:    40
+cpu mode:           ON
+threads per caller: 4
+
+Use of this software is permitted solely under the terms of the end user license agreement (EULA).By running, copying or accessing this software, you are demonstrating your acceptance of the EULA.
+The EULA may be found in /opt/ont/guppy/bin
+
+2023-06-23 21:50:15.904404 [guppy/info] crashpad_handler not supported on this platform.
+2023-06-23 21:50:17.803616 [guppy/message] Found 1 fast5 files to process.
+2023-06-23 21:50:17.806091 [guppy/message] Init time: 1864 ms
+2023-06-23 21:50:17.910870 [guppy/info] Read '03e058d7-c414-42d7-b73d-5a04ff9801e7' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.913165 [guppy/info] Read '05458685-6d7f-4c84-8089-8a7bd1a4e947' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.915368 [guppy/info] Read '07f5e7d5-6dd6-4bdd-9a51-fd7a4aaa747a' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.916534 [guppy/info] Read '0a6b4d23-7123-41c1-8e6e-998d76085d15' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.920847 [guppy/info] Read '0ae5efbd-9f6a-40a6-b42c-66dcb4777d26' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.921961 [guppy/info] Read '0b17d390-fbfe-41e2-bb47-3fc86391490c' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.923068 [guppy/info] Read '0b3cc3ca-0e8e-4aef-8479-ad78fa4664cb' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.924178 [guppy/info] Read '0e6e9fdc-da7d-41ce-a12e-702ae840effa' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.926350 [guppy/info] Read '10a27bc0-7d7d-43da-8a2e-efb57842231d' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.929583 [guppy/info] Read '10cb5d34-ded4-4553-95a5-54c33de2a6d8' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.931749 [guppy/info] Read '1249386f-13bc-4d1e-a42a-8b5096d7479d' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.932854 [guppy/info] Read '12c7288e-4f1b-4d27-8588-1376cd642fb1' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.935030 [guppy/info] Read '156bfe52-04ce-4e0a-8143-57960060480e' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.937265 [guppy/info] Read '1a8dbc13-d5de-4c3e-8578-9f0eeeb91c0d' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.940622 [guppy/info] Read '1cf347cc-0ed0-4ba9-8696-a9921b6f24c7' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.943984 [guppy/info] Read '1dd7a95c-d146-4fea-a57e-346eda5b2ffc' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.950527 [guppy/info] Read '2000af32-705b-4780-b71e-dd10331d09dc' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.952747 [guppy/info] Read '20da92e8-8fd2-460a-84e7-9d66b27590dc' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.954956 [guppy/info] Read '2133550e-a754-4bbd-a24c-55dd4970f121' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.961377 [guppy/info] Read '21d70e10-e5f7-4817-8d8a-1bbb27279394' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.964661 [guppy/info] Read '22e8cda1-0f6b-4ec8-bcaf-9fdc086450a6' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.965805 [guppy/info] Read '2445f402-6af9-43b4-8eb6-27973d4f5ff3' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.973264 [guppy/info] Read '256ea221-150f-47db-af10-28c7fabb0111' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.981850 [guppy/info] Read '25c4ae23-de50-4d0f-882b-30fb5be0dee6' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.984074 [guppy/info] Read '264474c3-570e-4344-b894-72e1ed7886cb' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:17.987490 [guppy/info] Read '2ac5a196-09fe-430f-bc03-03f8826bbe74' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.037765 [guppy/info] Read '0b17d390-fbfe-41e2-bb47-3fc86391490c' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:18.038060 [guppy/info] Read '2e67aeae-5994-4fe8-839e-f9998d0831b3' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.105687 [guppy/info] Read '2e9eded2-2635-4e83-a012-a65b61a744c9' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.112148 [guppy/info] Read '306d8d52-9e93-4646-b1fc-65eb3996b303' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.113307 [guppy/info] Read '317066aa-e1e3-45fd-a312-b782d6ea6c7f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.123492 [guppy/info] Read '31c6f9f6-b878-4f35-a9a1-29d820f95d20' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.214432 [guppy/info] Read '32a979ed-3938-4fa2-9323-83dd2ddcb82f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.216714 [guppy/info] Read '2133550e-a754-4bbd-a24c-55dd4970f121' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:18.223514 [guppy/info] Read '3432899c-cc9b-4eb0-b6aa-382c85959088' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.224646 [guppy/info] Read '39aff3e7-331e-48e4-a500-b6d58c058cac' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.235456 [guppy/info] Read '3bca698a-0480-40a0-a861-a269dead2c6b' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.251450 [guppy/info] Read '401fa27d-0048-4d69-abc1-8b28dc52eca2' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.263505 [guppy/info] Read '43e342f4-ad49-415c-a8b4-914ad1ea576f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.316774 [guppy/info] Read '44a83df7-a430-477c-907e-cbd74b01f193' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.355078 [guppy/info] Read '4530a2c7-88aa-4d5d-9cf9-8e6e5fae1abc' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.357884 [guppy/info] Read '470b6dd2-580d-4b6d-8d32-876edee4ccbd' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.359011 [guppy/info] Read '474c1118-a007-4992-be8e-feca8a339e78' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.401561 [guppy/info] Read '4ddd1e50-4487-410c-a415-1ad27b384ac5' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.402705 [guppy/info] Read '4f064d9e-4f7f-404b-a6d1-9fe0ff11be18' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.440998 [guppy/info] Read '4f8e2264-441e-4f00-90e3-55f1b70fa3fa' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.442145 [guppy/info] Read '4fe55964-6db0-4e26-96e3-aa2b20f343ac' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.443258 [guppy/info] Read '534b1645-089c-4e44-9ae5-47f0e2da3d19' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.444371 [guppy/info] Read '5681e5d6-3b91-46e6-af71-75fecdcce81a' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.519461 [guppy/info] Read '57699cb1-c108-4109-81f7-e40fe65415cd' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.529342 [guppy/info] Read '07f5e7d5-6dd6-4bdd-9a51-fd7a4aaa747a' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:18.530851 [guppy/info] Read '58186644-adcf-4bf5-bcce-95f8c46477f6' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.531981 [guppy/info] Read '58bd25dc-5e46-4733-8488-9bab7893c617' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.533089 [guppy/info] Read '5af8610c-88b8-47ab-8307-e53786534f1f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.544612 [guppy/info] Read '5dca5b9f-f408-49a9-b1d4-9b48fc74e474' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.548978 [guppy/info] Read '60b6e7e4-3f66-4976-94b6-9398e364618f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.552265 [guppy/info] Read '61e62c36-b9ae-4c16-bdcb-d52c1e7b6624' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.572651 [guppy/info] Read '6231c891-d5ae-4c5e-b94b-5ae8230c2937' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.577009 [guppy/info] Read '66756b89-5b8c-4e39-b315-385ff16e4e9e' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.584543 [guppy/info] Read '694ba8d5-0484-4680-b8a5-ffc0c140e764' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.589979 [guppy/info] Read '6bd01a95-efb2-493f-b74f-e319c624aeee' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.607095 [guppy/info] Read '6cc14efd-4219-44fe-b1ba-c081488bab85' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.614656 [guppy/info] Read '6dbe5146-9177-418c-a2a5-73388a930c37' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.636056 [guppy/info] Read '6e0a151f-c991-4a5f-a2e5-3cd06f1bf4d3' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.637401 [guppy/info] Read '6f06f373-38a2-402b-a08e-aaa6ce2550ff' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.663346 [guppy/info] Read '6f3b8659-e7fe-48b4-b567-a8cd51073e05' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.664535 [guppy/info] Read '6f530da1-cb8d-4d88-b796-2d94b0b7bc24' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.693232 [guppy/info] Read '6fcd44d5-0aaa-4341-b01f-dfa21ba7364e' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.718047 [guppy/info] Read '70536f0f-15db-4c53-910c-21205ed3c1a4' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.729407 [guppy/info] Read '7098d8a2-e772-452c-bfa9-fe0ef9dd438a' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.735461 [guppy/info] Read '70ae113d-1286-40b7-80a8-eaf2112d8309' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.744823 [guppy/info] Read '7252f318-cd6c-405e-b07e-4592c7a7e238' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.745988 [guppy/info] Read '741a49de-d1c2-42f9-bf04-3855b5e5bb39' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.802722 [guppy/info] Read '78dce91b-a75e-4dc2-bf31-e0f350fc46bd' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.919764 [guppy/info] Read '0a6b4d23-7123-41c1-8e6e-998d76085d15' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:18.925020 [guppy/info] Read '79440c76-beb3-41b8-a248-4a1bafc03418' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.925091 [guppy/info] Read '7ac43e1f-6737-4d46-9002-08d6d0b78b80' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.927015 [guppy/info] Read '7aec384b-027e-4c36-a6e5-e9fc6dc2ae1e' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.927070 [guppy/info] Read '7b2ad869-011c-4190-a8db-9162d665c2ce' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.928165 [guppy/info] Read '7b4f2c07-74ed-4399-9f72-252197bf3087' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:18.962578 [guppy/info] Read '03e058d7-c414-42d7-b73d-5a04ff9801e7' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:19.001292 [guppy/info] Read '12c7288e-4f1b-4d27-8588-1376cd642fb1' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:19.019146 [guppy/info] Read '1249386f-13bc-4d1e-a42a-8b5096d7479d' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:19.025362 [guppy/info] Read '317066aa-e1e3-45fd-a312-b782d6ea6c7f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:19.026950 [guppy/info] Read '7d277d01-42ef-4fcc-b0b0-cb92199f4436' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.038432 [guppy/info] Read '7e083045-1b93-4b87-bbd7-0f283ef99811' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.038538 [guppy/info] Read '7fd244b8-2a32-4cd2-b30e-d5a02f133291' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.047121 [guppy/info] Read '80c9dd05-f12f-41af-85a6-d2b457a418f6' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.079893 [guppy/info] Read '824f35d2-a516-4a34-a33f-29abae1cd5cb' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.081525 [guppy/info] Read '85d322da-9ff3-4881-ae3d-cba62f3a749e' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.091130 [guppy/info] Read '8a5fd1d1-34e6-46c1-9f83-57199845597b' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.092273 [guppy/info] Read '8dba92d9-cf01-4e6e-a5ca-1a5999662c69' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.137995 [guppy/info] Read '8e6c3531-acd3-4efe-a304-705949db6583' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.139197 [guppy/info] Read '8e971596-88ff-4f44-8818-ffa3796e94e3' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.139588 [guppy/info] Read '474c1118-a007-4992-be8e-feca8a339e78' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:19.159266 [guppy/info] Read '905ce0c4-54c8-435a-b5ca-dc40b2040ba1' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.166876 [guppy/info] Read '99569b2b-09cd-42cc-ad23-eeaf2657a783' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.179812 [guppy/info] Read '9a522809-9db1-4986-a017-758e60c5ef07' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.206476 [guppy/info] Read '9bb0e463-11a4-496c-8b93-e6885b1253e1' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.229018 [guppy/info] Read '9df43afe-712a-4d51-9493-a625e4bd75a0' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.242182 [guppy/info] Read '9f54caac-21f8-4b36-b369-310c0f25499e' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.255033 [guppy/info] Read '9fca52e2-b829-4c5a-9ad2-d7cd2a34e840' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.261537 [guppy/info] Read 'a0e8bcab-69df-4ff3-9cdd-9943b11ea7b7' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.277559 [guppy/info] Read 'a1ce48ac-ec6b-4685-97b9-77f34055ec20' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.279818 [guppy/info] Read 'a51d3731-813d-4544-890b-0cea039fcf5d' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.280961 [guppy/info] Read 'a53af576-a4bd-4b86-82e9-8768f9f4296f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.282103 [guppy/info] Read 'a6d14208-4142-4925-8f65-5cb5d0dd1808' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.305603 [guppy/info] Read 'a97fdb97-5ec7-434a-9ad5-8685445a5db2' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.306770 [guppy/info] Read 'aa97d21d-9554-4496-87d5-c77570edefa7' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.308988 [guppy/info] Read 'ac04814a-2d9e-488e-9373-2513fcd8ae72' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.327433 [guppy/info] Read 'ac362076-162c-4e13-9a56-0a88915dabe4' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.422808 [guppy/info] Read 'ace193db-0672-43e6-85b6-9f23768e7184' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.435884 [guppy/info] Read 'ae6ad09c-c08d-41d5-a7aa-7e40270608bd' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.437025 [guppy/info] Read 'afe6ab4b-c4d0-4e87-bcf1-0e2850810197' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.438148 [guppy/info] Read 'b2e7f4cc-0f0c-44a1-bc76-868821e7a843' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.449914 [guppy/info] Read 'b3b519e6-2b66-4468-bb6a-553a017d9760' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.453233 [guppy/info] Read 'b434efb0-7684-42ff-a14e-caaeb9ce02c1' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.463992 [guppy/info] Read 'b47726cb-7993-4c0b-a5a8-6476c85047ee' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.563113 [guppy/info] Read 'b5b24580-c831-461b-af70-586e23fa6cb0' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.564266 [guppy/info] Read 'b7dbbfd2-7567-4e03-9654-5c4432cef506' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.565414 [guppy/info] Read 'b93c7afd-9401-4ed6-9faf-c5c58dd6e2bb' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.567621 [guppy/info] Read 'b9f23c40-7c73-40db-a239-4f150bcbfe9f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.606064 [guppy/info] Read 'bddab793-d31e-4200-91b5-c9b150985fc1' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.607220 [guppy/info] Read 'be143981-6fdb-45e4-8309-033af5c34cfb' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.608330 [guppy/info] Read 'bf02a038-23d1-47f7-b39a-fc9876737675' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.711742 [guppy/info] Read 'bfeccabf-bb00-446d-839e-5627b36b7d7f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.923362 [guppy/info] Read 'c1770dd4-4a6d-4f3c-8ebf-fba88f5acc77' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.923455 [guppy/info] Read 'c2342a48-28d9-4c34-9c1e-24912b77265e' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.923473 [guppy/info] Read 'c7553f7d-df0d-466a-ba25-d0e99fe0c457' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.923490 [guppy/info] Read 'c7b6e2a3-1e7f-40a0-b25b-ff3fbce3b6a7' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:19.928745 [guppy/info] Read '0e6e9fdc-da7d-41ce-a12e-702ae840effa' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:19.935556 [guppy/info] Read 'ce3fc3e1-f306-4494-8b18-aaf77f66b036' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.071578 [guppy/info] Read 'cf8a72ed-e938-4bcb-b1c8-dfdbb33ef074' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.193851 [guppy/info] Read 'd02761b7-1090-49f3-b7e0-d37c9639e502' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.194045 [guppy/info] Read 'd1a261a3-165c-4431-b7ca-397ec3a46703' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.194068 [guppy/info] Read 'd5d7a945-241e-4a7b-aea7-d5b5a2500c65' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.242176 [guppy/info] Read 'd75c160a-7aa9-41fa-983a-654b6498a47f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.243328 [guppy/info] Read 'd77da978-6592-41fd-92c4-c14ae050c0c2' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.557890 [guppy/info] Read 'd7fd5fe2-01b7-44c4-a731-431e6ea75276' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.644971 [guppy/info] Read 'da7254b7-b81a-40df-b875-4562942db991' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.681944 [guppy/info] Read 'dccac722-4696-4d84-ad33-e85015da1b86' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:20.738326 [guppy/info] Read '264474c3-570e-4344-b894-72e1ed7886cb' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:20.759499 [guppy/info] Read 'dd32e0e8-641c-47b4-ad68-b496a189b16e' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.008253 [guppy/info] Read 'e3cf94db-16dc-4c9c-9d1f-f800cf316882' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.049307 [guppy/info] Read '22e8cda1-0f6b-4ec8-bcaf-9fdc086450a6' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:21.102533 [guppy/info] Read '0b3cc3ca-0e8e-4aef-8479-ad78fa4664cb' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:21.147310 [guppy/info] Read '1dd7a95c-d146-4fea-a57e-346eda5b2ffc' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:21.159888 [guppy/info] Read 'e6ddeaf2-fc73-435a-95dc-1806a7a8ed59' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.160005 [guppy/info] Read 'e8dfeb0b-4534-44b7-a98c-e7f4321a25ad' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.241634 [guppy/info] Read '1cf347cc-0ed0-4ba9-8696-a9921b6f24c7' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:21.261521 [guppy/info] Read '43e342f4-ad49-415c-a8b4-914ad1ea576f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:21.263205 [guppy/info] Read '20da92e8-8fd2-460a-84e7-9d66b27590dc' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:21.295163 [guppy/info] Read '7aec384b-027e-4c36-a6e5-e9fc6dc2ae1e' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:21.312789 [guppy/info] Read 'ef5c067a-c6f4-4c99-85d2-545b781f9569' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.369200 [guppy/info] Read 'f11907c8-973c-4797-8e25-88dbd9825f0f' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.440303 [guppy/info] Read 'f1902949-80c0-4c1b-af8b-07a07cb1a9f2' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.519507 [guppy/info] Read 'f2d46ee0-e0be-44a7-844c-9608ca11c542' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.559701 [guppy/info] Read 'f5235c2e-e4ed-44f8-ae9a-cd55ff8d289d' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.700034 [guppy/info] Read 'f752ccba-1f5c-46ae-aab4-e3c59a8411fb' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.734356 [guppy/info] Read 'f97dddac-2c9e-4480-b3be-6a4bce440497' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.741460 [guppy/info] Read 'f9c064cf-149b-47d1-a4c5-d525a4fa5a49' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:21.754996 [guppy/info] Read 'fa5c72c4-227e-411b-992c-5c7bd71087c3' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:22.035459 [guppy/info] Read 'fb96cb89-1074-4a06-a114-5bee31b64348' from file "curlcake_unmod.fast5" has been loaded.
+2023-06-23 21:50:22.037775 [guppy/info] Dispatched batch 0 containing 1 inputs:
+2023-06-23 21:50:22.038356 [guppy/info] Batch input 0 : demo/curlcake/curlcake_unmod/curlcake_unmod.fast5
+2023-06-23 21:50:22.042425 [guppy/info] Read 'd75c160a-7aa9-41fa-983a-654b6498a47f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:22.608423 [guppy/info] Read '32a979ed-3938-4fa2-9323-83dd2ddcb82f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:22.609980 [guppy/info] Read '7252f318-cd6c-405e-b07e-4592c7a7e238' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:22.610671 [guppy/info] Read 'd77da978-6592-41fd-92c4-c14ae050c0c2' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:22.874729 [guppy/info] Read '6fcd44d5-0aaa-4341-b01f-dfa21ba7364e' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:22.882070 [guppy/info] Read 'f11907c8-973c-4797-8e25-88dbd9825f0f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:22.896451 [guppy/info] Read 'f5235c2e-e4ed-44f8-ae9a-cd55ff8d289d' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:23.220703 [guppy/info] Read '4fe55964-6db0-4e26-96e3-aa2b20f343ac' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:23.316708 [guppy/info] Read '6f06f373-38a2-402b-a08e-aaa6ce2550ff' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:23.649549 [guppy/info] Read '6dbe5146-9177-418c-a2a5-73388a930c37' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:23.816316 [guppy/info] Read '78dce91b-a75e-4dc2-bf31-e0f350fc46bd' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.113689 [guppy/info] Read 'b93c7afd-9401-4ed6-9faf-c5c58dd6e2bb' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.284989 [guppy/info] Read '2ac5a196-09fe-430f-bc03-03f8826bbe74' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.306018 [guppy/info] Read '4f8e2264-441e-4f00-90e3-55f1b70fa3fa' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.307618 [guppy/info] Read 'dd32e0e8-641c-47b4-ad68-b496a189b16e' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.308430 [guppy/info] Read 'fb96cb89-1074-4a06-a114-5bee31b64348' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.339517 [guppy/info] Read '694ba8d5-0484-4680-b8a5-ffc0c140e764' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.355642 [guppy/info] Read '05458685-6d7f-4c84-8089-8a7bd1a4e947' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.753025 [guppy/info] Read '5681e5d6-3b91-46e6-af71-75fecdcce81a' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.893472 [guppy/info] Read 'e6ddeaf2-fc73-435a-95dc-1806a7a8ed59' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:24.895163 [guppy/info] Read 'e8dfeb0b-4534-44b7-a98c-e7f4321a25ad' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.018546 [guppy/info] Read '57699cb1-c108-4109-81f7-e40fe65415cd' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.079457 [guppy/info] Read '824f35d2-a516-4a34-a33f-29abae1cd5cb' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.167887 [guppy/info] Read '21d70e10-e5f7-4817-8d8a-1bbb27279394' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.168321 [guppy/info] Read '2445f402-6af9-43b4-8eb6-27973d4f5ff3' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.170119 [guppy/info] Read '44a83df7-a430-477c-907e-cbd74b01f193' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.186104 [guppy/info] Read '60b6e7e4-3f66-4976-94b6-9398e364618f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.344828 [guppy/info] Read '4ddd1e50-4487-410c-a415-1ad27b384ac5' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.345262 [guppy/info] Read '4f064d9e-4f7f-404b-a6d1-9fe0ff11be18' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.364825 [guppy/info] Read '156bfe52-04ce-4e0a-8143-57960060480e' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.409461 [guppy/info] Read '2000af32-705b-4780-b71e-dd10331d09dc' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.456199 [guppy/info] Read '5af8610c-88b8-47ab-8307-e53786534f1f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.473246 [guppy/info] Read '10a27bc0-7d7d-43da-8a2e-efb57842231d' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.474623 [guppy/info] Read '6f530da1-cb8d-4d88-b796-2d94b0b7bc24' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.564387 [guppy/info] Read '31c6f9f6-b878-4f35-a9a1-29d820f95d20' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.564780 [guppy/info] Read '8dba92d9-cf01-4e6e-a5ca-1a5999662c69' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.565876 [guppy/info] Read 'f97dddac-2c9e-4480-b3be-6a4bce440497' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.567229 [guppy/info] Read 'f9c064cf-149b-47d1-a4c5-d525a4fa5a49' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.605415 [guppy/info] Read '7b4f2c07-74ed-4399-9f72-252197bf3087' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.608947 [guppy/info] Read '9df43afe-712a-4d51-9493-a625e4bd75a0' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.625148 [guppy/info] Read '401fa27d-0048-4d69-abc1-8b28dc52eca2' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.711203 [guppy/info] Read '79440c76-beb3-41b8-a248-4a1bafc03418' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.721359 [guppy/info] Read 'f1902949-80c0-4c1b-af8b-07a07cb1a9f2' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.804854 [guppy/info] Read '741a49de-d1c2-42f9-bf04-3855b5e5bb39' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.805680 [guppy/info] Read 'afe6ab4b-c4d0-4e87-bcf1-0e2850810197' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.912253 [guppy/info] Read '0ae5efbd-9f6a-40a6-b42c-66dcb4777d26' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.928351 [guppy/info] Read '8a5fd1d1-34e6-46c1-9f83-57199845597b' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.949950 [guppy/info] Read '256ea221-150f-47db-af10-28c7fabb0111' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:25.952431 [guppy/info] Read '70ae113d-1286-40b7-80a8-eaf2112d8309' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.029887 [guppy/info] Read 'ae6ad09c-c08d-41d5-a7aa-7e40270608bd' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.053642 [guppy/info] Read '7b2ad869-011c-4190-a8db-9162d665c2ce' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.087796 [guppy/info] Read '85d322da-9ff3-4881-ae3d-cba62f3a749e' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.105782 [guppy/info] Read '70536f0f-15db-4c53-910c-21205ed3c1a4' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.316891 [guppy/info] Read '10cb5d34-ded4-4553-95a5-54c33de2a6d8' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.324057 [guppy/info] Read '1a8dbc13-d5de-4c3e-8578-9f0eeeb91c0d' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.325231 [guppy/info] Read '470b6dd2-580d-4b6d-8d32-876edee4ccbd' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.462943 [guppy/info] Read '905ce0c4-54c8-435a-b5ca-dc40b2040ba1' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.464995 [guppy/info] Read 'b2e7f4cc-0f0c-44a1-bc76-868821e7a843' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.591240 [guppy/info] Read 'b47726cb-7993-4c0b-a5a8-6476c85047ee' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.715775 [guppy/info] Read 'a1ce48ac-ec6b-4685-97b9-77f34055ec20' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.867808 [guppy/info] Read '3bca698a-0480-40a0-a861-a269dead2c6b' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.876307 [guppy/info] Read '2e67aeae-5994-4fe8-839e-f9998d0831b3' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.877708 [guppy/info] Read '2e9eded2-2635-4e83-a012-a65b61a744c9' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.892395 [guppy/info] Read '25c4ae23-de50-4d0f-882b-30fb5be0dee6' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.909403 [guppy/info] Read 'ac362076-162c-4e13-9a56-0a88915dabe4' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.913086 [guppy/info] Read 'cf8a72ed-e938-4bcb-b1c8-dfdbb33ef074' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.914554 [guppy/info] Read 'd02761b7-1090-49f3-b7e0-d37c9639e502' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.926964 [guppy/info] Read '9f54caac-21f8-4b36-b369-310c0f25499e' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.973037 [guppy/info] Read '7ac43e1f-6737-4d46-9002-08d6d0b78b80' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.973962 [guppy/info] Read 'e3cf94db-16dc-4c9c-9d1f-f800cf316882' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.979492 [guppy/info] Read '4530a2c7-88aa-4d5d-9cf9-8e6e5fae1abc' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.981342 [guppy/info] Read 'f752ccba-1f5c-46ae-aab4-e3c59a8411fb' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:26.982180 [guppy/info] Read 'ace193db-0672-43e6-85b6-9f23768e7184' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.064289 [guppy/info] Read 'f2d46ee0-e0be-44a7-844c-9608ca11c542' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.065194 [guppy/info] Read 'fa5c72c4-227e-411b-992c-5c7bd71087c3' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.108771 [guppy/info] Read '9bb0e463-11a4-496c-8b93-e6885b1253e1' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.111295 [guppy/info] Read '9a522809-9db1-4986-a017-758e60c5ef07' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.112444 [guppy/info] Read '9fca52e2-b829-4c5a-9ad2-d7cd2a34e840' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.113155 [guppy/info] Read 'ce3fc3e1-f306-4494-8b18-aaf77f66b036' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.134274 [guppy/info] Read 'b434efb0-7684-42ff-a14e-caaeb9ce02c1' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.240036 [guppy/info] Read '6cc14efd-4219-44fe-b1ba-c081488bab85' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.345372 [guppy/info] Read 'd7fd5fe2-01b7-44c4-a731-431e6ea75276' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.424897 [guppy/info] Read 'b3b519e6-2b66-4468-bb6a-553a017d9760' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.428610 [guppy/info] Read '534b1645-089c-4e44-9ae5-47f0e2da3d19' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.453057 [guppy/info] Read 'a0e8bcab-69df-4ff3-9cdd-9943b11ea7b7' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.453889 [guppy/info] Read 'a97fdb97-5ec7-434a-9ad5-8685445a5db2' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.534900 [guppy/info] Read '6f3b8659-e7fe-48b4-b567-a8cd51073e05' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.535560 [guppy/info] Read '7e083045-1b93-4b87-bbd7-0f283ef99811' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.566899 [guppy/info] Read 'ac04814a-2d9e-488e-9373-2513fcd8ae72' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.570750 [guppy/info] Read 'aa97d21d-9554-4496-87d5-c77570edefa7' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.601955 [guppy/info] Read '3432899c-cc9b-4eb0-b6aa-382c85959088' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.602946 [guppy/info] Read '66756b89-5b8c-4e39-b315-385ff16e4e9e' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.677097 [guppy/info] Read '306d8d52-9e93-4646-b1fc-65eb3996b303' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.677973 [guppy/info] Read '39aff3e7-331e-48e4-a500-b6d58c058cac' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.796846 [guppy/info] Read 'd1a261a3-165c-4431-b7ca-397ec3a46703' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.857487 [guppy/info] Read 'd5d7a945-241e-4a7b-aea7-d5b5a2500c65' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:27.911486 [guppy/info] Read '8e6c3531-acd3-4efe-a304-705949db6583' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.080133 [guppy/info] Read 'b7dbbfd2-7567-4e03-9654-5c4432cef506' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.162000 [guppy/info] Read '7fd244b8-2a32-4cd2-b30e-d5a02f133291' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.226529 [guppy/info] Read '6e0a151f-c991-4a5f-a2e5-3cd06f1bf4d3' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.241528 [guppy/info] Read '8e971596-88ff-4f44-8818-ffa3796e94e3' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.377087 [guppy/info] Read '58186644-adcf-4bf5-bcce-95f8c46477f6' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.400394 [guppy/info] Read 'ef5c067a-c6f4-4c99-85d2-545b781f9569' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.557697 [guppy/info] Read '58bd25dc-5e46-4733-8488-9bab7893c617' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.568018 [guppy/info] Read '7d277d01-42ef-4fcc-b0b0-cb92199f4436' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.767483 [guppy/info] Read '7098d8a2-e772-452c-bfa9-fe0ef9dd438a' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.782777 [guppy/info] Read 'b5b24580-c831-461b-af70-586e23fa6cb0' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.816410 [guppy/info] Read '5dca5b9f-f408-49a9-b1d4-9b48fc74e474' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.816851 [guppy/info] Read '61e62c36-b9ae-4c16-bdcb-d52c1e7b6624' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:28.989051 [guppy/info] Read 'bddab793-d31e-4200-91b5-c9b150985fc1' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.051941 [guppy/info] Read 'be143981-6fdb-45e4-8309-033af5c34cfb' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.157310 [guppy/info] Read '6231c891-d5ae-4c5e-b94b-5ae8230c2937' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.176912 [guppy/info] Read 'b9f23c40-7c73-40db-a239-4f150bcbfe9f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.312548 [guppy/info] Read '80c9dd05-f12f-41af-85a6-d2b457a418f6' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.418377 [guppy/info] Read 'bf02a038-23d1-47f7-b39a-fc9876737675' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.440505 [guppy/info] Read 'da7254b7-b81a-40df-b875-4562942db991' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.576503 [guppy/info] Read 'dccac722-4696-4d84-ad33-e85015da1b86' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.665438 [guppy/info] Read '6bd01a95-efb2-493f-b74f-e319c624aeee' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.980853 [guppy/info] Read 'a51d3731-813d-4544-890b-0cea039fcf5d' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:29.981303 [guppy/info] Read 'a53af576-a4bd-4b86-82e9-8768f9f4296f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:30.338044 [guppy/info] Read 'a6d14208-4142-4925-8f65-5cb5d0dd1808' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:30.425752 [guppy/info] Read '99569b2b-09cd-42cc-ad23-eeaf2657a783' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:31.315173 [guppy/info] Read 'bfeccabf-bb00-446d-839e-5627b36b7d7f' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:31.949608 [guppy/info] Read 'c1770dd4-4a6d-4f3c-8ebf-fba88f5acc77' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:33.211384 [guppy/info] Read 'c2342a48-28d9-4c34-9c1e-24912b77265e' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:33.767722 [guppy/info] Read 'c7553f7d-df0d-466a-ba25-d0e99fe0c457' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:34.497964 [guppy/info] Read 'c7b6e2a3-1e7f-40a0-b25b-ff3fbce3b6a7' from file "curlcake_unmod.fast5" completed.
+2023-06-23 21:50:34.508990 [guppy/info] Completed batch 0
+2023-06-23 21:50:34.554174 [guppy/message] Caller time: 16748 ms, Samples called: 7236244, samples/s: 432066
+2023-06-23 21:50:34.554319 [guppy/message] Finishing up any open output files.
+2023-06-23 21:50:52.488886 [guppy/message] Basecalling completed successfully.
