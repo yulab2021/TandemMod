@@ -21,10 +21,10 @@ pysam                         |0.16.0.1
 tqdm                          |4.39.0
 scikit-learn              |0.22 
 torch                     |1.9.1
-scipy                     |1.6.3
 guppy                     |6.1.5
 tombo                     |1.5.1
 ont_vbz_hdf_plugin        |1.0.1
+ont-fast5-api             |4.1.1
 
 You can install dependent modules manually or install them through yaml file.
 ```
