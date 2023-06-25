@@ -57,7 +57,7 @@ minimap2 -ax map-ont demo/reference_transcripts.fasta demo/m6A.fastq >demo/m6A.s
 Extract signal files and features from resquiggled fast5 files using the following python scripts.
 ```
 python scripts/extract_signal_from_fast5.py -p=40 --fast5 demo/guppy_single --reference demo/reference_transcripts.fasta --sam demo/m6A.sam --output demo/m6A.signal.tsv --clip 10
-python scripts/extract_feature_from_signal.py  -signal_file demo/m6A.signal.tsv -clip 10 --output demo/m6A.feature.tsv
+python scripts/extract_feature_from_signal.py  --signal_file demo/m6A.signal.tsv --clip 10 --output demo/m6A.feature.tsv
 ```
 
 ---
