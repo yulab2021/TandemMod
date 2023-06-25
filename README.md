@@ -4,7 +4,7 @@
 
 TandemMod is a deep learning framework for detecting RNA modifications in nanopore direct RNA sequencing (DRS) data. It offers three modes: de novo training, transfer learning, and prediction. Researchers can train from scratch, fine-tune pre-trained models, or apply existing models for predictions. TandemMod achieves high accuracy and can be used to identify RNA modifications in various species and conditions. It provides a user-friendly solution for studying RNA modifications.
 
-To use TandemMod, you can follow the instructions below. The detailed usage and run examples of the tree modes are available in our [document](https://yulab2021.github.io/TandemMod_document).
+To use TandemMod, you can follow the instructions below. The detailed usage and run examples of the three modes are available in our [document](https://yulab2021.github.io/TandemMod_document).
 
 ### Environment configuration
 #### The following modules are needed to run TandemMod. 
