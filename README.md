@@ -56,42 +56,42 @@ minimap2 -ax map-ont demo/reference_transcripts.fasta demo/m6A.fastq >demo/m6A.s
 ```
 Extract signal files and features from resquiggled fast5 files using the following python scripts.
 ```
-
-python scripts/extract_signal_from_fast5.py -p=40 --fast5=demo/guppy_single --reference demo/reference_transcripts.fasta --sam demo/m6A.sam -o demo/m6A --clip=10
-python scripts/extract_feature_from_signal.py  -signal_file demo/m6A.signal.tsv -clip 10 -label m6A.tsv -out_dir demo
+python scripts/extract_signal_from_fast5.py -p=40 --fast5 demo/guppy_single --reference demo/reference_transcripts.fasta --sam demo/m6A.sam --output demo/m6A.signal.tsv --clip 10
+python scripts/extract_feature_from_signal.py  -signal_file demo/m6A.signal.tsv -clip 10 --output demo/m6A.feature.tsv
 ```
 
 ---
 Three different modes has been developed: de novo training, transfer learning, and prediction. The mode of de novo training allows users to train the TandemMod model from scratch using their own datasets. In the prediction mode, users can apply a pre-trained or fine-tuned TandemMod model to identify modifications in their dataset. In the transfer learning mode, users can fine-tune a pre-trained TandemMod model using their own data. 
 ### Train your own model
-
 ```
-python scripts/TandemMod.py -run_mode train \
-  -new_model model/m5C.pkl \
-  -train_data_mod data/m5C_train.tsv \
-  -train_data_unmod data/C_train.tsv \
-  -test_data_mod data/m5C_test.tsv \
-  -test_data_unmod data/C_test.tsv 
+python scripts/TandemMod.py --run_mode train \
+  --new_model model/m5C.pkl \
+  --train_data_mod data/m5C_train.tsv \
+  --train_data_unmod data/C_train.tsv \
+  --test_data_mod data/m5C_test.tsv \
+  --test_data_unmod data/C_test.tsv \
+  --epoch 100
 ```
 ---
 ### Predict modifications using pretrained model.
-Pretained models were saved in directory ./models. You can load pretrained models to predict modification for new data.
 ```
-python scripts/TandemMod.py -run_mode predict \
-  -pretrained_model model/m6A.pkl \
-  -predict_file data/WT.feature.tsv
+python scripts/TandemMod.py --run_mode predict \
+  --pretrained_model model/m6A.pkl \
+  --feature_file data/WT.feature.tsv
+  --predict_result data/WT.prediction.tsv
 ```
 
 ### Transfer learning to new modification.
 In transfer learning mode, you can used a pretrained model to retrain the bottom layers to identify new modification.
 ```
-python scripts/TandemMod.py -run_mode transfer \
-  -pretrained_model model/m6A.pkl \
-  -new_model model/m6Am.pkl
-  -train_data_mod data/m6Am_train.tsv \
-  -train_data_unmod data/A_train.tsv \
-  -test_data_mod data/m6Am_test.tsv \
-  -test_data_unmod data/A_test.tsv 
+python scripts/TandemMod.py --run_mode transfer \
+  --pretrained_model model/m6A.pkl \
+  --new_model model/m6Am.pkl
+  --train_data_mod data/m6Am_train.tsv \
+  --train_data_unmod data/A_train.tsv \
+  --test_data_mod data/m6Am_test.tsv \
+  --test_data_unmod data/A_test.tsv \
+  --epoch 100
 ```
 ---
 ### Contact
