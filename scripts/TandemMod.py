@@ -14,7 +14,8 @@ from torch.utils.data import Dataset
 from torch.autograd import Variable
 
 from utils import load_data,load_predict_data,MyDataset,kmer_encode_dic
-from models import TandemMod
+from utils import CustomWeightedRandomSampler,make_weights_for_balanced_classes
+from models import TandemMod,BahdanauAttention
 
 torch.cuda.empty_cache()
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -28,6 +29,13 @@ class Config:
     learning_rate=0.001
 
 
+class NN(TandemMod):
+    def __init__(self):
+        """
+        Initialize the NN class.
+        Inherits from the TandemMod class.
+        """
+        super(NN, self).__init__()
 
 def test(model):
     test_acc = 0.
@@ -65,9 +73,9 @@ def test(model):
 
 
 def train(model):
-    print("Start training...")
+    print("start training...")
 
-    for epoch in range(1000):
+    for epoch in range(int(args.epoch)):
 
         torch.cuda.empty_cache()
 
@@ -112,7 +120,7 @@ def train(model):
                 test_acc,tr_auc=test(model)
 
                 toc = datetime.datetime.now()
-                print('Epoch {}-{} Train acc: {:.6f},Test Acc: {:.6f},AUC: {:.6f},time{:}'.format(epoch,i,  train_acc,test_acc ,tr_auc,toc-tic))
+                print('Epoch {}-{} Train acc: {:.6f},Test Acc: {:.6f},time{:}'.format(epoch,i,  train_acc,test_acc ,toc-tic))
 
                 tic = datetime.datetime.now()
                 y_train = []
@@ -158,9 +166,9 @@ def predict(model,dataloader):
         for j in range(len(batch_y)):
 
             contig,position,motif,read_id=batch_y[j].split("|")
-            print("%s\t%s\t%s\t%s\t%s\t%s" %(contig,position,motif,read_id,label_dict[pred[j]],probabilities[j]),file=args.predict_result)
+            print("%s\t%s\t%s\t%s\t%s\t%s" %(contig,position,motif,read_id,label_dict[pred[j]],probabilities[j]),file=predict_result)
         
-    file.close()
+
     predict_result.close()
     
 
@@ -168,16 +176,16 @@ def predict(model,dataloader):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='TandemMod, multiple types of RNA modification detection.')
 
-    parser.add_argument('-run_mode', required=True, default='train',help='Run mode. Default is train')
-    parser.add_argument('-pretrained_model', required=False, default='',help='Pretrained model file.')
-    parser.add_argument('-new_model', required=False, default='',help='New model file to be saved.')
-    parser.add_argument('-train_data_mod', required=False, default='', help='Train data file, modified.')
-    parser.add_argument('-train_data_unmod', required=False, default='', help='Train data file, unmodified.')
-    parser.add_argument('-test_data_mod', required=False, default='', help='Test data file, modified.')
-    parser.add_argument('-test_data_unmod', required=False, default='', help='Test data file, unmodified.')
-    parser.add_argument('-predict_file',required=False,default='',help='File to be predcited.')
-    parser.add_argument('-predict_result',required=False,default='',help='Predicit results.')
-    
+    parser.add_argument('--run_mode', required=True, default='train',help='Run mode. Default is train')
+    parser.add_argument('--pretrained_model', required=False, default='',help='Pretrained model file.')
+    parser.add_argument('--new_model', required=False, default='',help='New model file to be saved.')
+    parser.add_argument('--train_data_mod', required=False, default='', help='Train data file, modified.')
+    parser.add_argument('--train_data_unmod', required=False, default='', help='Train data file, unmodified.')
+    parser.add_argument('--test_data_mod', required=False, default='', help='Test data file, modified.')
+    parser.add_argument('--test_data_unmod', required=False, default='', help='Test data file, unmodified.')
+    parser.add_argument('--feature_file',required=False,default='',help='File to be predcited.')
+    parser.add_argument('--predict_result',required=False,default='',help='Predicit results.')
+    parser.add_argument('--epoch',required=False,default=100,help='Training epoch')
     
     args = parser.parse_args()
     
@@ -192,16 +200,15 @@ if __name__ == "__main__":
         weights = torch.DoubleTensor(weights)
         sampler = CustomWeightedRandomSampler(weights, len(weights))  
         
-        train_loader = torch.utils.data.DataLoader(dataset=train_dataset,sampler=sampler, shuffle=True, batch_size=Config.batch_size,num_workers=36,pin_memory=True)
+        train_loader = torch.utils.data.DataLoader(dataset=train_dataset,sampler=sampler, batch_size=Config.batch_size,num_workers=36,pin_memory=True)
         test_loader = torch.utils.data.DataLoader(dataset=test_dataset, shuffle=True, batch_size=Config.batch_size, num_workers=36,pin_memory=True)
         print("data loaded.")
-        print("start training.")
         model = TandemMod(num_classes=2,vocab_zie=5, embedding_size=4,seq_len=5).to(device)
         optimizer = torch.optim.Adam(model.parameters(),lr = Config.learning_rate)
         loss_func = torch.nn.CrossEntropyLoss().to(device)
         train(model)
         
-    elif run_mode=="test":
+    elif args.run_mode=="test":
         print("test process.")
         x_test,y_test=load_data(args.test_data_mod,args.test_data_unmod,data_length=4e3)
         test_dataset = MyDataset(x_test,y_test)
@@ -211,7 +218,7 @@ if __name__ == "__main__":
         print("model loaded.")
         test(model)
          
-    elif run_mode=="transfer":
+    elif args.run_mode=="transfer":
         print("transfer learning process.")
         model = torch.load(args.pretrained_model)
         for name,child in (model.named_children()):
@@ -231,18 +238,18 @@ if __name__ == "__main__":
         weights = torch.DoubleTensor(weights)
         sampler = CustomWeightedRandomSampler(weights, len(weights))  
         
-        train_loader = torch.utils.data.DataLoader(dataset=train_dataset,sampler=sampler, shuffle=True, batch_size=Config.batch_size,num_workers=36,pin_memory=True)
+        train_loader = torch.utils.data.DataLoader(dataset=train_dataset,sampler=sampler, batch_size=Config.batch_size,num_workers=36,pin_memory=True)
         test_loader = torch.utils.data.DataLoader(dataset=test_dataset, shuffle=True, batch_size=Config.batch_size, num_workers=36,pin_memory=True)
         print("data loaded.")
-        print("start training.")
-        model = TandemMod(num_classes=2,vocab_zie=5, embedding_size=4,seq_len=5).to(device)
+
+        #model = TandemMod(num_classes=2,vocab_zie=5, embedding_size=4,seq_len=5).to(device)
         optimizer = torch.optim.Adam(model.parameters(),lr = Config.learning_rate)
         loss_func = torch.nn.CrossEntropyLoss().to(device)
         train(model)
         
-    elif run_mode=="predict":
+    elif args.run_mode=="predict":
         print("predict process")
-        X,Y=load_predict_data(args.predict_file)
+        X,Y=load_predict_data(args.feature_file)
        
         dataset=MyDataset(X,Y)
         dataloader=torch.utils.data.DataLoader(dataset=dataset,batch_size=20000)

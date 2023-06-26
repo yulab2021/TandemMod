@@ -83,6 +83,40 @@ def signal_to_file(out_dir,file_name,line):
             f.writelines(line)
 
 
+def convert_base_name(base_name):
+    """
+    Converts a base name into a regular expression pattern.
+
+    Args:
+        base_name (str): Input base name to be converted.
+
+    Returns:
+        str: Regular expression pattern representing the converted base name.
+    """
+    merge_bases = {
+        'A': 'A',
+        'C': 'C',
+        'G': 'G',
+        'T': 'T',
+        'M': '[AC]',
+        'V': '[ACG]',
+        'R': '[AG]',
+        'H': '[ACT]',
+        'W': '[AT]',
+        'D': '[AGT]',
+        'S': '[CG]',
+        'B': '[CGT]',
+        'Y': '[CT]',
+        'N': '[ACGT]',
+        'K': '[GT]'
+    }
+    pattern = ''
+    for base in base_name:
+        pattern += merge_bases.get(base, base)
+    return pattern
+
+    
+
 def extract_5mer_features(signal_file):
     """
     Extracts features from a signal file.
@@ -92,11 +126,11 @@ def extract_5mer_features(signal_file):
         args (Namespace): Command-line arguments.
     """
     base_quality_dict=dict()
-    
-    kmer_fillter="[ACGT][ACGT]A[ACGT][ACGT]"
 
+    kmer_fillter = convert_base_name(args.motif)
     
-    out=open(args.out_dir+"/"+args.label,"w")
+    
+    out=open(args.output,"w")
 
     """
     #rename
@@ -209,12 +243,10 @@ def extract_5mer_features(signal_file):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Extract feature from signal.')
 
-    parser.add_argument('-signal_file', default='BaseCalled_template',help='Basecall subgroup Nanoraw resquiggle into. Default is BaseCalled_template')
-
-    parser.add_argument('-clip', default=10,help='reads first and last N base signal drop out')
-
-    parser.add_argument('-label', required=True, help='modified or unmodified')
-    parser.add_argument('-out_dir',required=True,help='output directory')
+    parser.add_argument('--signal_file', required = True, help='\tSignal file')
+    parser.add_argument('--clip', default=10, help='\tBase clip at both ends')
+    parser.add_argument('-o','--output', required = True, help="\tOutput file.")
+    parser.add_argument('--motif', required = True, help="\tSequence motif")
 
     args = parser.parse_args()
     

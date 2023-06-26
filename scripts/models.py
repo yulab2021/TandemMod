@@ -1,5 +1,8 @@
+import torch
 import torch.nn as nn
-
+from torch.utils import data as torch_data
+from torch.utils.data import Dataset
+from torch.autograd import Variable
 
 class BahdanauAttention(nn.Module):
     """
