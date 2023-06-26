@@ -1,6 +1,6 @@
 ## TandemMod
 ---
-![GitHub release (latest SemVer)](https://img.shields.io/badge/Version-v1.0-yellowgreen) ![GitHub release (latest SemVer)](https://img.shields.io/badge/Language-python-yellowgreen)
+![GitHub release (latest SemVer)](https://img.shields.io/badge/Version-v1.1.0-yellowgreen) ![GitHub release (latest SemVer)](https://img.shields.io/badge/Language-python-yellowgreen)
 
 TandemMod is a deep learning framework for detecting RNA modifications in nanopore direct RNA sequencing (DRS) data. It offers three modes: de novo training, transfer learning, and prediction. Researchers can train from scratch, fine-tune pre-trained models, or apply existing models for predictions. TandemMod achieves high accuracy and can be used to identify RNA modifications in various species and conditions. It provides a user-friendly solution for studying RNA modifications.
 

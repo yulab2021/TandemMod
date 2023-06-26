@@ -1,33 +1,79 @@
 name: TandemMod
 channels:
-  - pytorch
   - anaconda
-  - conda-forge
+  - pytorch
   - bioconda
+  - conda-forge
   - defaults
 dependencies:
- 
-  - hdf5=1.8.18=3
-  - html5lib=1.0.1=py37_0
-  - progressbar2=3.37.1=py37_0
-  - pysam=0.16.0=py37ha9a96c6_0
-  - python=3.7.6=cpython_he5300dc_6
-  - samtools=1.10=h2e538c0_3
-
-
-
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_kmp_llvm
+  - blas=2.116=openblas
+  - blas-devel=3.9.0=16_linux64_openblas
+  - c-ares=1.18.1=h7f98852_0
+  - ca-certificates=2023.01.10=h06a4308_0
+  - cached-property=1.5.2=hd8ed1ab_1
+  - cached_property=1.5.2=pyha770c72_1
+  - h5py=3.7.0=nompi_py37hf1ce037_101
+  - hdf5=1.12.2=nompi_h2386368_100
+  - joblib=0.16.0=py_0
+  - k8=0.2.5=hdcf5f25_4
+  - keyutils=1.6.1=h166bdaf_0
+  - krb5=1.19.3=h3790be6_0
+  - ld_impl_linux-64=2.39=hc81fddc_0
+  - libblas=3.9.0=16_linux64_openblas
+  - libcblas=3.9.0=16_linux64_openblas
+  - libcurl=7.86.0=h7bff187_1
+  - libedit=3.1.20191231=he28a2e2_2
+  - libev=4.33=h516909a_1
+  - libffi=3.4.2=h7f98852_5
+  - libgcc-ng=12.2.0=h65d4601_19
+  - libgfortran-ng=12.2.0=h69a702a_19
+  - libgfortran5=12.2.0=h337968e_19
+  - libgomp=12.2.0=h65d4601_19
+  - liblapack=3.9.0=16_linux64_openblas
+  - liblapacke=3.9.0=16_linux64_openblas
+  - libnghttp2=1.47.0=hdcd2b5c_1
+  - libnsl=2.0.0=h7f98852_0
+  - libopenblas=0.3.21=pthreads_h78a6416_3
+  - libsqlite=3.40.0=h753d276_0
+  - libssh2=1.10.0=haa6b8db_3
+  - libstdcxx-ng=12.2.0=h46fd767_19
+  - libzlib=1.2.13=h166bdaf_4
+  - llvm-openmp=14.0.6=h9e868ea_0
+  - minimap2=2.17=h5bf99c6_4
+  - ncurses=6.3=h27087fc_1
+  - numpy=1.19.5=py37h3e96413_3
+  - ont_vbz_hdf_plugin=1.0.1=h3f9cce5_5
+  - openblas=0.3.21=pthreads_h320a7e8_3
+  - openssl=1.1.1s=h7f8727e_0
+  - pip=22.3.1=pyhd8ed1ab_0
+  - python=3.7.12=hb7a2778_100_cpython
+  - python_abi=3.7=2_cp37m
+  - readline=8.1.2=h0f457ee_0
+  - scikit-learn=0.22.1=py37h22eb022_0
+  - scipy=1.7.0=py37h29e03ee_1
+  - setuptools=65.5.1=pyhd8ed1ab_0
+  - sqlite=3.40.0=h4ff8645_0
+  - tk=8.6.12=h27826a3_0
+  - wheel=0.38.4=pyhd8ed1ab_0
+  - xz=5.2.6=h166bdaf_0
+  - zlib=1.2.13=h166bdaf_4
+  - zstd=1.5.2=h6239696_4
   - pip:
-    - h5py==3.7.0
-    - hdf5plugin==3.3.1
-    - numpy==1.19.5
-    - ont-fast5-api==4.0.0
-    - pandas==1.1.0
-    - pathlib==1.0.1
-    - plotnine==0.8.0
+    - cython==0.29.35
+    - future==0.18.3
+    - mappy==2.26
+    - ont-fast5-api==4.1.1
+    - ont-tombo==1.5.1
+    - packaging==23.1
+    - pandas==1.3.5
+    - patsy==0.5.3
     - progressbar33==2.4
-    - scikit-learn==0.22
-    - toml==0.10.2
-    - torch==1.9.1
+    - python-dateutil==2.8.2
+    - pytz==2023.3
+    - six==1.16.0
     - statsmodels==0.10.0
-
-prefix: /home/wuyou/.conda/envs/TandemMod
+    - torch==1.9.1
+    - tqdm==4.65.0
+    - typing-extensions==4.6.3
