@@ -11,20 +11,19 @@ To use TandemMod, you can follow the instructions below. The detailed usage and 
 
 module | version
 ---|---
-samtools | 1.3.1
 minimap2 | 2.17-r941
 python                               |3.7.3
-h5py                               |2.9.0
+h5py                               |3.7.0
 statsmodels                        |0.10.0
 joblib                        |0.16.0
 pysam                         |0.16.0.1
-tqdm                          |4.39.0
 scikit-learn              |0.22 
 torch                     |1.9.1
 guppy                     |6.1.5
 tombo                     |1.5.1
 ont_vbz_hdf_plugin        |1.0.1
 ont-fast5-api             |4.1.1
+numpy                     |1.19.5
 
 You can install dependent modules manually or install them through yaml file.
 ```
