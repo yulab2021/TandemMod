@@ -12,7 +12,7 @@ To use TandemMod, you can follow the instructions below. The detailed usage and 
 module | version
 ---|---
 minimap2 | 2.17-r941
-python                               |3.7.3
+python                               |3.7.12
 h5py                               |3.7.0
 statsmodels                        |0.10.0
 joblib                        |0.16.0
