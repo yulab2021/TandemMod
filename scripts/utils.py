@@ -323,6 +323,9 @@ def load_predict_data(file):
     with open(file) as f:
 
         for line in f:
+        
+            line=line.rstrip()
+            items=line.split("\t")
 
             read_id=line.split("\t")[0]
             contig=line.split("\t")[1]
