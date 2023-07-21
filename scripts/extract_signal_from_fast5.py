@@ -214,7 +214,7 @@ def extract_signal(file_list):
 			num=get_signal(file)
 			if num:
 				nums.append(num)
-	output=open(args.output+".signal.tsv","w")
+	output=open(args.output,"w")
  
 	for num in nums:
 
