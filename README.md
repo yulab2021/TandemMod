@@ -25,7 +25,7 @@ ont-fast5-api             |4.1.1
 numpy                     |1.19.5
 scipy                     |1.7.0
 
-You can install dependent modules manually or install them through yaml file.
+You can install dependent modules manually or install them through yaml file. The entire installation will take about 10 minutes.
 ```
 conda env create -f TandemMod.yaml
 ```
@@ -59,7 +59,7 @@ python scripts/extract_feature_from_signal.py  --signal_file demo/IVET/m6A.signa
 ```
 
 ---
-Three different modes has been developed: de novo training, transfer learning, and prediction. The mode of de novo training allows users to train the TandemMod model from scratch using their own datasets. In the prediction mode, users can apply a pre-trained or fine-tuned TandemMod model to identify modifications in their dataset. In the transfer learning mode, users can fine-tune a pre-trained TandemMod model using their own data. 
+Three different modes has been developed: de novo training, transfer learning, and prediction. The mode of de novo training allows users to train the TandemMod model from scratch using their own datasets. In the prediction mode, users can apply a pre-trained or fine-tuned TandemMod model to identify modifications in their dataset. In the transfer learning mode, users can fine-tune a pre-trained TandemMod model using their own data. The execution time for each demonstration is estimated to be approximately 5-10 minutes on a "normal" desktop computer.
 ### Train your own model
 ```
 python scripts/TandemMod.py --run_mode train \
