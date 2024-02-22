@@ -25,6 +25,8 @@ def get_exon_dict_from_gff(gff):
     strand_dict={}
     with open(gff) as f:
         for line in f:
+            if line[0] == "#":
+                continue
             type=line.split("\t")[2]
             if type=="exon":
                 chr=line.split('\t')[0]
