@@ -94,8 +94,8 @@ python scripts/TandemMod.py --run_mode transfer \
 ---
 ### Contact
 TandemMod is maintained by Yu lab.
-If you use TandemMod in your research, please cite this article
-```
+If you use TandemMod in your research, please cite this article::
+
 Wu, Y., Shao, W., Yan, M. et al. Transfer learning enables identification of multiple types of RNA modifications using nanopore direct RNA sequencing. Nat Commun 15, 4049 (2024). https://doi.org/10.1038/s41467-024-48437-4.
-```
+
 
